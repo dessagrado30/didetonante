@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: BrantSe;
+    src: url("Brant-FREE.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Brant;
+    font-weight: bold;
+    src: url("Brant-FREE.otf") format("opentype");
+}
