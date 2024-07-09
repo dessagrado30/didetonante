@@ -5,17 +5,17 @@ text-decoration: none;
 }
 
 body {
-    background: url(/home/tortuga/Documentos/DIDETONANTE/assets/REEL.gif) fixed #0d0d0d;
+    background: url(../assets/REEL.gif) fixed #0d0d0d;
 }
 body.otra {
-    background: url(/home/tortuga/Documentos/DIDETONANTE/assets/0148-0319.gif) fixed #0d0d0d;
+    background: url(../assets/0148-0319.gif) fixed #0d0d0d;
     background-repeat: none;
 }
 body.otra_dos {
-    background: url(/home/tortuga/Documentos/DIDETONANTE/assets/img/I1_1.png) fixed #0d0d0d;
+    background: url(../assets/img/I1_1.png) fixed #0d0d0d;
 }
 body.otra_tres {
-    background: url(/home/tortuga/Documentos/DIDETONANTE/assets/REEL.gif) fixed #0d0d0d;
+    background: url(../assets/REEL.gif) fixed #0d0d0d;
 }
 
 .header{
