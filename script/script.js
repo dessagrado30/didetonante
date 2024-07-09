@@ -8,8 +8,15 @@ window.addEventListener("scroll", function(){
 window.addEventListener("scroll", function(){
     var body = document.querySelector("body");
     body.classList.toggle("otra",window.scrollY>900);
+    body.classList.toggle("scroll",window.scrollY>900);
     body.classList.toggle("otra_dos",window.scrollY>3000);
     body.classList.toggle("otra_tres",window.scrollY>5255);
+})
+
+
+window.addEventListener("scroll", function(){
+    var body = document.querySelector(".inicio__video");
+    body.classList.toggle("out__section",window.scrollY>900);
 })
 
 const dialog=document.querySelector(".modal");
