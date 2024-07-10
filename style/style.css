@@ -15,6 +15,47 @@ body.otra_dos {
     background: fixed #0d0d0d;
 }
 
+.preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 1100;
+/*     display: none; */
+}
+.loader {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+}
+@keyframes loader {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.loader::after,
+.loader::before {
+    animation: loader 2s linear infinite;
+    content: "";
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+}
+
+.loader::after {
+    opacity: 0;
+    animation-delay: 1s;
+}
+
+
+
 .header{
     position: fixed;
     top: 0;
@@ -38,9 +79,14 @@ body.otra_dos {
     align-items: center;
 }
 
-#logo {
+/*#logo {
     width: 40px;
     margin: 0 7px;
+}*/
+
+.header__logo {
+    width: 40px;
+    margin: 07px;
 }
 .header__nav{
     display: flex;
@@ -79,6 +125,7 @@ body.otra_dos {
     border-radius: 5px;
     border: solid 1px #00000000;
     transition: 0.5s;
+    cursor: pointer;
 }
 .item--button:hover {
     border: solid 1px #b5ff03 ;

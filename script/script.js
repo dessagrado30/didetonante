@@ -1,3 +1,7 @@
+window.addEventListener("DOMContentLoaded", function(){
+    const preloader = document.querySelector(".preloader");
+    preloader.style.display="none";
+})
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
     header.classList.toggle("abajo",window.scrollY>900);
