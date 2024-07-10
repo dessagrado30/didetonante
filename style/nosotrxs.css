@@ -1,14 +1,24 @@
 *{
-box-sizing: border-box;
 margin: 0;
 padding: 0;
 text-decoration: none;
 }
+
+body {
+    background: fixed #0d0d0d;
+}
+body.otra {
+    background: url(../assets/GLITCH_1.gif) fixed #0d0d0d;
+    background-repeat: none;
+}
+body.otra_dos {
+    background: fixed #0d0d0d;
+}
 .header{
     position: fixed;
-    background-color: red;
     top: 0;
     left: 0;
+    width: 100%;
 /*     width: 100%; */
     display: flex;
     justify-content: space-around;
@@ -28,10 +38,19 @@ text-decoration: none;
     align-items: center;
 }
 
-#logo {
+.header__logo {
     width: 40px;
-    margin: 0 7px;
+    margin: 07px;
 }
+
+.hlogo--color, .hicon--color {
+    filter: invert(0%)
+}
+
+.hlogo--color.inv, .hicon--color.invert {
+    filter: invert(100%);
+}
+
 .header__nav{
     display: flex;
     justify-content: center;
@@ -75,21 +94,24 @@ text-decoration: none;
 }
 
 .header.abajo{
-    background: #000000;
+    background: #ffffff;
     padding: 15px 20px;
 
     .item__link{
-        color: #fff;
+        color: #000000;
     }
     .item__link:hover {
-        color: #deff0b;
+        color: #a202ff;
+    }
+    .didetonante {
+        color: #000000;
     }
 }
 
-.header.arriba{
+/*.header.arriba{
     background: rgba(0, 0, 0, 0);
     padding: 30px 20px;
-}
+}*/
 .contenido {
-
+    height: 500vh;
 }

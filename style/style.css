@@ -240,7 +240,7 @@ body.otra_dos {
 }
 
 .section__aside {
-    position: relative;
+/*     position: relative; */
     height: 70vh;
     background-color: #ff00ff;
     .aside__desobediencias {
