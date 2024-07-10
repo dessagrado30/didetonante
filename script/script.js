@@ -10,13 +10,14 @@ window.addEventListener("scroll", function(){
     body.classList.toggle("otra",window.scrollY>900);
     body.classList.toggle("scroll",window.scrollY>900);
     body.classList.toggle("otra_dos",window.scrollY>3000);
-    body.classList.toggle("otra_tres",window.scrollY>5255);
 })
 
 
 window.addEventListener("scroll", function(){
-    var body = document.querySelector(".inicio__video");
-    body.classList.toggle("out__section",window.scrollY>900);
+    var video = document.querySelector(".inicio__element");
+    var texto = document.querySelector(".inicio__banner");
+    video.classList.toggle("out__section",window.scrollY>900);
+    texto.classList.toggle("out__section",window.scrollY>900);
 })
 
 const dialog=document.querySelector(".modal");

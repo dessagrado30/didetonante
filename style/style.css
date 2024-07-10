@@ -8,14 +8,11 @@ body {
     background: /*url(../assets/REEL.gif)*/ fixed #0d0d0d;
 }
 body.otra {
-    background: url(../assets/glitch.gif) fixed #0d0d0d;
+    background: url(../assets/GLITCH_1.gif) fixed #0d0d0d;
     background-repeat: none;
 }
 body.otra_dos {
     background: url(../assets/img/I1_1.png) fixed #0d0d0d;
-}
-body.otra_tres {
-    background: url(../assets/REEL.gif) fixed #0d0d0d;
 }
 
 .header{
@@ -27,7 +24,7 @@ body.otra_tres {
     justify-content: space-around;
     transition: 0.7s;
     padding: 30px 20px;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header .container__logo{
@@ -105,14 +102,15 @@ body.otra_tres {
 }
 
 .section__inicio {
+
     .text__container {
+/*        position: absolute;*/
         width: 100vw;
         height: 100vh;
         background-color: rgb(0, 0, 0, 70%);;
         z-index: 5;
     }
     .inicio__banner {
-        position: absolute;
         color: #b5ff03;
         font-size: 125px;
         font-family: alte_bold;
@@ -120,11 +118,14 @@ body.otra_tres {
         top: 25%;
         left: 10%;
     }
-    .inicio__video {
+    .inicio__element {
         position: fixed;
     }
-    .inicio__video.out__section{
-        position: relative;
+    .inicio__element.out__section{
+        display: none;
+    }
+    .inicio__banner.out__section{
+        display: none;
     }
 }
 
@@ -134,6 +135,7 @@ body.otra_tres {
     height: 100vh;
     display: flex;
     justify-content: center;
+    z-index: 100;
 
     .section__image {
         position: absolute;
