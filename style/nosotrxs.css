@@ -1,0 +1,95 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+.header{
+    position: fixed;
+    background-color: red;
+    top: 0;
+    left: 0;
+/*     width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 1000;
+}
+
+.header .container__logo{
+    font-family: mont;
+    position: relative;
+    color: #fff;
+    font-size: 1.5em;
+    transition: 1.5s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 40px;
+    margin: 0 7px;
+}
+.header__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list__item{
+    list-style: none;
+    a:hover {
+        color: #deff0b;
+    }
+}
+
+.item__link{
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+
+}
+
+.item--button {
+    padding: 0.3em 2em;
+    border-radius: 5px;
+    border: solid 1px #00000000;
+    transition: 0.5s;
+}
+.item--button:hover {
+    border: solid 1px #b5ff03 ;
+}
+
+.header.abajo{
+    background: #000000;
+    padding: 15px 20px;
+
+    .item__link{
+        color: #fff;
+    }
+    .item__link:hover {
+        color: #deff0b;
+    }
+}
+
+.header.arriba{
+    background: rgba(0, 0, 0, 0);
+    padding: 30px 20px;
+}
+.contenido {
+
+}

@@ -16,8 +16,10 @@ window.addEventListener("scroll", function(){
 window.addEventListener("scroll", function(){
     var video = document.querySelector(".inicio__element");
     var texto = document.querySelector(".inicio__banner");
+    var sep = document.querySelector(".separador__f");
     video.classList.toggle("out__section",window.scrollY>900);
     texto.classList.toggle("out__section",window.scrollY>900);
+    sep.classList.toggle("out__section-separador",window.scrollY<3500);
 })
 
 const dialog=document.querySelector(".modal");

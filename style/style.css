@@ -5,14 +5,14 @@ text-decoration: none;
 }
 
 body {
-    background: /*url(../assets/REEL.gif)*/ fixed #0d0d0d;
+    background: fixed #0d0d0d;
 }
 body.otra {
     background: url(../assets/GLITCH_1.gif) fixed #0d0d0d;
     background-repeat: none;
 }
 body.otra_dos {
-    background: url(../assets/img/I1_1.png) fixed #0d0d0d;
+    background: fixed #0d0d0d;
 }
 
 .header{
@@ -220,9 +220,36 @@ body.otra_dos {
 .section__intension {
     background-color: #0d0d0d;
 }
+
+.separador__f {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    .text__container {
+        position: fixed;
+        color: #ff00ff;
+        font-size: 140px;
+        font-family: alte_bold;
+        font-weight: bold;
+        top: 25%;
+        left: 10%;
+    }
+}
+.separador__f.out__section-separador {
+    display: none;
+}
+
 .section__aside {
+    position: relative;
     height: 70vh;
     background-color: #ff00ff;
+    .aside__desobediencias {
+        position: absolute;
+        color: #ffffff55;
+        font-size: 140px;
+        font-family: alte_bold;
+        font-weight: bold;
+        left: 10%;
 }
 .fooder {
     background-color: #000000dd;
