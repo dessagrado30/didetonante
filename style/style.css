@@ -37,16 +37,18 @@ body.otra_dos {
 @keyframes loader {
 
     0% {
-        transform: matrix(0, 0, 0, 0, -25, -25);
+        transform: matrix(1, 0, 0, 1, -25, -25);
         opacity: 0;
     }
 
     50% {
         transform: matrix(1.9, 0, 0, 1.9, -25, -25);
         opacity: 1;
+/*         border-color: #bbff00; */
     }
     100% {
         transform: matrix(3, 0, 0, 3, -25, -25);
+/*         border-color: #bbff00; */
         opacity: 0;
     }
 }
@@ -214,7 +216,7 @@ body.otra_dos {
 
         h2, p {
             padding: 1%;
-            color: black;
+            /*color: black;*/
             text-align: center;
             text-decoration-line:  line-through;
             text-decoration-color: #00000000;
@@ -224,6 +226,12 @@ body.otra_dos {
             text-decoration-color: #b5ff03;
             text-decoration-style: wavy;
         }
+    }
+    .text--black {
+        color: black;
+    }
+    .text--white {
+        color: white;
     }
     .text--top {
         top: 0;
@@ -270,6 +278,13 @@ body.otra_dos {
     }
 }
 
+.section__intension {
+    .section__image {
+        top: 0;
+        background-image: url(../assets/img/I4.png);
+    }
+}
+
 .section__nosotrxs {
     background-color: #ffffff;
 }
@@ -279,7 +294,8 @@ body.otra_dos {
 }
 
 .section__intension {
-    background-color: #0d0d0d;
+    background-color: #0b0b0b;
+    }
 }
 
 .separador__f {
@@ -302,7 +318,7 @@ body.otra_dos {
 
 .section__aside {
 /*     position: relative; */
-    height: 70vh;
+    height: 20vh;
     background-color: #ff00ff;
     .aside__desobediencias {
         position: absolute;
