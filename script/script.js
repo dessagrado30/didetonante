@@ -5,17 +5,22 @@ window.addEventListener("load", function(){
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
     header.classList.toggle("abajo",window.scrollY>900);
-    header.classList.toggle("arriba",window.scrollY>3500);
+    // header.classList.toggle("arriba",window.scrollY>3500);
 
 })
 
 window.addEventListener("scroll", function(){
-    var body = document.querySelector("body");
+    var body = document.querySelector(".background");
     var logo = document.querySelector(".hlogo--color")
     var icon = document.querySelector(".hicon--color");
-    body.classList.toggle("otra",window.scrollY>900);
+    var nodos = document.querySelector(".section__container")
+
+    body.classList.toggle("glitch",window.scrollY>900);
+    body.classList.toggle("none",window.scrollY>2500);
+    nodos.classList.toggle("nodes-true",window.scrollY>2700);
+    nodos.classList.toggle("nodes-false",window.scrollY>4500);
     body.classList.toggle("scroll",window.scrollY>900);
-    body.classList.toggle("otra_dos",window.scrollY>3000);
+    body.classList.toggle("text",window.scrollY>3000);
     logo.classList.toggle("inv",window.scrollY>900);
     icon.classList.toggle("invert",window.scrollY>900);
 })
@@ -24,11 +29,11 @@ window.addEventListener("scroll", function(){
 window.addEventListener("scroll", function(){
     var video = document.querySelector(".inicio__element");
     var texto = document.querySelector(".inicio__banner");
-    var sep = document.querySelector(".separador__f");
+    var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>900);
     texto.classList.toggle("out__section",window.scrollY>900);
-    sep.classList.toggle("out__section-separador",window.scrollY<3500);
+    sep.classList.toggle("out__section-separador",window.scrollY<4500);
 })
 
 const dialog=document.querySelector(".modal");
