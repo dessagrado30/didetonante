@@ -403,22 +403,23 @@ text-decoration: none;
     box-sizing: border-box;
 /*     position: absolute; */
     width: 90%;
-    right: 0%;
-    box-shadow: 200px 0 100px #000000;
+    right: -50%;
+    transform: translate(-50%, 0);
+    box-shadow: 90px 0 70px #000000;
     background-color: #0b0b0b;
     border: 1px solid #fafafa;
 
     .section__image {
         position: absolute;
         display: flex;
-        width: 100vw;
-        height: 61%;
+        width: 90vw;
+        height: 55%;
         justify-content: center;
         grid-template-columns: auto auto auto;
-        left: 0;
+        left: -1;
         .img {
             height: 100%;
-            display: none;
+/*             display: none; */
 
         }
     }
@@ -431,7 +432,7 @@ text-decoration: none;
         font-size: 140px;
         font-family: alte_bold;
         font-weight: bold;
-        top: 25%;
+        top: 20%;
         left: 10%;
     }
 }
