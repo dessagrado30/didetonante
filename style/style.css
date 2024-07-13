@@ -3,6 +3,10 @@ margin: 0;
 padding: 0;
 text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
 
 .background {
     background: fixed #0d0d0d;
@@ -42,16 +46,17 @@ text-decoration: none;
     0% {
         transform: matrix(1, 0, 0, 1, -25, -25);
         opacity: 0;
+        border-color: #ff00ff;
     }
 
     50% {
         transform: matrix(1.9, 0, 0, 1.9, -25, -25);
         opacity: 1;
-/*         border-color: #bbff00; */
+        border-color: #ff00ff;
     }
     100% {
         transform: matrix(3, 0, 0, 3, -25, -25);
-/*         border-color: #bbff00; */
+        border-color: #ff00ff;
         opacity: 0;
     }
 }
@@ -79,7 +84,7 @@ text-decoration: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
@@ -98,15 +103,11 @@ text-decoration: none;
     align-items: center;
 }
 
-/*#logo {
-    width: 40px;
-    margin: 0 7px;
-}*/
-
-.header__logo {
+.hlogo--color {
     width: 40px;
     margin: 07px;
-    filter: brightness(95%);
+    filter: saturate(0%) brightness(4000%) ;
+    transition: 1.5s;
 }
 .header__nav{
     display: flex;
@@ -162,6 +163,9 @@ text-decoration: none;
     .item__link:hover {
         color: #deff0b;
     }
+    .hlogo--color.inv {
+        filter: saturate(100%) brightness(4000%) ;
+    }
 }
 
 .header.arriba{
@@ -174,10 +178,11 @@ text-decoration: none;
     .text__container {
        position: absolute;
         width: 100vw;
-        height: 200vh;
-        background-color: rgb(0, 0, 0, 70%);;
+        height: 190vh;
+       background-color: rgb(0, 0, 0, 70%);;
         z-index: 1;
     }
+
     .inicio__banner {
         color: #bbff00;
         font-size: 140px;
@@ -199,17 +204,11 @@ text-decoration: none;
 
 .section {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     z-index: 100;
-
-/*    width: 90%;*/
-/*    right: -50%;
-    transform: translate(-50%, 0);*/
-/*     box-shadow: 90px 0 70px #000000; */
-/*     border: 1px solid #fafafa; */
 
     .section__image {
         position: absolute;
@@ -219,22 +218,25 @@ text-decoration: none;
     }
 
     .section__text {
+
         position: absolute;
         display: flex;
         align-items: center;
         width: 80%;
         height: 40%;
 
-        h2, p {
+        p {
             padding: 1%;
             max-width: 700px;
-            text-align: center;
             text-decoration-line:  line-through;
             text-decoration-color: #00000000;
             transition: 1s;
-
         }
-        h2:hover {
+        .h2--mod {
+            text-decoration-color: #b5ff03;
+            text-decoration-style: wavy;
+        }
+        .h2--mod:hover {
             text-decoration-color: #b5ff03;
             text-decoration-style: wavy;
         }
@@ -256,6 +258,7 @@ text-decoration: none;
     }
 
     .text__title {
+        text-align: center;
         font-family: alte_bold;
         width: 50vw;
     }
@@ -269,14 +272,25 @@ text-decoration: none;
         .paragraph--left, .paragraph--right {
             font-size: 1.3em;
         }
+        .paragraph--right {
+            text-align: right;
+        }
+        .paragraph--left {
+            text-align: left;
+        }
 }
 
+.section ~ section {
+    border-radius: 10px;
+    overflow:hidden;
+}
 
 
 .separador {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 700px;
+
 }
 
 
@@ -284,19 +298,22 @@ text-decoration: none;
     background-color: #f5f5f5;
     position: relative;
     width: 90%;
+    height: 90vh;
     left: 50%;
     transform: translate(-50%, 0);
     box-shadow:  150px 0 80px #000000cc, -150px 0 80px #00000055;
     .section__image {
         background-image: url(../assets/img/DD_Quienes_somos.png);
+        background-position: center;
     }
 }
 
 .section__accionar {
     background-color: #f5f5f5;
     left: 50%;
-    transform: translate(-50%, 0);
     width: 90%;
+    height: 90vh;
+    transform: translate(-50%, 0);
     box-shadow: 100px 0 100px #000000;
     .section__image {
         bottom: 0;
@@ -309,7 +326,7 @@ text-decoration: none;
     z-index: 0;
 
     .section__title {
-        border-left:1px solid #ddff00;
+        border-left:1px solid #ff00ff;
         position: absolute;
         display: grid;
         font-family: alte_bold;
@@ -370,17 +387,17 @@ text-decoration: none;
             }
             .box__icon {
                 position: absolute;
-                filter: brightness(95%);
+                filter: saturate(0%) brightness(4000%);
                 transition-duration: .5s;
 /*                 transition-property: width filter; */
                 width: 18%;
             }
         }
        .container__item:hover {
-            background-color: #161616;
+            background-color: #1b1b1b;
+            border-bottom:1px solid #ff00ff;
            .box__icon {
                 width: 20%;
-/*                filter: sepia(46%) saturate(4140%) hue-rotate(13deg) brightness(108%) contrast(105%);*/
             }
         }
     }
@@ -396,31 +413,36 @@ text-decoration: none;
         width: 90%;
         height: 32vh;
         bottom: 0%;
-        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        overflow: hidden;
         border-left: 1px solid #3f3f3f;
         .logos__item {
             color: #fafafa;
             margin: auto;
             gap: 10em;
+/*             width: 300px; */
             .item--img {
                 filter: brightness(50%);
             }
         }
     }
-}
-.section__right {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    right: 0;
+    .container__slider .barra__logos {
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+    }
+    .container__slider {
+        width: 100%;
+        background-color: blue;
+    }
 }
 .section__intension {
     background-color: #0b0b0b;
     width: 90%;
     right: -50%;
+    height: 90vh;
     transform: translate(-50%, 0);
     box-shadow: 90px 0 70px #000000;
-    border: 1px solid #fafafa;
+/*     border: 1px solid #fafafa; */
 
     .section__image {
         position: absolute;
@@ -433,7 +455,7 @@ text-decoration: none;
         }
     }
     .logo__urmadic {
-        width: 300px;
+        width: 200px;
     }
 }
 
