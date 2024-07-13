@@ -106,7 +106,7 @@ text-decoration: none;
 .header__logo {
     width: 40px;
     margin: 07px;
-    filter: brightness(90%);
+    filter: brightness(95%);
 }
 .header__nav{
     display: flex;
@@ -172,11 +172,11 @@ text-decoration: none;
 .section__inicio {
 
     .text__container {
-/*        position: absolute;*/
+       position: absolute;
         width: 100vw;
-        height: 100vh;
+        height: 200vh;
         background-color: rgb(0, 0, 0, 70%);;
-        z-index: 5;
+        z-index: 1;
     }
     .inicio__banner {
         color: #bbff00;
@@ -204,6 +204,12 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     z-index: 100;
+
+/*    width: 90%;*/
+/*    right: -50%;
+    transform: translate(-50%, 0);*/
+/*     box-shadow: 90px 0 70px #000000; */
+/*     border: 1px solid #fafafa; */
 
     .section__image {
         position: absolute;
@@ -276,6 +282,11 @@ text-decoration: none;
 
 .section__nosotrxs {
     background-color: #f5f5f5;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow:  150px 0 80px #000000cc, -150px 0 80px #00000055;
     .section__image {
         background-image: url(../assets/img/DD_Quienes_somos.png);
     }
@@ -283,7 +294,10 @@ text-decoration: none;
 
 .section__accionar {
     background-color: #f5f5f5;
-    box-shadow: 0 100px 100px #000000aa;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    box-shadow: 100px 0 100px #000000;
     .section__image {
         bottom: 0;
         background-image: url(../assets/img/I3.png);
@@ -292,8 +306,6 @@ text-decoration: none;
 
 .section__ejes {
     position: relative;
-/*     background-color: #0b0b0b; */
-/*     align-items: center; */
     z-index: 0;
 
     .section__title {
@@ -308,7 +320,6 @@ text-decoration: none;
         height: 85px;
         left: 0;
         bottom: 35%;
-
         transform: rotate(0.75turn);
     }
     .section__container {
@@ -325,7 +336,7 @@ text-decoration: none;
             position: relative;
             border: 1px solid #3f3f3f;
             border-right: none;
-            transition-duration: 5s;
+            transition-duration: .5s;
             .text__box {
                 color: #f5f5f5;
                 margin: 2em 2em 0 25px;
@@ -360,12 +371,16 @@ text-decoration: none;
             .box__icon {
                 position: absolute;
                 filter: brightness(95%);
-                width: 20%;
+                transition-duration: .5s;
+/*                 transition-property: width filter; */
+                width: 18%;
             }
         }
        .container__item:hover {
-           .box__title {
-            font-size: 2.05em;
+            background-color: #161616;
+           .box__icon {
+                width: 20%;
+/*                filter: sepia(46%) saturate(4140%) hue-rotate(13deg) brightness(108%) contrast(105%);*/
             }
         }
     }
@@ -400,12 +415,11 @@ text-decoration: none;
     right: 0;
 }
 .section__intension {
-    box-sizing: border-box;
+    background-color: #0b0b0b;
     width: 90%;
     right: -50%;
     transform: translate(-50%, 0);
     box-shadow: 90px 0 70px #000000;
-    background-color: #0b0b0b;
     border: 1px solid #fafafa;
 
     .section__image {
@@ -417,6 +431,9 @@ text-decoration: none;
         .img {
             width: 100%;
         }
+    }
+    .logo__urmadic {
+        width: 300px;
     }
 }
 
