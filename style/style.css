@@ -407,28 +407,34 @@ html {
     .section__container.nodes-false {
         display: none;
     }
+    .org__links {
+        position: fixed;
+/*         background-color: blue; */
+        width: 100%;
+        height: 32vh;
+        bottom: 0;
+        display: grid;
+        border-left: 1px solid #ffffff33;
+    }
     .container__slider {
 /*         border: 1px solid #ababab; */
-        position: fixed;
-        width: 90%;
+        position: absolute;
+        width: 80%;
         height: 32vh;
         bottom: 0%;
         display: flex;
         align-items: center;
         overflow: hidden;
-        border-left: 1px solid #ffffff33;
-        padding: 0 100px 0 100px;
         .barra__logos {
             position: absolute;
 /*             border: 1px solid #484848; */
             width: 200%;
             display: flex;
-            animation: scroll 90s linear infinite;
+            animation: scroll 100s linear infinite;
             .logos__item {
                 color: #fafafa;
                 margin: auto;
-                gap: 10em;
-                /*             width: 300px; */
+/*                 gap: 10em; */
                 .item--img {
                     filter: brightness(50%);
                 }
