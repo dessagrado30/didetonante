@@ -3,7 +3,7 @@ window.addEventListener("load", function(){
     const preloader = document.querySelector(".preloader");
     preloader.style.display="none";
 })
-
+/*
 //header transorn scroll
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
@@ -53,5 +53,5 @@ openModal.addEventListener("click", ()=>{
 
 closeModal.addEventListener("click", ()=>{
     dialog.close();
-})
+})*/
 
