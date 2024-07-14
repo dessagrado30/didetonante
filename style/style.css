@@ -419,16 +419,17 @@ html {
     .container__slider {
 /*         border: 1px solid #ababab; */
         position: absolute;
-        width: 80%;
+        width: 90%;
         height: 32vh;
         bottom: 0%;
         display: flex;
-        align-items: center;
+        align-items: start;
         overflow: hidden;
         .barra__logos {
             position: absolute;
 /*             border: 1px solid #484848; */
             width: 200%;
+            height: 250px;
             display: flex;
             animation: scroll 100s linear infinite;
             .logos__item {
