@@ -344,14 +344,14 @@ html {
         width: 90%;
         height: 60vh;
         display: grid;
-        grid-template-columns: 20% 20% 20% 20% 20%;x;
+        grid-template-columns: 20% 20% 20% 20% 20%;
         right: 0;
         top: 8%;
         display: none;
         .container__item {
             cursor: pointer;
             position: relative;
-            border: 1px solid #3f3f3f;
+            border: 1px solid #ffffff33;
             border-right: none;
             transition-duration: .5s;
             .text__box {
@@ -389,12 +389,12 @@ html {
                 position: absolute;
                 filter: saturate(0%) brightness(4000%);
                 transition-duration: .5s;
-/*                 transition-property: width filter; */
+                transition-property: width filter;
                 width: 18%;
             }
         }
        .container__item:hover {
-            background-color: #1b1b1b;
+            background-color: #1d1d1d;
             border-bottom:1px solid #ff00ff;
            .box__icon {
                 width: 20%;
@@ -407,32 +407,42 @@ html {
     .section__container.nodes-false {
         display: none;
     }
-    .barra__logos {
+    .container__slider {
+/*         border: 1px solid #ababab; */
         position: fixed;
-        display: grid;
         width: 90%;
         height: 32vh;
         bottom: 0%;
-        grid-template-columns: auto auto auto auto auto auto auto;
+        display: flex;
+        align-items: center;
         overflow: hidden;
-        border-left: 1px solid #3f3f3f;
-        .logos__item {
-            color: #fafafa;
-            margin: auto;
-            gap: 10em;
-/*             width: 300px; */
-            .item--img {
-                filter: brightness(50%);
+        border-left: 1px solid #ffffff33;
+        padding: 0 100px 0 100px;
+        .barra__logos {
+            position: absolute;
+/*             border: 1px solid #484848; */
+            width: 200%;
+            display: flex;
+            animation: scroll 90s linear infinite;
+            .logos__item {
+                color: #fafafa;
+                margin: auto;
+                gap: 10em;
+                /*             width: 300px; */
+                .item--img {
+                    filter: brightness(50%);
+                }
             }
         }
     }
-    .container__slider .barra__logos {
-        animation: scroll 40s linear infinite;
-        -webkit-animation: scroll 40s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
     }
-    .container__slider {
-        width: 100%;
-        background-color: blue;
+
+    100% {
+        transform: translateX(-50%);
     }
 }
 .section__intension {
