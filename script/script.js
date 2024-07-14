@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
     preloader.style.display="none";
 })
 
-//header transtorn scroll
+//header transorn scroll
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
     header.classList.toggle("abajo",window.scrollY>800);
@@ -20,18 +20,18 @@ window.addEventListener("scroll", function(){
     var nodos = document.querySelector(".section__container")
 
     body.classList.toggle("scroll",window.scrollY>900);
-    body.classList.toggle("glitch",window.scrollY>1000);
-    body.classList.toggle("none",window.scrollY>2500);
-    body.classList.toggle("text",window.scrollY>3000);
+    // body.classList.toggle("glitch",window.scrollY>0);
+    body.classList.toggle("none",window.scrollY>4400);
+    body.classList.toggle("text",window.scrollY>4400);
 
-    nodos.classList.toggle("nodes-true",window.scrollY>2300);
+    nodos.classList.toggle("nodes-true",window.scrollY>2500);
     nodos.classList.toggle("nodes-false",window.scrollY>4400);
 
     logo.classList.toggle("inv",window.scrollY>3000);
 
 })
 
-//background toggle scroll
+//background elements scroll
 window.addEventListener("scroll", function(){
     var video = document.querySelector(".inicio__element");
     var texto = document.querySelector(".inicio__banner");

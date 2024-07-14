@@ -17,16 +17,17 @@ body::-webkit-scrollbar{
     background: fixed #0d0d0d;
 
 }
-.background.glitch {
+/*.background.glitch {
     background: url(../assets/GLITCH_1.gif) fixed #0d0d0d;
     background-repeat: none;
-}
-.background.none {
+    z-index: 0;
+}*/
+/*.background.none {
     background: fixed #0d0d0d;
 }
 .background.text {
     background: fixed #0d0d0d;
-}
+}*/
 
 .preloader {
     position: fixed;
@@ -199,6 +200,7 @@ body::-webkit-scrollbar{
     }
     .inicio__element {
         position: fixed;
+        z-index: 0;
     }
     .inicio__element.out__section{
         display: none;
@@ -296,7 +298,18 @@ body::-webkit-scrollbar{
     position: relative;
     width: 100vw;
     height: 700px;
+}
+.glitch__container {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    .inter__element {
+        position: fixed;
+        top: 0;
 
+        .video {
+        }
+    }
 }
 
 
@@ -328,9 +341,9 @@ body::-webkit-scrollbar{
 }
 
 .section__ejes {
-/*     background-color: blue; */
+    background-color: #0b0b0b;
     position: relative;
-    z-index: 0;
+    z-index: 5;
 
     .section__title {
         border-left:1px solid #ff00ff;
@@ -484,6 +497,7 @@ body::-webkit-scrollbar{
 }
 
 .separador__final {
+    background-color: #0b0b0b;
     .text__container {
         position: fixed;
         color: #ff00ff;
