@@ -29,7 +29,7 @@ body::-webkit-scrollbar{
     background: fixed #0d0d0d;
 }*/
 
-.preloader {
+/*.preloader {
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -83,7 +83,7 @@ body::-webkit-scrollbar{
 .loader::after {
     opacity: 0;
     animation-delay: 1s;
-}
+}*/
 
 
 
