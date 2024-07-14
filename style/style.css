@@ -48,7 +48,7 @@ body::-webkit-scrollbar{
     z-index: 1200;
 }
 
-@keyframes loader {
+/*@keyframes loader {
 
     0% {
         transform: matrix(1, 0, 0, 1, -25, -25);
@@ -66,7 +66,7 @@ body::-webkit-scrollbar{
         border-color: #ff00ff;
         opacity: 0;
     }
-}
+}*/
 .loader::after,
 .loader::before {
     content: "";
@@ -462,7 +462,7 @@ body::-webkit-scrollbar{
         }
     }
 }
-@keyframes scroll {
+/*@keyframes scroll {
     0% {
         transform: translateX(0);
     }
@@ -470,7 +470,7 @@ body::-webkit-scrollbar{
     100% {
         transform: translateX(-50%);
     }
-}
+}*/
 .section__intension {
     background-color: #0b0b0b;
     width: 90%;
