@@ -24,8 +24,8 @@ window.addEventListener("scroll", function(){
     body.classList.toggle("none",window.scrollY>2500);
     body.classList.toggle("text",window.scrollY>3000);
 
-    nodos.classList.toggle("nodes-true",window.scrollY>2500);
-    nodos.classList.toggle("nodes-false",window.scrollY>4300);
+    nodos.classList.toggle("nodes-true",window.scrollY>2300);
+    nodos.classList.toggle("nodes-false",window.scrollY>4400);
 
     logo.classList.toggle("inv",window.scrollY>3000);
 
