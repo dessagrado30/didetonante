@@ -156,7 +156,8 @@ body::-webkit-scrollbar{
     cursor: pointer;
 }
 .item--button:hover {
-    border: solid 1px #b5ff03 ;
+/*     border: solid 1px #b5ff03 ; */
+    filter: sepia(86%) saturate(1695%) hue-rotate(15deg) brightness(107%) contrast(105%);
 }
 
 .header.abajo{
@@ -298,6 +299,7 @@ body::-webkit-scrollbar{
     position: relative;
     width: 100vw;
     height: 700px;
+    background-color: #0b0b0b;
 }
 .glitch__container {
     position: relative;
@@ -306,9 +308,6 @@ body::-webkit-scrollbar{
     .inter__element {
         position: fixed;
         top: 0;
-
-        .video {
-        }
     }
 }
 
@@ -322,7 +321,7 @@ body::-webkit-scrollbar{
     transform: translate(-50%, 0);
     box-shadow:  150px 0 80px #000000cc, -150px 0 80px #00000055;
     .section__image {
-        background-image: url(../assets/img/DD_Quienes_somos.png);
+        background-image: url(../assets/img/Nosotrxs.webp);
         background-position: center;
     }
 }
@@ -336,7 +335,7 @@ body::-webkit-scrollbar{
     box-shadow: 100px 0 100px #000000;
     .section__image {
         bottom: 0;
-        background-image: url(../assets/img/I3.png);
+        background-image: url(../assets/img/Accionares.webp);
     }
 }
 

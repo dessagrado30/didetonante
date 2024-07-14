@@ -39,7 +39,7 @@ window.addEventListener("scroll", function(){
 
     video.classList.toggle("out__section",window.scrollY>850);
     texto.classList.toggle("out__section",window.scrollY>850);
-    sep.classList.toggle("out__section-separador",window.scrollY<4200);
+    sep.classList.toggle("out__section-separador",window.scrollY<5800);
 })
 
 //button modal section
