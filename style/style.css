@@ -87,7 +87,7 @@ body::-webkit-scrollbar{
 
 
 
-.header{
+/*.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -156,7 +156,6 @@ body::-webkit-scrollbar{
     cursor: pointer;
 }
 .item--button:hover {
-/*     border: solid 1px #b5ff03 ; */
     filter: sepia(86%) saturate(1695%) hue-rotate(15deg) brightness(107%) contrast(105%);
 }
 
@@ -179,9 +178,9 @@ body::-webkit-scrollbar{
 .header.arriba{
     background: rgba(0, 0, 0, 0);
     padding: 30px 20px;
-}
+}*/
 
-/*.section__inicio {
+.section__inicio {
 
     .text__container {
        position: absolute;
@@ -526,7 +525,7 @@ body::-webkit-scrollbar{
 .fooder {
     background-color: #000000dd;
     height: 15vh;
-}*/
+}
 
 
 
