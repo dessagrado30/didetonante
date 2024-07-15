@@ -457,6 +457,9 @@ body::-webkit-scrollbar{
                 .item--img {
                     filter: brightness(50%);
                 }
+                .apiidtt {
+                    width: 120px;
+                }
             }
         }
     }
