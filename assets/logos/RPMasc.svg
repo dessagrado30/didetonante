@@ -612,8 +612,8 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      inkscape:zoom="3.5252055"
-     inkscape:cx="132.75822"
-     inkscape:cy="67.513794"
+     inkscape:cx="133.04189"
+     inkscape:cy="67.513795"
      inkscape:window-width="1920"
      inkscape:window-height="1052"
      inkscape:window-x="0"
@@ -627,7 +627,10 @@
        width="242.1058"
        height="42.03952"
        margin="0"
-       bleed="0" /></sodipodi:namedview><g
+       bleed="0"
+       inkscape:export-filename="RPMasc.png"
+       inkscape:export-xdpi="118.95625"
+       inkscape:export-ydpi="118.95625" /></sodipodi:namedview><g
      id="layer-MC0"
      inkscape:groupmode="layer"
      inkscape:label="Portada"

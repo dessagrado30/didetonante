@@ -210,6 +210,8 @@ body::-webkit-scrollbar{
     }
 }
 
+/*Estilo de secciones generales //////////////////////////////////////////*/
+
 .section {
     position: relative;
     width: 100vw;
@@ -224,74 +226,133 @@ body::-webkit-scrollbar{
         height: 60%;
         z-index: 30;
     }
-
-    .section__text {
-
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 80%;
-        height: 40%;
-
-        p {
-            padding: 1%;
-            max-width: 700px;
-            text-decoration-line:  line-through;
-            text-decoration-color: #00000000;
-            transition: 1s;
-        }
-        .h2--mod {
-            text-decoration-color: #b5ff03;
-            text-decoration-style: wavy;
-        }
-        .h2--mod:hover {
-            text-decoration-color: #b5ff03;
-            text-decoration-style: wavy;
-        }
-    }
-    .text__content {
-        width: 900px;
-    }
-    .content--black {
-        color: black;
-    }
-    .content--white {
-        color: white;
-    }
     .text--top {
         top: 0;
     }
     .text--bottom {
         bottom: 0;
     }
+    .section__text {
+/*         background-color: #544658; */
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        width: 70%;
+        max-width: 1200px;
+/*         min-width: 850px; */
+        height: 40%;
+        z-index:40;
 
-    .text__title {
-        text-align: center;
-        font-family: alte_bold;
-        width: 50vw;
-    }
-        .title--left, .title--right {
-            font-size: 3em;
+        .content--black {
+            color: black;
+        }
+        .content--white {
+            color: white;
+        }
+        .text__title {
+            font-family: alte_bold;
+
+            .h2--mod {
+                text-decoration-line: line-through;
+                text-decoration-color: #b5ff0300;
+                text-decoration-style: auto;
+                transition: 1s;
+            }
+            .h2--mod:hover {
+                text-decoration-color: #b5ff03;
+                text-decoration-style: wavy;
+            }
+
+            .title--left, .title--right {
+                position: absolute;
+                transform: translate(0, -50%);
+                font-size: 3em;
+            }
+            .title--left {
+/*                 background-color: #27ffb055; */
+                position: absolute;
+                text-align: left;
+                left: 0;
+            }
+            .title--right {
+/*                 background-color: #27ffb055; */
+                position: absolute;
+                text-align: right;
+                right: 0px;
+            }
+        }
+        .text__paragraph {
+/*             background-color: #27ffb055; */
+            /*justify-content: center;*/
         }
 
-    .text__paragraph {
-        width: 50vw;
-    }
         .paragraph--left, .paragraph--right {
             font-size: 1.3em;
         }
         .paragraph--right {
             text-align: right;
+            right: 0;
+
         }
         .paragraph--left {
             text-align: left;
+            left: 0;
         }
+    }
 }
-
 .section ~ section {
     border-radius: 10px;
     overflow:hidden;
 }
+
+@media (max-width:1300px){
+    .section {
+        .section__text {
+            position: absolute;
+/*             background-color: blue; */
+            width: 90%;
+        }
+    }
+}
+@media (max-width:1000px){
+    .section {
+        .section__text {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .text__paragraph {
+                display: none;
+            }
+            .text__title {
+                position: absolute;
+/*                 background-color: red; */
+                width: 50%;
+                height: 30%;
+                display: flex;
+                align-items: center;
+                .title--right {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    left: 0; /*cancela el rigth*/
+                }
+                .title--left {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    right: 0; /*cancelar el left*/
+
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------------------------------- */
 
 
 .separador {
@@ -310,6 +371,8 @@ body::-webkit-scrollbar{
     }
 }
 
+
+/* ---------------------------------------------- */
 
 .section__nosotrxs {
     background-color: #f5f5f5;
@@ -335,6 +398,7 @@ body::-webkit-scrollbar{
     .section__image {
         bottom: 0;
         background-image: url(../assets/img/Accionares.webp);
+        background-position: center;
     }
 }
 
@@ -352,14 +416,15 @@ body::-webkit-scrollbar{
         text-align: center;
         color: #f5f5f5;
         width: 300px;
-        height: 1vw;
-        left: 0;
-        bottom: 35%;
+        height: 100px;
+        left: 1%;
+        bottom: 50%;
         transform: rotate(0.75turn);
     }
     .section__container {
         position: fixed;
-        width: 90%;
+        width: 1700px;
+        overflow-x: hidden;
         height: 60vh;
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
@@ -437,7 +502,7 @@ body::-webkit-scrollbar{
     .container__slider {
 /*         border: 1px solid #ababab; */
         position: absolute;
-        width: 90%;
+        width: 1700px;
         height: 32vh;
         bottom: 0%;
         display: flex;
@@ -456,10 +521,23 @@ body::-webkit-scrollbar{
 /*                 gap: 10em; */
                 .item--img {
                     filter: brightness(50%);
+                    height: 120px
                 }
-                .apiidtt {
-                    width: 120px;
+/*                .img--studiot {
+                    height: 120px;
+                }*/
+/*                .img--apiidtt {
+                    height: 120px;
+                }*/
+/*                .img--quijote {
+                    height: 120px;
+                }*/
+                .img--masc {
+                    height: 35px;
                 }
+/*                .img--mujeres {
+                    height: 120px;
+                }*/
             }
         }
     }
@@ -485,11 +563,12 @@ body::-webkit-scrollbar{
     .section__image {
         position: absolute;
         display: grid;
-        justify-content: center;
+        justify-content: start;
         grid-template-columns: auto auto auto;
         left: 0;
         .img {
-            width: 100%;
+            height: 535px;
+
         }
     }
     .logo__urmadic {
