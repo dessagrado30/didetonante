@@ -17,7 +17,7 @@ window.addEventListener("scroll", function(){
     var body = document.querySelector(".background");
     var logo = document.querySelector(".hlogo--color")
     var icon = document.querySelector(".hicon--color");
-    var nodos = document.querySelector(".section__container")
+    var nodos = document.querySelector(".section__groups")
 
     body.classList.toggle("scroll",window.scrollY>900);
     // body.classList.toggle("glitch",window.scrollY>0);
@@ -38,8 +38,10 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>850);
+    video.classList.toggle("view__section",window.scrollY>4300);
     texto.classList.toggle("out__section",window.scrollY>850);
-    sep.classList.toggle("out__section-separador",window.scrollY<5800);
+    video.classList.toggle("out__section-2",window.scrollY>5850);
+    sep.classList.toggle("out__section-separador",window.scrollY<5500);
 })
 
 //button modal section
