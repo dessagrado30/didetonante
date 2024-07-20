@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style/contacto.css">
 	<link rel="stylesheet" href="assets/fonts/montserrat-font_T/Montserrat.css">
 	<link rel="stylesheet" href="assets/fonts/alte_haas_grotesk_T2/AlteHaasGrotesk.css">
-<!-- 	<script src="script/preloader.js"></script> -->
+<!-- 	<script type="text/javascript" src="script/preloader.js"></script> -->
 </head>
 <body class="background">
 	<div class="preloader">
@@ -83,9 +83,12 @@
 		</div>
 	</section>
 	<div class="separador glitch__container">
-		<video autoplay muted loop class="inter__element">
-			<source class="video" type="video/mp4" src="assets/Video/Glitch_.mp4">
-		</video>
+<!--		<video autoplay muted loop class="inter__element">
+			<source id="video-glitch" class="video" type="video/mp4" src="assets/Video/Glitch_.mp4">
+		</video>-->
+		<figure class="inter__element">
+			<img id="glitch" class="gif" src="assets/Video/Glitch_.gif">
+		</figure>
 	</div>
 	<section id="accionares" class="section section__accionar">
 		<div class="section__image">
@@ -196,7 +199,9 @@
 		</div>
 		<div class="section__text text--bottom">
 			<div class="text__title">
-				<a class="text__content  title--left" href="pages/in-tension.html"><img class="logo__urmadic" src="assets/logos/TheUrmandicaZine.png"></a>
+				<a class="text__content  title--left" href="pages/in-tension.html">
+					<img class="logo__urmadic" src="assets/logos/TheUrmandicaZine.png">
+				</a>
 			</div>
 			<div class="text__paragraph">
 				<p class="paragraph--right text__content content--white">
@@ -245,6 +250,6 @@
 	</section>
 	<div class="fooder">
 	</div>
-	<script src="script/script.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
 </body>
 </html>
