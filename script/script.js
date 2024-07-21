@@ -4,15 +4,6 @@ window.addEventListener("load", function(){
     preloader.style.display="none";
 })
 
-function cambio(){
-    var vid = document.querySelector(".video");
-    if (vid.src = "assets/Video/Glitch_.mp4"){
-        vid.src = "assets/Video/Glitch_responsivo.mp4";
-    }
-}
-
-
-
 //header transorn scroll
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
@@ -66,36 +57,13 @@ closeModal.addEventListener("click", ()=>{
     dialog.close();
 })
 
-// video.src="assets/Video/Glitch_responsivo.mp4";
-//
-// addEventListener('resize', () => {
-//     video = document.querySelector("#video-glitch");
-//     if (innerWidth < 1000) {
-//         document.getElementById("video-glitch").src="assets/Video/Glitch_responsivo.mp4";
-//     }
-// })
-
-
-
-// const video = document.getElementsByClassName("video")
-// const mediumBp = matchMedia('(max-width: 1000px)');
-// const changeSize = mql => {
-//         mql.matches
-//         ? video.src="assets/Video/Glitch_responsivo.mp4" : video.src="assets/Video/Glitch_responsivo.mp4"
-// }
-//
-// mediumBp.addListener(changeSize);
-// changeSize(mediumBp)
-
-cambio();
-
-const mediumBp = matchMedia('(min-width: 600px)');
+const mediumBp = matchMedia('(min-width: 1000px)');
 const changeSize = mql => {
     mql.matches
-    if (document.getElementById('glitch').src.endsWith('Glitch_.gif')) {
-        document.getElementById('glitch').src='assets/Video/Glitch_responsivo.gif';
-    }else{
+    if (document.getElementById('glitch').src.endsWith('Glitch_responsivo.gif')) {
         document.getElementById('glitch').src='assets/Video/Glitch_.gif';
+    }else{
+        document.getElementById('glitch').src='assets/Video/Glitch_responsivo.gif';
     }
 }
 
