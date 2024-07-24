@@ -7,25 +7,25 @@ window.addEventListener("load", function(){
 //header transorn scroll
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
-    header.classList.toggle("abajo",window.scrollY>800);
+    header.classList.toggle("abajo",window.scrollY>500);
     // header.classList.toggle("arriba",window.scrollY>3500);
 
 })
 
 //elements toggle scroll
 window.addEventListener("scroll", function(){
-    var body = document.querySelector(".background");
+    var body = document.querySelector(".inter__element");
     var logo = document.querySelector(".hlogo--color")
     var icon = document.querySelector(".hicon--color");
     var nodos = document.querySelector(".section__groups")
 
     body.classList.toggle("scroll",window.scrollY>900);
-    // body.classList.toggle("glitch",window.scrollY>0);
-    body.classList.toggle("none",window.scrollY>4400);
+    body.classList.toggle("glitch",window.scrollY>600);
+    body.classList.toggle("none",window.scrollY>2500);
     body.classList.toggle("text",window.scrollY>4400);
 
     nodos.classList.toggle("nodes-true",window.scrollY>2500);
-    nodos.classList.toggle("nodes-false",window.scrollY>4300);
+    nodos.classList.toggle("nodes-false",window.scrollY>4200);
 
     logo.classList.toggle("inv",window.scrollY>3000);
 
@@ -38,7 +38,7 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("view__section",window.scrollY>4300);
+    video.classList.toggle("view__section",window.scrollY>4200);
     texto.classList.toggle("out__section",window.scrollY>850);
     video.classList.toggle("out__section-2",window.scrollY>5850);
     sep.classList.toggle("out__section-separador",window.scrollY<5500);
@@ -57,15 +57,16 @@ closeModal.addEventListener("click", ()=>{
     dialog.close();
 })
 
-const mediumBp = matchMedia('(min-width: 1000px)');
-const changeSize = mql => {
-    mql.matches
-    if (document.getElementById('glitch').src.endsWith('Glitch_responsivo.gif')) {
-        document.getElementById('glitch').src='assets/Video/Glitch_.gif';
-    }else{
-        document.getElementById('glitch').src='assets/Video/Glitch_responsivo.gif';
-    }
-}
+// const mediumBp = matchMedia('(min-width: 1000px)');
+// const changeSize = mql => {
+//     mql.matches
+//     if (document.getElementById('glitch').src.endsWith('Glitch_.gif')) {
+//         document.getElementById('glitch').src='assets/Video/Glitch_responsivo.gif';
+//     }else{
+//         document.getElementById('glitch').src='assets/Video/Glitch_.gif';
+//     }
+// }
+//
+// mediumBp.addListener(changeSize);
+// changeSize(mediumBp);
 
-mediumBp.addListener(changeSize);
-changeSize(mediumBp);

@@ -1,8 +1,13 @@
+@font-face {
+    font-family: mont;
+    font-weight: medium;
+    src: url("MontserratMedium-lgZ6e.otf") format("opentype");
+}
 
 @font-face {
     font-family: mont;
     font-weight: light;
-    src: url("MontserratExtralight-jEZ6j.ttf") format("opentype");
+    src: url("MontserratExtralight-jEZ6j.ttf") format("truetype");
 }
 
 @font-face {
@@ -10,3 +15,4 @@
     font-weight: bold;
     src: url("MontserratExtrabold-qZ7Rx.otf") format("opentype");
 }
+

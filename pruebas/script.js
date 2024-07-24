@@ -1,13 +1,15 @@
-// function cambiar_imagen() {
-//     let video_cambio = document.getElementById('imagen')
-//
-//     if (video_cambio.src.endsWith('Nosotrxs.webp')) {
-//         video_cambio.src='../assets/img/Accionares.webp';
-//     }else{
-//         video_cambio.src='../assets/img/Nosotrxs.webp';
-//     }
-//
-// }
+
+
+function cambiar_imagen() {
+    let video_cambio = document.getElementById('imagen')
+
+    if (video_cambio.src.endsWith('Nosotrxs.webp')) {
+        video_cambio.src='../assets/img/Accionares.webp';
+    }else{
+        video_cambio.src='../assets/img/Nosotrxs.webp';
+    }
+
+}
 
 
 
@@ -38,3 +40,5 @@ function cambiar_gif() {
     }
 
 }
+
+
