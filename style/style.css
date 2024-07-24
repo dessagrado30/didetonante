@@ -291,7 +291,7 @@ body::-webkit-scrollbar{
 
 @media (max-width:1000px){
 
-    section {
+    .section {
         grid-template-columns: 1fr;
         .section__div-title, .section__div-paragraph {
             margin: 0;
@@ -540,7 +540,7 @@ body::-webkit-scrollbar{
         font-weight: bold;
         top: 20%;
         left: 10%;
-        display: none;
+/*         display: none; */
     }
 }
 .separador__final.out__section-separador {
@@ -558,10 +558,6 @@ body::-webkit-scrollbar{
         font-weight: bold;
         left: 10%;
 
-}
-.fooder {
-    background-color: #000000dd;
-    height: 15vh;
 }
 
 .glitch__container {
