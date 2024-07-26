@@ -183,18 +183,17 @@ body::-webkit-scrollbar{
     .text__container {
         position: absolute;
         width: 100vw;
-        height: 200vh;
-        background-color: rgb(0, 0, 0, 80%);
+        height: 100vh;
+        background-color: #0b0b0baa;
         display: flex;
         justify-content: center;
+        align-items: center;
         z-index: 1;
         .inicio__banner {
             color: #ceff1d;
-            font-size: 9em;
+            font-size: 7vw;
             font-family: alte_bold;
             font-weight: bold;
-            align-items: center;
-            top: 12%;
         }
     }
     .inicio__element {
@@ -214,9 +213,24 @@ body::-webkit-scrollbar{
         display: none;
     }
 }
-
+.section__found {
+    position: relative;
+    background-image: linear-gradient(#0b0b0b00 0,#0b0b0b 30% 70%,#0b0b0b00 100%);
+    width: 100%;
+    min-height: 800px;
+}
+.found__gradient-init {
+    background-image: linear-gradient(#0b0b0baa 0,#0b0b0b 70% 100%);
+}
+.found__gradient-tb {
+    background-image: linear-gradient(#0b0b0b00 0,#0b0b0b 70% 100%);
+}
+.found__gradient-bt {
+    background-image: linear-gradient(#0b0b0b 0,#0b0b0b00 70% 100%);
+}
 .section {
     position: relative;
+    #nosotrxs {position: relative;}
     background-color: #fefefe;
     width: 90%;
     max-width: 1700px;
@@ -230,7 +244,6 @@ body::-webkit-scrollbar{
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr .5fr;
-    box-shadow:  150px 0 80px #0b0b0bcc, -150px 0 80px #0b0b0bcc;
     z-index: 100;
 
     .section__div-image {
@@ -317,6 +330,7 @@ body::-webkit-scrollbar{
     width: 100vw;
     height: 700px;
     .inter__element {
+        width: 100%;
         margin: 0;
         padding: 0;
         margin-left: 0;

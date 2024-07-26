@@ -20,7 +20,7 @@ window.addEventListener("scroll", function(){
     var nodos = document.querySelector(".section__groups")
 
     body.classList.toggle("scroll",window.scrollY>900);
-    body.classList.toggle("glitch",window.scrollY>600);
+    body.classList.toggle("glitch",window.scrollY>800);
     body.classList.toggle("none",window.scrollY>2500);
     body.classList.toggle("text",window.scrollY>4400);
 
@@ -37,7 +37,7 @@ window.addEventListener("scroll", function(){
     var texto = document.querySelector(".inicio__banner");
     var sep = document.querySelector(".separador__final");
 
-    video.classList.toggle("out__section",window.scrollY>850);
+    video.classList.toggle("out__section",window.scrollY>1100);
     video.classList.toggle("view__section",window.scrollY>4200);
     texto.classList.toggle("out__section",window.scrollY>850);
     video.classList.toggle("out__section-2",window.scrollY>5850);
