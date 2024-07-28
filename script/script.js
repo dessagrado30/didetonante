@@ -14,7 +14,7 @@ window.addEventListener("scroll", function(){
 
 //elements toggle scroll
 window.addEventListener("scroll", function(){
-    var body = document.querySelector(".inter__element");
+    var body = document.querySelector(".glitch__container");
     var logo = document.querySelector(".hlogo--color")
     var icon = document.querySelector(".hicon--color");
     var nodos = document.querySelector(".section__groups")
@@ -66,7 +66,7 @@ closeModal.addEventListener("click", ()=>{
 //         document.getElementById('glitch').src='assets/Video/Glitch_.gif';
 //     }
 // }
-//
+
 // mediumBp.addListener(changeSize);
 // changeSize(mediumBp);
 
