@@ -19,10 +19,10 @@ window.addEventListener("scroll", function(){
     var icon = document.querySelector(".hicon--color");
     var nodos = document.querySelector(".section__groups")
 
-    body.classList.toggle("scroll",window.scrollY>900);
-    body.classList.toggle("glitch",window.scrollY>800);
-    body.classList.toggle("none",window.scrollY>2500);
-    body.classList.toggle("text",window.scrollY>4400);
+    body.classList.toggle("scroll",window.scrollY>600);
+    body.classList.toggle("glitch",window.scrollY>600);
+    body.classList.toggle("none",window.scrollY>2000);
+    body.classList.toggle("text",window.scrollY>4700);
 
     nodos.classList.toggle("nodes-true",window.scrollY>2500);
     nodos.classList.toggle("nodes-false",window.scrollY>4200);
@@ -37,11 +37,11 @@ window.addEventListener("scroll", function(){
     var texto = document.querySelector(".inicio__banner");
     var sep = document.querySelector(".separador__final");
 
-    video.classList.toggle("out__section",window.scrollY>1100);
-    video.classList.toggle("view__section",window.scrollY>4200);
+    video.classList.toggle("out__section",window.scrollY>600);
+    video.classList.toggle("view__section",window.scrollY>4700);
     texto.classList.toggle("out__section",window.scrollY>850);
     video.classList.toggle("out__section-2",window.scrollY>5850);
-    sep.classList.toggle("out__section-separador",window.scrollY<5500);
+    sep.classList.toggle("out__section-separador",window.scrollY>6500);
 })
 
 //button modal section
