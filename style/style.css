@@ -191,7 +191,7 @@ body::-webkit-scrollbar{
         z-index: 5;
         .inicio__banner {
             color: #ceff1d;
-            font-size: clamp(6rem, 7vw + 1rem, 8rem);
+            font-size: clamp(3rem, 6.5vw + 1rem, 8rem);
             font-family: alte_bold;
             font-weight: bold;
             opacity: 100%;
@@ -221,14 +221,14 @@ body::-webkit-scrollbar{
 }
 .section__found {
     position: relative;
-    background-image: linear-gradient(#0b0b0b00 0 100%);
+    background-color: #0b0b0baa;
     width: 100%;
     min-height: 800px;
 }
-.found__gradient-init {
+/* .found__gradient-init {
     background-color: #0b0b0baa;
-    z-index: 10;
-}
+    z-index: 10; */
+/* }
 .found__gradient-tb {
     background-image: linear-gradient(#0b0b0b00 0,#0b0b0baa 70% 100%);
     z-index: 10;
@@ -236,7 +236,7 @@ body::-webkit-scrollbar{
 .found__gradient-bt {
     background-image: linear-gradient(#0b0b0b 0,#0b0b0b00 90% 100%);
     z-index: 10;
-}
+} */
 .section {
     position: relative;
     #nosotrxs {position: relative;}
@@ -333,14 +333,14 @@ body::-webkit-scrollbar{
     position: relative;
     width: 100vw;
     height: 700px;
-    background-color: #0b0b0b00;
+    /* background-color: #0b0b0baa; */
 }
 .glitch__container {
     position: relative;
-    background: #0b0b0baa;
+    background-color: #0b0b0baa;
     width: 100vw;
     height: 700px;
-    transition: .5s;
+    /* transition: .5s; */
     opacity: 0;
     z-index: 0;
     .inter__element{
@@ -393,15 +393,21 @@ body::-webkit-scrollbar{
     }
 }
 .section__ejes {
+    /* filter: invert(100%); */
     background-color: #0b0b0b;
+    position: relative;
     display: grid;
     min-height: 1000px;
 /*     justify-content: left; */
     align-content: center;
-    z-index: 50;
+    transition: .5s;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 5;
 
     .section__title {
         position: absolute;
+        top: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -411,8 +417,7 @@ body::-webkit-scrollbar{
         color: #f5f5f5;
         width: 300px;
         height: 100px;
-        left: -3%;
-        bottom: 50%;
+        left: 0;
         transform: rotate(0.75turn);
         .indicator {
             position: absolute;
@@ -426,14 +431,13 @@ body::-webkit-scrollbar{
 
     .section__groups {
         position: fixed;
-        width: 90%;
+        width: 80%;
         height: 100vh;
         right: 50%;
         display: grid;
         align-content: center;
         top: 0;
         right: 0;
-        display: none;
 
         .section__container {
             width: 100vw;
@@ -534,12 +538,12 @@ body::-webkit-scrollbar{
             }
         }
     }
-    .section__groups.nodes-true {
-        display: grid;
-    }
-    .section__groups.nodes-false {
-        display: none;
-    }
+}
+.section__ejes.nodes-true {
+    opacity: 100%;
+}
+.section__ejes.nodes-false {
+    opacity: 0;
 }
 @keyframes scroll {
     0% {
@@ -574,7 +578,7 @@ body::-webkit-scrollbar{
 
 
 .separador__final {
-    background-color: #0b0b0baa;
+    /* background-color: #0b0b0baa; */
     transition: 0s;
     .inicio__banner {
         transition: 1s;
@@ -583,7 +587,7 @@ body::-webkit-scrollbar{
         font-size: 140px;
         font-family: alte_bold;
         font-weight: bold;
-        top: 10%;
+        top: 5%;
         left: 10%;
         opacity: 0;
     }
@@ -598,14 +602,8 @@ body::-webkit-scrollbar{
     width: 100%;
     height: 200px;
     background-color: #ff00ff;
-/*    .aside__desobediencias {
-        position: absolute;
-        color: #ffffff55;
-        font-size: 140px;
-        font-family: alte_bold;
-        font-weight: bold;
-        left: 10%;
-    }*/
+    margin: 0;
+    z-index: 1000;
 }
 @media (max-width: 1000px) {
     .inicio {

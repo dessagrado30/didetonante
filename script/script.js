@@ -17,11 +17,11 @@ window.addEventListener("scroll", function(){
     var body = document.querySelector(".glitch__container");
     var logo = document.querySelector(".hlogo--color")
     var icon = document.querySelector(".hicon--color");
-    var nodos = document.querySelector(".section__groups")
+    var nodos = document.querySelector(".section__ejes")
 
     body.classList.toggle("scroll",window.scrollY>600);
     body.classList.toggle("glitch",window.scrollY>600);
-    body.classList.toggle("none",window.scrollY>2000);
+    body.classList.toggle("none",window.scrollY>2500);
     body.classList.toggle("text",window.scrollY>4700);
 
     nodos.classList.toggle("nodes-true",window.scrollY>2500);
