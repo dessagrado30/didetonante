@@ -341,7 +341,7 @@ body::-webkit-scrollbar{
     width: 100vw;
     height: 700px;
     transition: .5s;
-    /* opacity: 0; */
+    opacity: 0;
     z-index: 0;
     .inter__element{
         position: fixed;
@@ -379,6 +379,7 @@ body::-webkit-scrollbar{
         position: sticky;
         bottom: 10%;
         overflow: hidden;
+        opacity: 100%;
         z-index: 5;
         .inter__element {
             position: absolute;
