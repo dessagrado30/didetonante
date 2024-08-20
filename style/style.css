@@ -256,7 +256,9 @@ body::-webkit-scrollbar{
         transform: translate(-5px, -45px);
         top: -5%;
         /* filter: sepia(86%) saturate(4000%) hue-rotate(23deg) brightness(100%) contrast(105%); */
-        filter: sepia(86%) saturate(4000%) hue-rotate(95deg) brightness(100%) contrast(105%);
+        /* filter: sepia(100%) saturate(4000%) hue-rotate(100deg) brightness(100%) contrast(100%); */
+        /* filter: invert(20%) sepia(68%) saturate(10000%) hue-rotate(294deg) brightness(113%) contrast(133%); */
+        filter:  sepia(26%) saturate(50000%) hue-rotate(19deg) brightness(106%) contrast(102%);
         opacity: 0;
         transition: 1.5s;
     }
@@ -463,14 +465,12 @@ body::-webkit-scrollbar{
 
     .text__container--nodos {
         position: absolute;
-        top: -60%;
+        /* top: -60%; */
         text-align: right;
-        color: #161616;
-        font-size: 40em;
+        color: #252525;
+        font-size: 20em;
         font-family: brob;
-        line-height: 80%;
-
-
+        line-height: 100%;
     }
 
     .section__groups {
@@ -506,7 +506,7 @@ body::-webkit-scrollbar{
                 }
                 .box__title {
                     position: absolute;
-                    font-family: helvetica;
+                    font-family: alte;
                     font-size: 2em;
                 }
                 .box__paragraph {
@@ -725,6 +725,7 @@ body::-webkit-scrollbar{
                 text-align: center;
                 .p {display: none;}
                 .p-resp {display: block}
+            }
         }
     }
 }
