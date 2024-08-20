@@ -10,14 +10,18 @@
 	<meta property="og:url" content="#">
 	<meta property="og:title" content="Diseño Detonante">
 	<meta property="og:description" content="Estudio nómada experimental que busca cuestionar y transformar realidades a partir de la ficción y el reconocimiento">
-	<meta property="og:image" content="./assets/img/meta.JPG">
+	<meta property="og:image" content="./assets/img/meta.JPG">	
 
 	<title>Diseño Detonante</title>
 	<link type="image/svg" rel="icon" href="assets/icons/LLAMITA.svg">
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/style_menu.css">
     <link rel="stylesheet" href="style/contacto.css">
 	<link rel="stylesheet" href="assets/fonts/montserrat-font_T/Montserrat.css">
 	<link rel="stylesheet" href="assets/fonts/alte_haas_grotesk_T2/AlteHaasGrotesk.css">
+	<link rel="stylesheet" href="assets/fonts/bro/BROBold.css">
+	<link rel="stylesheet" href="assets/fonts/brant_serif_t/Brant-FREE.css">
+	<link rel="stylesheet" href="assets/fonts/rozha-one/rozha-one.css">
 </head>
 <body class="background">
 	<div class="preloader">
@@ -32,11 +36,15 @@
 			</a>
 		</div>
 		<nav class="header__nav">
+			
+			<label class="nav__label">
+				<input class="checkbox" type="checkbox">
+			</label>
 			<ul class="nav__list">
-				<li class="list__item"><a class="item__link" href="#">Inicio</a></li>
-				<li class="list__item"><a class="item__link" href="#nosotrxs">Nosotrxs</a></li>
-				<li class="list__item"><a class="item__link" href="#accionares">Accionares</a></li>
-				<li class="list__item"><a class="item__link" href="#intension">In-Tension</a></li>
+				<li class="list__item"><a class="item__link" href="#">INICIO</a></li>
+				<li class="list__item"><a class="item__link" href="#nosotrxs">NOSOTRXS</a></li>
+				<li class="list__item"><a class="item__link" href="#accionares">ACCIONARES</a></li>
+				<li class="list__item"><a class="item__link" href="#intension">IN/TENSION</a></li>
 				<li class="list__item item--button button--open"><img src="assets/icons/send-horizontal.svg"></li>
 			</ul>
 		</nav>
@@ -60,7 +68,7 @@
     </dialog>
 	<div class="inicio">
 		<video autoplay muted loop class="inicio__element">
-			<source class="video" type="video/mp4" src="assets/Video/REEL_.mp4">
+			<source class="video" type="video/mp4" src="assets/Video/REEL.webm">
 		</video>
 		<div class="text__container">
 			<!-- <video autoplay muted loop class="inter__element">
@@ -74,9 +82,13 @@
 	</div>
 	<section id="nosotrxs">
 		<div class="section__found found__gradient-init">
+			<div class="dibujo__container">
+				<img class="dibujo" src="assets/img/g3.webp">
+			</div>
 			<div class="section section__div">
 				<div class="section__div-image">
 					<img class="image__item" src="assets/img/Nosotrxs.webp">
+					<!-- <img class="dibujo" src="assets/img/g3.webp"> -->
 				</div>
 				<div class="section__div-title">
 					<p class="title__item" >
@@ -128,6 +140,11 @@
 			<div class="indicator"></div>
 			<p>NODOS DE ACCIÓN</p>
 		</div>
+		<div class="text__container--nodos">
+			<p class="nodos__banner">
+				NODOS
+			</p>
+		</div>
 		<div class="section__groups">
 			<div class="section__container">
 				<div class="container__item item--talleres item--border-right-none">
@@ -137,31 +154,12 @@
 					<div class="container__text">
 						<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
 					</div>
-					<div class="container__image">
+					<div class="container__icon">
 						<img class="box__icon" src="assets/icons/LLAMITA.svg">
 					</div>
-				</div>
-				<div class="container__item item--interrupciones item--border-right-none">
-					<div class="container__text">
-						<h2 class="text__box box__title">Interrupciones</h2>
-					</div>
-					<div class="container__text">
-						<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
-					</div>
-					<div class="container__image">
-						<img class="box__icon" src="assets/icons/LLAMITA.svg">
-					</div>
-				</div>
-				<div class="container__item item--audiovisuales item--border-right-none">
-					<div class="container__text">
-						<h2 class="text__box box__title">Audiovisuales</h2>
-					</div>
-					<div class="container__text">
-						<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
-					</div>
-					<div class="container__image">
-						<img class="box__icon" src="assets/icons/LLAMITA.svg">
-					</div>
+					<figure>
+						<img class="container__img" src="assets/img/nodos/talleres.webp">
+					</figure>
 				</div>
 				<div class="container__item item--espacios item--border-right-none">
 					<div class="container__text">
@@ -170,20 +168,40 @@
 					<div class="container__text">
 						<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
 					</div>
-					<div class="container__image">
+					<div class="container__icon">
 						<img class="box__icon" src="assets/icons/LLAMITA.svg">
 					</div>
+					<figure>
+						<img class="container__img" src="assets/img/nodos/biblio.webp">
+					</figure>
 				</div>
-				<div class="container__item item--editorial">
+				<div class="container__item item--audiovisuales item--border-right-none">
 					<div class="container__text">
-						<h2 class="text__box box__title">Editorial</h2>
+						<h2 class="text__box box__title">Audiovisual</h2>
 					</div>
 					<div class="container__text">
 						<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
 					</div>
-					<div class="container__image">
+					<div class="container__icon">
 						<img class="box__icon" src="assets/icons/LLAMITA.svg">
 					</div>
+					<figure>
+						<img class="container__img" src="assets/img/nodos/audiovisual.webp">
+					</figure>
+				</div>
+				<div class="container__item item--editorial">
+					<div class="container__text">
+						<h2 class="text__box box__title">Grafico<br>Editorial</h2>
+					</div>
+					<div class="container__text">
+						<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
+					</div>
+					<div class="container__icon">
+						<img class="box__icon" src="assets/icons/LLAMITA.svg">
+					</div>
+					<figure>
+						<img class="container__img" src="assets/img/nodos/editorial.webp">
+					</figure>
 				</div>
 			</div>
 				<div class="org__links">

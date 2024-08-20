@@ -19,13 +19,13 @@ window.addEventListener("scroll", function(){
     var icon = document.querySelector(".hicon--color");
     var nodos = document.querySelector(".section__ejes")
 
-    body.classList.toggle("scroll",window.scrollY>600);
-    body.classList.toggle("glitch",window.scrollY>600);
+    body.classList.toggle("scroll",window.scrollY>700);
+    body.classList.toggle("glitch",window.scrollY>700);
     body.classList.toggle("none",window.scrollY>2500);
     body.classList.toggle("text",window.scrollY>4700);
 
-    nodos.classList.toggle("nodes-true",window.scrollY>2500);
-    nodos.classList.toggle("nodes-false",window.scrollY>4200);
+    nodos.classList.toggle("nodes-true",window.scrollY>2300);
+    nodos.classList.toggle("nodes-false",window.scrollY>3900);
 
     logo.classList.toggle("inv",window.scrollY>3000);
 
@@ -37,11 +37,11 @@ window.addEventListener("scroll", function(){
     var texto = document.querySelector(".inicio__banner");
     var sep = document.querySelector(".separador__final");
 
-    video.classList.toggle("out__section",window.scrollY>600);
-    video.classList.toggle("view__section",window.scrollY>4700);
+    video.classList.toggle("out__section",window.scrollY>2000);
+    video.classList.toggle("view__section",window.scrollY>4300);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("out__section-2",window.scrollY>5850);
-    sep.classList.toggle("out__section-separador",window.scrollY>6500);
+    video.classList.toggle("out__section-2",window.scrollY>5500);
+    sep.classList.toggle("out__section-separador",window.scrollY>6200);
 })
 
 //button modal section
@@ -57,16 +57,5 @@ closeModal.addEventListener("click", ()=>{
     dialog.close();
 })
 
-// const mediumBp = matchMedia('(min-width: 1000px)');
-// const changeSize = mql => {
-//     mql.matches
-//     if (document.getElementById('glitch').src.endsWith('Glitch_.gif')) {
-//         document.getElementById('glitch').src='assets/Video/Glitch_responsivo.gif';
-//     }else{
-//         document.getElementById('glitch').src='assets/Video/Glitch_.gif';
-//     }
-// }
 
-// mediumBp.addListener(changeSize);
-// changeSize(mediumBp);
 
