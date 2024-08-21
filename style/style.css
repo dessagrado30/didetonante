@@ -184,7 +184,7 @@ body::-webkit-scrollbar{
         color: #deff0b;
     }
     .hlogo--color.inv {
-        filter: saturate(100%) brightness(4000%) ;
+        filter: none;
     }
 }
 
@@ -661,7 +661,7 @@ body::-webkit-scrollbar{
     .inicio__banner {
         transition: 1s;
         position: fixed;
-        color: #ff00ff;
+        color: #fa33fb;
         font-size: 140px;
         font-family: alte_bold;
         font-weight: bold;
@@ -679,7 +679,7 @@ body::-webkit-scrollbar{
 .section__aside {
     width: 100%;
     height: 200px;
-    background-color: #ff00ff;
+    background-color: #fa33fb;
     margin: 0;
     z-index: 1000;
 }
