@@ -25,8 +25,8 @@ window.addEventListener("scroll", function(){
     body.classList.toggle("text",window.scrollY>4700);
 
     nodos.classList.toggle("nodes-true",window.scrollY>2500);
-    nodos.classList.toggle("img",window.scrollY>2500);
-    nodos.classList.toggle("nodes-false",window.scrollY>5000);
+    nodos.classList.toggle("img",window.scrollY>3500);
+    nodos.classList.toggle("nodes-false",window.scrollY>7500);
 
     logo.classList.toggle("inv",window.scrollY>3000);
 
@@ -39,10 +39,10 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>2000);
-    video.classList.toggle("view__section",window.scrollY>5100);
+    video.classList.toggle("view__section",window.scrollY>8100);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("out__section-2",window.scrollY>6500);
-    sep.classList.toggle("out__section-separador",window.scrollY>6700);
+    video.classList.toggle("out__section-2",window.scrollY>9500);
+    sep.classList.toggle("out__section-separador",window.scrollY>9700);
 })
 
 //button modal section
