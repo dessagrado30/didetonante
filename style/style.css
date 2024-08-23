@@ -612,6 +612,10 @@ body::-webkit-scrollbar{
         }
     }
 }
+#accionares{
+    position: absolute;
+    width: 100%;
+}
 .pages__container{
     position: sticky;
     top: 0;
@@ -626,11 +630,12 @@ body::-webkit-scrollbar{
         width: 100vw;
         height: 100vh;
         left: 0;
+
         animation: box-move auto linear;
         animation-timeline: scroll(root block);
         .box-uno {
             width: 100vw;
-            background-color: #fefefe;
+            background-color: #fefefe00;
         }
         .box-dos {
             width: 100vw;
@@ -643,9 +648,11 @@ body::-webkit-scrollbar{
     height: 400vh;
 } */
 @keyframes box-move {
-    31% {left: 0;}
-    60% {left: -100%;}
-    100% {left: -100%;}
+    25% {left: 0; background-color: #fefefe00;}
+    30% {background-color: #fefefeff;}
+    31% {left: 0; background-color: #fefefeff;}
+    60% {left: -100%; background-color: #fefefeff;}
+    100% {left: -100%; background-color: #fefefeff;}
 }    
 .section__ejes.nodes-true {
     opacity: 100%;
