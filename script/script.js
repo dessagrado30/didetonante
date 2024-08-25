@@ -1,3 +1,4 @@
+
 //preloader display none
 window.addEventListener("load", function(){
     const preloader = document.querySelector(".preloader");
@@ -8,15 +9,12 @@ window.addEventListener("load", function(){
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
     header.classList.toggle("abajo",window.scrollY>500);
-    // header.classList.toggle("arriba",window.scrollY>3500);
-
 })
 
 //elements toggle scroll
 window.addEventListener("scroll", function(){
     var body = document.querySelector(".glitch__container");
     var logo = document.querySelector(".hlogo--color")
-    var icon = document.querySelector(".hicon--color");
     var nodos = document.querySelector(".section__ejes")
 
     body.classList.toggle("scroll",window.scrollY>700);
