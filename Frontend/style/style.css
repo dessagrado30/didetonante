@@ -212,6 +212,7 @@ body::-webkit-scrollbar{
         align-items: center;
         z-index: 5;
         .inicio__banner {
+            top: 15%;
             position: fixed;
             color: var(--green-color);
             font-size: clamp(3rem, 6.5vw + 1rem, 8rem);
@@ -410,7 +411,7 @@ body::-webkit-scrollbar{
         margin: 0;
         padding: 0;
         margin-left: 0;
-        top: 0;
+        top: 5%;
         left: 0;
         display: flex;
         align-content: center;
@@ -682,11 +683,9 @@ body::-webkit-scrollbar{
     height: 400vh;
 } */
 @keyframes box-move {
-    25% {left: 0; background-color: #fefefe00;}
-    30% {background-color: #fefefeff;}
-    31% {left: 0; background-color: #fefefeff;}
+    31% {left: 0;}
     50% {left: -100%; opacity: 100%;}
-    55%, 100% {left: -100%; background-color: #fefefeff;opacity: 0;}
+    55%, 100% {left: -100%; background-color: #fefefe00;opacity: 0;}
     
 }    
 .section__ejes.nodes-true {

@@ -3,7 +3,11 @@
 // let email = document.getElementById("email");
 // let project = document.getElementById("project");
 // let message = document.getElementById("messaje");
-
+function ShowControl(){
+    const donateForm = document.getElementsByClassName("donate__form");
+    donateForm[0].style.translate = "-100%";
+    event.preventDefault();
+}
 
 function Probe(ind){
     const donateForm = document.getElementsByClassName("donate__form");
@@ -13,7 +17,6 @@ function Probe(ind){
         checkLogo.disabled = true;
         checkLogo.outline = "none"
         donateForm[0].style.translate = "0%"
-
     }else{
         document.getElementById("check_button").innerHTML = '<img src="./Frontend/assets/icons/triangle-alert.svg" alt="sendbutton"></img>'
     }
@@ -44,6 +47,7 @@ function Post(){
 }
 
 function View(result){
+    const donateForm = document.getElementsByClassName("print");
     let transformado = JSON.parse(result);
     var salida="";
     var elemento="";
@@ -56,7 +60,7 @@ function View(result){
         elemento = elemento + "<br>Mensaje: " + transformado[vc].message;
         salida = salida  + elemento + "<br><br>";
     }
-    alert(salida);
+    donateForm[0].innerHTML = salida;
 }
 function Get(){
     let key = document.getElementById("key");

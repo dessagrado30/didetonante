@@ -66,8 +66,8 @@
 						<div class="form__item" class="form__item" >
 							<select id="project" class="item__input" name="choice">
 								<option value="In/Tension" selected>In/Tension</option>
-								<option value="Monstruisa">Monstruisa</option>
-								<option value="Burbujas de autonoía">Burbujas de autonoía</option>
+								<option value="Monstruosa">Monstruosa</option>
+								<option value="Burbujas de autonomía">Burbujas de autonomía</option>
 								<option value="Ficción Mutante">Ficción Mutante</option>
 								<option value="Lumbre en el viento">Lumbre en el viento</option>
 							</select>
@@ -80,16 +80,19 @@
 					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
 				</form>
 				<form class="form donate__form">
-					<p class="title--mod form__title">¡Detónese!</p>
+					<p class="title--mod form__title">Control</p>
 					<div class="form__item">
 						<div class="form__item">
-							<input id="name" class="item__input" type="text" placeholder="Nombre / pseudónimo." value="Dessagrado" required>
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
 						</div>
 						<div class="form__item" >
-							<input id="organization" class="item__input" type="text" placeholder="Colectividad / organización." value="Monstruosa">
+							<p class="print"></p>
 						</div>
 					</div>
-					<button id="check_button" class="modal__button button__action button__donate" onclick="Post()"><img src="Frontend/assets/icons/flame.svg"></button>
+					<button class=" button__close  button__showdonate" onclick="ShowControl()"><img src="Frontend/assets/icons/x.svg" alt="closebutton"></button>
+					<button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button>
 				</form>
 			</div>
 		</div>
@@ -166,10 +169,7 @@
 				<img class="page__image" src="Frontend/assets/img/biblioteca_2.webp" alt="Primera biblioteca terminada / burbujas de autonomía.">
 			</div>
 			<div class="box-dos">
-				<p class="inicio__banner">
-					<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
-				</p>
-				<!-- <img class="page__image" src="Frontend/assets/img/biblioteca_2.webp" alt="Primera biblioteca terminada / burbujas de autonomía."> -->
+
 			</div>
 		</div>
 	</div>
