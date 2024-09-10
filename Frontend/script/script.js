@@ -39,9 +39,9 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>2000);
-    video.classList.toggle("view__section",window.scrollY>7500);
+    video.classList.toggle("view__section",window.scrollY>7300);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("out__section-2",window.scrollY>8900);
+    video.classList.toggle("out__section-2",window.scrollY>8300);
     sep.classList.toggle("out__section-separador",window.scrollY>8900);
 })
 

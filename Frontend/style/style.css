@@ -315,13 +315,22 @@ body::-webkit-scrollbar{
         overflow: hidden;
         scrollbar-width: none;
         .image__item, .img-mult {
-            display: flex;
+            background-color: red;
+/*             display: flex; */
             height: 600px;
-            transition: 1s;
+/*             transition: 1s; */
+        }
+        .vid-mult {
+/*             background-color: red; */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            translate: 0 -15%;
+            z-index: -1;
         }
         .front {
             position: fixed;
-            right: 0;   
+            right: 0;
             z-index: 50;
         }
         .back {
@@ -346,6 +355,9 @@ body::-webkit-scrollbar{
                 position: absolute;
                 width: 9rem;
                 transform: translate(-50%, -50%);
+            }
+            .mutante {
+                width: 17rem;
             }
         }
         .paragraph__item {
