@@ -96,6 +96,7 @@ body::-webkit-scrollbar{
     transition: padding 0.7s, background 0.7s, border-bottom 1s;
     padding: 30px 20px;
     z-index: 1000;
+    font-display: swap;
     .header__container{
         .container__logo{
             font-family: mont;
@@ -180,6 +181,7 @@ body::-webkit-scrollbar{
 
 .inicio {
     height: 100vh;
+    font-display: swap;
     .text__container {
         position: absolute;
         width: 100vw;
@@ -270,6 +272,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.5fr .5fr;
+    font-display: swap;
     z-index: 100;
     .color__base {
         position: absolute;
