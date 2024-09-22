@@ -470,6 +470,7 @@ body::-webkit-scrollbar{
     opacity: 0;
     list-style: none;
     width: 100vw;
+    font-display: swap;
     z-index: 5;
     .section__groups--scroll {
         height: 100vw;
@@ -493,6 +494,7 @@ body::-webkit-scrollbar{
             align-items: center;
             font-family: alte_bold;
             font-size: 1em;
+            
             color: #f5f5f5;
             width: 300px;
             height: 100px;
