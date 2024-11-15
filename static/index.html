@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="estudio, diseño, autonomía, nómada, comunidad, reconocimiento, ficción, anarquía, acción, cuestionamiento, antisistema">
+	<meta name="description" content="Estudio nómada experimental que busca cuestionar y transformar realidades a partir de la ficción y el reconocimiento">
+	<meta name="author" content="Diseño Detonante">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="#">
+	<meta property="og:title" content="Diseño Detonante">
+	<meta property="og:description" content="Estudio nómada experimental que busca cuestionar y transformar realidades a partir de la ficción y el reconocimiento">
+	<meta property="og:image" content="./assets/img/meta.JPG">
+
+	<title>Diseño Detonante</title>
+	<link type="image/svg" rel="icon" href={{ url_for("static", path="assets/icons/LLAMITA.svg")}}>
+
+	<link rel="stylesheet" href={{ url_for("static", path="style/style.css")}}>
+	<link rel="stylesheet" href={{ url_for("static", path="style/style_menu.css")}}>
+	<link rel="stylesheet" href={{ url_for("static", path="style/contacto.css")}}>
+	<link rel="stylesheet" href={{ url_for("static", path="assets/fonts/montserrat-font_T/Montserrat.css")}}>
+	<link rel="stylesheet" href={{ url_for("static", path="assets/fonts/alte_haas_grotesk_T2/AlteHaasGrotesk.css")}}>
+	<link rel="stylesheet" href={{ url_for("static", path="assets/fonts/rozha-one/rozha-one.css")}}>
+	<script type="text/javascript" src={{ url_for("static", path="script/script_backend.js")}}></script>
+</head>
+<body class="background">
+	<div class="preloader">
+		<span class="loader"></span>
+		<img class="load__logo" src={{ url_for("static", path="assets/icons/LLAMITA_PL.svg")}} alt="Logo Diseño Detonante">
+	</div>
+	<header class="header">
+		<div class="header__container">
+			<a class="container__logo" href="#">
+				<img class="header__logo hlogo--color" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="Logo Diseño Detonante">
+				<p>Diseño <strong>Detonante</strong></p>
+			</a>
+		</div>
+		<nav class="header__nav">
+			
+			<label class="nav__label">
+				<input class="checkbox" type="checkbox">
+			</label>
+			<ul class="nav__list">
+				<li class="list__item"><a class="item__link" href="#">INICIO</a></li>
+				<li class="list__item"><a class="item__link" href="#nosotrxs">NOSOTRXS</a></li>
+				<li class="list__item"><a class="item__link" href="#ejes">ACCIONARES</a></li>
+				<li class="list__item"><a class="item__link" href="#intension">IN/TENSION</a></li>
+				<li class="list__item item--button" onclick="modal('../assets/img/nodos/editorial.webp')"><img src={{ url_for("static", path="assets/icons/send-horizontal.svg")}}></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="inicio">
+		<video class="inicio__element" autoplay muted onmouseover="this.play();">
+			<source class="video" type="video/mp4" src={{ url_for("static", path="assets/Video/REEL.webm")}}>
+		</video>
+		<!-- <div class="text__container">
+			<p class="inicio__banner">
+				<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
+			</p>
+		</div> -->
+	</div>
+	<section id="nosotrxs">
+		<div class="section__found found__gradient-init">
+			<!-- <div class="dibujo__container">
+				<img class="dibujo" src={{ url_for("static", path="assets/img/g4.webp")}} alt="dibujos de ratas yuxtapuestos a retrato">
+			</div> -->
+			<div class="section section__div">
+				<div class="section__div-image">
+					<img class="image__item" src={{ url_for("static", path="assets/img/Nosotrxs.webp")}} alt="retrato - nosotrxs">
+					<!-- <img class="dibujo" src={{ url_for("static", path="assets/img/g3.webp")}}> -->
+				</div>
+				<div class="color__base">
+				</div>
+				<div class="section__div-title">
+					<p class="title__item" >
+						Nosotrxs
+					</p>
+				</div>
+				<div class="section__div-paragraph">
+					<p class="paragraph__item" >
+						Somos un estudio nómada experimental. Cuestionamos "El Diseño", sus formas y apellidos.
+						Detonamos ficciones, diseños otros, no diseños, criaturas mutantes y monstruosas.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="separador glitch__container">
+		<video autoplay muted onmouseover="this.play()" class="inter__element normal">
+			<source id="video-glitch" class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch.webm")}}>
+		</video>
+		<video autoplay muted loop class="inter__element responsive">
+			<source class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch_responsive.webm")}}>
+		</video>
+	</div>
+	<!-- <section id="accionares">
+		<div class="section__found found__gradient-init">
+			<div class="section section__div normal">
+				<div class="section__div-image">
+					<img class="image__item" src={{ url_for("static", path="assets/img/Accionares.webp")}} alt="fotografía accionares">
+				</div>
+				<div class="section__div-title">
+					<p class="title__item" >
+						Accionares
+					</p>
+				</div>
+				<div class="section__div-paragraph">
+					<p class="paragraph__item" >
+						Cotidianidad, ficciones, audiovisuales, talleres experienciales, documentales, diseño editorial,
+						fotografía e intervenciones en espacios transformadores en Colombia, Costa Rica, México y Perú.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- <div class="scroll">
+	</div> -->
+	<div class="pages__container">
+		<div class="pages">
+			<div id="ejes" class="box-uno, section__ejes">
+				<div class="section__groups--scroll">
+				</div>
+				<div class="section__groups">
+					<!-- <div class="section__title">
+						<div class="indicator"></div>
+						<img class="process__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}}>
+					</div> -->
+					<div class="section__container">
+						<div class="container__item item--talleres item--border-right-none" onclick="modal('assets/img/nodos/talleres.webp')">
+							<div class="container__text">
+								<h2 class="text__box box__title">Talleres</h2>
+							</div>
+							<div class="container__text">
+								<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
+							</div>
+		<!--					<div class="container__icon">
+								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - talleres">
+							</div>-->
+							<figure>
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/talleres.webp")}} alt="fotografía - talleres">
+							</figure>
+						</div>
+						<div class="container__item item--espacios item--border-right-none" onclick="modal('assets/img/nodos/biblio.webp')">
+							<div class="container__text">
+								<h2 class="text__box box__title">Espacios</h2>
+							</div>
+							<div class="container__text">
+								<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
+							</div>
+		<!--					<div class="container__icon">
+								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - bibliotecas">
+							</div>-->
+							<figure>
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/biblio.webp")}} alt="fotografía bibliotecas">
+							</figure>
+						</div>
+						<div class="container__item item--audiovisuales item--border-right-none" onclick="modal('assets/img/nodos/audiovisual.webp')">
+							<div class="container__text">
+								<h2 class="text__box box__title">Audiovisual</h2>
+							</div>
+							<div class="container__text">
+								<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
+							</div>
+		<!--					<div class="container__icon">
+								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - audiovisuales">
+							</div>-->
+							<figure>
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/audiovisual.webp")}} alt="fotografía - audiovisuales">
+							</figure>
+						</div>
+						<div class="container__item item--editorial" onclick="modal('assets/img/nodos/editorial.webp')">
+							<div class="container__text">
+								<h2 class="text__box box__title">Gráfico y<br>Editorial</h2>
+							</div>
+							<div class="container__text">
+								<p class="text__box box__paragraph">We'll evaluate your competitors' websites based on a set of defined standards to help understand the competition: what has worked, what has not worked and what are the actionable insights.</p>
+							</div>
+		<!--					<div class="container__icon">
+								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - editorial">
+							</div>-->
+							<figure>
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/editorial.webp")}}>
+							</figure>
+						</div>
+					</div>
+					<div class="org__links">
+						<div class="container__slider">
+							<div class="barra__logos">
+								<div class="logos__item"><img class="item--img img--studiot" src={{ url_for("static", path="assets/logos/StudioTEOTW.png")}} alt="logotipo - StudioTEOTW"></div>
+								<div class="logos__item"><img class="item--img img--apiidtt" src={{ url_for("static", path="assets/logos/APIIDTT.png")}} alt="logotipo - APIIDTT"></div>
+								<div class="logos__item"><img class="item--img img--quijote" src={{ url_for("static", path="assets/logos/Quijote.png")}} alt="logotipo - Quijote"></div>
+								<div class="logos__item"><img class="item--img img--masc" src={{ url_for("static", path="assets/logos/RPMasc.png")}} alt="logotipo - RPMasc"></div>
+								<div class="logos__item"><img class="item--img img--mujeres" src={{ url_for("static", path="assets/logos/MujeresLibres.png")}} alt="logotipo - MujeresLibres"></div>
+								<div class="logos__item"><img class="item--img img--pazalap" src={{ url_for("static", path="assets/logos/PazALP.png")}} alt="logotipo - PazALP"></div>
+								<!--<div class="logos__item">MultiCartonera</div>-->
+								<div class="logos__item"><img class="item--img img--studiot" src={{ url_for("static", path="assets/logos/StudioTEOTW.png")}} alt="logotipo - StudioTEOTW"></div>
+								<div class="logos__item"><img class="item--img img--apiidtt" src={{ url_for("static", path="assets/logos/APIIDTT.png")}} alt="logotipo - APIIDTT"></div>
+								<div class="logos__item"><img class="item--img img--quijote" src={{ url_for("static", path="assets/logos/Quijote.png")}} alt="logotipo - Quijote"></div>
+								<div class="logos__item"><img class="item--img img--masc" src={{ url_for("static", path="assets/logos/RPMasc.png")}} alt="logotipo - RPMasc"></div>
+								<div class="logos__item"><img class="item--img img--mujeres" src={{ url_for("static", path="assets/logos/MujeresLibres.png")}} alt="logotipo - MujeresLibres"></div>
+								<div class="logos__item"><img class="item--img img--pazalap" src={{ url_for("static", path="assets/logos/PazALP.png")}} alt="logotipo - PazALP"></div>
+								<!--<div class="logos__item">MultiCartonera</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <img class="page__image" src={{ url_for("static", path="assets/img/biblioteca_2.webp")}} alt="Primera biblioteca terminada / burbujas de autonomía."> -->
+			</div>
+			<div class="box-dos">
+				<div class="text__container">
+					<p class="inicio__banner">
+						<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- <section>
+		<div class="section black">
+		</div>
+	</section> -->
+	<section id="intension">
+		<div class="">
+			<div class="section section__div black">
+				<div class="section__div-image">
+					<img class="img-mult front" src={{ url_for("static", path="assets/img/zine/the_urmadic.webp")}} alt="Imagen portada in-tension">
+					<div class="img-mult back">
+						<img src={{ url_for("static", path="assets/img/zine/tiraurmadic.webp")}} alt="contenido In-tension">
+						<img src={{ url_for("static", path="assets/img/zine/tiraurmadic.webp")}} alt="contenido In-tension">
+					</div>
+
+					<!-- <img class="img-mult" src={{ url_for("static", path="assets/img/zine/the_urmadic_3.webp")}}> -->
+				</div>
+				<div class="section__div-title">
+					<div class="title__item" >
+						<a class="text__content  title--left" href="revistas/incluir.html"><img class="logo__item" src={{ url_for("static", path="assets/logos/TheUrmandicaZine.png")}}></a>
+					</div>
+				</div>
+				<div class="section__div-paragraph">
+					<p class="paragraph__item" >
+						Este es el texto que tendremos en cada sección en modo de descripción de la misma.
+						Lo que se quiere con esta es que sea una especie de portada general en cada parte global.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="separador">
+	</div>
+	<section id="theurmadic">
+		<div class="">
+			<div class="section section__div black">
+				<div class="section__div-image">
+					<img class="img-mult front" src={{ url_for("static", path="assets/img/zine/the_urmadic.webp")}} alt="Imagen portada in-tension">
+					<div class="img-mult back">
+						<img src={{ url_for("static", path="assets/img/zine/tiraurmadic.webp")}} alt="contenido In-tension">
+						<img src={{ url_for("static", path="assets/img/zine/tiraurmadic.webp")}} alt="contenido In-tension">
+					</div>
+
+					<!-- <img class="img-mult" src={{ url_for("static", path="assets/img/zine/the_urmadic_3.webp")}}> -->
+				</div>
+				<div class="section__div-title">
+					<div class="title__item" >
+						<a class="text__content  title--left" href="revistas/incluir.html"><img class="logo__item" src={{ url_for("static", path="assets/logos/TheUrmandicaZine.png")}}></a>
+					</div>
+				</div>
+				<div class="section__div-paragraph">
+					<p class="paragraph__item" >
+						Este es el texto que tendremos en cada sección en modo de descripción de la misma.
+						Lo que se quiere con esta es que sea una especie de portada general en cada parte global.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="separador">
+	</div>
+	<section id="audiovisual">
+			<div class="section section__video invert black">
+				<div class="section__div-image">
+					<!-- <img class="vid__img img-mult" src={{ url_for("static", path="assets/img/zine/the_urmadic_3.webp")}}> -->
+					<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+					<div class="vid-mult">
+						<div class="wistia_embed wistia_async_tjt8h0uypv videoFoam=true">
+							<img class="vid-mult" src="https://fast.wistia.com/embed/medias/tjt8h0uypv/swatch" />
+						</div>
+					</div>
+					<div class="vid__img">
+						<div class="mutante"><img class="logo__item mutante" src={{ url_for("static", path="assets/icons/audiovisuales/MUTANTE.svg")}} alt="logo cortometraje"></div>
+						<p class="paragraph__item" >
+							Este es el texto que tendremos en cada sección en modo de descripción de la misma.
+							Lo que se quiere con esta es que sea una especie de portada general en cada parte global. 
+						</p>
+					</div>
+				</div>
+				<!-- <div class="section__div-title">
+					<div class="title__item" >
+						<a class="text__content  title--left" href="pages/in-tension.html"><img class="logo__item mutante" src={{ url_for("static", path="assets/icons/audiovisuales/MUTANTE.svg")}}></a>
+					</div>
+				</div>
+				<div class="section__div-paragraph">
+					<p class="paragraph__item" >
+						Este es el texto que tendremos en cada sección en modo de descripción de la misma.
+					</p>
+				</div> -->
+			</div>
+	</section>
+	<div class="separador separador__final">
+		<!-- <div class="text__container">
+			<p class="inicio__banner banner--2">Ficción mutante como<br>
+			impulso radical de<br> realidades.</p>
+		</div> -->
+	</div>
+	<section class="section__footer">
+		<button class="com__button">comunidad</button>
+	</section>
+	<dialog class="modal modal-style">
+		<div class="modal__container">
+			<div class="modal__content">
+				<form method="POST" action=/users/add class="form contact__form">
+					<p class="title--mod form__title">¡Detónese!</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="name" class="item__input" type="text" name="username" placeholder="Nombre / pseudónimo." value="Dessagrado" spellcheck="false" required>
+						</div>
+						<div class="form__item" >
+							<input id="organization" class="item__input" type="text" name="organization" placeholder="Colectividad / organización." value="Monstruosa" spellcheck="false">
+						</div>
+						<div class="form__item" >
+							<input id="email" class="item__input" type="email" name="email" placeholder="Correo electrónico." value="dessagrado@gmail.com" spellcheck="false" required>
+						</div>
+						<div class="form__item" class="form__item" >
+							<select id="project" class="item__input" name="subject">
+								<option value="In/Tension" selected>In/Tension</option>
+								<option value="Monstruosa">Monstruosa</option>
+								<option value="Burbujas de autonomía">Burbujas de autonomía</option>
+								<option value="Ficción Mutante">Ficción Mutante</option>
+								<option value="Lumbre en el viento">Lumbre en el viento</option>
+							</select>
+						</div>
+						<div class="form__item">
+							<textarea id="message" class="item__textarea" name="message" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false">Espero poder participar en uno de sus proyectos, escribo para poder estar informadx de lo que se viene.</textarea>
+						</div>
+					</div>
+					<input id="check_button" class="modal__button button__action button__send" type="submit" value="">
+					<button class="modal__button button__action button__send"><img src={{ url_for("static", path="assets/icons/send-horizontal.svg")}}></button>
+					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src={{ url_for("static", path="assets/icons/x.svg")}} alt="sendbutton"></button>
+				</form>
+				<form class="form donate__form">
+					<p class="title--mod form__title">Control</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
+						</div>
+						<div class="form__item" >
+							<p class="print"></p>
+						</div>
+					</div>
+					<button class=" button__close  button__showdonate" onclick="ShowControl()"><img src={{ url_for("static", path="assets/icons/x.svg")}} alt="closebutton"></button>
+					<button id="" class="modal__button button__action button__get" onclick="Get()"><img src={{ url_for("static", path="assets/icons/target.svg")}}></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src={{ url_for("static", path="assets/icons/chevrons-left-right-ellipsis.svg")}}></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src={{ url_for("static", path="assets/icons/trash-2.svg")}}></button>
+				</form>
+			</div>
+		</div>
+	</dialog>
+	<script type="text/javascript" src={{ url_for("static", path="script/script.js")}}></script>
+	
+</body>
+</html>
