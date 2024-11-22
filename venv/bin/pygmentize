@@ -1,4 +1,6 @@
-#!/home/tortuga/fastapi/venv/bin/python
+#!/bin/sh
+'''exec' "/run/media/tortuga/TORTUGA/Documentos (1)/WEB_DISEÑO_DETONANTE/didetonante/venv/bin/python3" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

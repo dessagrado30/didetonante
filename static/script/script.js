@@ -39,10 +39,10 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>2000);
-    video.classList.toggle("view__section",window.scrollY>6000);
+    video.classList.toggle("view__section",window.scrollY>5500);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("out__section-2",window.scrollY>7000);
-    sep.classList.toggle("out__section-separador",window.scrollY>8700);
+    video.classList.toggle("out__section-2",window.scrollY>6000);
+    sep.classList.toggle("out__section-separador",window.scroll>8700);
 })
 
 //button modal section

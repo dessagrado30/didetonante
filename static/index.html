@@ -51,9 +51,18 @@
 	</header>
 
 	<div class="inicio">
-		<video class="inicio__element" autoplay muted onmouseover="this.play();">
+
+		<video class="inicio__element" autoplay muted loop onmouseover="this.play();">
 			<source class="video" type="video/mp4" src={{ url_for("static", path="assets/Video/REEL.webm")}}>
 		</video>
+		<div class="separador glitch__container">
+			<video autoplay muted onmouseover="this.play()" class="inter__element normal">
+				<source id="video-glitch" class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch.webm")}}>
+			</video>
+			<video autoplay muted loop class="inter__element responsive">
+				<source class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch_responsive.webm")}}>
+			</video>
+		</div>
 		<!-- <div class="text__container">
 			<p class="inicio__banner">
 				<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
@@ -86,35 +95,13 @@
 			</div>
 		</div>
 	</section>
-	<div class="separador glitch__container">
+	<!-- <div class="separador glitch__container">
 		<video autoplay muted onmouseover="this.play()" class="inter__element normal">
 			<source id="video-glitch" class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch.webm")}}>
 		</video>
 		<video autoplay muted loop class="inter__element responsive">
 			<source class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch_responsive.webm")}}>
 		</video>
-	</div>
-	<!-- <section id="accionares">
-		<div class="section__found found__gradient-init">
-			<div class="section section__div normal">
-				<div class="section__div-image">
-					<img class="image__item" src={{ url_for("static", path="assets/img/Accionares.webp")}} alt="fotografía accionares">
-				</div>
-				<div class="section__div-title">
-					<p class="title__item" >
-						Accionares
-					</p>
-				</div>
-				<div class="section__div-paragraph">
-					<p class="paragraph__item" >
-						Cotidianidad, ficciones, audiovisuales, talleres experienciales, documentales, diseño editorial,
-						fotografía e intervenciones en espacios transformadores en Colombia, Costa Rica, México y Perú.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- <div class="scroll">
 	</div> -->
 	<div class="pages__container">
 		<div class="pages">
@@ -187,20 +174,12 @@
 					<div class="org__links">
 						<div class="container__slider">
 							<div class="barra__logos">
-								<div class="logos__item"><img class="item--img img--studiot" src={{ url_for("static", path="assets/logos/StudioTEOTW.png")}} alt="logotipo - StudioTEOTW"></div>
-								<div class="logos__item"><img class="item--img img--apiidtt" src={{ url_for("static", path="assets/logos/APIIDTT.png")}} alt="logotipo - APIIDTT"></div>
-								<div class="logos__item"><img class="item--img img--quijote" src={{ url_for("static", path="assets/logos/Quijote.png")}} alt="logotipo - Quijote"></div>
-								<div class="logos__item"><img class="item--img img--masc" src={{ url_for("static", path="assets/logos/RPMasc.png")}} alt="logotipo - RPMasc"></div>
-								<div class="logos__item"><img class="item--img img--mujeres" src={{ url_for("static", path="assets/logos/MujeresLibres.png")}} alt="logotipo - MujeresLibres"></div>
-								<div class="logos__item"><img class="item--img img--pazalap" src={{ url_for("static", path="assets/logos/PazALP.png")}} alt="logotipo - PazALP"></div>
-								<!--<div class="logos__item">MultiCartonera</div>-->
-								<div class="logos__item"><img class="item--img img--studiot" src={{ url_for("static", path="assets/logos/StudioTEOTW.png")}} alt="logotipo - StudioTEOTW"></div>
-								<div class="logos__item"><img class="item--img img--apiidtt" src={{ url_for("static", path="assets/logos/APIIDTT.png")}} alt="logotipo - APIIDTT"></div>
-								<div class="logos__item"><img class="item--img img--quijote" src={{ url_for("static", path="assets/logos/Quijote.png")}} alt="logotipo - Quijote"></div>
-								<div class="logos__item"><img class="item--img img--masc" src={{ url_for("static", path="assets/logos/RPMasc.png")}} alt="logotipo - RPMasc"></div>
-								<div class="logos__item"><img class="item--img img--mujeres" src={{ url_for("static", path="assets/logos/MujeresLibres.png")}} alt="logotipo - MujeresLibres"></div>
-								<div class="logos__item"><img class="item--img img--pazalap" src={{ url_for("static", path="assets/logos/PazALP.png")}} alt="logotipo - PazALP"></div>
-								<!--<div class="logos__item">MultiCartonera</div>-->
+								{% for cop in [1, 2] %}
+									{% for logo_o in logo %}
+										<div class="logos__item"><img class="item--img img--{{logo_o}}" src=http://localhost:8000/static/assets/logos/{{logo_o}}.png alt="logotipo - {{logo_o}}"></div>
+									{% endfor %}
+								{% endfor %}
+
 							</div>
 						</div>
 					</div>
@@ -226,7 +205,7 @@
 		<div class="">
 			<div class="section section__div black">
 				<div class="section__div-image">
-					<img class="img-mult front" src={{ url_for("static", path="assets/img/zine/the_urmadic.webp")}} alt="Imagen portada in-tension">
+					<img class="img-mult front" src={{ url_for("static", path="assets/img/zine/the_urmadic_3.webp")}} alt="Imagen portada in-tension">
 					<div class="img-mult back">
 						<img src={{ url_for("static", path="assets/img/zine/tiraurmadic.webp")}} alt="contenido In-tension">
 						<img src={{ url_for("static", path="assets/img/zine/tiraurmadic.webp")}} alt="contenido In-tension">
@@ -315,6 +294,9 @@
 		</div> -->
 	</div>
 	<section class="section__footer">
+		{% for texto in [1, 2, 3] %}
+			<button class="com__button">comunidad</button>
+		{% endfor %}
 		<button class="com__button">comunidad</button>
 	</section>
 	<dialog class="modal modal-style">

@@ -5,14 +5,15 @@ from fastapi.responses import RedirectResponse
 from sqlalchemy.ext.declarative import declarative_base
 from typing import Annotated
 
+
 from backend.models.user import Usr, session
 # from backend.schemas.user import Base_Model
 
 key = Fernet.generate_key()
 f = Fernet(key)
 user = APIRouter()
-
 Base = declarative_base()
+
 
 @user.post("/users/add")
 def create_user(username: Annotated[str, Form()], organization: Annotated[str, Form()], email: Annotated[str, Form()], subject: Annotated[str, Form()], message: Annotated[str, Form()]):
