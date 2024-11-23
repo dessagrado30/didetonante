@@ -220,6 +220,10 @@ body::-webkit-scrollbar{
         opacity: 100%;
         transition: opacity 1s;
     }
+    .inicio__element.low__opacity{
+        opacity: 10%;
+        transition: opacity 1s;
+    }
     .inicio__element.out__section-2{
         opacity: 0;
         transition: opacity 1s;

@@ -28,7 +28,7 @@ window.addEventListener("scroll", function(){
     nodos.classList.toggle("img",window.scrollY>3500);
     nodos.classList.toggle("nodes-false",window.scrollY>7500);
 
-    logo.classList.toggle("inv",window.scrollY>3000);
+    logo.classList.toggle("inv",window.scrollY>7500);
 
 })
 
@@ -39,9 +39,10 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("out__section",window.scrollY>2000);
-    video.classList.toggle("view__section",window.scrollY>5500);
+    video.classList.toggle("view__section",window.scrollY>5300);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("out__section-2",window.scrollY>6000);
+    video.classList.toggle("low__opacity",window.scrollY>6300);
+    video.classList.toggle("out__section-2",window.scrollY>7000);
     sep.classList.toggle("out__section-separador",window.scroll>8700);
 })
 
