@@ -663,7 +663,7 @@ body::-webkit-scrollbar{
     top: 0;
     left: 50%;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     overflow: hidden;
     .pages {
         position: relative;
@@ -697,11 +697,14 @@ body::-webkit-scrollbar{
     height: 400vh;
 } */
 @keyframes box-move {
-    33% {left: 0;}
-    52% {left: -100%; opacity: 100%;}
-    58%, 100% {left: -100%;}
-    68%, 80% {background-color: #fefefe00;opacity: 0;}
-    100% {opacity: 0;}
+    20% {left: 0;}
+    55% {left: -100%;}
+    100%{left: -100%;}
+    
+    55% {opacity: 100%;}
+    60% {opacity: 0;}
+    100%{opacity: 0;}
+    /* 100% {opacity: 0;} */
 
     
 }    
