@@ -9,14 +9,19 @@ html {
 
 body {
     margin: 0;
+
+    
     --green-color:#ceff1d;
     --mag-color:#fd33d1;
 }
+
+
 
 body::-webkit-scrollbar{
     width: 0px;
     height: 0px;
 }
+
 
 .background {
     background: #0b0b0b;
@@ -85,7 +90,16 @@ body::-webkit-scrollbar{
     animation-delay: 1s;
 }
 
+main{
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    scroll-snap-type: y mandatory;
+}
 
+main > section{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;   
+}
 
 .header{
     position: fixed;
