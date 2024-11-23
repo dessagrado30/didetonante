@@ -26,7 +26,7 @@ window.addEventListener("scroll", function(){
 
     nodos.classList.toggle("nodes-true",window.scrollY>100);
     nodos.classList.toggle("img",window.scrollY>3500);
-    nodos.classList.toggle("nodes-false",window.scrollY>7500);
+    nodos.classList.toggle("nodes-false",window.scrollY>2500);
 
     logo.classList.toggle("inv",window.scrollY>7500);
 

@@ -465,6 +465,10 @@ body::-webkit-scrollbar{
         }
     }
 }
+#ejes{
+    position: relative;
+    top: 100px;
+}
 .section__ejes {
     bottom: 0;
     display: grid;
@@ -697,7 +701,7 @@ body::-webkit-scrollbar{
     height: 400vh;
 } */
 @keyframes box-move {
-    20% {left: 0;}
+    25% {left: 0;}
     55% {left: -100%;}
     100%{left: -100%;}
     
@@ -710,11 +714,11 @@ body::-webkit-scrollbar{
 }    
 .section__ejes.nodes-true {
     opacity: 100%;
-    transition: opacity 1s;
+    /* transition: opacity .5s; */
 }
 .section__ejes.nodes-false {
     opacity: 0;
-    transition: opacity 1s;
+    /* transition: opacity .5s; */
 }
 @keyframes scroll {
     0% {
