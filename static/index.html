@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href={{ url_for("static", path="style/style.css")}}>
 	<link rel="stylesheet" href={{ url_for("static", path="style/style_menu.css")}}>
 	<link rel="stylesheet" href={{ url_for("static", path="style/contacto.css")}}>
+	<link rel="stylesheet" href={{ url_for("static", path="style/audiovisual.css")}}>
 	<link rel="stylesheet" href={{ url_for("static", path="assets/fonts/montserrat-font_T/Montserrat.css")}}>
 	<link rel="stylesheet" href={{ url_for("static", path="assets/fonts/alte_haas_grotesk_T2/AlteHaasGrotesk.css")}}>
 	<link rel="stylesheet" href={{ url_for("static", path="assets/fonts/rozha-one/rozha-one.css")}}>
@@ -95,6 +96,9 @@
 			</div>
 		</div>
 	</section>
+	<section id="ejes">
+	
+	</section>
 	<!-- <div class="separador glitch__container">
 		<video autoplay muted onmouseover="this.play()" class="inter__element normal">
 			<source id="video-glitch" class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch.webm")}}>
@@ -105,7 +109,7 @@
 	</div> -->
 	<div class="pages__container">
 		<div class="pages">
-			<div id="ejes" class="box-uno, section__ejes">
+			<div class="box-uno, section__ejes">
 				<div class="section__groups--scroll">
 				</div>
 				<div class="section__groups">
@@ -257,36 +261,66 @@
 	</section>
 	<div class="separador">
 	</div>
-	<section id="audiovisual">
-			<div class="section section__video invert black">
-				<div class="section__div-image">
-					<!-- <img class="vid__img img-mult" src={{ url_for("static", path="assets/img/zine/the_urmadic_3.webp")}}> -->
-					<script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-					<div class="vid-mult">
-						<div class="wistia_embed wistia_async_tjt8h0uypv videoFoam=true">
-							<img class="vid-mult" src="https://fast.wistia.com/embed/medias/tjt8h0uypv/swatch" />
-						</div>
+	<section class="section audiovisual__section">
+		<p class="section__title">MOVIMIENTO</p>
+		<div class="container">
+			<div class="controls box">
+				<figure class="mutante__icon">
+					<img class="mutante__icon" src={{ url_for("static", path="assets/icons/audiovisuales/MUTANTE.svg")}} alt="logo de cortometraje Mutante">
+				</figure>
+				<p class="paragraph__item" >
+					Este es el texto que tendremos en cada sección en modo de descripción de la misma.
+					Lo que se quiere con esta es que sea una especie de portada general en cada parte global. 
+				</p>
+				<div class="controls__container">	
+					<div class="controls__button">
+						<img class="controls__button" src={{ url_for("static", path="assets/icons/multimedia/share-2.svg")}} alt="icono compartir cortometraje">
 					</div>
-					<div class="vid__img">
-						<div class="mutante"><img class="logo__item mutante" src={{ url_for("static", path="assets/icons/audiovisuales/MUTANTE.svg")}} alt="logo cortometraje"></div>
-						<p class="paragraph__item" >
-							Este es el texto que tendremos en cada sección en modo de descripción de la misma.
-							Lo que se quiere con esta es que sea una especie de portada general en cada parte global. 
-						</p>
+					<div class="controls__button">
+						<img class="controls__button button-back" src={{ url_for("static", path="assets/icons/multimedia/fast-forward.svg")}} alt="icono anterior cortometraje">
+					</div>
+					<div class="controls__button button-play">
+						<img class="controls__button button-play" src={{ url_for("static", path="assets/icons/multimedia/play.svg")}} alt="icono reproducir cortometraje">
+					</div>
+					<div class="controls__button">
+						<img class="controls__button" src={{ url_for("static", path="assets/icons/multimedia/fast-forward.svg")}} alt="icono siguiente cortometraje">
+					</div>
+					<div class="controls__button">
+						<img class="controls__button" src={{ url_for("static", path="assets/icons/multimedia/library.svg")}} alt="icono de ir a librería o más contenido">	
 					</div>
 				</div>
-				<!-- <div class="section__div-title">
-					<div class="title__item" >
-						<a class="text__content  title--left" href="pages/in-tension.html"><img class="logo__item mutante" src={{ url_for("static", path="assets/icons/audiovisuales/MUTANTE.svg")}}></a>
-					</div>
-				</div>
-				<div class="section__div-paragraph">
-					<p class="paragraph__item" >
-						Este es el texto que tendremos en cada sección en modo de descripción de la misma.
-					</p>
-				</div> -->
 			</div>
+			<div class="image box">
+				<figure class="mutante__img">
+					<img class="mutante__img" src={{ url_for("static", path="assets/img/nodos/audiovisual/mutante_mapa.jpg")}} alt="fotograma cortometraje Mutante">
+				</figure>
+			</div>
+			<div class="data box">
+				<div class="data__content">
+					<img class="content__logo" src={{ url_for("static", path="assets/logos/Quijote.png")}} alt="logo quijote">
+					<p class="paragraph__item">
+						Este es el texto que tendremos en cada sección en modo de descripción de la misma.
+						Lo que se quiere con esta es que sea una especie de portada general en cada parte global. 
+					</p>
+				</div>
+				<div class="menus__container">	
+					<div class="menu involucradxs">
+						<img class="menu__icon icon__involucradxs" src={{ url_for("static", path="assets/icons/multimedia/origami.svg")}} alt="icono Involucradxs">
+						<p class="menu__name">Involucradxs</p>
+					</div>
+					<div class="menu creacion">
+						<img class="menu__icon icon__creacion" src={{ url_for("static", path="assets/icons/multimedia/clapperboard.svg")}} alt="icono Realización">
+						<p class="menu__name">Realización</p>
+					</div>
+					<div class="menu referencias">
+						<img class="menu__icon icon__referencias" src={{ url_for("static", path="assets/icons/multimedia/waypoints.svg")}} alt="icono Referencias">
+						<p class="menu__name">Referencias</p>	
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+
 	<div class="separador separador__final">
 		<!-- <div class="text__container">
 			<p class="inicio__banner banner--2">Ficción mutante como<br>
