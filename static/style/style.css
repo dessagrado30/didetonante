@@ -201,7 +201,7 @@ main > section{
     width: 100vw;
     height: 700px;
     /* opacity: 0; */
-    z-index: 0;
+    z-index: 1;
     .inter__element{
         position: fixed;
         width: 100%;
@@ -213,7 +213,7 @@ main > section{
         left: 0;
         display: flex;
         align-content: center;
-        z-index: 0;
+        z-index: 1;
         .video {
             position: absolute;
             width: 100%;
