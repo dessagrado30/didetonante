@@ -52,18 +52,18 @@
 	</header>
 
 	<div class="inicio">
-
+		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+			<source class="video" type="video/mp4" src={{ url_for("static", path="assets/Video/REEL.webm")}}>
+		</video>
 		<div class="separador glitch__container">
-			<video preload="auto" onmouseover="this.play()" class="inter__element normal">
+			<video onmouseover="this.play()" class="inter__element normal">
 				<source id="video-glitch" class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch.webm")}}>
 			</video>
-			<video loop class="inter__element responsive">
+			<video preload="auto" loop class="inter__element responsive">
 				<source class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch_responsive.webm")}}>
 			</video>
-			<video class="inicio__element" autoplay muted loop onmouseover="this.play();">
-				<source class="video" type="video/mp4" src={{ url_for("static", path="assets/Video/REEL.webm")}}>
-			</video>
 		</div>
+
 		<!-- <div class="text__container">
 			<p class="inicio__banner">
 				<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
