@@ -28,7 +28,8 @@
 	<div class="preloader">
 		<span class="loader"></span>
 		<img class="load__logo" src={{ url_for("static", path="assets/icons/LLAMITA_PL.svg")}} alt="Logo Diseño Detonante">
-		<div class="entrar" onclick="continuar()"><p>Continuar</p></div>
+		<a onclick="continuar()" class="item__link entrar" href="#">INICIO</a>
+
 	</div>
 	<header class="header">
 		<div class="header__container">
@@ -262,7 +263,7 @@
 	</section>
 	<div class="separador">
 	</div>
-	<section class="section audiovisual__section">
+	<section id="audiovisual" class="section audiovisual__section">
 		<p class="section__title">MOVIMIENTO</p>
 		<div class="container">
 			<div class="controls box">

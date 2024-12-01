@@ -34,7 +34,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     z-index: 1100;
     left: 0;
-    transition: left 2s;
+    transition: left 2s cubic-bezier(0.74,-0.01, 0.43, 0.99);
     .load__logo {
         position: absolute;
         display: flex;
@@ -49,23 +49,32 @@ body::-webkit-scrollbar{
         width: 150px;
         height: 70px;
         border-radius: 20px;
-        display: none;
+        /* display: none; */
         align-items: center;
         justify-content: center;
         border: 3px solid var(--mag-color);
         cursor: pointer;
+        transition-duration: 1s;
+        opacity: 0;
     }
-}
 
+}
+.item__link{
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
 .preloader-button{
     .entrar{
         display: flex;
-
+        opacity: 1;
     }
 }
 
 .preloader-hidden{
-    left: -100%;
+    left: -101%;
 }
 
 @keyframes loader {
@@ -712,7 +721,7 @@ main > section{
         height: 100vh;
         left: 0;
 
-        animation: box-move auto cubic-bezier(0.69, 0.02, 0.29, 0.99);;
+        animation: box-move auto cubic-bezier(0.69, 0.02, 0.29, 0.99);
         animation-timeline: scroll(root block);
         .page__image {
             position: sticky;
