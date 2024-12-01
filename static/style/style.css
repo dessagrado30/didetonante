@@ -33,6 +33,7 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: center;
     z-index: 1100;
+    transition: 1s;
     .load__logo {
         position: absolute;
         display: flex;
@@ -40,10 +41,32 @@ body::-webkit-scrollbar{
         height: 100px;
         z-index: 1200;
     }
+    .entrar{
+        bottom: 10%;
+        color: var(--mag-color);
+        position: absolute;
+        width: 150px;
+        height: 70px;
+        border-radius: 20px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid var(--mag-color);
+        cursor: pointer;
+    }
 }
+
+.preloader-button{
+    .entrar{
+        display: flex;
+
+    }
+}
+
 .preloader-hidden{
-    display: none;
+    display:none
 }
+
 @keyframes loader {
     
     0% {

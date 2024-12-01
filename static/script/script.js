@@ -1,11 +1,13 @@
 //preloader display none
+const preloader = document.querySelector(".preloader");
 window.addEventListener("load", function(){
-    const preloader = document.querySelector(".preloader");
     this.setTimeout(() => {
-        preloader.classList.add("preloader-hidden");
-    }, 5000) 
+        preloader.classList.add("preloader-button");
+    }, 5000)
 })
-
+function continuar(){
+    preloader.classList.add("preloader-hidden");
+}
 //header transorn scroll
 window.addEventListener("scroll", function(){
     var header = document.querySelector(".header");
