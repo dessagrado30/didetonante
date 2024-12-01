@@ -52,6 +52,7 @@
 	</header>
 
 	<div class="inicio">
+
 		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
 			<source class="video" type="video/mp4" src={{ url_for("static", path="assets/Video/REEL.webm")}}>
 		</video>
@@ -63,7 +64,6 @@
 				<source class="video" type="video/webm" src={{ url_for("static", path="assets/Video/Glitch_responsive.webm")}}>
 			</video>
 		</div>
-
 		<!-- <div class="text__container">
 			<p class="inicio__banner">
 				<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
@@ -129,7 +129,7 @@
 								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - talleres">
 							</div>-->
 							<figure>
-								<img loading="lazy" class="container__img" src={{ url_for("static", path="assets/img/nodos/talleres.webp")}} alt="fotografía - talleres">
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/DevenirPresentes.webp")}} alt="fotografía - talleres">
 							</figure>
 						</div>
 						<div class="container__item item--espacios item--border-right-none" onclick="modal('assets/img/nodos/biblio.webp')">
@@ -143,7 +143,7 @@
 								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - bibliotecas">
 							</div>-->
 							<figure>
-								<img loading="lazy" class="container__img" src={{ url_for("static", path="assets/img/nodos/biblio.webp")}} alt="fotografía bibliotecas">
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/biblio.webp")}} alt="fotografía bibliotecas">
 							</figure>
 						</div>
 						<div class="container__item item--audiovisuales item--border-right-none" onclick="modal('assets/img/nodos/audiovisual.webp')">
@@ -157,7 +157,7 @@
 								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - audiovisuales">
 							</div>-->
 							<figure>
-								<img loading="lazy" class="container__img" src={{ url_for("static", path="assets/img/nodos/audiovisual.webp")}} alt="fotografía - audiovisuales">
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/audiovisual.webp")}} alt="fotografía - audiovisuales">
 							</figure>
 						</div>
 						<div class="container__item item--editorial" onclick="modal('assets/img/nodos/editorial.webp')">
@@ -171,7 +171,7 @@
 								<img class="box__icon" src={{ url_for("static", path="assets/icons/LLAMITA.svg")}} alt="ícono nodo de acción - editorial">
 							</div>-->
 							<figure>
-								<img loading="lazy" class="container__img" src={{ url_for("static", path="assets/img/nodos/editorial.webp")}}>
+								<img class="container__img" src={{ url_for("static", path="assets/img/nodos/editorial.webp")}}>
 							</figure>
 						</div>
 					</div>
@@ -180,7 +180,7 @@
 							<div class="barra__logos">
 								{% for cop in [1, 2] %}
 									{% for logo_o in logo %}
-										<div class="logos__item"><img  loading="lazy" class="item--img img--{{logo_o}}" src=https://didetonante.onrender.com/static/assets/logos/{{logo_o}}.png alt="logotipo - {{logo_o}}"></div>
+										<div class="logos__item"><img class="item--img img--{{logo_o}}" src=https://didetonante.onrender.com/static/assets/logos/{{logo_o}}.png alt="logotipo - {{logo_o}}"></div>
 									{% endfor %}
 								{% endfor %}
 
