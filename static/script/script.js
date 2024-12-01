@@ -1,7 +1,9 @@
 //preloader display none
 window.addEventListener("load", function(){
     const preloader = document.querySelector(".preloader");
-    preloader.classList.add("preloader-hidden");
+    this.setTimeout(() => {
+        preloader.classList.add("preloader-hidden");
+    }, 5000) 
 })
 
 //header transorn scroll
