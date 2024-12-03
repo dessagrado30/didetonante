@@ -1,9 +1,10 @@
 //preloader display none
 const preloader = document.querySelector(".preloader");
 window.addEventListener("load", function(){
-    this.setTimeout(() => {
-        preloader.classList.add("preloader-button");
-    }, 5000)
+    preloader.classList.add("preloader-button");
+    // this.setTimeout(() => {
+    //     preloader.classList.add("preloader-button");
+    // }, 5000)
 })
 function continuar(){
     preloader.classList.add("preloader-hidden");
@@ -44,7 +45,7 @@ window.addEventListener("scroll", function(){
 
     video.classList.toggle("out__section",window.scrollY>1500);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("view__section",window.scrollY>4500);
+    video.classList.toggle("view__section",window.scrollY>4300);
     video.classList.toggle("low__opacity",window.scrollY>5500);
     video.classList.toggle("out__section-2",window.scrollY>7000);
     sep.classList.toggle("out__section-separador",window.scroll>8700);
