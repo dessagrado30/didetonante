@@ -653,8 +653,8 @@ body::-webkit-scrollbar{
         height: 100vh;
         left: 0;
 
-        animation: box-move auto cubic-bezier(0.69, 0.02, 0.29, 0.99);
-        animation-timeline: scroll(root block);
+        /* animation: box-move auto cubic-bezier(0.69, 0.02, 0.29, 0.99);
+        animation-timeline: scroll(root block); */
         .page__image {
             position: sticky;
             right: 30%;
@@ -667,23 +667,20 @@ body::-webkit-scrollbar{
         }
         .box-dos {
             width: 100vw;
-            background-color: black;
         }    
     }
 }
 
-@keyframes box-move {
+/* @keyframes box-move {
     25% {left: 0;}
     55% {left: -100%;}
     100%{left: -100%;}
     
     55% {opacity: 100%;}
     60% {opacity: 0;}
-    100%{opacity: 0;}
-    /* 100% {opacity: 0;} */
+    100%{opacity: 0;} 
+}   */
 
-    
-}    
 .section__ejes.nodes-true {
     opacity: 100%;
     /* transition: opacity .5s; */

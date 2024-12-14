@@ -15,6 +15,7 @@
 	<title>Diseño Detonante</title>
 	<link type="image/svg" rel="icon" href="assets/icons/LLAMITA.svg">
 
+	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/style_menu.css">
 	<link rel="stylesheet" href="style/contacto.css">
@@ -146,12 +147,22 @@
 					<div class="org__links">
 						<div class="container__slider">
 							<div class="barra__logos">
-								{% for cop in [1, 2] %}
-									{% for logo_o in logo %}
-										<div class="logos__item"><img class="item--img img--{{logo_o}}" src=http://localhost:8000/static/assets/logos/{{logo_o}}.webp alt="logotipo - {{logo_o}}"></div>
-										<!-- <div class="logos__item"><img class="item--img img--{{logo_o}}" src=https://didetonante.onrender.com/static/assets/logos/{{logo_o}}.webp alt="logotipo - {{logo_o}}"></div> -->
-									{% endfor %}
-								{% endfor %}
+
+								<div class="logos__item"><img class="item--img img--TheUrmandicaZine" src=assets/logos/TheUrmandicaZine.webp alt="logotipo - TheUrmandicaZine"></div>
+								<div class="logos__item"><img class="item--img img--StudioTEOTW" src=assets/logos/StudioTEOTW.webp alt="logotipo - StudioTEOTW"></div>
+								<div class="logos__item"><img class="item--img img--RPMasc" src=assets/logos/RPMasc.webp alt="logotipo - RPMasc"></div>
+								<div class="logos__item"><img class="item--img img--Quijote" src=assets/logos/Quijote.webp alt="logotipo - Quijote"></div>
+								<div class="logos__item"><img class="item--img img--PazALP" src=assets/logos/PazALP.webp alt="logotipo - PazALP"></div>
+								<div class="logos__item"><img class="item--img img--MujeresLibres" src=assets/logos/MujeresLibres.webp alt="logotipo - MujeresLibres"></div>
+								<div class="logos__item"><img class="item--img img--APIIDTT" src=assets/logos/APIIDTT.webp alt="logotipo - APIIDTT"></div>
+
+								<div class="logos__item"><img class="item--img img--TheUrmandicaZine" src=assets/logos/TheUrmandicaZine.webp alt="logotipo - TheUrmandicaZine"></div>
+								<div class="logos__item"><img class="item--img img--StudioTEOTW" src=assets/logos/StudioTEOTW.webp alt="logotipo - StudioTEOTW"></div>
+								<div class="logos__item"><img class="item--img img--RPMasc" src=assets/logos/RPMasc.webp alt="logotipo - RPMasc"></div>
+								<div class="logos__item"><img class="item--img img--Quijote" src=assets/logos/Quijote.webp alt="logotipo - Quijote"></div>
+								<div class="logos__item"><img class="item--img img--PazALP" src=assets/logos/PazALP.webp alt="logotipo - PazALP"></div>
+								<div class="logos__item"><img class="item--img img--MujeresLibres" src=assets/logos/MujeresLibres.webp alt="logotipo - MujeresLibres"></div>
+								<div class="logos__item"><img class="item--img img--APIIDTT" src=assets/logos/APIIDTT.webp alt="logotipo - APIIDTT"></div>
 							</div>
 						</div>
 					</div>
@@ -160,7 +171,7 @@
 			<div class="box-dos">
 				<div class="text__container">
 					<p class="inicio__banner">
-						<span class="p">Diseño nómada como<br> práctica política de<br> re existencia.</span>
+						<span class="p">Ficción mutante como<br> impulso radical de<br> realidades.</span>
 					</p>
 				</div>
 			</div>
@@ -306,9 +317,7 @@
 	<div class="separador separador__final">
 	</div>
 	<section class="section__footer">
-		{% for texto in ["contacto", "noticias", "comunidad"] %}
-			<button class="com__button">{{texto}}</button>
-		{% endfor %}
+
 	</section>
 	<dialog class="modal modal-style">
 		<div class="modal__container">
@@ -360,7 +369,11 @@
 			</div>
 		</div>
 	</dialog>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 	<script type="text/javascript" src="script/script.js"></script>
+	<script type="text/javascript" src="script/gsap_scroll.js"></script>
 	
 </body>
 </html>
