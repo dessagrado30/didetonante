@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Incluir</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/fonts/montserrat-font_T/Montserrat.css">
+	<link rel="stylesheet" href="../assets/fonts/alte_haas_grotesk_T2/AlteHaasGrotesk.css">
+	<link rel="stylesheet" href="../assets/fonts/rozha-one/rozha-one.css">
+
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__container">
+			<a class="container__logo" href="../../index.html">
+				<img class="header__logo hlogo--color" src="../assets/icons/LLAMITA.svg">
+				<p>Diseño <strong>Detonante</strong></p>
+			</a>
+		</div>
+		<nav class="header__nav">
+			
+			<label class="nav__label">
+				<input class="checkbox" type="checkbox">
+			</label>
+			<ul class="nav__list">
+				<li class="list__item"><a class="item__link" href="../../index.html">INICIO</a></li>
+				<li class="list__item"><a class="item__link" href="../../index.html#nosotrxs">NOSOTRXS</a></li>
+				<li class="list__item"><a class="item__link" href="../../index.html#accionares">ACCIONARES</a></li>
+				<li class="list__item"><a class="item__link" href="../../index.html#intension">IN/TENSION</a></li>
+				<li class="list__item item--button" onclick="modal(0)"><img src="../assets/icons/send-horizontal.svg"></li>
+			</ul>
+		</nav>
+	</header>
+    <section>
+        <!--Contenido-->
+        <div class="principalcontainer">
+            <div class="stand">
+                <div class="zine borderland" onclick='select("R001", "In/Tension - Borderland", 25000)'>
+                    <p id="borderland">
+                        InTension/BORDERLAND
+                        R001
+                        25000
+                    </p>
+                </div>
+                <div class="zine inbetween" onclick='select("R002", "In/Tension - Inbetween", 25000)'>
+                    <p id="inbetween">
+                        InTension/INBETWEEN
+                        R002
+                        25000
+                    </p>                    
+                </div>
+                <div class="zine onstage" onclick='select("R003", "In/Tension - Onstage", 25000)'>
+                    <p id="onstage">
+                        InTension/ONSTAGE
+                        R003
+                        25000
+                    </p>
+                </div>
+                <div class="zine cuestion" onclick='select("R004", "Cuestionándonos - RPM", 25000)'>
+                    <p id="borderland">
+                        InTension/BORDERLAND
+                        R001
+                        25000
+                    </p>                    
+                </div>
+                <div class="zine fanz" onclick='select("R005", "Setónese - FanZinete", 25000)'>
+                    <p id="inbetween">
+                        InTension/INBETWEEN
+                        R002
+                        25000
+                    </p>                    
+                </div>
+                <div class="zine borderland" onclick='select("R006", "In/Tension - Onstage", 25000)'>
+                    <p id="onstage">
+                        InTension/ONSTAGE
+                        R003
+                        25000
+                    </p>
+                </div>
+
+            </div>
+            <div class="seccontainer">
+                <label>Código:</label><br>
+                <input type="text" class="code" required><br>
+                <label>Nombre:</label><br>
+                <input type="text" class="name" required><br>
+                <label>Precio:</label><br>
+                <input type="number" class="price" required><br>
+                <label>Unidades:</label><br>
+                <input type="number" class="units" required><br>
+                <button onclick="add()">Añadir</button><br>
+                <p class="output"></p>
+                <a class="change" href="buscar.html"><div></div></a>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
