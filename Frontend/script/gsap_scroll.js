@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 var timeline = gsap.timeline({
     scrollTrigger: {
         trigger: '.pages',
-        markers: true,
+        // markers: true,
         start: 'center top',
         end: '+=2800 1000',
         scrub: 2,
