@@ -5,8 +5,8 @@ from backend.routes.user import user
 from fastapi.responses import HTMLResponse
 
 app = FastAPI()
-templatesJinja=Jinja2Templates(directory="static")
-app.mount("/static", StaticFiles(directory="static"), name="static")
+templatesJinja=Jinja2Templates(directory="https://srv1783-files.hstgr.io/23092c91c70a0f07/files/public_html/static")
+app.mount("/static", StaticFiles(directory="https://srv1783-files.hstgr.io/23092c91c70a0f07/files/public_html/static"), name="static")
 
 
 
