@@ -34,7 +34,7 @@ body::-webkit-scrollbar{
     justify-content: center;
     z-index: 1100;
     left: 0;
-    transition: left 2s cubic-bezier(0.74,-0.01, 0.43, 0.99);
+    transition: left 1s cubic-bezier(0.74,-0.01, 0.43, 0.99);
     .load__logo {
         position: absolute;
         display: flex;
@@ -114,7 +114,7 @@ body::-webkit-scrollbar{
     width: 48px;
     height: 48px;
     position: absolute;
-    animation: loader 2s linear infinite;
+    animation: loader 3s linear infinite;
 }
 
 /* .loader::after,
