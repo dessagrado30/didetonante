@@ -322,20 +322,20 @@
 	<dialog class="modal modal-style">
 		<div class="modal__container">
 			<div class="modal__content">
-				<form method="POST" action=/users/add class="form contact__form">
+				<form class="form contact__form">
 					<p class="title--mod form__title">¡Detónese!</p>
 					<div class="form__item">
 						<div class="form__item">
-							<input id="name" class="item__input" type="text" name="username" placeholder="Nombre / pseudónimo." value="Dessagrado" spellcheck="false" required>
+							<input id="name" class="item__input" type="text" placeholder="Nombre / pseudónimo." value="Dessagrado" spellcheck="false" required>
 						</div>
 						<div class="form__item" >
-							<input id="organization" class="item__input" type="text" name="organization" placeholder="Colectividad / organización." value="Monstruosa" spellcheck="false">
+							<input id="organization" class="item__input" type="text" placeholder="Colectividad / organización." value="Monstruosa" spellcheck="false">
 						</div>
 						<div class="form__item" >
-							<input id="email" class="item__input" type="email" name="email" placeholder="Correo electrónico." value="dessagrado@gmail.com" spellcheck="false" required>
+							<input id="email" class="item__input" type="email" placeholder="Correo electrónico." value="dessagrado@gmail.com" spellcheck="false" required>
 						</div>
 						<div class="form__item" class="form__item" >
-							<select id="project" class="item__input" name="subject">
+							<select id="project" class="item__input" name="choice">
 								<option value="In/Tension" selected>In/Tension</option>
 								<option value="Monstruosa">Monstruosa</option>
 								<option value="Burbujas de autonomía">Burbujas de autonomía</option>
@@ -344,12 +344,26 @@
 							</select>
 						</div>
 						<div class="form__item">
-							<textarea id="message" class="item__textarea" name="message" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false">Espero poder participar en uno de sus proyectos, escribo para poder estar informadx de lo que se viene.</textarea>
+							<textarea id="message" class="item__textarea" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false">Espero poder participar en uno de sus proyectos, escribo para poder estar informadx de lo que se viene.</textarea>
 						</div>
 					</div>
-					<input id="check_button" class="modal__button button__action button__send" type="submit" value="">
-					<button class="modal__button button__action button__send"><img src="Frontend/assets/icons/send-horizontal.svg" alt="Enviar"></button>
-					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="Frontend/assets/icons/x.svg" alt="Cerrar"></button>
+					<button id="check_button" class="modal__button button__action button__send" onclick="Post()"><img src="Frontend/assets/icons/send-horizontal.svg"></button>
+					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
+				</form>
+				<form class="form donate__form">
+					<p class="title--mod form__title">Control</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
+						</div>
+						<div class="form__item" >
+							<p class="print"></p>
+						</div>
+					</div>
+					<button class=" button__close  button__showdonate" onclick="ShowControl()"><img src="Frontend/assets/icons/x.svg" alt="closebutton"></button>
+					<button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button>
 				</form>
 				<!-- <form class="form donate__form">
 					<p class="title--mod form__title">Control</p>

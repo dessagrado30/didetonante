@@ -40,7 +40,7 @@ function Post(){
         body: raw,
         redirect: "follow"
     };
-    fetch("http://localhost:6500/senders/", requestOption)
+    fetch("https://didetonante.com/senders/", requestOption)
         .then((response) => response.text())
         .then((result) => Probe(true))
         .catch((error) => console.error(error));
@@ -71,7 +71,7 @@ function Get(){
       redirect: "follow"
     };
     
-    fetch(`http://localhost:6500/senders/${key.value}`, requestOptions)
+    fetch(`https://didetonante.com/senders/${key.value}`, requestOptions)
       .then((response) => response.text())
       .then((result) => View(result))
       .catch((error) => console.error(error));
@@ -100,7 +100,7 @@ function Put(){
         body: raw,
         redirect: "follow"
     };
-    fetch(`http://localhost:6500/senders/`, requestOption)
+    fetch(`https://didetonante.com/senders/`, requestOption)
         .then((response) => response.text())
         .then((result) => PutResponse(result))
         .catch((error) => console.error(error));
@@ -117,7 +117,7 @@ function Delete(){
         redirect : "follow"
     }
     let key = document.getElementById("key")
-    fetch(`http://localhost:6500/senders/${key.value}`, requestOption)
+    fetch(`https://didetonante.com/senders/${key.value}`, requestOption)
         .then((response) => response.text())
         .then((result) => alert(result))
         .catch((error) => console.error(error))
