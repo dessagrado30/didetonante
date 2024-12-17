@@ -1,6 +1,14 @@
-*{
+/* *{
 box-sizing: border-box;
 text-decoration: none;
+} */
+
+@view-transition {
+    navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.5s;
 }
 html {
     scroll-behavior: smooth;
@@ -353,7 +361,6 @@ body::-webkit-scrollbar{
         height: 700px;
     }
     .section__div-image {
-        font-family: mont;
         font-weight: medium;
         grid-column-start: 1;
         grid-column-end: 3;
@@ -365,6 +372,29 @@ body::-webkit-scrollbar{
             transition: filter .5s, transform .5s;
             height: 600px;
             display: flex;
+        }
+        .img-mult {
+            .back, .maximize_button{
+                cursor: pointer;
+                transition: .3s;
+            }
+            .maximize_button{
+                position: absolute;
+                /* filter: brightness(50); */
+                top: 35%;
+                left: 30%;
+                width: 70px;
+                opacity: 0;
+                z-index: 200;
+            }
+        }
+        .img-mult:hover {
+            .back{
+                opacity: 80%;
+            }
+            .maximize_button{
+                opacity: 1;
+            }
         }
         .vid-mult {
             position: absolute;
@@ -396,12 +426,13 @@ body::-webkit-scrollbar{
             z-index: 50;
         }
         .back {
-            animation: scroll 150s linear infinite;
+            animation: scroll 700s linear infinite;
         }
     }
     .image-left {
         justify-content: left;
     }
+
     .section__div-title, .section__div-paragraph {
         display: grid;
         margin: 0 10%;
@@ -414,8 +445,13 @@ body::-webkit-scrollbar{
             line-height: 0;
             .logo__item {
                 position: absolute;
-                width: 9rem;
                 transform: translate(-50%, -50%);
+            }
+            .intension{
+                width: 9rem;
+            }
+            .theurmadicazine{
+                width: 7rem;
             }
             .mutante {
                 width: 17rem;
@@ -424,11 +460,20 @@ body::-webkit-scrollbar{
         .paragraph__item {
             font-family: mont;
             font-weight: medium;
-            text-align: right;
+            text-align: left;
             font-size: 1.2em;
         }
     }
 }
+/* 
+&:hover{
+    .image__item, .img-mult {
+        transition: filter .5s, transform .5s;
+        height: 600px;
+        display: flex;
+    }
+} */
+
 
 .invert {
     grid-template-rows: .5fr 1.5fr;
@@ -446,7 +491,7 @@ body::-webkit-scrollbar{
 }
 
 .black {
-    background-color: #0b0b0b;
+    background-color: #1b1b1b;
     color: #fefefe;
 }
 
@@ -534,7 +579,9 @@ body::-webkit-scrollbar{
                     position: absolute;
                     width: 200px;
                     height: 300px;
-                    font-size: 1.1em;
+                    font-family: BricolageGrotesque;
+                    font-weight: medium;
+                    font-size: 1.2em;
                 }
                 .zine{
                     transform: translate(0, 1em);
@@ -746,7 +793,7 @@ body::-webkit-scrollbar{
 
 .section__footer {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: var(--mag-color);
     margin: 0;
     z-index: 1000;

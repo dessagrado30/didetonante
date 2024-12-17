@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: OpenSans-light;
+    src: url("OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("OpenSans-Regular.ttf") format("truetype");
+}
