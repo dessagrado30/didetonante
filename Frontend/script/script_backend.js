@@ -13,12 +13,12 @@ function Probe(ind){
     const donateForm = document.getElementsByClassName("donate__form");
     const checkLogo = document.getElementById("check_button");
     if (ind === true){
-        checkLogo.innerHTML = '<img src={{ url_for("static", path=./assets/icons/check.svg")}} alt="sendbutton"></img>'
+        checkLogo.innerHTML = '<img src="Frontend/assets/icons/check.svg" alt="sendbutton"></img>'
         checkLogo.disabled = true;
         checkLogo.outline = "none"
         donateForm[0].style.translate = "0%"
     }else{
-        document.getElementById("check_button").innerHTML = '<img src={{ url_for("static", path=./assets/icons/triangle-alert.svg")}} alt="sendbutton"></img>'
+        document.getElementById("check_button").innerHTML = '<img src="Frontend/assets/icons/triangle-alert.svg" alt="sendbutton"></img>'
     }
 }
 
@@ -40,7 +40,7 @@ function Post(){
         body: raw,
         redirect: "follow"
     };
-    fetch("/senders/", requestOption)
+    fetch("senders", requestOption)
         .then((response) => response.text())
         .then((result) => Probe(true))
         .catch((error) => console.error(error));
@@ -71,7 +71,7 @@ function Get(){
       redirect: "follow"
     };
     
-    fetch(`/senders/${key.value}`, requestOptions)
+    fetch(`senders?${key.value}`, requestOptions)
       .then((response) => response.text())
       .then((result) => View(result))
       .catch((error) => console.error(error));
@@ -100,7 +100,7 @@ function Put(){
         body: raw,
         redirect: "follow"
     };
-    fetch(`/senders/`, requestOption)
+    fetch(`senders`, requestOption)
         .then((response) => response.text())
         .then((result) => PutResponse(result))
         .catch((error) => console.error(error));
@@ -117,7 +117,7 @@ function Delete(){
         redirect : "follow"
     }
     let key = document.getElementById("key")
-    fetch(`/senders/${key.value}`, requestOption)
+    fetch(`senders?${key.value}`, requestOption)
         .then((response) => response.text())
         .then((result) => alert(result))
         .catch((error) => console.error(error))

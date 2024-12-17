@@ -62,7 +62,7 @@ function modal(img){
 function closeModal(){
     event.preventDefault();
     const checkLogo = document.getElementById("check_button");
-    checkLogo.innerHTML = '<img src={{ url_for("static", path=./assets/icons/send-horizontal.svg")}} alt="sendbutton"></img>'
+    checkLogo.innerHTML = '<img src="./Frontend/assets/icons/send-horizontal.svg" alt="sendbutton"></img>'
     checkLogo.disabled = false;
     action.close();
 }
