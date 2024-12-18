@@ -8,7 +8,7 @@ text-decoration: none;
 }
 ::view-transition-old(root),
 ::view-transition-new(root) {
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 html {
     scroll-behavior: smooth;
@@ -374,27 +374,29 @@ body::-webkit-scrollbar{
             display: flex;
         }
         .img-mult {
+            
             .back, .maximize_button{
-                cursor: url('../assets/icons/flame.svg'), auto;;
+                cursor: url('../assets/icons/eye.svg') 30 30, auto;
                 transition: .3s;
             }
-            .maximize_button{
+            /* .maximize_button{
                 position: absolute;
-                /* filter: brightness(50); */
                 top: 35%;
                 left: 30%;
                 width: 70px;
                 opacity: 0;
-                z-index: 200;
-            }
+            } */
         }
-        .img-mult:hover {
-            .back{
-                opacity: 50%;
-            }
+        .img-mult:hover{
+            transform: scale(1.05);
             .maximize_button{
                 opacity: 1;
             }
+            
+            .back{
+                opacity: 50%;
+            }
+
         }
         .vid-mult {
             position: absolute;

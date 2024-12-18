@@ -1,18 +1,3 @@
-// preloader display none
-const preloader = document.querySelector(".preloader");
-window.addEventListener("load", function(){
-    preloader.classList.add("preloader-hidden");
-})
-function continuar(){
-    preloader.classList.add("preloader-hidden");
-}
-//header transorn scroll
-window.addEventListener("scroll", function(){
-    var header = document.querySelector(".header");
-    header.classList.toggle("abajo",window.scrollY>500);
-    // header.classList.toggle("arriba",window.scrollY>3500);
-
-})
 
 //elements toggle scroll
 window.addEventListener("scroll", function(){
