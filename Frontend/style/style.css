@@ -375,7 +375,7 @@ body::-webkit-scrollbar{
         }
         .img-mult {
             .back, .maximize_button{
-                cursor: pointer;
+                cursor: url('../assets/icons/flame.svg'), auto;;
                 transition: .3s;
             }
             .maximize_button{
@@ -448,7 +448,7 @@ body::-webkit-scrollbar{
                 transform: translate(-50%, -50%);
             }
             .intension{
-                width: 9rem;
+                width: 11rem;
             }
             .theurmadicazine{
                 width: 7rem;
@@ -458,10 +458,11 @@ body::-webkit-scrollbar{
             }
         }
         .paragraph__item {
-            font-family: mont;
-            font-weight: medium;
+            font-family: OpenSans;
+            /* font-weight: medium; */
             text-align: left;
-            font-size: 1.2em;
+            font-size: 1.1em;
+            line-height: 1.5;
         }
     }
 }
@@ -579,9 +580,9 @@ body::-webkit-scrollbar{
                     position: absolute;
                     width: 200px;
                     height: 300px;
-                    font-family: BricolageGrotesque;
-                    font-weight: medium;
-                    font-size: 1.2em;
+                    font-family: OpenSans;
+                    font-size: 1.1em;
+                    line-height: 1.5;
                 }
                 .zine{
                     transform: translate(0, 1em);
