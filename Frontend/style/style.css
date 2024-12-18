@@ -390,7 +390,7 @@ body::-webkit-scrollbar{
         }
         .img-mult:hover {
             .back{
-                opacity: 80%;
+                opacity: 50%;
             }
             .maximize_button{
                 opacity: 1;
