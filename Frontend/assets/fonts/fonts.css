@@ -1,0 +1,108 @@
+
+@font-face {
+    font-family: alte;
+    src: url("alte_haas_grotesk_T2/AlteHaasGroteskBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: alte_bold;
+    font-weight: bold;
+    src: url("alte_haas_grotesk_T2/AlteHaasGroteskBold.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: BetterM;
+    src: url("Better Monday/Better Monday.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: BricolageGrotesque;
+    src: url("Bricolage_Grotesque/BricolageGrotesque-Light.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: mont;
+    font-weight: medium;
+    src: url("montserrat-font_T/MontserratMedium-lgZ6e.otf") format("opentype");
+}
+
+@font-face {
+    font-family: mont;
+    font-weight: light;
+    src: url("montserrat-font_T/MontserratExtralight-jEZ6j.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: mont;
+    font-weight: bold;
+    src: url("montserrat-font_T/MontserratExtrabold-qZ7Rx.otf") format("opentype");
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: OpenSans-light;
+    src: url("Open_Sans/OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url("Open_Sans/OpenSans-Regular.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: rozha;
+    font-weight: normal;
+    src: url("rozha-one/RozhaOne-Regular.ttf") format("truetype");
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: selincah;
+    src: url("selincah/SELINCAH.ttf") format("truetype");
+}
+
+
+
+
+
+
+@font-face {
+    font-family: VintageGlitch;
+    src: url("VintageGlitch/Vintage Glitch.ttf") format("opentype");
+}
