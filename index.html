@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="estudio de diseño, diseño detonante, diseño autónomo, tony fry, comunidades, reconocimiento, ficción, anarquismo, acción">
+	<meta name="keywords" content="estudio de diseño, diseño detonante, diseño y autonomía, tony fry, diseño y anarquismo, diseño decolonial, acción directa, reconocimiento, diseño de ficción, diseño rizomático, diseño audiovisual">
 	<meta name="description" content="Somos un estudio de diseño nómada y sin apellidos. A través de la ficción,  y el reconocimiento, provocamos desde el cuestionamiento y la transformación de imaginarios">
 	<meta name="author" content="Diseño Detonante">
 	<meta property="og:type" content="website">
@@ -32,19 +32,23 @@
 <body class="background">
 	<div class="preloader">
 		<span class="loader"></span>
-		<img class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante">
-		<a onclick="continuar()" class="item__link entrar" href="#">INICIO</a>
+		<img class="preloader__found" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="Fondo portada precarga">
+		<!-- <img class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante"> -->
+		<p class="text__preloader">
+			"Solo lanzaremos hilos al aire, libres para enredarse, entre sus infinitos posibles."<br>
+		</p>
+		<!-- <a onclick="continuar()" class="item__link entrar" href="#">ENTRAR</a> -->
+		<a class="item__link entrar" href="#">PRÓXIMAMENTE</a>
 
 	</div>
 	<header class="header">
 		<div class="header__container">
 			<a class="container__logo" href="#">
 				<img class="header__logo hlogo--color" src="Frontend/assets/icons/LLAMITA.svg" alt="Logo Diseño Detonante">
-				<p>Diseño <strong>Detonante</strong></p>
+				<h1>Diseño <strong>Detonante</strong></h1>
 			</a>
 		</div>
 		<nav class="header__nav">
-			
 			<label class="nav__label">
 				<input class="checkbox" type="checkbox">
 			</label>
@@ -59,15 +63,17 @@
 	</header>
 
 	<div class="inicio">
-
-		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+		<!-- <video class="inicio__element" async autoplay muted loop onmouseover="this.play();"> -->
+		<video class="inicio__element">
 			<source class="video" type="video/mp4" src="Frontend/assets/Video/REEL.webm">
 		</video>
 		<div class="separador glitch__container">
-			<video onmouseover="this.play()" class="inter__element normal">
+			<!-- <video onmouseover="this.play()" class="inter__element normal"> -->
+			<video class="inter__element normal">
 				<source id="video-glitch" class="video" type="video/webm" src="Frontend/assets/Video/Glitch.webm">
 			</video>
-			<video preload="auto" loop class="inter__element responsive">
+			<!-- <video preload="auto" loop class="inter__element responsive"> -->
+			<video preload="auto" class="inter__element responsive">
 				<source class="video" type="video/webm" src="Frontend/assets/Video/Glitch_responsive.webm">
 			</video>
 		</div>
@@ -81,9 +87,9 @@
 				<div class="color__base">
 				</div>
 				<div class="section__div-title">
-					<p class="title__item" >
+					<h2 class="title__item" >
 						Nosotrxs
-					</p>
+					</h2>
 				</div>
 				<div class="section__div-paragraph">
 					<p class="paragraph__item" >
@@ -100,7 +106,9 @@
 		<div class="pages">
 			<div class="box-uno, section__ejes">
 				<div class="section__groups">
-					<p class="section__title">Accionares</p>
+					<h2 class="section__title">
+						Accionares
+					</h2>
 					<div class="section__container">
 						<div class="container__item item--talleres item--border-right-none" onclick="modal('assets/img/nodos/talleres.webp')">
 							<div class="container__text">
