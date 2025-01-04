@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="34.622303mm"
+   height="34.622299mm"
+   viewBox="0 0 34.622303 34.6223"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="LLAMITA_PLC.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#404040"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#313131"
+     inkscape:document-units="mm"
+     inkscape:zoom="3.4310169"
+     inkscape:cx="80.734083"
+     inkscape:cy="60.186239"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g62" />
+  <defs
+     id="defs1">
+    <rect
+       x="871.8587"
+       y="2406.4612"
+       width="327.37936"
+       height="53.751522"
+       id="rect587-9-9" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath54-4">
+      <path
+         d="m 266.473,116.234 h 904.988 V 626.289 H 266.473 Z"
+         transform="matrix(1.3333333,0,0,1.3333333,3874.6667,0)"
+         id="path54-0" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath52-9">
+      <path
+         d="M 0,0 H 1438 V 729 H 0 Z"
+         transform="matrix(1.3333333,0,0,1.3333333,3874.6667,0)"
+         id="path52-1" />
+    </clipPath>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,-481.8861,481.8861,0,-10542.574,3398.9272)"
+       spreadMethod="pad"
+       id="linearGradient16000">
+      <stop
+         style="stop-color:#fa33fb;stop-opacity:1;"
+         offset="0"
+         id="stop15998" />
+      <stop
+         style="stop-color:#f42752;stop-opacity:1;"
+         offset="0.89477801"
+         id="stop15999" />
+      <stop
+         style="stop-color:#f42752;stop-opacity:1;"
+         offset="1"
+         id="stop16000" />
+    </linearGradient>
+    <linearGradient
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(284.606,284.606,284.606,-284.606,-316.4568,-227.1588)"
+       spreadMethod="pad"
+       id="linearGradient16003">
+      <stop
+         style="stop-color:#fa33fb;stop-opacity:1;"
+         offset="0"
+         id="stop16001" />
+      <stop
+         style="stop-color:#f42752;stop-opacity:1;"
+         offset="0.89477801"
+         id="stop16002" />
+      <stop
+         style="stop-color:#f42752;stop-opacity:1;"
+         offset="1"
+         id="stop16003" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16003">
+      <path
+         d="M 0,612 H 480 V 0 H 0 Z"
+         transform="translate(-414.03601,-466.12881)"
+         id="path16003" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.7718858,-130.12722)">
+    <g
+       id="g62"
+       style="display:inline"
+       transform="matrix(0.03805117,0,0,0.03805117,424.24032,27.273384)"
+       inkscape:export-filename="img/I1.png"
+       inkscape:export-xdpi="96.133537"
+       inkscape:export-ydpi="96.133537">
+      <path
+         id="path16000"
+         d="m -10548.815,2917.0612 c -0.134,0.054 -0.747,2.5912 -1.535,5.5599 v 0 c -4.696,18.4228 -13.776,40.1879 -22.059,52.943 v 0 c -5.149,7.8526 -9.801,13.279 -16.13,18.6307 v 0 c -11.34,9.5461 -30.177,30.1174 -33.42,36.5319 v 0 c -0.593,1.1759 -2.961,7.0678 -5.323,12.906 v 0 c -2.19,5.9102 -5.061,12.7548 -6.197,15.3838 v 0 c -2.015,4.1424 -4.779,7.9256 -5.558,8.0204 v 0 c -1.46,-0.1558 -4.05,-8.4289 -5.506,-17.9008 v 0 c -3.134,-20.4426 -3.035,-32.7312 0.311,-54.7375 v 0 c 0.788,-4.8295 1.274,-9.6053 1.122,-10.4621 v 0 c -0.356,-1.9948 -2.314,-3.8598 -3.992,-3.412 v 0 c -3.152,0.7483 -8.577,8.4837 -22.38,31.7402 v 0 c -4.717,8.1672 -12.341,20.8493 -16.894,28.3654 v 0 c -9.814,16.3569 -14.283,24.3928 -20.684,36.8684 v 0 c -17.661,35.0061 -28.276,68.0695 -32.691,101.565 v 0 c -1.135,9.3784 -1.713,33.1943 -1.001,41.5101 v 0 c 3.223,33.6246 11.305,64.8636 29.772,91.7924 v 0 c 13.281,19.5084 34.511,35.8425 56.717,52.3097 v 0 c 6.488,4.8117 48.055,34.391 109.98,34.2503 v 0 c 63.375,-0.1425 90.501,-23.3205 110.023,-35.0346 v 0 c 14.247,-8.8029 24.035,-16.3545 36.328,-28.9441 v 0 c 17.995,-18.1451 53.979,-53.2385 53.842,-130.422 v 0 c -0.134,-58.0391 -21.822,-108.153 -50.58,-145.4523 v 0 c -5.483,-7.1604 -7.926,-10.9837 -14.825,-23.0307 v 0 c -5.11,-9.1389 -6.169,-10.2018 -8.368,-10.163 v 0 c -3.249,0.2626 -3.418,1.397 -5.876,25.6038 v 0 c -2.727,28.1772 -8.469,15.2556 -9.853,13.5753 v 0 c -1.242,-1.3765 -0.766,-8.9875 -11.149,-23.8518 v 0 c -9.645,-9.6774 -6.805,-5.2187 -14.897,-12.5309 v 0 c -5.613,-5.0352 -11.417,-8.9127 -23.558,-15.739 v 0 c -11.956,-6.7531 -12.939,-7.4412 -16.913,-12.1957 v 0 c -4.158,-4.7939 -7.479,-10.1273 -10.665,-16.6011 v 0 c -3.116,-6.5071 -4.985,-12.343 -6.698,-20.865 v 0 c -2.626,-13.4823 -8.822,-24.6749 -19.727,-36.1611 v 0 c -3.702,-3.9368 -10.81,-10.0731 -11.562,-10.0731 v 0 c 0,0 0,0 0,0.044"
+         style="display:inline;fill:url(#linearGradient16000);stroke:none;stroke-width:2.26106" />
+      <path
+         id="path16001"
+         d="m 0,0 c -46.865,96.183 -162.827,136.163 -259.01,89.298 -96.183,-46.864 -136.163,-162.827 -89.298,-259.01 46.864,-96.182 162.827,-136.163 259.01,-89.298 C 6.884,-212.145 46.865,-96.183 0,0 Z"
+         style="display:inline;fill:none;stroke:url(#linearGradient16003);stroke-width:14.933;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(2.2610565,0,0,-2.2610565,-10148.802,2966.1199)"
+         clip-path="url(#clipPath16003)" />
+    </g>
+  </g>
+</svg>

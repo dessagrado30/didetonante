@@ -40,6 +40,7 @@ body::-webkit-scrollbar{
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1100;
@@ -47,53 +48,87 @@ body::-webkit-scrollbar{
     transition: left 1s cubic-bezier(0.74,-0.01, 0.43, 0.99);
     overflow: hidden;
     .preloader__found{
-        /* width: 100%; */
-        height: 120%;
+        background-color: rebeccapurple;
+        min-height: 120vh;
         filter: saturate(0) brightness(10%);
     }
-    .load__logo {
-        top: 70%;
+    .cont{
         position: absolute;
-        width: 100px;
-        height: 100px;
-        z-index: 1200;
-    }
-    .text__preloader {
-        /* background-color: #202020; */
-        max-width: 500px;
-        width: 79%;
-        /* top: 20%; */
-        position: absolute;
-        color: var(--mag-color);
-        font-family: OpenSans;
-        font-size: 1.5rem;
-        line-height: 3rem;
-        text-align: center;
-        transition-duration: 3s;
-        z-index: 1300;
-        opacity: 0;
-        
-    }
-    .entrar{
-        bottom: 32%;
-        color: var(--mag-color);
-        position: absolute;
-        width: 150px;
-        width: 200px; /* PROXIMAMENTE */
-        height: 70px;
-        border-radius: 20px;
-        align-items: center;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        border: 2px solid var(--mag-color);
-        cursor: pointer;
+        align-items: center;
         transition-duration: 3s;
         opacity: 0;
-        &:hover{
+        .load__logo {
+            top: 70%;
+            width: 100px;
+            height: 100px;
+            z-index: 1200;
+        }
+        .text__preloader {
+            max-width: 500px;
+            width: 79%;
             color: var(--mag-color);
-            border: 3px solid var(--mag-color);
+            font-family: OpenSans;
+            font-size: 1.5rem;
+            line-height: 3rem;
+            text-align: center;
+            transition-duration: 3s;
+            z-index: 1300;            
+        }
+        .anim__logo{
+            position: relative;
+            .load__logo{
+                width: 70px;
+            }
+            .loader{
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::after,
+                &::before {
+                    position: absolute;
+                    content: "";
+                    border: 1.5px solid var(--mag-color);
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    animation: loader 4s linear infinite;
+                }
+        
+                &::after {
+                    position: absolute;
+                    opacity: 0;
+                    animation-delay: 2s;
+                }
+            }
+
+        }
+        .entrar{
+            bottom: 32%;
+            color: var(--mag-color);
+            width: 200px;
+            height: 70px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--mag-color);
+            cursor: pointer;
+            transition-duration: 3s;
+            &:hover{
+                color: var(--mag-color);
+                border: 3px solid var(--mag-color);
+            }
         }
     }
-
 }
 .item__link{
     font-family: helvetica;
@@ -102,17 +137,11 @@ body::-webkit-scrollbar{
     letter-spacing: 2px;
     font-weight: 600;
 }
-.preloader-text {
-    .text__preloader {
+.cont-view{
+    .cont{
         opacity: 1;
     }
 
-}
-.preloader-button{
-    .entrar{
-        display: flex;
-        opacity: 1;
-    }
 }
 
 .preloader-hidden{
@@ -120,61 +149,37 @@ body::-webkit-scrollbar{
 }
 
 /*--------------- logo DD -------------------*/
-/* 
+
 
 @keyframes loader {
     
     0% {
-        transform: matrix(1, 0, 0, 1, -25, -25);
+        transform: matrix(1, 0, 0, 1, 0, 0);
         opacity: 0;
-        border-color: #f42752ff;
+        /* border-color: #f42752ff; */
     }
 
     25% {
-        transform: matrix(1.5, 0, 0, 1.5, -25, -25);
-        opacity: 1;
+        transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+        opacity: 0;
         border-color: var(--mag-color);
     }
 
-    50% {
-        transform: matrix(2, 0, 0, 2, -25, -25);
+    70% {
+        transform: matrix(2, 0, 0, 2, 0, 0);
         opacity: 1;
         border-color: var(--mag-color);
     }
-    100% {
-        transform: matrix(2.5, 0, 0, 2.5, -25, -25);
+    90% {
         border-color: #f42752ff;
+    }
+    100% {
+        transform: matrix(2.5, 0, 0, 2.5, 0, 0);
         opacity: 0;
     }
 }
 
-.loader::after,
-.loader::before {
-    content: "";
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    animation: loader 3s linear infinite;
-}
 
-.loader::after,
-.loader::before {
-    position: absolute;
-    content: "";
-    border: 3px solid var(--mag-color);
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    animation: loader 2s linear infinite;
-    transform: translate(-50%, -50%);
-}
-
-.loader::after {
-    opacity: 0;
-    animation-delay: 1s;
-} */
 
 /*--------------- logo DD -------------------*/
 
