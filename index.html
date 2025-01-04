@@ -35,7 +35,7 @@
 
 		<div class="cont">
 			<div class="anim__logo">
-				<span onclick="continuar()" class="loader"></span>
+				<a href="#"><span onclick="continuar()" class="loader" ></span></a>
 				<img  class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante">
 			 </div>
 			<p class="text__preloader">
@@ -70,8 +70,8 @@
 	</header>
 
 	<div class="inicio">
-		<!-- <video class="inicio__element" async autoplay muted loop onmouseover="this.play();"> -->
-		<video class="inicio__element">
+		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+		<!-- <video class="inicio__element"> -->
 			<source class="video" type="video/mp4" src="Frontend/assets/Video/REEL.webm">
 		</video>
 		<div class="separador glitch__container">
@@ -117,7 +117,7 @@
 						Accionares
 					</h2>
 					<div class="section__container">
-						<div class="container__item item--talleres item--border-right-none" onclick="modal('assets/img/nodos/talleres.webp')">
+						<div class="container__item item--talleres item--border-right-none" onclick="modal('assets/img/nodos/talleres2.webp')">
 							<div class="container__text">
 								<h2 class="text__box box__title">Talleres</h2>
 							</div>
@@ -125,7 +125,7 @@
 								<p class="text__box box__paragraph">Mutuar es transformar mientras lo otro y lxs otrxs nos habitar... es tensionar los lenguajes que nos diseñan, re-conociéndonos en la diferencia.</p>
 							</div>
 							<figure>
-								<img class="container__img" src="Frontend/assets/img/nodos/DevenirPresentes.webp" alt="fotografía: taller de estructuras - Devenir presentes, 2023">
+								<img class="container__img" src="Frontend/assets/img/nodos/talleres2.webp" alt="fotografía: taller de estructuras - Devenir presentes, 2023">
 							</figure>
 						</div>
 						<div class="container__item item--espacios item--border-right-none" onclick="modal('assets/img/nodos/biblio.webp')">
@@ -303,6 +303,7 @@
 
 			
 			<div class="controls box">
+
 				<figure class="mutante__icon">
 					<img class="mutante__icon" src="Frontend/assets/icons/audiovisuales/MUTANTE.svg" alt="logo de cortometraje Mutante">
 				</figure>
@@ -310,22 +311,25 @@
 					Este es el texto que tendremos en cada sección en modo de descripción de la misma.
 					Lo que se quiere con esta es que sea una especie de portada general en cada parte global. 
 				</p>
-				<div class="controls__container">	
-					<div class="controls__button">
-						<img class="controls__button" src="Frontend/assets/icons/multimedia/share-2.svg" alt="compartir cortometraje">
+				<div class="controls__container">
+					<div class="buttons">
+						<div class="controls__button">
+							<img class="controls__button" src="Frontend/assets/icons/multimedia/share-2.svg" alt="compartir cortometraje">
+						</div>
+						<div class="controls__button">
+							<img class="controls__button button-back" src="Frontend/assets/icons/multimedia/fast-forward.svg" alt="anterior cortometraje">
+						</div>
+						<div class="controls__button button-play">
+							<img class="controls__button button-play" src="Frontend/assets/icons/multimedia/play.svg" alt="reproducir cortometraje">
+						</div>
+						<div class="controls__button">
+							<img class="controls__button" src="Frontend/assets/icons/multimedia/fast-forward.svg" alt="siguiente cortometraje">
+						</div>
+						<div class="controls__button">
+							<img onclick="audioviasualInfo()" class="controls__button" src="Frontend/assets/icons/multimedia/library.svg" alt="de ir a librería o más contenido">	
+						</div>
 					</div>
-					<div class="controls__button">
-						<img class="controls__button button-back" src="Frontend/assets/icons/multimedia/fast-forward.svg" alt="anterior cortometraje">
-					</div>
-					<div class="controls__button button-play">
-						<img class="controls__button button-play" src="Frontend/assets/icons/multimedia/play.svg" alt="reproducir cortometraje">
-					</div>
-					<div class="controls__button">
-						<img class="controls__button" src="Frontend/assets/icons/multimedia/fast-forward.svg" alt="siguiente cortometraje">
-					</div>
-					<div class="controls__button">
-						<img onclick="audioviasualInfo()" class="controls__button" src="Frontend/assets/icons/multimedia/library.svg" alt="de ir a librería o más contenido">	
-					</div>
+
 				</div>
 			</div>
 			<div class="image box">

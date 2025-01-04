@@ -54,8 +54,10 @@ function closeModal(){
 function audioviasualInfo(){
     var image = document.querySelector(".image");
     var data = document.querySelector(".data");
+    var buttons = document.querySelector(".buttons");
     image.classList.toggle("image-show")
     data.classList.toggle("data-show")
+    buttons.classList.toggle("show-buttons")
 }
 
 
