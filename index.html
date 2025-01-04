@@ -33,12 +33,16 @@
 	<div class="preloader">
 		<span class="loader"></span>
 		<img class="preloader__found" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="Fondo portada precarga">
-		<!-- <img class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante"> -->
-		<p class="text__preloader">
-			"Solo lanzaremos hilos al aire, libres para enredarse, entre sus infinitos posibles."<br>
+		<p class="cont">
+
+			<img class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante">
+			<p class="text__preloader">
+				"Solo lanzaremos hilos al aire, libres para enredarse, entre sus infinitos posibles."<br>
+			</p>
+			<!-- <div onclick="continuar()" class="item__link entrar">ENTRAR</div> -->
+			<a class="item__link entrar" href="#">PRÓXIMAMENTE</a>
+
 		</p>
-		<!-- <a onclick="continuar()" class="item__link entrar" href="#">ENTRAR</a> -->
-		<a class="item__link entrar" href="#">PRÓXIMAMENTE</a>
 
 	</div>
 	<header class="header">
@@ -53,10 +57,10 @@
 				<input class="checkbox" type="checkbox">
 			</label>
 			<ul class="nav__list">
-				<li class="list__item"><a class="item__link" href="#">INICIO</a></li>
-				<li class="list__item"><a class="item__link" href="#nosotrxs">NOSOTRXS</a></li>
-				<li class="list__item"><a class="item__link" href="#ejes">ACCIONARES</a></li>
-				<li class="list__item"><a class="item__link" href="#intension">IN/TENSION</a></li>
+				<li class="list__item"><a class="item__link white" href="#">INICIO</a></li>
+				<li class="list__item"><a class="item__link white" href="#nosotrxs">NOSOTRXS</a></li>
+				<li class="list__item"><a class="item__link white" href="#ejes">ACCIONARES</a></li>
+				<li class="list__item"><a class="item__link white" href="#intension">IN/TENSION</a></li>
 				<li class="list__item item--button" onclick="modal('../assets/img/nodos/editorial.webp')"><img src="Frontend/assets/icons/send-horizontal.svg"></li>
 			</ul>
 		</nav>
@@ -68,12 +72,12 @@
 			<source class="video" type="video/mp4" src="Frontend/assets/Video/REEL.webm">
 		</video>
 		<div class="separador glitch__container">
-			<!-- <video onmouseover="this.play()" class="inter__element normal"> -->
-			<video class="inter__element normal">
+			<video onmouseover="this.play()" class="inter__element normal">
+			<!-- <video class="inter__element normal"> -->
 				<source id="video-glitch" class="video" type="video/webm" src="Frontend/assets/Video/Glitch.webm">
 			</video>
-			<!-- <video preload="auto" loop class="inter__element responsive"> -->
-			<video preload="auto" class="inter__element responsive">
+			<video preload="auto" loop class="inter__element responsive">
+			<!-- <video preload="auto" class="inter__element responsive"> -->
 				<source class="video" type="video/webm" src="Frontend/assets/Video/Glitch_responsive.webm">
 			</video>
 		</div>
@@ -132,17 +136,19 @@
 								<img class="container__img" src="Frontend/assets/img/nodos/biblio.webp" alt="fotografía: primera biblioteca terminada, burbujas de autónimía">
 							</figure>
 						</div>
-						<div class="container__item item--audiovisuales item--border-right-none" onclick="modal('assets/img/nodos/audiovisual.webp')">
-							<div class="container__text">
-								<h2 class="text__box box__title">Audiovisual</h2>
+						<a href="#audiovisual">
+							<div class="container__item item--audiovisuales item--border-right-none">
+								<div class="container__text">
+									<h2 class="text__box box__title">Audiovisual</h2>
+								</div>
+								<div class="container__text">
+									<p class="text__box box__paragraph">Las historias son las principales generadoras de acontecimientos, fuentes de provocación constante y tension a los convencimientos.</p>
+								</div>
+								<figure>
+									<img class="container__img" src="Frontend/assets/img/nodos/audiovisual.webp" alt="fotograma - cortometraje Armadillo">
+								</figure>
 							</div>
-							<div class="container__text">
-								<p class="text__box box__paragraph">Las historias son las principales generadoras de acontecimientos, fuentes de provocación constante y tension a los convencimientos.</p>
-							</div>
-							<figure>
-								<img class="container__img" src="Frontend/assets/img/nodos/audiovisual.webp" alt="fotograma - cortometraje Armadillo">
-							</figure>
-						</div>
+						</a>
 						<div class="container__item item--editorial" onclick="modal('assets/img/nodos/editorial.webp')">
 							<div class="container__text">
 								<h2 class="text__box box__title">Gráfico y<br>Editorial</h2>
@@ -192,7 +198,7 @@
 				<div class="section__div-image">
 					<img class="img-mult front" src="Frontend/assets/img/zine/the_urmadic_3.webp" alt="Imagen portada in-tension">
 					<a class="text__content  title--left" href="Frontend/templates/in-tension.html">
-						<div class="img-mult">
+						<div class="img-mult back__container">
 							<div class="back">
 								<img src="Frontend/assets/img/zine/tiraurmadic.webp" alt="contenido In-tension">
 								<img src="Frontend/assets/img/zine/tiraurmadic.webp" alt="contenido In-tension">
@@ -226,7 +232,7 @@
 				<div class="section__div-image">
 					<img class="img-mult front" src="Frontend/assets/img/zine/the_urmadic.webp" alt="Imagen portada TheUrmadicaZine">
 					<a class="text__content  title--left" href="Frontend/templates/in-tension.html">
-						<div class="img-mult">
+						<div class="img-mult back__container">
 							<div class="back">
 								<img src="Frontend/assets/img/zine/tiraurmadic.webp" alt="contenido TheUrmadicaZine">
 								<img src="Frontend/assets/img/zine/tiraurmadic.webp" alt="contenido TheUrmadicaZine">
@@ -252,8 +258,47 @@
 	<div class="separador">
 	</div>
 	<section id="audiovisual" class="section audiovisual__section">
+
+
+
+<!-- 
+		<div id="search" class="section search__section black">
+
+		</div> -->
+
+
+
 		<p class="section__title">MOVIMIENTO</p>
-		<div class="container">
+		<div class="media__container open-info">
+
+			<div class="av__grid">
+				<div class="cortos__container">
+	
+					<div class="cortos mutante" onclick="audioviasualInfo()">
+						<figure>
+							<img src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="portada, corto mutante">
+						</figure>
+					</div>
+					<div class="cortos rpmasc">
+						<figure>
+							<img src="Frontend/assets/img/nodos/audiovisual/rpmasc.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
+						</figure>
+					</div>
+					<div class="cortos lumbre">
+						<figure>
+							<img src="Frontend/assets/img/nodos/audiovisual/lumbre.webp" alt="portada, lumbre en el viento ">
+						</figure>
+					</div>
+					<div class="cortos armadillo">
+						<figure>
+							<img src="Frontend/assets/img/nodos/audiovisual/armadillo.webp" alt="portada, corto armadillo">
+						</figure>
+					</div>
+	
+				</div>
+			</div>
+
+			
 			<div class="controls box">
 				<figure class="mutante__icon">
 					<img class="mutante__icon" src="Frontend/assets/icons/audiovisuales/MUTANTE.svg" alt="logo de cortometraje Mutante">
@@ -276,7 +321,7 @@
 						<img class="controls__button" src="Frontend/assets/icons/multimedia/fast-forward.svg" alt="siguiente cortometraje">
 					</div>
 					<div class="controls__button">
-						<img class="controls__button" src="Frontend/assets/icons/multimedia/library.svg" alt="de ir a librería o más contenido">	
+						<img onclick="audioviasualInfo()" class="controls__button" src="Frontend/assets/icons/multimedia/library.svg" alt="de ir a librería o más contenido">	
 					</div>
 				</div>
 			</div>

@@ -35,6 +35,7 @@ body::-webkit-scrollbar{
     background: #0b0b0b;
 }
 .preloader {
+    background-color: black;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -44,10 +45,11 @@ body::-webkit-scrollbar{
     z-index: 1100;
     left: 0;
     transition: left 1s cubic-bezier(0.74,-0.01, 0.43, 0.99);
+    overflow: hidden;
     .preloader__found{
-        width: 100%;
-        height: 100%;
-        filter: saturate(0) brightness(5%);
+        /* width: 100%; */
+        height: 120%;
+        filter: saturate(0) brightness(10%);
     }
     .load__logo {
         top: 70%;
@@ -62,26 +64,29 @@ body::-webkit-scrollbar{
         width: 79%;
         /* top: 20%; */
         position: absolute;
-        color: #fd3387;
+        color: var(--mag-color);
         font-family: OpenSans;
         font-size: 1.5rem;
         line-height: 3rem;
         text-align: center;
+        transition-duration: 3s;
         z-index: 1300;
+        opacity: 0;
+        
     }
     .entrar{
         bottom: 32%;
-        color: #fd3387;
+        color: var(--mag-color);
         position: absolute;
         width: 150px;
-         width: 200px; /* PROXIMAMENTE */
+        width: 200px; /* PROXIMAMENTE */
         height: 70px;
         border-radius: 20px;
         align-items: center;
         justify-content: center;
-        border: 3px solid #fd3387;
+        border: 2px solid var(--mag-color);
         cursor: pointer;
-        transition-duration: 1s;
+        transition-duration: 3s;
         opacity: 0;
         &:hover{
             color: var(--mag-color);
@@ -97,6 +102,12 @@ body::-webkit-scrollbar{
     letter-spacing: 2px;
     font-weight: 600;
 }
+.preloader-text {
+    .text__preloader {
+        opacity: 1;
+    }
+
+}
 .preloader-button{
     .entrar{
         display: flex;
@@ -107,7 +118,10 @@ body::-webkit-scrollbar{
 .preloader-hidden{
     left: -101%;
 }
+
+/*--------------- logo DD -------------------*/
 /* 
+
 @keyframes loader {
     
     0% {
@@ -143,9 +157,9 @@ body::-webkit-scrollbar{
     height: 48px;
     position: absolute;
     animation: loader 3s linear infinite;
-} */
+}
 
-/* .loader::after,
+.loader::after,
 .loader::before {
     position: absolute;
     content: "";
@@ -155,12 +169,15 @@ body::-webkit-scrollbar{
     height: 90px;
     animation: loader 2s linear infinite;
     transform: translate(-50%, -50%);
-} */
+}
 
 .loader::after {
     opacity: 0;
     animation-delay: 1s;
-}
+} */
+
+/*--------------- logo DD -------------------*/
+
 
 .header{
     position: fixed;
@@ -181,6 +198,7 @@ body::-webkit-scrollbar{
             text-decoration: none;
             display: flex;
             align-items: center;
+            left: 0;
             h1 {
                 font-family: mont;
                 font-size: 1.5em;
@@ -193,6 +211,7 @@ body::-webkit-scrollbar{
         }
     }
     .header__nav{
+        width:50%;
         font-size: .9em;
         display: flex;
         justify-content: center;
@@ -205,7 +224,9 @@ body::-webkit-scrollbar{
             }
         }
         .nav__list{
-            position: relative;
+            right: 10%;
+            /* background-color: red; */
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -216,12 +237,17 @@ body::-webkit-scrollbar{
                     font-family: helvetica;
                     margin: 0 15px;
                     text-decoration: none;
-                    color: #f5f5f5;
                     letter-spacing: 2px;
                     font-weight: 600;
                     &:hover {
                         color: var(--green-color);
                     }
+                }
+                .white{
+                    color: #f5f5f5;
+                }
+                .send__icon {
+                    filter: brightness(0);
                 }
             }
             .item--button {
@@ -256,7 +282,7 @@ body::-webkit-scrollbar{
 .separador {
     position: relative;
     width: 100vw;
-    height: 700px;
+    height: 900px;
 }
 .glitch__container {
     position: relative;
@@ -397,7 +423,6 @@ body::-webkit-scrollbar{
             display: flex;
         }
         .img-mult {
-            
             .back, .maximize_button{
                 cursor: url('../assets/icons/eye.svg') 30 30, auto;
                 transition: .3s;
@@ -410,14 +435,12 @@ body::-webkit-scrollbar{
                 opacity: 0;
             } */
         }
-        .img-mult:hover{
-            transform: scale(1.05);
-            .maximize_button{
-                opacity: 1;
-            }
-            
+        .back__container:hover{
+            transform: scale(105%);
             .back{
-                opacity: 50%;
+                opacity: 80%;
+                filter: blur(3px);
+                
             }
 
         }

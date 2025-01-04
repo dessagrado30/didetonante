@@ -51,6 +51,12 @@ function closeModal(){
     checkLogo.disabled = false;
     action.close();
 }
+function audioviasualInfo(){
+    var image = document.querySelector(".image");
+    var data = document.querySelector(".data");
+    image.classList.toggle("image-show")
+    data.classList.toggle("data-show")
+}
 
 
 
