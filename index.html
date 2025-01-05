@@ -35,7 +35,7 @@
 
 		<div class="cont">
 			<div class="anim__logo">
-				<a href="#"><span onclick="continuar()" class="loader" ></span></a>
+				<div><span onclick="continuar()" class="loader" ></div>
 				<img  class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante">
 			 </div>
 			<p class="text__preloader">
@@ -70,10 +70,10 @@
 	</header>
 
 	<div class="inicio">
-		<!-- <video class="inicio__element" async autoplay muted loop onmouseover="this.play();"> -->
-		<video class="inicio__element">
-			<source class="video" type="video/mp4" src="Frontend/assets/Video/REEL.webm">
+		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+			<source class="video" type="video/webm" src="Frontend/assets/Video/REEL.webm">
 		</video>
+		<!-- <video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video> -->
 		<div class="separador glitch__container">
 			<video onmouseover="this.play()" class="inter__element normal">
 			<!-- <video class="inter__element normal"> -->
@@ -271,28 +271,28 @@
 
 
 
-		<p class="section__title">MOVIMIENTO</p>
+		<p class="section__title">EN MOVIMIENTO</p>
 		<div class="media__container open-info">
 
 			<div class="av__grid">
 				<div class="cortos__container">
 	
-					<div class="cortos mutante" onclick="audioviasualInfo()">
+					<div class="cortos mutante" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/MUTANTE.svg', 'logo de cortometraje Mutante', '¿Cuánto de eso a lo que he llamado otrx, me habita y me hace monstrux? Sabiendo mis entrañas contaminadas con los colores extravagantes, los silencios estridentes y las formas deformadas de las fronteras que se hacen diluibles a través de los susurros.', 'Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp')" onclick="audioviasualInfo()">
 						<figure>
 							<img src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="portada, corto mutante">
 						</figure>
 					</div>
-					<div class="cortos rpmasc">
+					<div class="cortos rpmasc" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/RPMASC.webp', 'logo de cortometraje Mutante', '¿En qué medida la violencia que se le señala a ese amigo o compañero en lo cotidiano, habla de mis violencias como hombre? ¿Cuánto pregunto? ¿Cuánto supongo y cuánto prefiero no preguntar para que no crean que no sé dónde tengo que tocar?', 'Frontend/assets/img/nodos/audiovisual/rpmasc.webp')" onclick="audioviasualInfo()">
 						<figure>
 							<img src="Frontend/assets/img/nodos/audiovisual/rpmasc.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
 						</figure>
 					</div>
-					<div class="cortos lumbre">
+					<div class="cortos lumbre" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/LUMBRE.webp', 'logo de cortometraje Mutante', 'Organizarse como mujeres indígenas para volver a levantar sus pueblos, abre grietas, incluso dentro sus propias comunidades; grietas que provocan despliegues de saberes y sentires vinculados profundamente con sus territorios/cuerpos, cosechando desde el reconocimiento, nociones presentes de autonomía y cuidado mutuo.', 'Frontend/assets/img/nodos/audiovisual/lumbre.webp')" onclick="audioviasualInfo()">
 						<figure>
 							<img src="Frontend/assets/img/nodos/audiovisual/lumbre.webp" alt="portada, lumbre en el viento ">
 						</figure>
 					</div>
-					<div class="cortos armadillo">
+					<div class="cortos armadillo" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/ARMADILLO_o.png', 'logo de cortometraje Armadillo', '¿Estás segurx de que tu cotidianidad es solo eso que pasa pasivamente por tus ojos día tras día? ¿Qué pasaría si un día nos levantáramos con el poder de ver la forma en que nos diseñamos y diseñamos los mundos que habitamos sin ser conscientes?', 'Frontend/assets/img/nodos/audiovisual/armadillo.webp')" onclick="audioviasualInfo()">
 						<figure>
 							<img src="Frontend/assets/img/nodos/audiovisual/armadillo.webp" alt="portada, corto armadillo">
 						</figure>
@@ -304,12 +304,11 @@
 			
 			<div class="controls box">
 
-				<figure class="mutante__icon">
-					<img class="mutante__icon" src="Frontend/assets/icons/audiovisuales/MUTANTE.svg" alt="logo de cortometraje Mutante">
+				<figure id="logo" class="film__icon">
+					<img class="film__icon" src="Frontend/assets/icons/audiovisuales/ARMADILLO.png" alt="logo de cortometraje Mutante">
 				</figure>
-				<p class="paragraph__item" >
-					Este es el texto que tendremos en cada sección en modo de descripción de la misma.
-					Lo que se quiere con esta es que sea una especie de portada general en cada parte global. 
+				<p id="parag" class="paragraph__item">
+					Selecciona un clip para obtener los detalles. 
 				</p>
 				<div class="controls__container">
 					<div class="buttons">
@@ -333,8 +332,8 @@
 				</div>
 			</div>
 			<div class="image box">
-				<figure class="mutante__img">
-					<img class="mutante__img" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="fotograma cortometraje Mutante">
+				<figure id="center__image" class="center__img">
+					<img class="center__img" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="fotograma cortometraje Mutante">
 				</figure>
 			</div>
 			<div class="data box">
@@ -444,12 +443,19 @@
 	</dialog>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"></script> -->
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.js"></script> -->
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+	<!-- <script type="text/javascript" src="Frontend/script/video-scroll.js"></script> -->
 	<script type="text/javascript" src="Frontend/script/preload.js"></script>
 	<script type="text/javascript" src="Frontend/script/header.js"></script>
 	<script type="text/javascript" src="Frontend/script/script.js"></script>
 	<script type="text/javascript" src="Frontend/script/gsap_scroll.js"></script>
+
 	
 </body>
 </html>

@@ -60,6 +60,26 @@ function audioviasualInfo(){
     buttons.classList.toggle("show-buttons")
 }
 
+function changeControlsP(cl, log, alt, text, ci){
+    const logo = document.getElementById("logo")
+    const paragraph = document.getElementById("parag")
+    const cortoImage = document.getElementById("center__image")
+    cortoImage.innerHTML=`<img class="center__img" src="${ci}" alt="imagen portada"></img>`
+    logo.innerHTML=`<img class="${cl}" src="${log}" alt="${alt}"></img>`
+    paragraph.innerHTML=text
+}
+
+
+
+// var xhr = new XMLHttpRequest();
+// xhr.open('GET', 'nav.html', true);
+// xhr.onreadystatechange = function () {
+//   if (xhr.readyState === 4 && xhr.status === 200) {
+//     document.getElementById('menuContainer').innerHTML = xhr.responseText;
+//   }
+// };
+// xhr.send();
+
 
 
 

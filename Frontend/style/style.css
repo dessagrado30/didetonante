@@ -345,6 +345,7 @@ body::-webkit-scrollbar{
 .inicio {
     height: 100vh;
     font-display: swap;
+
     .text__container {
         position: absolute;
         width: 100vw;
@@ -356,7 +357,7 @@ body::-webkit-scrollbar{
     }
     .inicio__element {
         position: fixed;
-        opacity: 20%;
+        opacity: 10%;
         transition: opacity .1s;
         z-index: 0;
     }
@@ -440,15 +441,16 @@ body::-webkit-scrollbar{
                 opacity: 0;
             } */
         }
-        .back__container:hover{
-            transform: scale(105%);
-            .back{
-                opacity: 80%;
-                filter: blur(3px);
-                
+        @media (hover:hover){
+            .back__container:hover{
+                transform: scale(105%);
+                .back{
+                    opacity: 80%;
+                    filter: blur(3px);
+                }
             }
-
         }
+
         .vid-mult {
             position: absolute;
             width: 100%;
