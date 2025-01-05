@@ -2,10 +2,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 var timeline = gsap.timeline({
     scrollTrigger: {
-        trigger: '.pages',
+        trigger: '#ejes',
         // markers: true,
-        start: 'center top',
-        end: '+=2800 1000',
+        start: 'top top',
+        end: '+=2500 top',
         scrub: 2,
     },
 })
@@ -17,6 +17,7 @@ timeline.to(
     }
 
 )
+
 timeline.to(
     '.pages', { 
         opacity: 0,
