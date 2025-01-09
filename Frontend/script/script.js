@@ -25,16 +25,18 @@ window.addEventListener("scroll", function(){
     var texto = document.querySelector(".inicio__banner");
     var sep = document.querySelector(".separador__final");
 
-    video.classList.toggle("out__section",window.scrollY>1500);
+    video.classList.toggle("out__section",window.scrollY>2000);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("view__section",window.scrollY>4300);
+    video.classList.toggle("view__section",window.scrollY>5000);
     video.classList.toggle("low__opacity",window.scrollY>5500);
     video.classList.toggle("out__section-2",window.scrollY>7000);
     sep.classList.toggle("out__section-separador",window.scroll>8700);
 })
 
 //button modal section
-const action=document.querySelector(".modal");
+const action=document.querySelector(".send");
+const showZine=document.querySelector(".zine");
+const showVideo=document.querySelector(".showVideo");
 const opModal=document.getElementsByClassName("button--open");
 const openModal=document.querySelector(".button--open");
 const modalContent=document.getElementsByClassName("modal__content");
@@ -43,14 +45,34 @@ const modalContent=document.getElementsByClassName("modal__content");
 function modal(img){
     // modalContent[0].style.backgroundImage=`url(${img})`;
     action.showModal();
+    action.classList.toggle("opacity-modal")
 }
 function closeModal(){
     event.preventDefault();
+    action.classList.toggle("opacity-modal")
     const checkLogo = document.getElementById("check_button");
     checkLogo.innerHTML = '<img src="./Frontend/assets/icons/send-horizontal.svg" alt="sendbutton"></img>'
     checkLogo.disabled = false;
     action.close();
 }
+function zmodal(){
+    console.log("aquí está la función")
+    showZine.showModal();
+    showZine.classList.toggle("opacity-modal")
+}
+function closeZModal(){
+    showZine.classList.remove("opacity-modal")
+    showZine.close();
+}
+function vmodal(){
+    showVideo.showModal();
+    showVideo.classList.toggle("opacity-modal")
+}
+function closeVModal(){
+    showVideo.classList.remove("opacity-modal")
+    showVideo.close();
+}
+
 function audioviasualInfo(){
     var image = document.querySelector(".image");
     var data = document.querySelector(".data");
@@ -60,13 +82,15 @@ function audioviasualInfo(){
     buttons.classList.toggle("show-buttons")
 }
 
-function changeControlsP(cl, log, alt, text, ci){
+function changeControlsP(cl, src, alt, text, img, title, linkV){
     const logo = document.getElementById("logo")
     const paragraph = document.getElementById("parag")
     const cortoImage = document.getElementById("center__image")
-    cortoImage.innerHTML=`<img class="center__img" src="${ci}" alt="imagen portada"></img>`
-    logo.innerHTML=`<img class="${cl}" src="${log}" alt="${alt}"></img>`
+    const corto = document.getElementById("corto")
+    cortoImage.innerHTML=`<img class="center__img" src="${img}" alt="imagen portada"></img>`
+    logo.innerHTML=`<img class="${cl}" src="${src}" alt="${alt}"></img>`
     paragraph.innerHTML=text
+    corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
 }
 
 
