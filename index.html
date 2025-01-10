@@ -71,10 +71,10 @@
 	</header>
 
 	<div class="inicio">
-		<!-- <video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
 			<source class="video" type="video/webm" src="Frontend/assets/Video/REEL.webm">
-		</video> -->
-		<video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video>
+		</video>
+		<!-- <video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video> -->
 		<div class="separador glitch__container">
 			<video onmouseover="this.play()" class="inter__element normal">
 			<!-- <video class="inter__element normal"> -->
@@ -213,7 +213,7 @@
 				</div>
 				<div class="section__div-title">
 					<div class="title__item" >
-						<a class="text__content  title--left" href="Frontend/templates/in-tension.html"><img class="logo__item intension" src="Frontend/assets/logos/InTension.webp" alt="logo In/Tension"></a>
+						<div class="text__content  title--left" onclick="zmodal()"><img class="logo__item intension" src="Frontend/assets/logos/InTension.webp" alt="logo In/Tension"></div>
 					</div>
 				</div>
 				<div class="section__div-paragraph">
@@ -228,9 +228,9 @@
 			</div>
 		</div>
 	</section>
-	<div class="separador">
-	</div>
-	<section id="theurmadic">
+	<!-- <div class="separador">
+	</div> -->
+	<!-- <section id="theurmadic">
 		<div class="">
 			<div class="section section__div black">
 				<div class="section__div-image">
@@ -245,9 +245,9 @@
 						</div>
 					</a>
 				</div>
-				<div class="section__div-title" onclick="zmodal()">
+				<div class="section__div-title">
 					<div class="title__item" >
-						<div class="text__content  title--left"><img class="logo__item theurmadicazine" src="Frontend/assets/logos/TheUrmandicaZine.webp" alt="logo TheUrmadicaZine"></div>
+						<div class="text__content  title--left" onclick="zmodal()"><img class="logo__item theurmadicazine" src="Frontend/assets/logos/TheUrmandicaZine.webp" alt="logo TheUrmadicaZine"></div>
 					</div>
 				</div>
 				<div class="section__div-paragraph">
@@ -258,7 +258,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<div class="separador">
 	</div>
 	<section id="audiovisual" class="section audiovisual__section">
@@ -388,18 +388,18 @@
 			</div>
 		</div>
 	</section>
-	<div class="zine">
-		<div class="separador separador__final">
-			<div class="zine__container">
-				<iframe class="zine" src="//v.calameo.com/?bkcode=007850651b973920efd1a&page=2"></iframe>
-			</div>
-		</div>
-		<button class="modal__button button__close" onclick="closeZModal()"><img src="Frontend/assets/icons/undo-2.svg" alt="sendbutton"></button>
+	<div class="separador">
+	</div>
+	<div class="separador">
+	</div>
+	<div class="separador">
 	</div>
 
 	<section class="section__footer">
 
 	</section>
+
+
 	<dialog class="send modal modal-style">
 		<div class="modal__container">
 			<div class="modal__content">
@@ -441,7 +441,7 @@
 							<p class="print"></p>
 						</div>
 					</div>
-					<button class=" button__close  button__showdonate" onclick="ShowControl()"><img src="Frontend/assets/icons/x.svg" alt="closebutton"></button>
+					<button class=" button__close close-top" onclick="ShowControl()"><img src="Frontend/assets/icons/x.svg" alt="closebutton"></button>
 					<button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
 					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
 					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button>
@@ -449,11 +449,23 @@
 			</div>
 		</div>
 	</dialog>
-	<dialog class="showVideo modal modal-style">
-		<div id="corto" class="video__container">
-			
+	
+	<dialog class="fanZ modal modal-style">
+		<div class="fzine">
+			<div class="separador separador__final">
+				<div class="zine__container">
+					<iframe class="fanzine" src="//v.calameo.com/?bkcode=007850651b973920efd1a"></iframe>
+				</div>
+			</div>
+			<button class="modal__button button__close" onclick="closeZModal()"><img src="Frontend/assets/icons/undo-2.svg" alt="sendbutton"></button>
 		</div>
-		<button class="modal__button button__close" onclick="closeVModal()"><img src="Frontend/assets/icons/undo-2.svg" alt="sendbutton"></button>
+	</dialog>
+	<dialog class="showVideo modal modal-style">
+		<div class="modal__container">
+			<div id="corto" class="video__container">
+			</div>
+			<button class="modal__button button__close close-video" onclick="closeVModal()"><img src="Frontend/assets/icons/undo-2.svg" alt="sendbutton"></button>
+		</div>
 	</dialog>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.js"></script>

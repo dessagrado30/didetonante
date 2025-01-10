@@ -35,15 +35,10 @@ window.addEventListener("scroll", function(){
 
 //button modal section
 const action=document.querySelector(".send");
-const showZine=document.querySelector(".zine");
+const showZine=document.querySelector(".fanZ");
 const showVideo=document.querySelector(".showVideo");
-const opModal=document.getElementsByClassName("button--open");
-const openModal=document.querySelector(".button--open");
-const modalContent=document.getElementsByClassName("modal__content");
-// const closeModal=document.querySelector(".button--close");
 
 function modal(img){
-    // modalContent[0].style.backgroundImage=`url(${img})`;
     action.showModal();
     action.classList.toggle("opacity-modal")
 }

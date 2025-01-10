@@ -1,29 +1,31 @@
-.zine{
+.fzine{
+    position: relative;
+    overflow: hidden;
     background-color: #00000055;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     /* opacity: 0; */
     .separador__final{
         display: flex;
-        width: 100%;
+        width: 90%;
         justify-content: center;
         align-items: center;
         .zine__container{
             position: relative;
-            width: 95%; 
+            width: 95vw; 
             height: 800px;
             border-radius: 30px;
             overflow: hidden; 
-            .zine{
+            .fanzine{
                 position: absolute;
-                top: -20%;
+                bottom: 0;
+                transform: translate(0, 15%);
                 left: -1%;
                 padding: 0;
                 background-color: black; 
-                /* width: 1200px;  */
                 width:101%;
                 height:150%;
                 margin:0;
@@ -32,7 +34,4 @@
 
         }
     }
-}
-.opacity-modal{
-    opacity: 1;
 }

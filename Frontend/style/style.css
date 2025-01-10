@@ -501,6 +501,9 @@ body::-webkit-scrollbar{
             .logo__item {
                 position: absolute;
                 transform: translate(-50%, -50%);
+                &:hover{
+                    cursor: pointer;
+                }
             }
             .intension{
                 width: 11rem;
