@@ -71,16 +71,16 @@
 	</header>
 
 	<div class="inicio">
-		<video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+		<!-- <video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
 			<source class="video" type="video/webm" src="Frontend/assets/Video/REEL.webm">
-		</video>
-		<!-- <video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video> -->
+		</video> -->
+		<video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video>
 		<div class="separador glitch__container">
 			<video onmouseover="this.play()" class="inter__element normal">
 			<!-- <video class="inter__element normal"> -->
 				<source id="video-glitch" class="video" type="video/webm" src="Frontend/assets/Video/Glitch.webm">
 			</video>
-			<video preload="auto" loop class="inter__element responsive">
+			<video onmouseover="this.play()" autoplay loop class="video inter__element responsive">
 			<!-- <video preload="auto" class="inter__element responsive"> -->
 				<source class="video" type="video/webm" src="Frontend/assets/Video/Glitch_responsive.webm">
 			</video>
@@ -118,7 +118,7 @@
 						Accionares
 					</h2>
 					<div class="section__container">
-						<div class="container__item item--talleres item--border-right-none" onclick="modal('assets/img/nodos/talleres2.webp')">
+						<div class="container__item item--talleres item--border-right-none">
 							<div class="container__text">
 								<h2 class="text__box box__title">Talleres</h2>
 							</div>
@@ -126,10 +126,10 @@
 								<p class="text__box box__paragraph">Mutuar es transformar mientras lo otro y lxs otrxs nos habitar... es tensionar los lenguajes que nos diseñan, re-conociéndonos en la diferencia.</p>
 							</div>
 							<figure>
-								<img class="container__img" src="Frontend/assets/img/nodos/talleres2.webp" alt="fotografía: taller de estructuras - Devenir presentes, 2023">
+								<img class="container__img img--talleres" src="Frontend/assets/img/nodos/talleres2.webp" alt="fotografía: taller de estructuras - Devenir presentes, 2023">
 							</figure>
 						</div>
-						<div class="container__item item--espacios item--border-right-none" onclick="modal('assets/img/nodos/biblio.webp')">
+						<div class="container__item item--espacios item--border-right-none">
 							<div class="container__text">
 								<h2 class="text__box box__title">Espacios</h2>
 							</div>
@@ -137,10 +137,10 @@
 								<p class="text__box box__paragraph">La autonomía crea posibles, y empieza transformarndo las "pequeñas cosas" con las que nos rodeamos y nos relacionamos.</p>
 							</div>
 							<figure>
-								<img class="container__img" src="Frontend/assets/img/nodos/biblio.webp" alt="fotografía: primera biblioteca terminada, burbujas de autónimía">
+								<img class="container__img img--espacios" src="Frontend/assets/img/nodos/biblio.webp" alt="fotografía: primera biblioteca terminada, burbujas de autónimía">
 							</figure>
 						</div>
-						<a href="#audiovisual">
+						<a>
 							<div class="container__item item--audiovisuales item--border-right-none">
 								<div class="container__text">
 									<h2 class="text__box box__title">Audiovisual</h2>
@@ -153,7 +153,7 @@
 								</figure>
 							</div>
 						</a>
-						<div class="container__item item--editorial" onclick="modal('assets/img/nodos/editorial.webp')">
+						<div class="container__item item--editorial">
 							<div class="container__text">
 								<h2 class="text__box box__title">Gráfico y<br>Editorial</h2>
 							</div>
