@@ -499,7 +499,7 @@ body::-webkit-scrollbar{
         .title__item {
             position: relative;
             font-family: rozha;
-            font-size: 5em;
+            font-size: 4.5em;
             line-height: 0;
             .logo__item {
                 position: absolute;
@@ -811,6 +811,9 @@ body::-webkit-scrollbar{
     }
 }
 @media (width < 1000px){
+    .title__item{
+        font-size: 4em;
+    }
     .section__ejes {
         /* background-color: #30dee455; */
         display: flex;
@@ -847,7 +850,8 @@ body::-webkit-scrollbar{
 
                     }
                     .box__paragraph {
-                        width: 70%;
+                        font-size: 1em;
+                        width: 80%;
                     }
                     
                     .container__text {

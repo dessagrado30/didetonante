@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 var timeline = gsap.timeline({
     scrollTrigger: {
         trigger: '#ejes',
-        markers: true,
+        // markers: true,
         start: '500 top',
         end: '+=1500 top',
         scrub: 2,
