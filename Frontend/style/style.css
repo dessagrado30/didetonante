@@ -9,6 +9,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
@@ -325,7 +326,7 @@ body::-webkit-scrollbar{
     opacity: 0;
 }
 
-@media (max-width:1000px){
+@media (width < 1000px){
     .glitch__container {
         background: #0b0b0b00;
         position: sticky;
@@ -809,7 +810,7 @@ body::-webkit-scrollbar{
         transform: translateX(-50%);
     }
 }
-@media (max-width:1000px){
+@media (width < 1000px){
     .section__ejes {
         /* background-color: #30dee455; */
         display: flex;
@@ -859,8 +860,10 @@ body::-webkit-scrollbar{
                         width: 100%;
                         height: auto;
                         left: 0%;
-                        top: -120%;  
-                        transition: top 1s;                      
+                        top: -120%;
+                        opacity: 1;
+                        transition: 2s;
+                   
                     }
                     .img--talleres{
                         top: -100%;
@@ -869,9 +872,10 @@ body::-webkit-scrollbar{
 
                 }
                 .container__item:hover{
+                    /* transition: 3s; */
                     .container__img {
-                        width: 0;
-                        height: 100%;
+                        /* width: 0; */
+                        opacity: 0;
                         left: 0%;
                     }
                 }
@@ -879,30 +883,34 @@ body::-webkit-scrollbar{
 
             .section__container:has(.item--talleres:hover){
                 grid-template-columns: 100%;
-                grid-template-rows: 40% 15% 15% 15%;  
+                grid-template-rows: 40% 15% 15% 15%; 
+                
                 .container__img {
-                    top: -170%;                        
+                    top: -170%;                      
                 }  
             }
             .section__container:has(.item--espacios:hover){
                 grid-template-columns: 100%;
                 grid-template-rows: 15% 40% 15% 15%;
+
                 .container__img {
-                    top: -170%;                        
+                    top: -170%;                       
                 }  
             }
             .section__container:has(.item--audiovisuales:hover){
                 grid-template-columns: 100%;
                 grid-template-rows: 15% 15% 40% 15%;
+
                 .container__img {
-                    top: -170%;                        
+                    top: -170%;                       
                 }  
             }
             .section__container:has(.item--editorial:hover){
                 grid-template-columns: 100%;
                 grid-template-rows: 15% 15% 15% 40%;
+
                 .container__img {
-                    top: -170%;                        
+                    top: -170%;                      
                 }  
             }
             .org__links {
@@ -1051,7 +1059,7 @@ body::-webkit-scrollbar{
 
     .inicio__banner {
         width: 100%;
-        left: 500%;
+        left: 350%;
     }
     .video{
         width: 300%;

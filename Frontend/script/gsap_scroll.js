@@ -3,9 +3,9 @@ gsap.registerPlugin(ScrollTrigger);
 var timeline = gsap.timeline({
     scrollTrigger: {
         trigger: '#ejes',
-        // markers: true,
-        start: 'top top',
-        end: '+=2500 top',
+        markers: true,
+        start: '500 top',
+        end: '+=1500 top',
         scrub: 2,
     },
 })
@@ -21,6 +21,7 @@ timeline.to(
 timeline.to(
     '.pages', { 
         opacity: 0,
-    }, '-=.1'
+        duration: .1,
+    }, '-=.2'
     
 )
