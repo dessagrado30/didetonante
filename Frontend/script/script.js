@@ -72,20 +72,25 @@ function audioviasualInfo(){
     var image = document.querySelector(".image");
     var data = document.querySelector(".data");
     var buttons = document.querySelector(".controls__container");
+    var backg = document.querySelector(".backg__controls")
     image.classList.toggle("image-show")
     data.classList.toggle("data-show")
     buttons.classList.toggle("show-buttons")
+    backg.style.backgroundImage= `url("../assets/img/nodos/audiovisual/armadillo.webp")`
 }
 
-function changeControlsP(cl, src, alt, text, img, title, linkV){
+function changeControlsP(cl, src, alt, text, img, title, linkV, bg){
     const logo = document.getElementById("logo")
     const paragraph = document.getElementById("parag")
     const cortoImage = document.getElementById("center__image")
+
     const corto = document.getElementById("corto")
+
     cortoImage.innerHTML=`<img class="center__img" src="${img}" alt="imagen portada"></img>`
     logo.innerHTML=`<img class="${cl}" src="${src}" alt="${alt}"></img>`
     paragraph.innerHTML=text
     corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
+    
 }
 
 
