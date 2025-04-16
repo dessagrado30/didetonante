@@ -78,9 +78,10 @@ body {
             }
         }
         .close-video{
-            top: auto;
-            left: 0;
-            margin-left: 10rem;
+            position: absolute;
+            top: 19%;
+            left: 80%;
+            /* margin: 10rem; */
             border: 1px solid #00000000;
             transition-duration: .5s;
             &:hover{

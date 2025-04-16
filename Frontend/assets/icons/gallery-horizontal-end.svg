@@ -8,19 +8,19 @@
    stroke-width="2"
    stroke-linecap="round"
    stroke-linejoin="round"
-   class="lucide lucide-chevron-down"
+   class="lucide lucide-gallery-horizontal-end-icon lucide-gallery-horizontal-end"
    version="1.1"
-   id="svg1"
-   sodipodi:docname="chevron-down.svg"
+   id="svg2"
+   sodipodi:docname="gallery-horizontal-end.svg"
    inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1" />
+     id="defs2" />
   <sodipodi:namedview
-     id="namedview1"
+     id="namedview2"
      pagecolor="#505050"
      bordercolor="#eeeeee"
      borderopacity="1"
@@ -36,9 +36,21 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="svg2" />
   <path
-     d="m 14.999979,5.9999793 -5.9999997,5.9999997 5.9999997,6"
+     d="M2 7v10"
      id="path1"
+     style="stroke:#ffffff;stroke-opacity:1" />
+  <path
+     d="M6 5v14"
+     id="path2"
+     style="stroke:#ffffff;stroke-opacity:1" />
+  <rect
+     width="12"
+     height="18"
+     x="10"
+     y="3"
+     rx="2"
+     id="rect2"
      style="stroke:#ffffff;stroke-opacity:1" />
 </svg>

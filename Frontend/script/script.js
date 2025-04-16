@@ -59,11 +59,17 @@ function closeZModal(){
     showZine.classList.remove("opacity-modal")
     showZine.close();
 }
-function vmodal(){
+function vmodal(linkV, title){
+    const corto = document.getElementById("corto")
+    corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
     showVideo.showModal();
     showVideo.classList.toggle("opacity-modal")
+    
+    
 }
-function closeVModal(){
+function closeVModal(linkV, title){
+    const corto = document.getElementById("corto")
+    corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
     showVideo.classList.remove("opacity-modal")
     showVideo.close();
 }
@@ -79,18 +85,30 @@ function audioviasualInfo(){
     backg.style.backgroundImage= `url("../assets/img/nodos/audiovisual/armadillo.webp")`
 }
 
-function changeControlsP(cl, src, alt, text, img, title, linkV, bg){
+function changeControlsP(cl, src, alt, text, img, port){
     const logo = document.getElementById("logo")
     const paragraph = document.getElementById("parag")
     const cortoImage = document.getElementById("center__image")
+    const pinImage = document.getElementById("pin__image")
+    
 
-    const corto = document.getElementById("corto")
+    const armadillo = document.getElementById("armadillo__post")
+    const lumbre = document.getElementById("lumbre__post")
+    const rpmasc = document.getElementById("rpmasc__post")
+    const mutante = document.getElementById("mutante__post")
+    const silencio = document.getElementById("silencio__post")
 
+    // pinImage.innerHTML=`<img src="${img}" alt="imagen ${title}"></img>`
     cortoImage.innerHTML=`<img class="center__img" src="${img}" alt="imagen portada"></img>`
     logo.innerHTML=`<img class="${cl}" src="${src}" alt="${alt}"></img>`
     paragraph.innerHTML=text
-    corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
     
+    
+    armadillo.style.opacity = port[4]
+    lumbre.style.opacity = port[3]
+    rpmasc.style.opacity = port[2]
+    mutante.style.opacity = port[1]
+    silencio.style.opacity = port[0]
 }
 
 
