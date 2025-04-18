@@ -21,31 +21,47 @@
 	<link rel="stylesheet" href="Frontend/style/contacto.css">
 	<link rel="stylesheet" href="Frontend/style/audiovisual.css">
 	<link rel="stylesheet" href="Frontend/style/revistas.css">
+	<!-- todas las fuentes -->
 	<link rel="stylesheet" href="Frontend/assets/fonts/fonts.css">
-	<!-- <link rel="stylesheet" href="Frontend/assets/fonts/montserrat-font_T/Montserrat.css">
-	<link rel="stylesheet" href="Frontend/assets/fonts/alte_haas_grotesk_T2/AlteHaasGrotesk.css">
-	<link rel="stylesheet" href="Frontend/assets/fonts/rozha-one/rozha-one.css">
-	<link rel="stylesheet" href="Frontend/assets/fonts/Open_Sans/OpenSans.css"> -->
 	
+	<!-- gsap -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js">
+	</script>
+
+	<!-- frontend script -->
 	<script type="text/javascript" src="Frontend/script/script_backend.js"></script>
+
+	<!-- preloader -->
+	<link rel="stylesheet" href="Frontend/style/preloader.css">
 
 </head>
 <body class="background">
-	<!-- <div class="preloader">
-		<img class="preloader__found" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="Fondo portada precarga">
-
-		<div class="cont">
-			<div class="anim__logo">
-				<div><span onclick="continuar()" class="loader" ></div>
-				<img  class="load__logo" src="Frontend/assets/icons/LLAMITA_PL.svg" alt="Logo Diseño Detonante">
-			 </div>
-			<p class="text__preloader">
-				"Lanzaremos hilos al aire, libres para enredarse, entre sus infinitos posibles."<br>
+	<div class="preloader">
+		<div class="texto">
+  
+			<p>
+			  Lanzaremos hilos al aire... libres, para enredarse entre sus infinitos posibles.
 			</p>
-
+		  <div class="mask"></div>
 		</div>
-
-	</div> -->
+		
+		
+		<svg class="llamita" onclick="continuar()" width="193.701" xmlns="http://www.w3.org/2000/svg" height="232.608"viewBox="-1512.852 7206.978 193.701 232.608">
+		
+			  <linearGradient x1="-.394" y1="65.096" x2="110.41" y2="65.096" xlink:href="#render-3728-b" id="render-3728-e" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.748140, 0.000000, 0.000000, 1.744741, -1512.163126, 7209.705933)">
+			  </linearGradient>
+			  <linearGradient id="render-3728-b">
+				<stop style="stop-color:#fc33fd;stop-opacity:1" offset="0">
+				</stop>
+				<stop style="stop-color:#f62752;stop-opacity:1" offset=".778">
+				</stop>
+				<stop style="stop-color:#f62752;stop-opacity:1" offset="1">
+				</stop>
+			  </linearGradient>
+		
+			  <path id="animated-path" d="m-1428.582 7231.609c-5.371 10.872-16.931 17.474-22.614 25.416-10.314 13.569-8.523 23.343-11.46 22.914-8.491-24.162 1.033-41.753-3.074-42.668-2.382-2.331-14.124 19.379-21.707 32.049-5.374 9.43-20.123 32.353-24.775 63.186-.552 4.563-.834 16.167-.488 20.22 1.575 16.366 5.516 31.585 14.52 44.7 6.484 9.501 16.842 17.451 27.68 25.474 3.159 2.35 23.45 16.749 53.659 16.686 30.921-.073 44.163-11.365 53.689-17.068 6.951-4.282 11.734-7.96 17.719-14.091 8.788-8.834 26.341-25.929 26.282-63.517-.044-28.27-8.122-42.49-20.134-62.539-7.3-9.999-10.229-15.218-15.116-22.748-3.309-2.291-3.604 2.934-4.116 11.843-2.787 18.067-2.354 1.997-13.021-7.67-15.649-16.05-20.805-5.844-31.041-29.835-3.938-17.975-7.296-18.513-13.704-25.417-4.187-5.269-3.051 3.241-9.893 18.307z" style="stroke-width:0.00332884;fill:url(#render-3728-e);fill-opacity:0.992157;display:inline;stroke:none" class="fills" xml:space="preserve"></path>
+		</svg>
+	</div>
 	<header class="header">
 		<div class="header__container">
 			<a class="container__logo" href="#">
@@ -68,10 +84,10 @@
 	</header>
 
 	<div class="inicio">
-		<!-- <video class="inicio__element" async autoplay muted loop onmouseover="this.play();">
+		<video class="inicio__element" async autoplay muted onmouseover="this.play();">
 			<source class="video" type="video/webm" src="Frontend/assets/Video/REEL.webm">
-		</video> -->
-		<video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video>
+		</video>
+		<!-- <video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video> -->
 		<div class="separador glitch__container">
 			<video onmouseover="this.play()" class="inter__element normal">
 			<!-- <video class="inter__element normal"> -->

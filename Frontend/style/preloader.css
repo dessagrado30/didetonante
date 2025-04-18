@@ -1,0 +1,75 @@
+.preloader {
+    overflow: hidden;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    z-index: 1100;
+  }
+  
+  .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
+  
+  /* svg-path */
+  .svgpath-0bc2ef862b96 > svg {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px,0px);
+  }
+  .svgpath-0bc2ef862b96 {
+    position: absolute;
+    left: 115.15px;
+    top: 95.98px;
+    width: 193.7px;
+    height: 232.61px;
+  }
+  .llamita{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+  }
+  .texto{
+    position: absolute;
+    /* background-color: red; */
+    overflow: hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 500px;
+    height: 100%;
+    p{
+      animation: scrollpreloader 40s linear infinite;
+      font-family:"Rozha One";
+      /* background-color:blue; */
+      position: absolute;
+      width: 900%;
+      color:#ffffff77;
+    }
+    .mask{
+      position:absolute;
+      width:110%;
+      height:100%;
+      margin:0;
+      border-radius: 50%; /* Forma circular */
+      background: radial-gradient(
+        circle at center,
+        #cc009955 0%,    /* Negro sólido en el centro */
+        #000000 50%     /* Transparencia hacia los bordes */
+      )
+    }
+  }
+  
+  @keyframes scrollpreloader {
+      0% {
+          transform: translateX(60%);
+      }
+  
+      100% {
+          transform: translateX(-60%);
+      }
+  }

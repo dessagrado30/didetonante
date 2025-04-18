@@ -86,7 +86,7 @@ body::-webkit-scrollbar{
                 width: 70px;
             }
             .loader{
-                /* cursor: pointer; */
+                cursor: pointer;
                 position: absolute;
                 top: 50%;
                 left: 50%;
