@@ -12,7 +12,7 @@ var timeline = gsap.timeline({
 
 timeline.to(
     '.pages', { 
-        x: -1900,
+        x: -2000,
         duration: 1,     
     }
 

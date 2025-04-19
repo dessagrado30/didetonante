@@ -25,9 +25,9 @@ window.addEventListener("scroll", function(){
     var texto = document.querySelector(".inicio__banner");
     var sep = document.querySelector(".separador__final");
 
-    video.classList.toggle("out__section",window.scrollY>2000);
+    video.classList.toggle("low__opacity",window.scrollY>2000);
     texto.classList.toggle("out__section",window.scrollY>850);
-    video.classList.toggle("view__section",window.scrollY>5000);
+    video.classList.toggle("view__section",window.scrollY>4500);
     video.classList.toggle("low__opacity",window.scrollY>5500);
     video.classList.toggle("out__section-2",window.scrollY>7000);
     sep.classList.toggle("out__section-separador",window.scroll>8700);
@@ -59,20 +59,30 @@ function closeZModal(){
     showZine.classList.remove("opacity-modal")
     showZine.close();
 }
-function vmodal(linkV, title){
+
+// Modal video
+
+// el cambio que hay que hacer en esta sección, es transformar los datos a json y administrarlo desde ahí para optimizar el funcionamiento de los enlaces y acciones.
+
+function vmodal(linkV, title, min){
     const corto = document.getElementById("corto")
-    corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
+    // const originalText = corto.textContent;
+    if (min === 1){
+        corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
+    }
+    // corto.textContent = textContent.slice(0, -147) + `?autoplay=1&muted=0&loop=1?subtitle=en"` + textContent.slice(-147)
     showVideo.showModal();
     showVideo.classList.toggle("opacity-modal")
     
     
 }
-function closeVModal(linkV, title){
+function closeVModal(li, ti){
     const corto = document.getElementById("corto")
-    corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
+    corto.innerHTML = `<iframe class="video" title="${ti}" width="560" height="315" src="https://${li}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
     showVideo.classList.remove("opacity-modal")
     showVideo.close();
 }
+
 
 function audioviasualInfo(){
     var image = document.querySelector(".image");
@@ -85,7 +95,7 @@ function audioviasualInfo(){
     backg.style.backgroundImage= `url("../assets/img/nodos/audiovisual/armadillo.webp")`
 }
 
-function changeControlsP(cl, src, alt, text, img, port){
+function changeControlsP(cl, src, alt, text, img, port, linkV, title){
     const logo = document.getElementById("logo")
     const paragraph = document.getElementById("parag")
     const cortoImage = document.getElementById("center__image")
@@ -97,12 +107,18 @@ function changeControlsP(cl, src, alt, text, img, port){
     const rpmasc = document.getElementById("rpmasc__post")
     const mutante = document.getElementById("mutante__post")
     const silencio = document.getElementById("silencio__post")
+    const cbutton = document.getElementById("closeButton")
 
     // pinImage.innerHTML=`<img src="${img}" alt="imagen ${title}"></img>`
     cortoImage.innerHTML=`<img class="center__img" src="${img}" alt="imagen portada"></img>`
     logo.innerHTML=`<img class="${cl}" src="${src}" alt="${alt}"></img>`
     paragraph.innerHTML=text
-    
+
+    const corto = document.getElementById("corto")
+    corto.innerHTML = `<div class="video__container"><iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe></div>`
+    cbutton.setAttribute(
+        "onclick", 
+        `closeVModal("${linkV}", "${title}")`)
     
     armadillo.style.opacity = port[4]
     lumbre.style.opacity = port[3]

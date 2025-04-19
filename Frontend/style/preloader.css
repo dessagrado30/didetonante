@@ -1,4 +1,6 @@
 .preloader {
+    background-color: #000000;
+    position: fixed;
     overflow: hidden;
     color: white;
     font-size: 5rem;
@@ -8,9 +10,13 @@
     align-items: center;
     width: 100vw;
     min-height: 100vh;
+    left: 0;
+    transition: left 1.5s cubic-bezier(0.74,-0.01, 0.43, 0.99);
     z-index: 1100;
   }
-  
+  .preloader-hidden{
+    left: -101%;
+}
   .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
   
   /* svg-path */
@@ -32,6 +38,17 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
+    animation-name: escala;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes escala{
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
   .texto{
     position: absolute;

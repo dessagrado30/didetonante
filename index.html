@@ -28,6 +28,8 @@
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js">
 	</script>
 
+	<script type="text/javascript" src="Frontend/script/REELscript.js"></script>
+
 	<!-- frontend script -->
 	<script type="text/javascript" src="Frontend/script/script_backend.js"></script>
 
@@ -84,9 +86,12 @@
 	</header>
 
 	<div class="inicio">
-		<video class="inicio__element" async autoplay muted onmouseover="this.play();">
+		<div id="scroll-animation" class="inicio__element">
+			<!-- Las imágenes se insertarán aquí por JS -->
+		</div>
+		<!-- <video class="inicio__element" async autoplay muted onmouseover="this.play();">
 			<source class="video" type="video/webm" src="Frontend/assets/Video/REEL.webm">
-		</video>
+		</video> -->
 		<!-- <video class="inicio__element" type="video/webm" src="Frontend/assets/Video/REEL.webm"></video> -->
 		<div class="separador glitch__container">
 			<video onmouseover="this.play()" class="inter__element normal">
@@ -241,9 +246,15 @@
 			</div>
 		</div>
 	</section>
-	<!-- <div class="separador">
-	</div> -->
-	<!-- <section id="theurmadic">
+
+
+	
+	<div class="separador">
+	</div>
+
+
+
+	<section id="theurmadic">
 		<div class="">
 			<div class="section section__div black">
 				<div class="section__div-image">
@@ -271,21 +282,15 @@
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
+
+
+
+
 	<div class="separador">
 	</div>
 	<section id="audiovisual" class="section audiovisual__section" >
-
-
-
-<!-- 
-		<div id="search" class="section search__section black">
-
-		</div> -->
-
-
-
-		<!-- <p class="section__title">EN MOVIMIENTO</p> -->
+		<p class="section__title">EN MOVIMIENTO</p>
 		<div class="media__container open-info">
 
 			<div class="av__grid">
@@ -295,13 +300,13 @@
 						<figure id="pin__image">
 							<img class="min" id="armadillo__post" src="Frontend/assets/img/nodos/audiovisual/armadillo.webp" alt="portada, corto armadillo">
 							<img class="min" id="lumbre__post"  src="Frontend/assets/img/nodos/audiovisual/lumbre.webp" alt="portada, lumbre en el viento ">
-							<img class="min" id="rpmasc__post" src="Frontend/assets/img/nodos/audiovisual/rpmasc.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
+							<img class="min rpmasc" id="rpmasc__post" src="Frontend/assets/img/nodos/audiovisual/rpmasc.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
 							<img class="min" id="mutante__post" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="portada, corto mutante">
-							<img class="min" id="silencio__post" src="Frontend/assets/img/nodos/audiovisual/silencio.webp" alt="portada, corto silencio">
+							<img class="min silencio" id="silencio__post" src="Frontend/assets/img/nodos/audiovisual/silencio-claro.webp" alt="portada, corto silencio">
 						</figure>
 						<div class="pin__options">
 							<figure class="container__buttons">
-								<!-- <img class="button-play" src="Frontend/assets/icons/play.svg" alt="Información"> -->
+								<img class="button-play" src="Frontend/assets/icons/play.svg" alt="Información" onclick="vmodal(false, false, false)">
 								<img class="button-info" src="Frontend/assets/icons/info.svg" alt="Información" onclick="audioviasualInfo()">
 							</figure>
 						</div>
@@ -309,28 +314,28 @@
 
 					<div class="carrusel">
 					
-						<div id="armadillo__min" class="cortos silencio" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/SILENCIO.webp', 'logo de cortometraje Silencio', 'Cortometraje realizado a partir de Cicatrices del Silencio, un documento basado en talleres desarrollados en siete cárceles de Colombia. Testimonio de resistencia, autonomía y lucha por la dignidad.', 'Frontend/assets/img/nodos/audiovisual/silencio.webp', [1, 0, 0, 0, 0])" onclick="vmodal('lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o?autoplay=1&muted=0&loop=1', 'SILENCIO')">
+						<div  id="silencio__min" class="cortos silencio" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/SILENCIO.webp', 'logo de cortometraje Silencio', 'Cortometraje realizado a partir de Cicatrices del Silencio, un documento basado en talleres desarrollados en siete cárceles de Colombia. Testimonio de resistencia, autonomía y lucha por la dignidad.', 'Frontend/assets/img/nodos/audiovisual/silencio.webp', [1, 0, 0, 0, 0], 'lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o', 'SILENCIO')" onclick="vmodal('lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o?autoplay=1&muted=0&loop=1?subtitle=en', 'SILENCIO', 1)">
 							<figure>
-								<img class="min" src="Frontend/assets/img/nodos/audiovisual/silencio.webp" alt="portada, corto silencio">
+								<img class="min silencio-min" src="Frontend/assets/img/nodos/audiovisual/silencio-claro.webp" alt="portada, corto silencio">
 							</figure>
 						</div>
 		
-						<div id="lumbre__min" class="cortos mutante" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/MUTANTE.webp', 'logo de cortometraje Mutante', '¿Cuánto de eso a lo que he llamado otrx, me habita y me hace monstrux? Sabiendo mis entrañas contaminadas con los colores extravagantes, los silencios estridentes y las formas deformadas de las fronteras que se hacen diluibles a través de los susurros.', 'Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp', [0, 1, 0, 0, 0])" onclick="vmodal('lone.earth/videos/embed/3dfdb4a5-bf8b-42cd-bb82-376cc8a61475?autoplay=1&muted=0&loop=1?subtitle=en', 'MUTANTE')">
+						<div id="mutante__min" class="cortos mutante" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/MUTANTE.webp', 'logo de cortometraje Mutante', '¿Cuánto de eso a lo que he llamado otrx, me habita y me hace monstrux? Sabiendo mis entrañas contaminadas con los colores extravagantes, los silencios estridentes y las formas deformadas de las fronteras que se hacen diluibles a través de los susurros.', 'Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp', [0, 1, 0, 0, 0], 'lone.earth/videos/embed/3dfdb4a5-bf8b-42cd-bb82-376cc8a61475', 'MUTANTE')" onclick="vmodal('lone.earth/videos/embed/3dfdb4a5-bf8b-42cd-bb82-376cc8a61475?autoplay=1&muted=0&loop=1?subtitle=en', 'MUTANTE', 1)">
 							<figure>
 								<img class="min" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="portada, corto mutante">
 							</figure>
 						</div>
-						<div id="rpmasc__min"class="cortos rpmasc" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/RPMASC.webp', 'logo del segundo coloquio nacional de masculinidades - PERÚ', '¿En qué medida la violencia que se le señala a ese amigo o compañero en lo cotidiano, habla de mis violencias como hombre? ¿Cuánto pregunto? ¿Cuánto supongo y cuánto prefiero no preguntar para que no crean que no sé dónde tengo que tocar?', 'Frontend/assets/img/nodos/audiovisual/rpmasc.webp', [0, 0, 1, 0, 0])" onclick="vmodal('lone.earth/videos/embed/24a1d1a1-6f90-49b6-98be-158aff72f4a8?autoplay=1&muted=0&loop=1', 'II COLOQUIO NACIONAL DE MASCULINIDADES')">
+						<div id="rpmasc__min"class="cortos rpmasc" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/RPMASC.webp', 'logo del segundo coloquio nacional de masculinidades - PERÚ', '¿En qué medida la violencia que se le señala a ese amigo o compañero en lo cotidiano, habla de mis violencias como hombre? ¿Cuánto pregunto? ¿Cuánto supongo y cuánto prefiero no preguntar para que no crean que no sé dónde tengo que tocar?', 'Frontend/assets/img/nodos/audiovisual/rpmasc.webp', [0, 0, 1, 0, 0], 'lone.earth/videos/embed/24a1d1a1-6f90-49b6-98be-158aff72f4a8', 'II COLOQUIO NACIONAL DE MASCULINIDADES')" onclick="vmodal('lone.earth/videos/embed/24a1d1a1-6f90-49b6-98be-158aff72f4a8?autoplay=1&muted=0&loop=1', 'II COLOQUIO NACIONAL DE MASCULINIDADES', 1)">
 							<figure>
 								<img class="min" src="Frontend/assets/img/nodos/audiovisual/rpmasc.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
 							</figure>
 						</div>
-						<div id="mutante__min" class="cortos lumbre" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/LUMBRE.webp', 'logo de cortometraje Mutante', 'Mujeres que abren grietas, grietas que provocan despliegues de saberes y sentires vinculados profundamente con sus territorios/cuerpos, cosechando desde el reconocimiento, nociones presentes de autonomía y cuidado mutuo.', 'Frontend/assets/img/nodos/audiovisual/lumbre.webp', [0, 0, 0, 1, 0])" onclick="vmodal('lone.earth/videos/embed/4852fe09-2a10-4fd9-ab5a-2f15116bb331?autoplay=1&muted=0&loop=1', 'LUMBRE EN EL VIENTO')">
+						<div  id="lumbre__min" class="cortos lumbre" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/LUMBRE.webp', 'logo de cortometraje Mutante', 'Mujeres que abren grietas, grietas que provocan despliegues de saberes y sentires vinculados profundamente con sus territorios/cuerpos, cosechando desde el reconocimiento, nociones presentes de autonomía y cuidado mutuo.', 'Frontend/assets/img/nodos/audiovisual/lumbre.webp', [0, 0, 0, 1, 0], 'lone.earth/videos/embed/4852fe09-2a10-4fd9-ab5a-2f15116bb331', 'LUMBRE EN EL VIENTO')" onclick="vmodal('lone.earth/videos/embed/4852fe09-2a10-4fd9-ab5a-2f15116bb331?autoplay=1&muted=0&loop=1', 'LUMBRE EN EL VIENTO', 1)">
 							<figure>
 								<img class="min" src="Frontend/assets/img/nodos/audiovisual/lumbre.webp" alt="portada, lumbre en el viento ">
 							</figure>
 						</div>
-						<div id="silencio__min" class="cortos armadillo" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/ARMADILLO_o.png', 'logo de cortometraje Armadillo', '¿Estás segurx de que tu cotidianidad es solo eso que pasa pasivamente por tus ojos día tras día? ¿Qué pasaría si un día nos levantáramos con el poder de ver la forma en que nos diseñamos y diseñamos los mundos que habitamos sin ser conscientes?', 'Frontend/assets/img/nodos/audiovisual/armadillo.webp', [0, 0, 0, 0, 1])" onclick="vmodal('lone.earth/videos/embed/279c822a-a6b4-4779-9f58-683aad9a6678?autoplay=1&muted=0&loop=1?subtitle=en', 'ARMADILLO')">
+						<div id="armadillo__min" class="cortos armadillo" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/ARMADILLO_o.png', 'logo de cortometraje Armadillo', '¿Estás segurx de que tu cotidianidad es solo eso que pasa pasivamente por tus ojos día tras día? ¿Qué pasaría si un día nos levantáramos con el poder de ver la forma en que nos diseñamos y diseñamos los mundos que habitamos sin ser conscientes?', 'Frontend/assets/img/nodos/audiovisual/armadillo.webp', [0, 0, 0, 0, 1], 'lone.earth/videos/embed/279c822a-a6b4-4779-9f58-683aad9a6678', 'ARMADILLO')" onclick="vmodal('lone.earth/videos/embed/279c822a-a6b4-4779-9f58-683aad9a6678?autoplay=1&muted=0&loop=1?subtitle=en', 'ARMADILLO', 1)">
 							<figure>
 								<img class="min" src="Frontend/assets/img/nodos/audiovisual/armadillo.webp" alt="portada, corto armadillo">
 							</figure>
@@ -347,11 +352,10 @@
 					<!-- <img class="background__controls" src="Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp" alt="portada, corto mutante"> -->
 				</div>
 				<figure id="logo" class="film__icon">
-					<img class="film__icon" src="Frontend/assets/icons/audiovisuales/MUTANTE.svg" alt="logo de cortometraje Mutante">
+					<img class="film__icon" src='Frontend/assets/icons/audiovisuales/SILENCIO.webp' alt="logo de cortometraje Silencio">
 				</figure>
 				<p id="parag" class="paragraph__item">
-					¿Cuánto de eso a lo que he llamado otrx, me habita y me hace monstrux? Sabiendo mis entrañas contaminadas con los colores extravagantes, los silencios estridentes y las formas deformadas de las fronteras que se hacen diluibles a través de los susurros.
-				</p>
+					Cortometraje realizado a partir de Cicatrices del Silencio, un documento basado en talleres desarrollados en siete cárceles de Colombia. Testimonio de resistencia, autonomía y lucha por la dignidad.				</p>
 				<div class="controls__container">
 					<div class="buttons">
 						<div class="controls__button">
@@ -360,7 +364,7 @@
 						<div class="controls__button">
 							<img class="controls__button button-back" src="Frontend/assets/icons/multimedia/fast-forward.svg" alt="anterior cortometraje">
 						</div>
-						<div class="controls__button button-play" onclick="vmodal()">
+						<div class="controls__button button-play" onclick="vmodal(false, false, false)">
 							<img class="controls__button button-play" src="Frontend/assets/icons/multimedia/play.svg" alt="reproducir cortometraje">
 						</div>
 						<div class="controls__button">
@@ -512,8 +516,7 @@
 		<div class="modal__container">
 			<div id="corto" class="video__container">
 				
-			</div>
-			<button class="modal__button button__close close-video" onclick="closeVModal('lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o?autoplay=0&muted=1&loop=0', 'SILENCIO')"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
+			</div><button id="closeButton" class="modal__button button__close close-video" onclick="closeVModal('lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o?subtitle=en', 'SILENCIO')"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
 		</div>
 	</dialog>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>

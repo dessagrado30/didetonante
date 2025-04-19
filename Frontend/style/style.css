@@ -35,155 +35,6 @@ body::-webkit-scrollbar{
 .background {
     background: #0b0b0b;
 }
-.preloader {
-    background-color: black;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1100;
-    left: 0;
-    transition: left 1s cubic-bezier(0.74,-0.01, 0.43, 0.99);
-    overflow: hidden;
-    .preloader__found{
-        background-color: rebeccapurple;
-        min-height: 120vh;
-        filter: saturate(0) brightness(10%);
-    }
-    .cont{
-        position: absolute;
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition-duration: 3s;
-        opacity: 0;
-        .load__logo {
-            top: 70%;
-            width: 100px;
-            height: 100px;
-            z-index: 1200;
-        }
-        .text__preloader {
-            max-width: 500px;
-            width: 79%;
-            color: var(--mag-color);
-            font-family: OpenSans;
-            font-size: 1.5rem;
-            line-height: 3rem;
-            text-align: center;
-            transition-duration: 3s;
-            z-index: 1300;            
-        }
-        .anim__logo{
-            position: relative;
-            .load__logo{
-                width: 70px;
-            }
-            .loader{
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                &::after,
-                &::before {
-                    position: absolute;
-                    content: "";
-                    border: 1.5px solid var(--mag-color);
-                    border-radius: 50%;
-                    width: 30px;
-                    height: 30px;
-                    animation: loader 4s linear infinite;
-                }
-        
-                &::after {
-                    position: absolute;
-                    opacity: 0;
-                    animation-delay: 2s;
-                }
-            }
-
-        }
-        .entrar{
-            bottom: 32%;
-            color: var(--mag-color);
-            width: 200px;
-            height: 70px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid var(--mag-color);
-            cursor: pointer;
-            transition-duration: 3s;
-            &:hover{
-                color: var(--mag-color);
-                border: 3px solid var(--mag-color);
-            }
-        }
-    }
-}
-.item__link{
-    font-family: helvetica;
-    margin: 0 15px;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 600;
-}
-.cont-view{
-    .cont{
-        opacity: 1;
-    }
-
-}
-
-.preloader-hidden{
-    left: -101%;
-}
-
-/*--------------- logo DD -------------------*/
-
-
-@keyframes loader {
-    
-    0% {
-        transform: matrix(1, 0, 0, 1, 0, 0);
-        opacity: 0;
-        /* border-color: #f42752ff; */
-    }
-
-    25% {
-        transform: matrix(1.5, 0, 0, 1.5, 0, 0);
-        opacity: 0;
-        border-color: var(--mag-color);
-    }
-
-    70% {
-        transform: matrix(2, 0, 0, 2, 0, 0);
-        opacity: 1;
-        border-color: var(--mag-color);
-    }
-    90% {
-        border-color: #f42752ff;
-    }
-    100% {
-        transform: matrix(2.5, 0, 0, 2.5, 0, 0);
-        opacity: 0;
-    }
-}
-
-
-
-/*--------------- logo DD -------------------*/
-
 
 .header{
     /* background-color: blueviolet; */
@@ -669,6 +520,7 @@ body::-webkit-scrollbar{
                     top: 0;
                     transition: left .5s;
                 }
+
                 .container__text {
                     height: 100px;
                     padding: 0 1em 0 1em;
@@ -691,7 +543,9 @@ body::-webkit-scrollbar{
                     left: 50%;
                 }
             }
+
         }
+
         .section__container:has(.item--talleres:hover){
             grid-template-columns: 600px 300px 300px 300px;
         }
