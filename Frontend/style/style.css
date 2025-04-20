@@ -212,21 +212,21 @@ body::-webkit-scrollbar{
     .inicio__element {
         position: fixed;
         opacity: 10%;
-        transition: opacity .1s;
+        /* transition: opacity .1s; */
         z-index: 0;
     }
     .inicio__element.out__section{
         opacity: 0;
-        transition: opacity 1s;
+        /* transition: opacity 1s; */
         
     }
     .inicio__element.view__section{
         opacity: 100%;
-        transition: opacity 1s;
+        transition: opacity .3s;
     }
     .inicio__element.low__opacity{
-        opacity: 10%;
-        transition: opacity 1s;
+        opacity: 20%;
+        /* transition: opacity 1s; */
     }
     .inicio__element.out__section-2{
         opacity: 0;

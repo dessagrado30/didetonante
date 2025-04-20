@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('scroll-animation');
-  const totalFrames = 587; // Ajusta según tus archivos
+  const totalFrames = 250; // Ajusta según tus archivos
   let frames = [];
   let isScrolling = false;
 

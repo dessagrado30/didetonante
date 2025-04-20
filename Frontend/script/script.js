@@ -25,11 +25,11 @@ window.addEventListener("scroll", function(){
     var texto = document.querySelector(".inicio__banner");
     var sep = document.querySelector(".separador__final");
 
-    video.classList.toggle("low__opacity",window.scrollY>2000);
-    texto.classList.toggle("out__section",window.scrollY>850);
+    video.classList.toggle("low__opacity",window.scrollY>1000);
+    // texto.classList.toggle("out__section",window.scrollY>850);
     video.classList.toggle("view__section",window.scrollY>4500);
-    video.classList.toggle("low__opacity",window.scrollY>5500);
-    video.classList.toggle("out__section-2",window.scrollY>7000);
+    // video.classList.toggle("low__opacity",window.scrollY>5500);
+    video.classList.toggle("out__section-2",window.scrollY>7500);
     sep.classList.toggle("out__section-separador",window.scroll>8700);
 })
 
