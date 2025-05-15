@@ -1,0 +1,171 @@
+
+.editorial__section{
+    background-color: #00000000;
+    position: relative;
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    
+    .media__container{
+        position: absolute;
+        top: 0;
+        width:100%;
+        height: 85%;
+        border-radius: 30px;    
+        overflow: hidden;
+        /* z-index: 100; */
+
+        .zn__grid{
+            position: absolute;
+            width: 70%;
+            height: 100%;
+            right: 0;
+            display: flex;
+            justify-content: right;
+
+            .issues__container{
+                position: relative;
+                overflow: hidden;
+                display: grid;
+                border-radius: 0 30px 30px 0;
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 1fr;
+                .issues{
+                    
+                    img{
+                        transition: .5s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: scale(101%);
+                            /* filter: brightness(70%) saturate(0%) blur(5px); */
+                        }
+                    }
+                }
+
+                .pin{
+                    /* background-color: blueviolet; */
+                    .issue__image{
+                        width: 100%;
+                        /* position: absolute; */
+                        /* opacity: 30%; */
+                    }
+                    img{
+                        border-radius: 20px;
+                        margin-top: 10%;
+                        transition: .5s;
+                        &:hover{
+                            cursor: pointer;
+                            transform: translate(10%, 0) scale(101%);
+                            filter: brightness(70%) saturate(0%);
+                        }
+                    }
+                    /* .issue-1{
+                        background-color: blueviolet;
+                    }
+                    .issue-1{
+                        background-color: aqua;
+                    }
+                    .issue-1{
+                        background-color: antiquewhite;
+                    } */
+                }
+
+                .carrusel{
+                    /* display: flex; */
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    height: 100%;
+                    overflow: hidden;
+                    border-radius: 50px;
+                    /* flex-direction: column; */
+
+                    .issues{
+                        figure{
+                            margin: 0;
+                            img{
+                                width: 100%;
+                                opacity: 100%;
+                            }
+                        }
+                    }
+                    /* .the_urmadic-1{
+                        position: relative;
+                        overflow: hidden;
+                        grid-column: 1/3;
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .the_urmadic-2{
+                        position: relative;
+                        overflow: hidden;
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                right: 0;
+                                height: 100%;
+                            }
+                        }
+        
+                    }
+                    .the_urmadic-3{
+                        position: relative;
+                        overflow: hidden;
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                left: 0;
+                                height: 100%;
+                            }
+                        }
+                    }    */
+                }
+            }
+        }
+    }
+}
+
+
+.box{
+    position: absolute;
+    height: 600px;
+}
+.zn__controls{
+    width: 30%;
+    height: 95%;
+    border-radius: 50px;
+    padding-top: 10rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 30;
+    
+    .film__icon{
+
+        height: 8rem;
+        transition-duration: 3s;
+    }
+    .paragraph__item {
+        width: 60%;
+        color: white;
+        font-family: mont;
+        font-weight: medium;
+        text-align: left;
+        line-height: 1.7rem;
+        font-size: 1em;
+        transition-duration: 3s;
+    }
+}
+
+
+

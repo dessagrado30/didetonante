@@ -127,9 +127,6 @@
                             top: -20%;
                             right: 0;
                         }
-                        .armadillo{
-                            height: 100%;
-                        }
 
                     }
                     .pin__options{
@@ -254,7 +251,7 @@
             height: 600px;
         }
         .controls{
-            width: 31%;
+            width: 530px;
             height: 100%;
             border-radius: 30px;
             /* padding-top: 3rem; */

@@ -26,7 +26,7 @@ window.addEventListener("scroll", function(){
     var sep = document.querySelector(".separador__final");
 
     video.classList.toggle("low__opacity",window.scrollY>1000);
-    // texto.classList.toggle("out__section",window.scrollY>850);
+    // texto.classList.toggle("out__section",window.scrollY>3000);
     video.classList.toggle("view__section",window.scrollY>4500);
     // video.classList.toggle("low__opacity",window.scrollY>5500);
     video.classList.toggle("out__section-2",window.scrollY>7500);
@@ -68,7 +68,7 @@ function vmodal(linkV, title, min){
     const corto = document.getElementById("corto")
     // const originalText = corto.textContent;
     if (min === 1){
-        corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
+        corto.innerHTML = `<iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
     }
     // corto.textContent = textContent.slice(0, -147) + `?autoplay=1&muted=0&loop=1?subtitle=en"` + textContent.slice(-147)
     showVideo.showModal();
@@ -78,7 +78,7 @@ function vmodal(linkV, title, min){
 }
 function closeVModal(li, ti){
     const corto = document.getElementById("corto")
-    corto.innerHTML = `<iframe class="video" title="${ti}" width="560" height="315" src="https://${li}" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
+    corto.innerHTML = `<iframe class="video" title="${ti}" width="560" height="315" src="https://${li}" frameborder="0" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>`
     showVideo.classList.remove("opacity-modal")
     showVideo.close();
 }
@@ -112,10 +112,10 @@ function changeControlsP(cl, src, alt, text, img, port, linkV, title){
     // pinImage.innerHTML=`<img src="${img}" alt="imagen ${title}"></img>`
     cortoImage.innerHTML=`<img class="center__img" src="${img}" alt="imagen portada"></img>`
     logo.innerHTML=`<img class="${cl}" src="${src}" alt="${alt}"></img>`
-    paragraph.innerHTML=text
+    paragraph.innerHTML = text
 
     const corto = document.getElementById("corto")
-    corto.innerHTML = `<div class="video__container"><iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allowfullscreen="" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe></div>`
+    corto.innerHTML = `<div class="video__container"><iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe></div>`
     cbutton.setAttribute(
         "onclick", 
         `closeVModal("${linkV}", "${title}")`)
