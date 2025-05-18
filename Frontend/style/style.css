@@ -284,7 +284,7 @@ body::-webkit-scrollbar{
         scrollbar-width: none;
         .image__item, .img-mult {
             transition: filter .5s, transform .5s;
-            /* height: 600px; */
+            height: 100%;
             display: flex;
         }
         .img-mult {
@@ -698,6 +698,14 @@ body::-webkit-scrollbar{
 }
 /* pantalla 1280px */
 @media (width < 1500px){
+    .section {
+        .section__div-image {
+            .image__item, .img-mult {
+                width: 100%;
+                height: fit-content;
+            }
+        }
+    }
     .section__ejes {
         /* background-color: red; */
 
