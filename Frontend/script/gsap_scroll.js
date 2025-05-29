@@ -4,7 +4,7 @@ var timeline = gsap.timeline({
     scrollTrigger: {
         trigger: '#ejes',
         markers: true,
-        start: '300 top',
+        start: '0 top',
         end: '+=2000 top',
         scrub: 2,
     },
@@ -12,7 +12,7 @@ var timeline = gsap.timeline({
 
 timeline.to(
     '.pages', { 
-        x: -2000,
+        x: -2500,
         duration: 1,     
     }
 )

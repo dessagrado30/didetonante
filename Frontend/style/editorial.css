@@ -14,7 +14,6 @@
         height: 85%;
         border-radius: 30px;    
         overflow: hidden;
-        /* z-index: 100; */
 
         .zn__grid{
             position: absolute;
@@ -38,17 +37,13 @@
                         &:hover{
                             cursor: pointer;
                             transform: scale(101%);
-                            /* filter: brightness(70%) saturate(0%) blur(5px); */
                         }
                     }
                 }
 
                 .pin{
-                    /* background-color: blueviolet; */
                     .issue__image{
                         width: 100%;
-                        /* position: absolute; */
-                        /* opacity: 30%; */
                     }
                     img{
                         border-radius: 20px;
@@ -60,19 +55,9 @@
                             filter: brightness(70%) saturate(0%);
                         }
                     }
-                    /* .issue-1{
-                        background-color: blueviolet;
-                    }
-                    .issue-1{
-                        background-color: aqua;
-                    }
-                    .issue-1{
-                        background-color: antiquewhite;
-                    } */
                 }
 
                 .carrusel{
-                    /* display: flex; */
                     position: relative;
                     display: grid;
                     grid-template-columns: 1fr;
@@ -80,7 +65,6 @@
                     height: 100%;
                     overflow: hidden;
                     border-radius: 50px;
-                    /* flex-direction: column; */
 
                     .issues{
                         figure{
@@ -91,43 +75,6 @@
                             }
                         }
                     }
-                    /* .the_urmadic-1{
-                        position: relative;
-                        overflow: hidden;
-                        grid-column: 1/3;
-                        figure{
-                            margin: 0;
-                            img{
-                                position: absolute;
-                                width: 100%;
-                            }
-                        }
-                    }
-                    .the_urmadic-2{
-                        position: relative;
-                        overflow: hidden;
-                        figure{
-                            margin: 0;
-                            img{
-                                position: absolute;
-                                right: 0;
-                                height: 100%;
-                            }
-                        }
-        
-                    }
-                    .the_urmadic-3{
-                        position: relative;
-                        overflow: hidden;
-                        figure{
-                            margin: 0;
-                            img{
-                                position: absolute;
-                                left: 0;
-                                height: 100%;
-                            }
-                        }
-                    }    */
                 }
             }
         }

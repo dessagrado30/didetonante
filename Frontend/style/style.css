@@ -141,7 +141,7 @@ body::-webkit-scrollbar{
 .separador {
     position: relative;
     width: 100vw;
-    height: 900px;
+    height: 500px;
 }
 .glitch__container {
     position: relative;
@@ -177,25 +177,7 @@ body::-webkit-scrollbar{
     opacity: 0;
 }
 
-@media (width < 1000px){
-    .glitch__container {
-        background: #0b0b0b00;
-        position: sticky;
-        bottom: 10%;
-        overflow: hidden;
-        opacity: 100%;
-        z-index: 5;
-        .inter__element {
-            position: absolute;
-        }
-        .normal {
-            display: none;
-        }
-        .responsive {
-            display: flex;
-        }
-    }
-}
+
 .inicio {
     height: 100vh;
     font-display: swap;
@@ -237,7 +219,7 @@ body::-webkit-scrollbar{
     position: relative;
     width: 100%;
     /* kkkkkkkkkkkkkkkkkkkk */
-    height: 90vh;
+    height: 80vh;
     /* min-height: 800px; */
 }
 
@@ -458,10 +440,11 @@ body::-webkit-scrollbar{
     top: 100px;
 }
 .section__ejes {
-    bottom: 0;
+    /* bottom: 0; */
+    padding: 10% 0 5% 0;
     display: grid;
-    /* height: 100%; */
-    min-height: 100%;
+    min-height: 50%;
+    height: 800px;
     justify-items: center;
     align-content: center;
     opacity: 0;
@@ -474,19 +457,21 @@ body::-webkit-scrollbar{
     .section__groups {
         /* background-color: red; */
         position: relative;
-        width: 65%;
-        height: 100vh;
+        width: 70%;
+        height: 75vh;
         display: grid;
-        align-content: center;
+        /* align-content: center; */
+
 
         .section__title {
-            margin: 7rem;
             position: absolute;
+            top: -15%;
+            right: 5%;
             font-family: rozha;
             font-size: 5em;            
             color: #fafafa;
             z-index: -1;
-            /* display: none; */
+            display: block;
         }
 
         .section__container {
@@ -596,7 +581,7 @@ body::-webkit-scrollbar{
             width: 80%;
             margin: 0 10% 0 10%;
             bottom: 20%;
-            height: 10%;
+            height: 15vh;
             overflow: hidden;
             background-color: #1b1b1b7e;
             border: 1px solid #0c0c0c15;
@@ -608,7 +593,7 @@ body::-webkit-scrollbar{
             .barra__logos {
                 position: absolute;
                 width: 200%;
-                height: 100px;
+                height: 150px;
                 display: flex;
                 animation: scroll 100s linear infinite;
 
@@ -618,7 +603,7 @@ body::-webkit-scrollbar{
                     gap: 10em;
                     .item--img {
                         filter: brightness(50%);
-                        height: 80px;
+                        height: 100px;
                     }
                     .img--RPMasc {
                         height: 25px;
@@ -632,23 +617,23 @@ body::-webkit-scrollbar{
     }
 }
 
-#accionares{
+/* #accionares{
     position: absolute;
     width: 100%;
-}
+} */
 .pages__container{
     position: sticky;
     top: 0;
     left: 50%;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     .pages {
         position: relative;
         display: grid;
         grid-template-columns: 100vw 100vw;
         width: 100vw;
-        height: 100vh;
+        /* height: 50%; */
         left: 0;
 
         animation: box-move auto cubic-bezier(0.69, 0.02, 0.29, 0.99);
@@ -656,8 +641,7 @@ body::-webkit-scrollbar{
         .page__image {
             position: sticky;
             right: 30%;
-            width: 100%;
-            
+            width: 100%;            
         }
         .box-uno {
             width: 100vw;
@@ -696,7 +680,7 @@ body::-webkit-scrollbar{
         transform: translateX(-50%);
     }
 }
-/* pantalla 1280px */
+
 @media (width < 1500px){
     .section {
         .section__div-image {
@@ -707,11 +691,9 @@ body::-webkit-scrollbar{
         }
     }
     .section__ejes {
-        /* background-color: red; */
-
         .section__groups {
             position: absolute;
-            top: 100px;
+            /* top: 100px; */
             width: 80%;
             .section__title {
                 /* margin: 7rem; */
@@ -778,21 +760,60 @@ body::-webkit-scrollbar{
                     }
                 }
             }
+
             .org__links {
-                position: absolute;
+                /* position: absolute; */
                 width: 80%;
                 margin: 0 10% 0 10%;
-                bottom: 20%;
-                height: 14%;
+                bottom: 10%;
+                /* height: 14%; */
                 overflow: hidden;
                 background-color: #1b1b1b7e;
                 border: 1px solid #0c0c0c15;
                 border-radius: 23px;
             }
+
+            .container__slider {
+                width: 150%;
+                .barra__logos {
+                    height: 100px;
+                    .logos__item{
+                        .item--img {
+                            height: 70px;
+                        }
+                        .img--RPMasc {
+                            height: 25px;
+                        }
+                        .img--PazALP {
+                            height: 50px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
 @media (width < 1000px){
+
+    .glitch__container {
+        background: #0b0b0b00;
+        position: sticky;
+        bottom: 10%;
+        overflow: hidden;
+        opacity: 100%;
+        z-index: 5;
+        .inter__element {
+            position: absolute;
+        }
+        .normal {
+            display: none;
+        }
+        .responsive {
+            display: flex;
+        }
+    }
+
     .title__item{
         font-size: 4em;
     }
@@ -899,21 +920,22 @@ body::-webkit-scrollbar{
                     top: -170%;                       
                 }  
             }
-
+/* 
             .org__links {
 
                 width: 100%;
                 margin: 0;
                 bottom: 5%;
-                height: 130px;
+                height: 10%;
                 overflow: hidden;
                 background-color: #1b1b1b7e;
                 border: 1px solid #0c0c0c15;
                 border-radius: 23px;
-            }
-            .container__slider{
+            } */
+            /* .container__slider{
                 width: 800px;
                 .barra__logos{
+                    height: 100px;
                     .logos__item{
                         .item--img{
                             height: 70px;
@@ -928,7 +950,7 @@ body::-webkit-scrollbar{
 
                 }
 
-            }
+            } */
 
         }
     }
@@ -940,12 +962,12 @@ body::-webkit-scrollbar{
     position: absolute;
     width: 80%;
     color: var(--mag-color);
-    font-size: 6em;
+    font-size: 23em;
     font-family: alte_bold;
     font-weight: bold;
-    top: 10%;
-    left: 150%;
-    transform: translate(-50%, 0);
+    /* top: 10%; */
+    /* left: 100%; */
+    /* transform: translate(-50%, 0); */
     opacity: 100;
 }
 .separador__final {  

@@ -110,8 +110,8 @@ function changeControlsP(cl, src, alt, text, img, port, linkV, title){
     const cbutton = document.getElementById("closeButton")
 
     // pinImage.innerHTML=`<img src="${img}" alt="imagen ${title}"></img>`
-    cortoImage.innerHTML=`<img class="center__img" src="${img}" alt="imagen portada"></img>`
-    logo.innerHTML=`<img class="${cl}" src="${src}" alt="${alt}"></img>`
+    cortoImage.innerHTML=`<img class="center__img mid--${cl}" src="${img}" alt="imagen portada"></img>`
+    logo.innerHTML=`<img class="icon icon--${cl}" src="${src}" alt="${alt}"></img>`
     paragraph.innerHTML = text
 
     const corto = document.getElementById("corto")

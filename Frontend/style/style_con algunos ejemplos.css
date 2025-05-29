@@ -1,0 +1,335 @@
+/* 
+ * Variables CSS centralizadas para colores y valores reutilizables
+ * Mejora: Agrupar todas las variables en :root para mejor mantenibilidad
+ */
+:root {
+  --green-color: #ceff1d;
+  --mag-color: #fd33d1;
+  --black: #0b0b0b;
+  --white: #f5f5f5;
+  --section-height: 80vh;
+  --header-padding: 20px;
+  --transition-time: 0.3s;
+}
+
+/*
+ * Reset básico y estilos globales
+ * Mejora: Simplificar selectores y agrupar propiedades relacionadas
+ */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif; /* Fallback tipográfico */
+  color: var(--white);
+  background: var(--black);
+}
+
+/* 
+ * View Transition API (Experimental)
+ * Mejora: Añadir prefijos y versión de respaldo
+ */
+@supports (view-transition-name: none) {
+  @view-transition {
+    navigation: auto;
+  }
+  
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 1s;
+  }
+}
+
+/*
+ * Header - Versión mejorada
+ * Mejora: 
+ * 1. Usar sticky en lugar de fixed para mejor rendimiento
+ * 2. Simplificar la estructura de selectores
+ * 3. Transiciones optimizadas
+ */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 30px var(--header-padding);
+  background: transparent;
+  transition: all var(--transition-time) ease;
+  z-index: 100; /* Sistema de z-index escalable */
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+  
+  /* Estado cuando el header está "abajo" (scrolled) */
+  &--scrolled {
+    padding: 5px var(--header-padding);
+    background: var(--black);
+    
+    .nav-link {
+      color: var(--white);
+      
+      &:hover {
+        color: var(--green-color);
+      }
+    }
+  }
+}
+
+/*
+ * Logo del header - Versión mejorada
+ * Mejora: Eliminar transformaciones innecesarias
+ */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  
+  &__image {
+    width: 40px;
+    filter: saturate(0%) brightness(4000%);
+    
+    .header--scrolled & {
+      filter: none;
+    }
+  }
+  
+  &__text {
+    font-family: 'mont', sans-serif;
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+}
+
+/*
+ * Navegación - Versión mejorada
+ * Mejora: 
+ * 1. Estructura semántica mejorada
+ * 2. Menú mobile-first
+ */
+.nav {
+  &__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__link {
+    position: relative;
+    font-family: 'Helvetica', sans-serif;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: color var(--transition-time);
+    
+    &:hover {
+      color: var(--green-color);
+    }
+  }
+  
+  /* Versión móvil */
+  @media (max-width: 1000px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    background: rgba(11, 11, 11, 0.95);
+    transform: translateX(100%);
+    transition: transform var(--transition-time);
+    
+    &--open {
+      transform: translateX(0);
+    }
+    
+    &__list {
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 20px;
+    }
+  }
+}
+
+/*
+ * Secciones principales - Versión mejorada
+ * Mejora:
+ * 1. Usar CSS Grid para layout más consistente
+ * 2. Eliminar alturas fijas problemáticas
+ * 3. Mejor manejo de responsive
+ */
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 90%;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 50px 0;
+  
+  &__content {
+    display: grid;
+    gap: 20px;
+    align-content: center;
+  }
+  
+  &__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      transition: filter var(--transition-time);
+    }
+  }
+  
+  /* Variantes de sección */
+  &--inverted {
+    grid-template-rows: auto 1fr;
+  }
+  
+  &--dark {
+    background: #1b1b1b;
+    color: var(--white);
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    
+    &--inverted {
+      grid-template-areas: 
+        "content image"
+        "content image";
+    }
+  }
+}
+
+/*
+ * Efectos hover mejorados
+ * Mejora: 
+ * 1. Simplificar las transiciones
+ * 2. Usar transform en lugar de left para mejor rendimiento
+ */
+.card {
+  transition: all var(--transition-time);
+  
+  &:hover {
+    background: #202020;
+    
+    .card__image {
+      transform: translateX(30%);
+    }
+    
+    .card__icon {
+      filter: saturate(0%) brightness(400%);
+    }
+  }
+  
+  &__image {
+    transition: transform var(--transition-time);
+  }
+  
+  &__icon {
+    transition: filter var(--transition-time);
+    filter: saturate(0%) brightness(150%);
+  }
+}
+
+/*
+ * Animaciones optimizadas
+ * Mejora: 
+ * 1. Usar will-change para propiedades animadas
+ * 2. Simplificar animaciones complejas
+ */
+@keyframes scroll-logos {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos-slider {
+  will-change: transform;
+  animation: scroll-logos 100s linear infinite;
+  
+  /* Detener animación cuando el usuario prefiere menos movimiento */
+  @media (prefers-reduced-motion) {
+    animation: none;
+  }
+}
+
+/*
+ * Footer - Versión mejorada
+ * Mejora: 
+ * 1. Estructura semántica
+ * 2. Mejor manejo de botones
+ */
+.footer {
+  background: var(--mag-color);
+  padding: 50px var(--header-padding);
+  text-align: center;
+  
+  &__button {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid var(--black);
+    border-radius: 15px;
+    background: transparent;
+    color: var(--black);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-time);
+    
+    &:hover {
+      background: var(--black);
+      color: var(--mag-color);
+    }
+  }
+}
+
+/*
+ * Media Queries organizadas
+ * Mejora: 
+ * 1. Breakpoints consistentes
+ * 2. Orden lógico (mobile first)
+ */
+@media (max-width: 1000px) {
+  .header {
+    padding: 15px var(--header-padding);
+  }
+  
+  .section {
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+    
+    &__content {
+      order: 2;
+    }
+    
+    &__image {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-padding: 15px;
+  }
+  
+  .section {
+    width: 95%;
+  }
+}
