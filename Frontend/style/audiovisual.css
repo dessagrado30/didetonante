@@ -150,138 +150,146 @@
                         align-items: start;
                         justify-content: center;
                         flex-direction: column;
-                        padding: 3% 0 0 5%;
+                        padding: 0 0 0 5%;
                         .background__controls{
                             display: none;
                         }
-                        .film__icon{
+
+                        .container__elements{
                             position: absolute;
                             width: 50%;
-                            height: 30%;
-                            top: 0;
-                            left: 0;
-                            transition-duration: 3s;
-
-                            .icon{
+                            height: 100%;
+                            .film__icon{
                                 position: absolute;
-                                bottom: 0;
-                                left: 50%;
-                                transform: translate(-50%, 0);
-                                width: 60%;
-                                height: fit-content;
-                            }
-
-                            .icon--armadillo{
-                                width: 60%;
-                                height: fit-content;
-                            }
-                            .icon--lumbre{
-                                height: 70%;
-                                width: fit-content;
-                            }
-                            .icon--rpmasc{
-                                height: 70%;
-                                width: fit-content;
-                            }
-                            .icon--mutante{
-                                width: 60%;
-                                height: fit-content;
-                            }
-                            .icon--silencio{
-                                width: 60%;
-                                height: fit-content;
-                            }
-
-
-                        }
-                        .paragraph__item {
-                            position: absolute;
-                            top: 30%;
-                            width: 40%;
-                            color: white;
-                            font-family: OpenSans;
-                            font-weight: medium;
-                            text-align: left;
-                            line-height: 1.7rem;
-                            font-size: 1.1em;
-                            /* transition-duration: 3s; */
-                        }
-                        .controls__container{
-                            position: absolute;
-                            bottom: 10rem;
-                            margin-top: 5%;
-                            border-top: 1px solid #9e9e9e00;
-                            width: 40%;
-                            overflow: hidden;
-                            transition-duration: 1s;
-                            
-                            
-                            .buttons{
-                                width: 70%;
-                                height: 100%;
-                                padding-top: 3%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                margin-left: 50%;
-                                transform: translate(-50%, -100%);
-                                transition-duration: 1s; 
-                                
-                                .controls__button{
-                                    cursor: pointer;
-                                    filter: brightness(90%);
-                                    width: 30px;
-                                    &:hover {
-                                        filter: sepia(86%) saturate(1695%) hue-rotate(15deg) brightness(107%) contrast(105%);
-                                    }
-                                }
-                                .button-back{
-                                    transform: rotate(180deg);
-                                }
-                                .button-play{
-                                    width: 60px;
-                                } 
-                            }
-                        }
-                        .show-buttons{
-                            border-top: 1px solid #9e9e9e;
-                            .buttons{
-                                transform: translate(-50%, 0);
-                            }
-                        }
-                        .modo{
-                            position: absolute;
-                            min-width: 350px;
-                            bottom: 0;
-                            margin-bottom: 5em;
-                            .button-av{
-                                font-family: rozha;
-                                font-size: 2rem;
-                                position: relative;
-                                width: 90%;
-                                height: 50px;
-                                margin: 10px;
-                                border-radius: 20px;
-                                display: flex;
-                                .button-av-text{
-                                    position: relative;
-                                    margin: 0;
-                                    align-content: center;
+                                top: 0;
+                                left: 0;
+        
+                                width: 100%;
+                                height: 30%;
+                                transition-duration: 3s;
+    
+                                .icon{
+                                    position: absolute;
+                                    bottom: 0;
                                     left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+    
+                                .icon--armadillo{
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+                                .icon--lumbre{
+                                    height: 70%;
+                                    width: fit-content;
+                                }
+                                .icon--rpmasc{
+                                    height: 70%;
+                                    width: fit-content;
+                                }
+                                .icon--mutante{
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+                                .icon--silencio{
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+    
+    
+                            }
+                            .paragraph__item {
+                                position: absolute;
+                                top: 30%;
+                                width: 100%;
+                                color: white;
+                                font-family: OpenSans;
+                                font-weight: medium;
+                                text-align: left;
+                                line-height: 1.7rem;
+                                font-size: 1.1em;
+                                /* transition-duration: 3s; */
+                            }
+                            .controls__container{
+                                position: absolute;
+                                bottom: 10rem;
+                                margin-top: 5%;
+                                border-top: 1px solid #9e9e9e00;
+                                width: 100%;
+                                overflow: hidden;
+                                transition-duration: 1s;
+                                
+                                
+                                .buttons{
+                                    width: 70%;
+                                    height: 100%;
+                                    padding-top: 3%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin-left: 50%;
+                                    transform: translate(-50%, -100%);
+                                    transition-duration: 1s; 
+                                    
+                                    .controls__button{
+                                        cursor: pointer;
+                                        filter: brightness(90%);
+                                        width: 30px;
+                                        &:hover {
+                                            filter: sepia(86%) saturate(1695%) hue-rotate(15deg) brightness(107%) contrast(105%);
+                                        }
+                                    }
+                                    .button-back{
+                                        transform: rotate(180deg);
+                                    }
+                                    .button-play{
+                                        width: 60px;
+                                    } 
+                                }
+                            }
+                            .show-buttons{
+                                border-top: 1px solid #9e9e9e;
+                                .buttons{
                                     transform: translate(-50%, 0);
                                 }
                             }
-                            .peliculas{
-                                cursor: pointer;
-                                border: 2px solid magenta;
-                                color: magenta;
-                            }
-                            .podcast{
-                                cursor: default;
-                                border: 2px solid rgb(51, 51, 51);
-                                color: rgb(51, 51, 51);
+                            .modo{
+                                position: absolute;
+                                min-width: 350px;
+                                bottom: 0;
+                                margin-bottom: 5em;
+                                .button-av{
+                                    font-family: rozha;
+                                    font-size: 2rem;
+                                    position: relative;
+                                    width: 90%;
+                                    height: 50px;
+                                    margin: 10px;
+                                    border-radius: 20px;
+                                    display: flex;
+                                    .button-av-text{
+                                        position: relative;
+                                        margin: 0;
+                                        align-content: center;
+                                        left: 50%;
+                                        transform: translate(-50%, 0);
+                                    }
+                                }
+                                .peliculas{
+                                    cursor: pointer;
+                                    border: 2px solid magenta;
+                                    color: magenta;
+                                }
+                                .podcast{
+                                    cursor: default;
+                                    border: 2px solid rgb(51, 51, 51);
+                                    color: rgb(51, 51, 51);
+                                }
                             }
                         }
+
                     }
 
                     .pin__options{

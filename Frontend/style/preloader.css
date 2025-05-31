@@ -35,7 +35,7 @@
     height: 232.61px;
   }
   .llamita{
-    cursor: pointer;
+    /* cursor: pointer; */
     position: absolute;
     top: 50%;
     animation-name: escala;
@@ -60,11 +60,11 @@
     width: 500px;
     height: 100%;
     p{
-      animation: scrollpreloader 40s linear infinite;
+      /* animation: scrollpreloader 50s linear infinite; */
       font-family:"Rozha One";
       /* background-color:blue; */
       position: absolute;
-      width: 900%;
+      width: 500px;
       color:#ffffff77;
     }
     .mask{
@@ -81,7 +81,7 @@
     }
   }
   
-  @keyframes scrollpreloader {
+  /* @keyframes scrollpreloader {
       0% {
           transform: translateX(60%);
       }
@@ -89,4 +89,4 @@
       100% {
           transform: translateX(-60%);
       }
-  }
+  } */
