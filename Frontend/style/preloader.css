@@ -3,7 +3,7 @@
     position: fixed;
     overflow: hidden;
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
     position: absolute;
     top: 50%;
     animation-name: escala;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-timing-function: ease-in-out;
   }
   @keyframes escala{
