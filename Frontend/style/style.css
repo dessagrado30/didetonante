@@ -143,6 +143,9 @@ body::-webkit-scrollbar{
     width: 100vw;
     height: 700px;
 }
+.large {
+    height: 7000px;
+}
 .texture{
     background-color: var(--mag-color);
     mix-blend-mode: difference;
