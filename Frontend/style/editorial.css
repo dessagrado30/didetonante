@@ -56,9 +56,9 @@
                                 filter: brightness(70%) saturate(0%);  
                             }
                         }
-                        .issue-2{
+                        /* .issue-2{
                             right: 40%;
-                        }
+                        } */
                     }
                 }
 

@@ -5,7 +5,7 @@ var timeline = gsap.timeline({
         trigger: '#ejes',
         // markers: true,
         start: '100 top',
-        end: '+=2000 top',
+        end: '+=1900 top',
         scrub: 2,
     },
 })
