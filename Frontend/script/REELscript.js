@@ -11,11 +11,12 @@ document.addEventListener('DOMContentLoaded', async () => {
       img.src = `Frontend/assets/Video/REEL_frames/${String(i).padStart(4, '0')}.webp`;
       
       img.classList.add('frame');
-      img.style.position = 'fixed';
-      img.style.top = '0';
-      img.style.left = '0';
-      img.style.width = '100%';
-      img.style.height = '100%';
+      img.classList.add('seq_reel');
+      // img.style.position = 'fixed';
+      // img.style.top = '0';
+      // img.style.left = '0';
+      // img.style.width = '100%';
+      // img.style.height = '100%';
       img.style.objectFit = 'cover';
       img.style.display = 'none';
       container.appendChild(img);
