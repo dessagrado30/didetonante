@@ -3,6 +3,8 @@
 // let email = document.getElementById("email");
 // let project = document.getElementById("project");
 // let message = document.getElementById("messaje");
+
+
 function ShowControl(){
     const donateForm = document.getElementsByClassName("donate__form");
     donateForm[0].style.translate = "-100%";
@@ -40,7 +42,7 @@ function Post(){
         body: raw,
         redirect: "follow"
     };
-    fetch("senders", requestOption)
+    fetch("/senders", requestOption)
         .then((response) => response.text())
         .then((result) => Probe(true))
         .catch((error) => console.error(error));

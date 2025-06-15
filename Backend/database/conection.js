@@ -1,9 +1,11 @@
+
 const mysql = require('mysql2');
 const db = mysql.createConnection ({
-    host:'https://auth-db1783.hstgr.io',
-    user: 'u770439969_root',
+    host:'127.0.0.1',
+    // port: 3306,
+    user: 'root',
     password: 'WSXZ1048',
-    database: 'u770439969_PROCESOS',
+    database: 'PROCESOS',
 });
 
 db.connect((err) => {
@@ -14,3 +16,6 @@ db.connect((err) => {
 });
 
 module.exports = db;
+
+
+//u770439969_

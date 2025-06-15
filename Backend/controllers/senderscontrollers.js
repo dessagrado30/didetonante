@@ -66,3 +66,6 @@ class sendersController {
 }
 
 module.exports = new sendersController();
+
+
+// create table senders (id int unsigned not null auto_increment comment 'llave primaria', name varchar (30) not null, organization varchar (30), email varchar(255) unique not null, project varchar(30), massage varchar(255), primary key (id))
