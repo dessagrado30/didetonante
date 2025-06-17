@@ -115,7 +115,7 @@ function changeControlsP(cl, src, alt, text, img, port, linkV, title){
     paragraph.innerHTML = text
 
     const corto = document.getElementById("corto")
-    corto.innerHTML = `<div class="video__container"><iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0" allow="autoplay; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe></div>`
+    corto.innerHTML = `<div class="video__container"><iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0"; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe></div>`
     cbutton.setAttribute(
         "onclick", 
         `closeVModal("${linkV}", "${title}")`)
