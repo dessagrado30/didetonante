@@ -524,7 +524,7 @@
 							<textarea id="message" class="item__textarea" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false"></textarea>
 						</div>
 					</div>
-					<button id="check_button" class="modal__button button__action button__send" onclick="Post()"><img src="Frontend/assets/icons/send-horizontal.svg"></button>
+					<button id="check_button" class="modal__button button__action button__send" onclick="Post(event)"><img src="Frontend/assets/icons/send-horizontal.svg"></button>
 					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
 				</form>
 				<form class="form donate__form">
@@ -546,7 +546,7 @@
 		</div>
 	</dialog>
 	
-	<dialog class="fanZ modal modal-style">
+	<!-- <dialog class="fanZ modal modal-style">
 		<div class="fzine">
 			<div class="separador separador__final">
 				<div class="zine__container">
@@ -555,7 +555,7 @@
 			</div>
 			<button class="modal__button button__close" onclick="closeZModal()"><img src="Frontend/assets/icons/undo-2.svg" alt="sendbutton"></button>
 		</div>
-	</dialog>
+	</dialog> -->
 	<dialog class="showVideo modal modal-style">
 		<div class="modal__container">
 			<div id="corto" class="video__container">

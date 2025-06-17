@@ -4,9 +4,9 @@ const app = express();
 
 
 const sendersroutes = require('./Backend/routes/sendersroutes.js');
-
-app.use(express.json()); 
 app.use(cors()); 
+app.use(express.json()); 
+
 
 app.get('/', (req, res) => { 
     res.send('<h1>¡Podría hacer parte de lo que viene!.</h1>'); 

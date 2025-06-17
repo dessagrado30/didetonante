@@ -1,8 +1,1 @@
-{
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10",
-    "upper-case": "^2.0.2"
-  }
-}
+{"name":"api-nodejs-mysql","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"cors":"^2.8.5","express":"^5.1.0","nodemon":"^3.1.10","upper-case":"^2.0.2"}}

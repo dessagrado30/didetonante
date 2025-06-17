@@ -1,0 +1,29 @@
+###
+GET http://localhost:6500/senders HTTP/1.1
+
+###
+POST http://localhost:6500/senders HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Ratismal",
+    "organization": "DiDeto",
+    "email": "dide@junk.ou",
+    "project": "Espacios",
+    "massage": "Qué interesante, quiero hacer parte de algún proyecto. Es proceso que más me interesa es ese de las máscaras y el podcast."
+}
+
+###
+DELETE http://localhost:6500/senders/13 HTTP/1.1
+
+###
+PUT http://localhost:6500/senders/14 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hector tabares",
+    "organization": "Diseño Detonante",
+    "email": "error_desconocido@proton.me",
+    "project": "Espacios",
+    "massage": "Qué interesante, quiero hacer parte de algún proyecto. Es proceso que más me interesa es ese de las máscaras y el podcast."
+}

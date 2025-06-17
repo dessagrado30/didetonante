@@ -23,11 +23,52 @@ function Probe(ind){
         document.getElementById("check_button").innerHTML = '<img src="Frontend/assets/icons/triangle-alert.svg" alt="sendbutton"></img>'
     }
 }
+// function Post(event) {
+//     event.preventDefault();
+    
+//     const payload = {
+//         name: document.getElementById("name").value.trim(),
+//         organization: document.getElementById("organization").value.trim() || null,
+//         email: document.getElementById("email").value.trim(),
+//         project: document.getElementById("project").value.trim() || null,
+//         message: document.getElementById("message").value.trim()
+//     };
 
-function Post(){
+//     console.log("Payload a enviar:", payload);
+
+//     const requestOptions = {
+//         method: "POST",
+//         headers: { 
+//             "Content-Type": "application/json",
+//             "Accept": "application/json" // 👈 Añade esto
+//         },
+//         body: JSON.stringify(payload)
+//     };
+
+//     fetch("http://localhost:6500/senders", requestOptions)
+//         .then(async (response) => {
+//             if (!response.ok) {
+//                 const errorData = await response.json();
+//                 throw new Error(`Server error: ${JSON.stringify(errorData)}`);
+//             }
+//             return response.json();
+//         })
+//         .then((result) => {
+//             console.log("Success:", result);
+//             Probe(true);
+//         })
+//         .catch((error) => {
+//             console.error("Full error:", error);
+//             alert(`Error: ${error.message}`); // 👈 Muestra al usuario
+//         });
+// }
+
+
+function Post(event){
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     event.preventDefault();
+
 
     let raw = JSON.stringify({
         "name":document.getElementById("name").value,
@@ -42,7 +83,10 @@ function Post(){
         body: raw,
         redirect: "follow"
     };
-    fetch("/senders", requestOption)
+    console.log(raw)
+
+    fetch("http://localhost:6500/senders", requestOption)
+
         .then((response) => response.text())
         .then((result) => Probe(true))
         .catch((error) => console.error(error));
