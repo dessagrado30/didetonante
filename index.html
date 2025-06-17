@@ -496,39 +496,13 @@
 	</section>
 
 	<dialog class="send modal modal-style">
+
 		<div class="modal__container">
 			<div class="modal__content">
+
 				<form class="form contact__form">
-					<p class="title--mod form__title">¡Detónese!</p>
-					<div class="form__item">
-						<div class="form__item">
-							<input id="name" class="item__input" type="text" placeholder="Nombre / pseudónimo." spellcheck="false" required>
-						</div>
-						<div class="form__item" >
-							<input id="organization" class="item__input" type="text" placeholder="Colectividad / organización." spellcheck="false">
-						</div>
-						<div class="form__item" >
-							<input id="email" class="item__input" type="email" placeholder="Correo electrónico." spellcheck="false" required>
-						</div>
-						<div class="form__item" class="form__item" >
-							<select id="project" class="item__input" name="choice">
-								<option value="General" selected>General</option>
-								<option value="In/Tension">In/Tension</option>
-								<option value="Monstruosa">Monstruosa</option>
-								<option value="Burbujas de autonomía">Burbujas de autonomía</option>
-								<option value="Ficción Mutante">Ficción Mutante</option>
-								<option value="Lumbre en el viento">Lumbre en el viento</option>
-							</select>
-						</div>
-						<div class="form__item">
-							<textarea id="message" class="item__textarea" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false"></textarea>
-						</div>
-					</div>
-					<button id="check_button" class="modal__button button__action button__send" onclick="Post(event)"><img src="Frontend/assets/icons/send-horizontal.svg"></button>
-					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
-				</form>
-				<form class="form donate__form">
-					<p class="title--mod form__title">Control</p>
+					<embed class="api_contacto" src="https://didetonanteback.onrender.com/">
+					<!-- <p class="title--mod form__title">Control</p>
 					<div class="form__item">
 						<div class="form__item">
 							<input id="key" class="item__input" type="number" placeholder="Código" required>
@@ -536,13 +510,14 @@
 						<div class="form__item" >
 							<p class="print"></p>
 						</div>
-					</div>
+					</div> -->
 					<button class=" button__close close-top" onclick="ShowControl()"><img src="Frontend/assets/icons/x.svg" alt="closebutton"></button>
-					<button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<!-- <button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
 					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
-					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button> -->
 				</form>
 			</div>
+			
 		</div>
 	</dialog>
 	

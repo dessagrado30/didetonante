@@ -25,6 +25,6 @@ tl.to(path, {
 });
 
 // Opcional: Pausar/reanudar al hacer clic
-// path.addEventListener("click", () => {
-//   tl.paused(!tl.paused());
-// });
+path.addEventListener("click", () => {
+  tl.paused(!tl.paused());
+});

@@ -42,7 +42,7 @@ function modal(img){
     action.showModal();
     action.classList.toggle("opacity-modal")
 }
-function closeModal(){
+function closeModal(event){
     event.preventDefault();
     action.classList.toggle("opacity-modal")
     const checkLogo = document.getElementById("check_button");

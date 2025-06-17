@@ -4,20 +4,25 @@ body {
     --mag-color:#fa33fb;
     --fuente-clara:#c9c9c9;
 }
-
 .modal {
     overflow: hidden;
-    border-radius: 30px;
-    background-color: #000000;
+    background-color: #00000000;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition-duration: .5s;
+    transition-duration: 1s;
+    /* transition-delay: .2s; */
+
+
+
+
     .modal__container {
         display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
         color: var(--fuente-clara);
-        background-color: #000000cc;
+        background-color: #000000aa;
         border: none;
         width: 100vw;
         height: 100vh;
@@ -43,11 +48,19 @@ body {
 
             }
             .contact__form {
+                position: relative;
                 border-radius: 15px 0 0 15px;
                 z-index: 100;
+                .api_contacto{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
             }
             .donate__form {
-
+                position: relative;
                 transition:.5s cubic-bezier(0.5, 0.07, 0.33, 1.02);
                 border-radius: 0 15px 15px 0;
                 translate: -100%;
@@ -201,7 +214,7 @@ body {
         width: 30px;
     }
 }
-.button__get{
+/* .button__get{
     left: 25%;
     img{
         width: 35px;
@@ -219,7 +232,7 @@ body {
     img{
         width: 35px;
     }
-}
+} */
 
 
 
