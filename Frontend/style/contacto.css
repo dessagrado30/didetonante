@@ -11,7 +11,7 @@ body {
     height: 100%;
     opacity: 0;
     transition-duration: 1s;
-    /* transition-delay: .2s; */
+    transition-delay: .2s;
 
 
 
@@ -59,14 +59,14 @@ body {
                     left: 0;
                 }
             }
-            .donate__form {
+            /* .donate__form {
                 position: relative;
                 transition:.5s cubic-bezier(0.5, 0.07, 0.33, 1.02);
                 border-radius: 0 15px 15px 0;
                 translate: -100%;
                 z-index: 50;
 
-            }
+            } */
         }
     }
     .modal__container{
@@ -96,7 +96,7 @@ body {
             left: 80%;
             /* margin: 10rem; */
             border: 1px solid #00000000;
-            transition-duration: .5s;
+            /* transition-duration: .5s; */
             &:hover{
                 border: 1px solid var(--green-color);
             }
@@ -180,7 +180,7 @@ body {
 
 
 .button__action {
-    background-color: #0b0b0b;
+    background-color: #0b0b0b00;
 /*    left: 25%;*/
     width: 5rem;
     height: 3rem;

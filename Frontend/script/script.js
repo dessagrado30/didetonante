@@ -23,14 +23,14 @@ window.addEventListener("scroll", function(){
 window.addEventListener("scroll", function(){
     var video = document.querySelector(".inicio__element");
     var texto = document.querySelector(".inicio__banner");
-    var sep = document.querySelector(".separador__final");
+    // var sep = document.querySelector(".separador__final");
 
     // video.classList.toggle("low__opacity",window.scrollY>1000);
     // texto.classList.toggle("out__section",window.scrollY>3000);
     video.classList.toggle("view__section",window.scrollY>4500);
     // video.classList.toggle("low__opacity",window.scrollY>5500);
     video.classList.toggle("out__section-2",window.scrollY>10500);
-    sep.classList.toggle("out__section-separador",window.scroll>8700);
+    // sep.classList.toggle("out__section-separador",window.scroll>8700);
 })
 
 //button modal section
@@ -42,11 +42,11 @@ function modal(img){
     action.showModal();
     action.classList.toggle("opacity-modal")
 }
-function closeModal(event){
+function closeModal(){
     event.preventDefault();
     action.classList.toggle("opacity-modal")
-    const checkLogo = document.getElementById("check_button");
-    checkLogo.innerHTML = '<img src="./Frontend/assets/icons/send-horizontal.svg" alt="sendbutton"></img>'
+    const checkLogo = document.getElementById("close_button");
+    checkLogo.innerHTML = '<img src="./Frontend/assets/icons/x.svg" alt="sendbutton"></img>'
     checkLogo.disabled = false;
     action.close();
 }
