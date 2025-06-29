@@ -505,7 +505,46 @@
 						<p class="title">¡Gracias!</p>
 						<p class="paragraph">Cada vez estamos más cerca. Elija un proyecto de su interés y comente.</p>
 					</div>
-					<embed class="api_contacto" src="https://didetonanteback.onrender.com/">
+					<!-- <embed class="api_contacto" src="https://didetonanteback.onrender.com/"> -->
+
+
+
+					<div class="modal__content">
+						<form method="post" action="didetonanteback" class="form contact__form">
+							<!-- <a href="/fuego"> -->
+							<p class="title--mod form__title">¡Detónese!</p>
+							<!-- </a> -->
+							<div class="form__item">
+								<div class="form__item">
+									<input id="name" name="name" class="item__input" type="text" placeholder="Nombre / pseudónimo." spellcheck="false" required>
+								</div>
+								<div class="form__item" >
+									<input id="organization" name="organization" class="item__input" type="text" placeholder="Colectividad / organización." spellcheck="false">
+								</div>
+								<div class="form__item" >
+									<input id="email" name="email" class="item__input" type="email" placeholder="Correo electrónico." spellcheck="false" required>
+								</div>
+								<div class="form__item" class="form__item" >
+									<select id="project" class="item__input" name="project">
+										<option value="General" selected>General</option>
+										<option value="In/Tension">In/Tension</option>
+										<option value="Monstruosa">Monstruosa</option>
+										<option value="Burbujas de autonomía">Burbujas de autonomía</option>
+										<option value="Ficción Mutante">Ficción Mutante</option>
+										<option value="Lumbre en el viento">Lumbre en el viento</option>
+									</select>
+								</div>
+								<div class="form__item">
+									<textarea id="message" name="message" class="item__textarea" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false"></textarea>
+								</div>
+							</div>
+							<button id="check_button" type="submit" class="modal__button button__action button__send"><img src="assets/icons/send-horizontal.svg"></button>
+						</form>
+					</div>
+
+
+
+
 					<!-- <p class="title--mod form__title">Control</p>
 					<div class="form__item">
 						<div class="form__item">
