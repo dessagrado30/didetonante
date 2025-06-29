@@ -498,27 +498,29 @@
 	<dialog class="send modal modal-style">
 
 		<div class="modal__container">
-			<div class="modal__content">
+			<!-- <div class="modal__content">
 
-				<div class="form contact__form">
-					<div class="message">
+				<div class="form contact__form"> -->
+					<!-- <div class="message">
 						<p class="title">¡Gracias!</p>
 						<p class="paragraph">Cada vez estamos más cerca. Elija un proyecto de su interés y comente.</p>
-					</div>
+					</div> -->
 					<!-- <embed class="api_contacto" src="https://didetonanteback.onrender.com/"> -->
 
 
 
 					<div class="modal__content">
-						<form method="post" action="didetonanteback" class="form contact__form">
+						<form method="post" class="form contact__form">
 							<!-- <a href="/fuego"> -->
 							<p class="title--mod form__title">¡Detónese!</p>
+							<button id="check_button" type="submit" class="modal__button button__action button__send" onclick="post()"><img src="Frontend/assets/icons/send-horizontal.svg"></button>
+
 							<!-- </a> -->
 							<div class="form__item">
 								<div class="form__item">
 									<input id="name" name="name" class="item__input" type="text" placeholder="Nombre / pseudónimo." spellcheck="false" required>
 								</div>
-								<div class="form__item" >
+								<div class="form__item">
 									<input id="organization" name="organization" class="item__input" type="text" placeholder="Colectividad / organización." spellcheck="false">
 								</div>
 								<div class="form__item" >
@@ -538,7 +540,6 @@
 									<textarea id="message" name="message" class="item__textarea" rows="6" placeholder="Escríbanos sus ideas, reflexiones, preguntas, comentarios, etc." spellcheck="false"></textarea>
 								</div>
 							</div>
-							<button id="check_button" type="submit" class="modal__button button__action button__send"><img src="assets/icons/send-horizontal.svg"></button>
 						</form>
 					</div>
 
@@ -559,8 +560,8 @@
 					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
 					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button> -->
 
-				</div>
-			</div>
+				<!-- </div>
+			</div> -->
 			
 		</div>
 	</dialog>
