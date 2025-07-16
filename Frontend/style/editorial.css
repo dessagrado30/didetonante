@@ -1,12 +1,11 @@
 
 .editorial__section{
-    background-color: #ffffff00;
+    background-color: #fa626200;
     position: relative;
     display: flex;
     border-radius: 0px;
     justify-content: center;
     align-items: center;
-    /* height: 700px; */
     overflow: hidden;
     border-radius: 30px;
     
@@ -16,106 +15,320 @@
         width:100%;
         height: 100%;
 
+
+
+
         .zn__grid{
             position: absolute;
-            width: 70%;
+            width: 100%;
             height: 100%;
             right: 0;
             display: flex;
-            justify-content: right;
+            overflow: hidden;
+            /* justify-content: right; */
 
             .issues__container{
-                position: relative;
+                position: absolute;
                 height: 100%;
-                display: grid;
-                grid-template-columns: 1fr 3fr;
+                /* overflow: hidden; */
+                /* display: grid;
+                grid-template-columns: 4fr 2fr 6fr;
                 grid-template-rows: 1fr;
+                gap: 1%; */
+                
 
-                .carrucel-zine{
-                    height: 100%;
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr 1fr 1fr;
-                    gap: 3%;
 
-                    .issues-min{
-                        position: relative;
-                        img{
-                            position: absolute;
-                            width: fit-content;
-                            height: 100%;
-                            top: 0;
-                            right: 10%;
-                            border-radius: 20px;
-                            transition: .5s;
-                        }
-                        &:hover{
-                            img{
-                                cursor: pointer;
-                                /* transform: translate(-30%, 0) scale(101%); */
-                                filter: brightness(70%) saturate(0%);  
-                            }
-                        }
-                        /* .issue-2{
-                            right: 40%;
-                        } */
+                .zn__controls{
+                    width: 100%;
+                    /* padding-top: 10rem; */
+                    background-color: rgb(0, 0, 0);
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    /* border: 1px solid #ffffff33; */
+                    /* z-index: 30; */
+                    
+                    .film__icon{
+                        height: 8rem;
+                        transition-duration: 3s;
+                    }
+                    .paragraph__item {
+                        width: 60%;
+                        color: white;
+                        font-family: mont;
+                        font-weight: medium;
+                        text-align: left;
+                        line-height: 1.7rem;
+                        font-size: 1em;
+                        transition-duration: 3s;
                     }
                 }
 
-                .issues{  
+                .carrusel__container{
+                    width: 100%;
+                    /* height: 700px; */
+                    .carrucel-zine{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        /* display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                        gap: 2%; */
+
+                        .issues-min{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid black;
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            z-index: 1000;
+                            /* figure{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                width: 100%;
+                                img{
+                                    position: relative;
+                                    width: 90%;
+                                    height: fit-content;
+                                    bottom: 0;
+                                    left: 0;
+                                    transition: .5s;
+                                }
+                            }
+                             */
+                            &:hover{
+                                img{
+                                    cursor: pointer;
+                                    /* transform: translate(-30%, 0) scale(101%); */
+                                    filter: brightness(70%) saturate(0%);  
+                                }
+                            }
+                            /* .issue-2{
+                                right: 40%;
+                            } */
+                        }
+                    }
+
+                }
+
+                .issues{ 
+                    background-color: bisque;
                     position: relative;
                     height: 100%;
                     overflow: hidden;
                     
-                    figure{
+                    /* figure{
                         margin: 0;
-                        border-radius: 30px;
                         overflow: hidden;
                         img{
-                            transform: translate(-1%, -1%);
-                            width: 101%;
-                            opacity: 100%;
+                            position: relative;
+                            height: 700px;
+                            width: fit-content;
                         }
-                    }
+                    } */
                 }
             }
         }
     }
 }
 
+@media (width > 1000px){
 
-.box{
-    position: absolute;
-    height: 600px;
-}
-.zn__controls{
-    width: 30%;
-    height: 95%;
-    border-radius: 30px;
-    padding-top: 10rem;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #ffffff33;
-    /* z-index: 30; */
-    
-    .film__icon{
+    .zn__grid{
 
-        height: 8rem;
-        transition-duration: 3s;
+
+        .issues__container{
+            /* background-color: rgb(43, 189, 226); */
+            display: grid;
+            grid-template-columns: 4fr 2fr 6fr;
+            grid-template-rows: 1fr;
+            gap: 1%;
+
+
+            .zn__controls{
+                padding-top: 10rem;
+                height: 600px;
+                
+                .film__icon{
+                    height: 8rem;
+                    transition-duration: 3s;
+                }
+
+                .paragraph__item {
+                    width: 60%;
+                    /* color: rgb(23, 223, 223); */
+                    font-family: mont;
+                    font-weight: medium;
+                    text-align: left;
+                    line-height: 1.7rem;
+                    font-size: 1em;
+                    transition-duration: 3s;
+                }
+            }
+
+            .carrusel__container{
+
+                .carrucel-zine{
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    gap: 2%;
+                    .issues-min{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid black;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        z-index: 1000;
+                        figure{
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            img{
+                                position: relative;
+                                width: 90%;
+                                height: fit-content;
+                                bottom: 0;
+                                left: 0;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+            }
+            .issues{ 
+                background-color: bisque;
+            }
+
+            .issues{ 
+                background-color: bisque;
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                
+                figure{
+                    margin: 0;
+                    overflow: hidden;
+                    img{
+                        position: relative;
+                        /* transform: translate(-1%, -1%); */
+                        
+                        /* width: 100%;
+                        height: fit-content; */
+                        height: 700px;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
     }
-    .paragraph__item {
-        width: 60%;
-        color: white;
-        font-family: mont;
-        font-weight: medium;
-        text-align: left;
-        line-height: 1.7rem;
-        font-size: 1em;
-        transition-duration: 3s;
+
+}
+@media (width < 1000px){
+    .zn__grid{
+
+
+        .issues__container{
+            /* background-color: rgb(43, 189, 226); */
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 1fr;
+            /* gap: 2%; */
+
+            .zn__controls{
+                padding-top: 6rem;
+                padding-bottom: 5rem;
+                .film__icon{
+                    height: 8rem;
+                    transition-duration: 3s;
+                }
+
+                .paragraph__item {
+                    width: 60%;
+                    /* color: rgb(23, 223, 223); */
+                    font-family: mont;
+                    font-weight: medium;
+                    text-align: left;
+                    line-height: 1.7rem;
+                    font-size: 1em;
+                    transition-duration: 3s;
+                }
+            }
+
+            .carrusel__container{
+                
+                .carrucel-zine{
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(1, 1fr);
+                    /* gap: 1%; */
+                    .issues-min{
+                        display: flex;
+                        /* align-items: center; */
+                        /* justify-content: center; */
+                        border: 1px solid black;
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        figure{
+                            /* position: absolute; */
+                            top: 0;
+                            /* left: 0; */
+                            display: flex;
+                            justify-content: center;
+                            
+                            height: 100px;
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                /* width: 100%; */
+                                width: 100%;
+                                height: fit-content;
+                                bottom: 0;
+                                left: 0;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                        
+                }
+
+            }
+            .issues{ 
+                background-color: bisque;
+                position: relative;
+                height: 100%;
+                overflow: hidden;
+                display: none;
+                
+                figure{
+                    margin: 0;
+                    overflow: hidden;
+                    img{
+                        position: relative;
+                        /* transform: translate(-1%, -1%); */
+                        
+                        /* width: 100%;
+                        height: fit-content; */
+                        height: 700px;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
     }
 }
-
-
 
