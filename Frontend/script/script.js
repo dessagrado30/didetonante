@@ -95,7 +95,7 @@ function audioviasualInfo(){
     backg.style.backgroundImage= `url("../assets/img/nodos/audiovisual/armadillo.webp")`
 }
 
-function changeControlsP(cl, src, alt, text, img, port, linkV, title){
+function changeControlsP(cl, src, alt, text, img, port, linkV, title, proc, invoImg, invoText, ref){
     const logo = document.getElementById("logo")
     const paragraph = document.getElementById("parag")
     const cortoImage = document.getElementById("center__image")
@@ -109,10 +109,17 @@ function changeControlsP(cl, src, alt, text, img, port, linkV, title){
     const silencio = document.getElementById("silencio__post")
     const cbutton = document.getElementById("closeButton")
 
+    const proceso = document.getElementById("data__proceso")
+    const involucradxs = document.getElementById("data__involucradxs")
+    const referencias = document.getElementById("data__referencias")
+
     // pinImage.innerHTML=`<img src="${img}" alt="imagen ${title}"></img>`
-    cortoImage.innerHTML=`<img class="center__img mid--${cl}" src="${img}" alt="imagen portada"></img>`
     logo.innerHTML=`<img class="icon icon--${cl}" src="${src}" alt="${alt}"></img>`
     paragraph.innerHTML = text
+    cortoImage.innerHTML=`<img class="center__img mid--${cl}" src="${img}" alt="imagen portada"></img>`
+    proceso.innerHTML=`<p class="paragraph__item">${proc}</p>`
+    involucradxs.innerHTML=`<img class="content__logo" src="${invoImg}" alt="logo organización"><p class="paragraph__item">${invoText}</p>`
+    referencias.innerHTML=`<p class="paragraph__item">${ref}</p>`
 
     const corto = document.getElementById("corto")
     corto.innerHTML = `<div class="video__container"><iframe class="video" title="${title}" width="560" height="315" src="https://${linkV}" frameborder="0"; fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe></div>`
@@ -137,7 +144,6 @@ function changeControlsP(cl, src, alt, text, img, port, linkV, title){
 //   }
 // };
 // xhr.send();
-
 
 
 

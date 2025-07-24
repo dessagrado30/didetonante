@@ -336,9 +336,9 @@ body::-webkit-scrollbar{
         opacity: 0;
 
     }
-    .section__video {
+    /* .section__video {
         height: 700px;
-    }
+    } */
     .section__div-image {
         position: relative;
         font-weight: medium;
@@ -525,8 +525,7 @@ body::-webkit-scrollbar{
     top: 100px;
 }
 .section__ejes {
-    /* bottom: 0; */
-    padding: 10% 0 5% 0;
+    padding: 12% 0 5% 0;
     display: grid;
     min-height: 50%;
     height: 800px;
@@ -536,17 +535,13 @@ body::-webkit-scrollbar{
     list-style: none;
     width: 100vw;
     font-display: swap;
-    /* z-index: 5; */
     transition: opacity 1s;
     
     .section__groups {
-        /* background-color: red; */
         position: relative;
         width: 70%;
         height: 75vh;
         display: grid;
-        /* align-content: center; */
-
 
         .section__title {
             position: absolute;
@@ -555,13 +550,10 @@ body::-webkit-scrollbar{
             font-family: rozha;
             font-size: 5em;            
             color: #fafafa;
-            /* z-index: -1; */
             display: block;
         }
 
         .section__container {
-            /* margin: 0; */
-            /* position: absolute; */
             left: 0;
             width: 100%;
             height: 550px;
@@ -569,7 +561,6 @@ body::-webkit-scrollbar{
             scrollbar-width: none;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            /* grid-template-columns: repeat(auto-fit, minmax(250px, 300)); */
             justify-content: center;
             scroll-behavior: auto;
             gap: 1%;
@@ -584,7 +575,6 @@ body::-webkit-scrollbar{
                 height: 70%;
                 color: #ebebebaf;
                 overflow: hidden;
-                /* z-index: 200; */
                 .text__box {
                     margin: 2em 2em 0 25px;
                 }
@@ -703,10 +693,6 @@ body::-webkit-scrollbar{
     }
 }
 
-/* #accionares{
-    position: absolute;
-    width: 100%;
-} */
 .pages__container{
     position: sticky;
     top: 0;
@@ -719,9 +705,7 @@ body::-webkit-scrollbar{
         display: grid;
         grid-template-columns: 100vw 150vw;
         width: 100vw;
-        /* height: 50%; */
         left: 0;
-
         animation: box-move auto cubic-bezier(0.69, 0.02, 0.29, 0.99);
         /* animation-timeline: scroll(root block); */
         .page__image {
@@ -735,7 +719,7 @@ body::-webkit-scrollbar{
         }
         .box-dos {
             position: relative;
-            width: 100vw;
+            width: 0;
             /* z-index: 900; */
         }    
     }
@@ -747,7 +731,8 @@ body::-webkit-scrollbar{
     .illustration{
         position: absolute;
         isolation: isolate;
-        width: 50%;
+        width: 500px;
+        min-width: 300px;
         left: 50%;
         transform: translate(-50%, 0);
         z-index: 100;

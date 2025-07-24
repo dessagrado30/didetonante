@@ -108,7 +108,6 @@
                     position: relative;
                     display: flex;
                     overflow: hidden;
-                    /* border: 1px solid #ffffff55; */
                     border-radius: 30px 30px 5px 5px;
                     grid-row: 1/3;
                     img{
@@ -165,7 +164,7 @@
                             height: 100%;
                             transform: translate(0, -8%);
                             top: 10%;
-                            transition-duration: 1s;
+                            transition-duration: .5s;
                             .film__icon{
                                 position: absolute;
                                 top: 0;
@@ -238,7 +237,7 @@
                                     justify-content: space-between;
                                     margin-left: 50%;
                                     transform: translate(-50%, -100%);
-                                    transition-duration: 1s; 
+                                    transition-duration: .5s; 
                                     
                                     .controls__button{
                                         cursor: pointer;
@@ -409,12 +408,14 @@
                                 
                                 .data__content{
                                     display: flex;
+                                    color:#8a8a8a;
                                     flex-direction: column;
                                     justify-content: center;
                                     align-items: center;
+                                    top: 30%;
                                     width: 100%;
                                     height: 100%;
-                                    left: 0;
+                                    /* left: 0;  */
                                     
                                     .content__logo{
                                         filter: opacity(50%);
@@ -422,11 +423,11 @@
                                     }
                                     .paragraph__item {
                                         width: 55%;
-                                        color: white;
-                                        font-family: mont;
+                                        /* color: white; */
+                                        font-family: montserrat;
                                         font-weight: medium;
                                         text-align: center;
-                                        font-size: 1em;
+                                        font-size: .8em;
                                     }
                                 }
                                 /* .proceso{
@@ -447,7 +448,7 @@
                             width: 60%;
                             justify-content: space-between;
                             align-items: center;
-                            bottom: 0;
+                            bottom: -10%;
                             margin-bottom: 10%;
             
                             .menu{
