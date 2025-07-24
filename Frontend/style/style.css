@@ -58,7 +58,7 @@ body::-webkit-scrollbar{
             /* left: ; */
             transform: translate(-7%, 0);
             h1 {
-                font-family: mont;
+                font-family: montserrat;
                 font-size: 1.5em;
             }
             .hlogo--color {
@@ -149,8 +149,11 @@ body::-webkit-scrollbar{
     background-color: var(--mag-color);
     mix-blend-mode: difference;
     height: 300px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
+    align-content: center;
+    justify-items: center;
+    
     p{
         margin: 1%;
     }
@@ -167,7 +170,8 @@ body::-webkit-scrollbar{
     /* position: absolute; */
     color: white;
     font-size: 1.5rem;
-    width: 90%;
+    width: 400px;
+
     text-align: start;
 }
 
@@ -1084,8 +1088,8 @@ body::-webkit-scrollbar{
         background-color: var(--mag-color);
         mix-blend-mode: difference;
         height: 300px;
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center;
+        align-items: center; */
         align-content: center;
         justify-items: center;
         p{

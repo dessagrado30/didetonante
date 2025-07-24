@@ -87,7 +87,7 @@ function closeVModal(li, ti){
 function audioviasualInfo(){
     var image = document.querySelector(".image");
     var data = document.querySelector(".data");
-    var buttons = document.querySelector(".controls__container");
+    var buttons = document.querySelector(".container__elements");
     var backg = document.querySelector(".backg__controls")
     image.classList.toggle("image-show")
     data.classList.toggle("data-show")

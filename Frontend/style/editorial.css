@@ -14,10 +14,6 @@
         top: 0;
         width:100%;
         height: 100%;
-
-
-
-
         .zn__grid{
             position: absolute;
             width: 100%;
@@ -45,6 +41,7 @@
                     display: flex;
                     align-items: center;
                     flex-direction: column;
+                    border-radius: 8px;
                     /* border: 1px solid #ffffff33; */
                     /* z-index: 30; */
                     
@@ -54,19 +51,19 @@
                     }
                     .paragraph__item {
                         width: 60%;
+                        text-align: ;
                         color: white;
-                        font-family: mont;
-                        font-weight: medium;
-                        text-align: left;
+                        font-family: montserrat;
+                        font-weight: 400;
+                        /* text-align: left; */
                         line-height: 1.7rem;
-                        font-size: 1em;
+                        font-size: 1rem;
                         transition-duration: 3s;
                     }
                 }
 
                 .carrusel__container{
                     width: 100%;
-                    /* height: 700px; */
                     .carrucel-zine{
                         position: relative;
                         width: 100%;
@@ -80,28 +77,30 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            border: 1px solid black;
+                            /* border: 1px solid black; */
                             position: relative;
                             width: 100%;
                             height: 100%;
                             display: flex;
                             z-index: 1000;
-                            /* figure{
-                                display: flex;
+
+                            figure{
+                                /* display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 position: absolute;
-                                width: 100%;
+                                width: 100%; */
                                 img{
-                                    position: relative;
+                                    border-radius: 5px;
+                                    /* position: relative;
                                     width: 90%;
                                     height: fit-content;
                                     bottom: 0;
                                     left: 0;
-                                    transition: .5s;
+                                    transition: .5s; */
                                 }
                             }
-                             */
+                            
                             &:hover{
                                 img{
                                     cursor: pointer;
@@ -118,20 +117,23 @@
                 }
 
                 .issues{ 
-                    background-color: bisque;
+                    background-color: #00000000;
                     position: relative;
                     height: 100%;
                     overflow: hidden;
+                    border-radius: 8px;
                     
-                    /* figure{
-                        margin: 0;
-                        overflow: hidden;
+                    figure{
+                        /* margin: 0;
+                        overflow: hidden; */
+                        /* border-radius: 5px; */
                         img{
-                            position: relative;
+                            /* position: relative;
                             height: 700px;
-                            width: fit-content;
+                            width: fit-content; */
+                            border-radius: 8px;
                         }
-                    } */
+                    }
                 }
             }
         }
@@ -141,8 +143,6 @@
 @media (width > 1000px){
 
     .zn__grid{
-
-
         .issues__container{
             /* background-color: rgb(43, 189, 226); */
             display: grid;
@@ -161,11 +161,11 @@
                 }
 
                 .paragraph__item {
-                    width: 60%;
+                    width: 50%;
                     /* color: rgb(23, 223, 223); */
                     font-family: mont;
                     font-weight: medium;
-                    text-align: left;
+                    /* text-align: justify; */
                     line-height: 1.7rem;
                     font-size: 1em;
                     transition-duration: 3s;
@@ -173,7 +173,7 @@
             }
 
             .carrusel__container{
-
+                height: 700px;
                 .carrucel-zine{
                     position: relative;
                     display: grid;
@@ -185,7 +185,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        border: 1px solid black;
+                        /* border: 1px solid black; */
                         width: 100%;
                         height: 100%;
                         display: flex;
@@ -209,11 +209,11 @@
                 }
             }
             .issues{ 
-                background-color: bisque;
+                /* background-color: bisque; */
             }
 
             .issues{ 
-                background-color: bisque;
+                /* background-color: bisque; */
                 position: relative;
                 height: 100%;
                 overflow: hidden;
@@ -260,7 +260,7 @@
                     /* color: rgb(23, 223, 223); */
                     font-family: mont;
                     font-weight: medium;
-                    text-align: left;
+                    text-align: justify;
                     line-height: 1.7rem;
                     font-size: 1em;
                     transition-duration: 3s;
@@ -268,7 +268,7 @@
             }
 
             .carrusel__container{
-                
+                height: max-content;
                 .carrucel-zine{
                     position: relative;
                     display: grid;
@@ -279,7 +279,7 @@
                         display: flex;
                         /* align-items: center; */
                         /* justify-content: center; */
-                        border: 1px solid black;
+                        /* border: 1px solid black; */
                         width: 100%;
                         height: 500px;
                         display: flex;
@@ -308,7 +308,7 @@
 
             }
             .issues{ 
-                background-color: bisque;
+                /* background-color: bisque; */
                 position: relative;
                 height: 100%;
                 overflow: hidden;
