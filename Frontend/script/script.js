@@ -6,6 +6,7 @@ window.addEventListener("scroll", function(){
     var icon = document.querySelector(".hicon--color");
     var nodos = document.querySelector(".section__ejes")
 
+
     // body.classList.toggle("scroll",window.scrollY<700);
     // body.classList.toggle("glitch",window.scrollY<700);
     body.classList.toggle("none",window.scrollY>700);
@@ -16,6 +17,7 @@ window.addEventListener("scroll", function(){
     nodos.classList.toggle("nodes-false",window.scrollY>2500);
 
     logo.classList.toggle("inv",window.scrollY>7500);
+ 
 
 })
 
