@@ -5,6 +5,12 @@
 }
 
 @font-face {
+    font-family: alte-regular;
+    src: url("alte_haas_grotesk_T2/AlteHaasGroteskRegular.ttf") format("truetype");
+}
+
+
+@font-face {
     font-family: alte_bold;
     font-weight: bold;
     src: url("alte_haas_grotesk_T2/AlteHaasGroteskBold.ttf") format("truetype");
