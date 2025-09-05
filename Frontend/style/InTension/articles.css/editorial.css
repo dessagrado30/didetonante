@@ -1,0 +1,15 @@
+.banner{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-color: aquamarine;
+    .background__image{
+        position: absolute;
+        width: 100%;
+        height: 100%5434543g;
+        img{
+            width: 100%;
+            height: fit-content;
+        }
+    }
+}

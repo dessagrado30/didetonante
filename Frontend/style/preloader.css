@@ -11,29 +11,30 @@
     width: 100vw;
     min-height: 100vh;
     left: 0;
-    transition: left 1.5s cubic-bezier(0.74,-0.01, 0.43, 0.99);
+    top: 0;
+    transition: top 1.5s cubic-bezier(0.74,-0.01, 0.43, 0.99);
     z-index: 1100;
   }
   .preloader-hidden{
-    left: -101%;
-}
+    top: -101%;
+  }
   .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
   
   /* svg-path */
-  .svgpath-0bc2ef862b96 > svg {
+  /* .svgpath-0bc2ef862b96 > svg {
     cursor: pointer;
     position: absolute;
     top: 0px;
     left: 0px;
     transform: translate(0px,0px);
-  }
-  .svgpath-0bc2ef862b96 {
+  } */
+  /* .svgpath-0bc2ef862b96 {
     position: absolute;
     left: 115.15px;
     top: 95.98px;
     width: 193.7px;
     height: 232.61px;
-  }
+  } */
   .llamita{
     /* cursor: pointer; */
     position: absolute;
@@ -41,6 +42,7 @@
     animation-name: escala;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
+    transform: scale(60%);
   }
   @keyframes escala{
     from {
@@ -59,6 +61,7 @@
     align-items:center;
     width: 500px;
     height: 100%;
+    filter: saturate(0);
     p{
       /* animation: scrollpreloader 50s linear infinite; */
       font-family:"Rozha One";
