@@ -1,0 +1,169 @@
+.banner{
+    width: 100vw;
+    height: 90vh;
+    .banner__container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .background__image{
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                position: absolute;
+                width: 100%;
+                height: fit-content;
+                top: -40%;
+            }
+            .filtro__banner{
+                position: absolute;
+                background-color: #ff0000;
+                opacity: 70%;
+                mix-blend-mode: multiply;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .section__text{
+            width: 900px;
+            height: 320px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2%;
+            z-index: 1;
+            .title{
+                text-align: center;
+                position: relative;
+                width: 100px;
+                font-family: alte;
+                color: #fafafa;
+                bottom: 0;
+                .mind{
+                    position: absolute;
+                    top: -30%;
+                    font-size: 5rem;
+                    transform: translate(-25%, 0);
+                }
+                .field{
+                    line-height: 0;
+                    position: absolute;
+                    font-size: 8rem;
+                    right: -100%;
+                    top: 0;
+                    transform-origin: center;
+                    transform: rotate(-90deg) translate(-50%, 0);
+                }
+            }
+            .description{
+                width: 800px;
+                background-color: #00000088;
+                padding: 5%;
+                mix-blend-mode: luminosity;
+                border-radius: 10px;
+                color: #fafafa;
+                font-family: alte-regular;
+                font-size: 1.2rem;
+                line-height: 1.4;
+                text-align: justify ;
+            }
+        }
+    }
+}
+.contain{
+    position: relative;
+    background-color: #fafafa;
+    width: 100%;
+    height: auto;
+    padding-block: 5%;
+    .articles__list{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: end;
+        .section__title{
+            width: 100%;
+            color: #ff0000;
+            opacity: 60%;
+            mix-blend-mode: darken;
+            position: absolute;
+            font-family: alte;
+            font-size: 14rem;
+            text-align: center;
+            line-height: 0;
+            top: 0;
+        }
+        .article{
+            position: relative;
+            width: 85%;
+            height: 35vh;
+            overflow: hidden;
+            border-radius: 20px;
+            figure{
+                margin: 0;
+            }
+            .article__title{
+                position: absolute;
+                width: 100%;
+                height: 65%;
+                bottom: 0;                
+                .filter{
+                    width: 100%;
+                    height: 100%;
+                    mix-blend-mode: darken;
+                }
+                .article_one{
+                    background-color: #ff000044;
+                }
+                .article_two{
+                    background-color: #ff000088;
+                }
+                .article_three{
+                    background-color: #ff0000cc;
+                }
+                .issue__min-title{
+                    position: absolute;
+                    top: 5%;
+                    width: 80%;
+                    text-align: center;
+                    font-family: alte_bold;
+                    color: #fafafa;
+                    font-size: 2.2rem;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    span{
+                        font-family: alte-regular;
+                    }
+
+                }
+            }
+            .description_box{
+                position: absolute;
+                width: 100%;
+                height: 35%;
+                background-color: #ffffff;
+                bottom: 0;
+            }
+            .description_text{
+                margin: 3% 10% 3% 10%;
+                font-family: alte-regular;
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+.articles{
+    position: relative;
+    padding: 0;
+    .articles__container{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden    ;
+    }
+}

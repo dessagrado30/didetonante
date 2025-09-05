@@ -1,0 +1,28 @@
+
+body{
+    background-color: #fafafa;
+    height: fit-content;
+    overflow: hidden;
+}
+.articles{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.article_one{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    font-family: alte;
+    .title{
+        line-height: 0;
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+}

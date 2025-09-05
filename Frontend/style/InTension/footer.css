@@ -3,12 +3,12 @@
     background-color: #fafafa;
     width: 100vw;
     height: 50vh;
-    color: #fafafa;
 }
 
 .banner-home{
     background-image: linear-gradient(to right, var(--mag), var(--mag), var(--mag-color));
     mix-blend-mode: difference;
+    color: #fafafa;
 }
 
 .footer{
