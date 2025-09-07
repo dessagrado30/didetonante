@@ -61,6 +61,11 @@
     src: url("montserrat-font_T/MontserratExtrabold-qZ7Rx.otf") format("opentype");
 }
 
+@font-face {
+    font-family: mont-black;
+    font-weight: italic;
+    src: url("montserrat-font_T/Montserrat-BlackItalic.ttf") format("truetype");
+}
 
 
 

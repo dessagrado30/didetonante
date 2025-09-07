@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial</title>
-	<link rel="stylesheet" href="../../../style/normalize.css">
-	<link rel="stylesheet" href="../../../style/style.css">
-    <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
-	<link rel="stylesheet" href="../../../style/InTension/in-tension.css">
-    <link rel="stylesheet" href="../../../style/InTension/articles.css/template.css">
+	<link rel="stylesheet" href="/Frontend/style/normalize.css">
+	<link rel="stylesheet" href="/Frontend/style/style.css">
+    <link rel="stylesheet" href="/Frontend/assets/fonts/fonts.css">
+	<link rel="stylesheet" href="/Frontend/style/InTension/in-tension.css">
+    <link rel="stylesheet" href="/Frontend/style/InTension/articles/mindField/mindfield.css">
+    <link rel="stylesheet" href="/Frontend/style/InTension/articles/articles_style.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <a class="container__logo" href="../../../../index.html">
-                <img id="logo" class="header__logo hlogo--color" src="../../../assets/icons/LLAMITA.svg">
+            <a class="container__logo" href="/index.html">
+                <img id="logo" class="header__logo hlogo--color" src="/Frontend/assets/icons/LLAMITA.svg">
             </a>
         </div>
         <div class="intension__container">
-            <a href="../in-tension.html"><img class="intension__logo" src="../../../assets/logos/InTension.webp" alt=""></a>
+            <a href="/Frontend/templates/InTension/in-tension.html"><img class="intension__logo" src="/Frontend/assets/logos/InTension.webp" alt=""></a>
         </div>
         <nav class="header__nav">
             <label class="nav__label">
                 <input class="checkbox" type="checkbox">
             </label>
             <ul class="nav__list">
-                <li class="list__item item--button"><img class="send__icon" src="../../../assets/icons/align-justify.svg"></li>
-                <li class="list__item item--button" onclick="modal('../../../assets/img/nodos/editorial.webp')"><img class="send__icon" src="../../../assets/icons/send-horizontal.svg"></li>
+                <li class="list__item item--button"><img class="send__icon" src="/Frontend/assets/icons/align-justify.svg"></li>
+                <li class="list__item item--button" onclick="modal('/Frontend/assets/img/nodos/editorial.webp')"><img class="send__icon" src="/Frontend/assets/icons/send-horizontal.svg"></li>
             </ul>
         </nav>
     </header>
@@ -38,10 +39,17 @@
             </figure>
             <div class="section__text">
                 <p class="title"><span class="field">Field</span><span class="mind">Mind</span></p>
-                <p class="description">Many of the problems, issues, concerns, and conditions of the present world make people depressed, anxious, or mentally ill. This section of the publication will examine the impacts of the forces that produce disturbed minds, and seek forms of response, recognising the situation is going to get worse. The issue of mind as areas of inquiry are sensitive, they can ‘blow-up!’ Hence Mind Field, the publication has two meanings: it names a field of inquiry; and, is a place of danger.</p>
+                <div class="paragraph__container">
+                    <p class="description">Many of the problems, issues, concerns, and conditions of the present world make people depressed, anxious, or mentally ill. This section of the publication will examine the impacts of the forces that produce disturbed minds, and seek forms of response, recognising the situation is going to get worse. The issue of mind as areas of inquiry are sensitive, they can 'blow-up!' Hence Mind Field, the publication has two meanings: it names a field of inquiry; and, is a place of danger.</p>
+                </div>
             </div>
         </div>      
     </section>
+    <a href="/Frontend/templates/InTension/in-tension.html#content_section">
+        <div class="content__button">
+            <img src="/Frontend/assets/icons/content__icon.svg" alt="show content icon">
+        </div>
+    </a>
     <section class="contain">
         <div class="articles__list">
             <div class="article">
@@ -74,24 +82,27 @@
                     <h2 class="issue__min-title">Mind as a product</h2>
                 </div>
             </div>
-            <h1 class="section__title">MIND FIELD</h1>
+            <h1 class="section__title">Mind field</h1>
         </div>
     </section>
     <section class="articles">
-        <iframe class="articles__container" src="/Frontend/templates/InTension/articles/onResistence.html" frameborder="0"></iframe>
+        <iframe class="articles__container" src="/Frontend/templates/InTension/articles/mindField/mindField-articles.html" frameborder="0"></iframe>
+    </section>
+    <section class="more">
+        <div class="reaction"></div>
+        <div class="material"></div>     
     </section>
     <section class="in-tension__footer">
         <a href="#InTensionPort">
             <div class="displace up">
-                <figure class="displace-icon"><img src="../../../assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
+                <figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
             </div>
         </a>
-        <iframe class="ftr" src="../footer.html" frameborder="0">
+        <iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
         </iframe>
     </section>
 
-
-	<script src="../../script/header.js"></script>
+	<script src="/Frontend/script/header.js"></script>
 	<script src="/Frontend/script/in-tension.js"></script>
 </body>
 </html>

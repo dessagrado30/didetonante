@@ -35,15 +35,34 @@
     width: 193.7px;
     height: 232.61px;
   } */
+  .llamita__container{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid #f62752;
+    border-radius: 50%;
+    animation: spin linear infinite;
+    animation-duration: 5s;
+    top: 50%;
+  }
   .llamita{
-    /* cursor: pointer; */
     position: absolute;
     top: 50%;
+    /* cursor: pointer; */
     animation-name: escala;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
-    transform: scale(60%);
+    transform: scale(40%) translate(0, -50%);
   }
+  @keyframes spin{
+
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
   @keyframes escala{
     from {
       opacity: 0;
