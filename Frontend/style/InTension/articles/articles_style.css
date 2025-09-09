@@ -1,3 +1,62 @@
+
+body{
+    --section-1-color:#ff0000;
+    --section-2-color:#9400ff;
+    --section-3-color:#006666;
+}
+.section__one-color{
+    background-color: var(--section-1-color);
+}
+.section__two-color{
+    background-color: var(--section-2-color);
+}
+.section__three-color{
+    background-color: var(--section-3-color);
+}
+.section__one-text-color{
+    color: var(--section-1-color);
+}
+.section__two-text-color{
+    color: var(--section-2-color);
+}
+.section__three-text-color{
+    color: var(--section-3-color);
+}
+.banner{
+    width: 100vw;
+    height: 90vh;
+    .banner__container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .background__image{
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            img{
+                position: absolute;
+                width: 100%;
+                height: fit-content;
+                top: -40%;
+            }
+            .filtro__banner{
+                position: absolute;
+                opacity: 70%;
+                mix-blend-mode: darken;
+                width: 100%;
+                height: 100%;
+            }
+            .low_opacity{
+                opacity: 30%;
+            }
+        }
+    }
+}
 .contain{
     position: relative;
     background-color: #fafafa;
@@ -15,10 +74,8 @@
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         justify-items: center;
         row-gap: 2%;
-        /* padding-block: 10%; */
         .section__title{
             width: 100%;
-            color: #ff0000;
             opacity: 60%;
             mix-blend-mode: darken;
             position: absolute;
@@ -54,13 +111,13 @@
                     mix-blend-mode: darken;
                 }
                 .article_one{
-                    background-color: #ff000044;
+                    opacity: 20%;
                 }
                 .article_two{
-                    background-color: #ff000088;
+                    opacity: 40%;
                 }
                 .article_three{
-                    background-color: #ff0000cc;
+                    opacity: 60%;
                 }
                 .issue__min-title{
                     position: absolute;

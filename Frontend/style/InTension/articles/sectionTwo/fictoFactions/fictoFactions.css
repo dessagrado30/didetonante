@@ -1,0 +1,57 @@
+.background__image{
+    top: -100%;
+}
+.section__text{
+    width: 900px;
+    height: 300px;
+    display: grid;
+    color: #666699;
+    grid-template-columns: 1fr 1fr;
+    mix-blend-mode: difference;
+    gap: 2%;
+    z-index: 1;
+    .title{
+        text-align: center;
+        position: relative;
+        width: 130px;
+        font-family: alte;
+        bottom: 0;
+        .ficto{
+            position: absolute;
+            top: -40%;
+            left: 100%;
+            font-size: 6rem;
+            transform: translate(-25%, 0);
+        }
+        .factions{
+            line-height: 0;
+            position: absolute;
+            font-size: 5rem;
+            right: -80%;
+            top: 0;
+            transform-origin: center;
+            transform: rotate(-90deg) translate(-50%, 0);
+        }
+    }
+    .paragraph__container{
+        width: 780px;
+        margin-top: 2%;
+        left: 0;
+        opacity: 70%;
+        background-color: #9933ff;
+        mix-blend-mode: difference;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .description{
+            width: 90%;
+            color: #fafafa;
+            font-family: alte-regular;
+            font-size: 1.2rem;
+            line-height: 1.4;
+            text-align: justify;
+            
+        }
+    }
+}
