@@ -3,17 +3,20 @@ body{
 }
 .articles{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
     width: 100%;
 }
-.article_one{
+.article{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: relative;
     width: 80%;
     min-width: 400px;
     max-width: 700px;
     font-family: alte;
+    margin-bottom: 10%;
     .title{
         font-size: 3rem;
     }

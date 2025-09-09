@@ -24,7 +24,7 @@ body{
 }
 .banner{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     .banner__container{
         position: relative;
         width: 100%;
@@ -40,7 +40,7 @@ body{
             height: 100%;
             img{
                 position: absolute;
-                width: 100%;
+                width: 120%;
                 height: fit-content;
                 top: -40%;
             }
