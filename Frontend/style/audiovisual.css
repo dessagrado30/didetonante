@@ -303,7 +303,7 @@
                     .controls{
                         background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));;
                         .container__elements{
-                            top: .5%;
+                            top: 5%;
                             .controls__container{
                                 border-top: 1px solid #fafafa55;
                                 .buttons{

@@ -3,6 +3,12 @@ body{
     --section-1-color:#ff0000;
     --section-2-color:#9400ff;
     --section-3-color:#006666;
+    --issue-color: #d7ff39;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .section__one-color{
     background-color: var(--section-1-color);
@@ -21,6 +27,9 @@ body{
 }
 .section__three-text-color{
     color: var(--section-3-color);
+}
+.issue-color{
+    background-color: var(--issue-color);
 }
 .banner{
     width: 100vw;
@@ -58,42 +67,49 @@ body{
     }
 }
 .contain{
-    position: relative;
+    position: sticky;
+    top: 0;
     background-color: #fafafa;
     width: 100%;
+    /* max-width: 1000px; */
     height: auto;
+    /* border-radius: 30px; */
     display: flex;
     justify-content: center;
-    padding: 5% 0 20% 0;
+    padding-block: 10%;
+    /* margin-block: 10%; */
     .articles__list{
         position: relative;
         width: 100%;
         max-width: 1700px;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        justify-items: center;
-        row-gap: 2%;
+        /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+        grid-template-columns: 1fr;
+        justify-items: center;        
+        row-gap: 0%;
         .section__title{
+            color: #0b0b0b;
             width: 100%;
-            opacity: 60%;
+            /* opacity: 60%; */
             mix-blend-mode: darken;
             position: absolute;
             display: flex;
             justify-content: center;
             font-family: alte;
-            font-size: 12rem;
-            line-height: .5;
+            font-size: 7rem;
+            line-height: 1;
             top: -15%;
             /* display: none; */
         }
         .title_matters{
-            font-size: 11rem;
+            font-size: 5rem;
         }
         .article{
             position: relative;
-            width: 85%;
-            height: 30vh;
+            width: 90%;
+            max-width: 700px;
+            height: 15vh;
             overflow: hidden;
             border-radius: 20px;
             bottom: -12%;
@@ -103,13 +119,18 @@ body{
             .article__title{
                 position: absolute;
                 width: 100%;
-                height: 65%;
-                bottom: 0;                
+                height: 80%;
+                bottom: 0;
+                /* opacity: 0;                */
                 .filter{
+                    position: absolute;
                     width: 100%;
-                    height: 100%;
-                    mix-blend-mode: darken;
+                    height: 60%;
+                    bottom: 0;
+                    /* mix-blend-mode: darken; */
+                    
                 }
+                
                 .article_one{
                     opacity: 20%;
                 }
@@ -126,8 +147,8 @@ body{
                     text-align: center;
                     font-family: mont-black;
                     font-weight: italic;
-                    color: #fafafa;
-                    font-size: 2rem;
+                    color: #0b0b0b;
+                    font-size: 1.5rem;
                     left: 50%;
                     transform: translate(-50%, 0);
                     span{
@@ -140,12 +161,12 @@ body{
             .description_box{
                 position: absolute;
                 width: 100%;
-                height: 35%;
-                background-color: #ffffff;
+                height: 40%;
+                /* background-color: var(--section-1-color); */
                 bottom: 0;
             }
             .description_text{
-                margin: 3% 10% 3% 10%;
+                margin: 0 10% 0 10%;
                 font-family: alte-regular;
                 font-weight: 500;
                 font-size: 1.2rem;
@@ -154,9 +175,16 @@ body{
     }
 }
 .articles{
+    background-color: #fafafa;
     position: relative;
+    width: 100%;
     .articles__container{
         width: 100%;
         height: 200vh;
     }
+}
+.in-tension__footer{
+    /* position: absolute; */
+    width: 100%;
+    /* bottom: 0; */
 }
