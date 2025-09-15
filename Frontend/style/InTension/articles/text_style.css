@@ -1,7 +1,17 @@
 body{
-    background-color: #fafafa;
+    --section-1-color:#ff0000;
+    --section-2-color:#9400ff;
+    --section-3-color:#006666;
+    --issue-color: #d7ff39;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
 .articles{
+    /* background-color: aqua  ; */
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -9,19 +19,62 @@ body{
     width: 100%;
 }
 .article{
+    position: relative;
+    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
     position: relative;
     width: 80%;
     min-width: 400px;
-    max-width: 700px;
-    font-family: alte;
+    max-width: 800px;
+    font-family: alte-regular;
     margin-bottom: 10%;
-    .title{
-        font-size: 3rem;
-    }
+
     .text{
         text-align: justify;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+.title__container{
+    /* background-color: #9400ff; */
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 10% 0 2% 0;
+
+    .title{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #00000022;
+        font-family: alte;
+        font-size: 5rem;
+        /* bottom: 0; */
+        background-size: cover;
+        background-clip: text;
+        background-position: fixed;
+        p{
+            margin: 0;
+        }
+    }
+    .image{
+        background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
+    }
+    .filter{
+        position: absolute;
+        mix-blend-mode: darken;
+
+    }
+    .group_one{
+        background-color: var(--section-1-color);
+        opacity: 70%;
+    }
+    .group_two{
+        background-color: var(--section-2-color);
+        opacity: 30%;
+    }
+    .group_three{
+        background-color: var(--section-3-color);
+
     }
 }
