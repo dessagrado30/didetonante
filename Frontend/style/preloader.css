@@ -20,21 +20,6 @@
   }
   .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
   
-  /* svg-path */
-  /* .svgpath-0bc2ef862b96 > svg {
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translate(0px,0px);
-  } */
-  /* .svgpath-0bc2ef862b96 {
-    position: absolute;
-    left: 115.15px;
-    top: 95.98px;
-    width: 193.7px;
-    height: 232.61px;
-  } */
   .llamita__container{
     position: absolute;
     width: 150px;
@@ -50,7 +35,6 @@
   .llamita{
     position: absolute;
     top: 50%;
-    /* cursor: pointer; */
     animation-name: escala;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -73,7 +57,6 @@
   }
   .texto{
     position: absolute;
-    /* background-color: red; */
     overflow: hidden;
     display:flex;
     justify-content:center;
@@ -82,7 +65,6 @@
     height: 100%;
     filter: saturate(0);
     p{
-      /* animation: scrollpreloader 50s linear infinite; */
       font-family:"Rozha One";
       /* background-color:blue; */
       position: absolute;
