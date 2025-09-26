@@ -3,12 +3,15 @@ body{
     --section-1-color:#ff0000;
     --section-2-color:#9400ff;
     --section-3-color:#006666;
-    --issue-color: #d7ff39;
+    --issue-color: #d8fc00;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+.section__cero-color{
+    background-color: var(--issue-color);
 }
 .section__one-color{
     background-color: var(--section-1-color);
@@ -49,14 +52,14 @@ body{
             height: 100%;
             img{
                 position: absolute;
-                width: 120%;
+                width: 100%;
                 height: fit-content;
-                top: -40%;
+                top: 5%;
             }
             .filtro__banner{
                 position: absolute;
-                opacity: 70%;
-                mix-blend-mode: darken;
+                opacity: 100%;
+                mix-blend-mode: multiply;
                 width: 100%;
                 height: 100%;
             }
@@ -70,14 +73,11 @@ body{
     position: relative;
     top: 0;
     background-color: #fafafa;
-    /* width: 80%; */
     padding: 15%;
     height: auto;
     display: grid;
-    /* gap: 2%; */
     padding-bottom: 50%;
     justify-content: center;
-    /* padding-block: 10%; */
     .articles__list{
         border-top: 1px solid #0b0b0b55;
         position: sticky;
@@ -109,7 +109,7 @@ body{
         .article:not(:last-of-type){
             border-right: 1px solid #0b0b0b55;
         }
-        .article{
+        .pre-article{
             /* animation-name: show;
             animation-timeline: view();
             animation-range: entry 0 cover 20%; */
@@ -204,6 +204,7 @@ body{
         }
     }
 }
+
 .one{
     animation-name: showone;
     animation-timeline: view();
@@ -257,7 +258,7 @@ body{
     width: 100%;
     .articles__container{
         width: 100%;
-        height: 200vh;
+        height: 145vh;
     }
 }
 .in-tension__footer{
