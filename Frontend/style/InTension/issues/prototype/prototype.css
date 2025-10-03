@@ -60,10 +60,13 @@ a{
     opacity: 100%;
 }
 .index{
+    background-color: blueviolet;
     .articles__box{
+        width: 100%;
         justify-content: center;
         transform: translate(0, -180%);
         .articles__container{
+            /* background-color: aquamarine; */
             left: 50%;
         }
         .box__section{
@@ -84,3 +87,5 @@ a{
 .separator{
     height: 1000px;
 }
+
+/* sections container. */

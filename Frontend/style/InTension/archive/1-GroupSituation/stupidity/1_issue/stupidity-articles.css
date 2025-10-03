@@ -27,7 +27,7 @@
 .article-one{
     width: 45%;
     display: grid;
-    margin-bottom: 0;
+    margin-bottom: 10%;
     .article__head{ 
         position: relative;
         display: grid;
