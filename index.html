@@ -17,10 +17,11 @@
 
 	<link rel="stylesheet" href="Frontend/style/normalize.css">
 	<link rel="stylesheet" href="Frontend/style/style.css">
+	<link rel="stylesheet" href="Frontend/style/header-and-behavior.css">
 	<link rel="stylesheet" href="Frontend/style/contacto.css">
 	<link rel="stylesheet" href="Frontend/style/editorial.css">
 	<link rel="stylesheet" href="Frontend/style/audiovisual.css">
-	<link rel="stylesheet" href="Frontend/style/revistas.css">
+	<!-- <link rel="stylesheet" href="Frontend/style/revistas.css"> -->
 
 	<!-- todas las fuentes -->
 	<link rel="stylesheet" href="/Frontend/assets/fonts/fonts.css">
@@ -265,7 +266,7 @@
 						<a href="Frontend/templates/InTension/in-tension.html">
 						<figure id="zine__logo" class="film__icon">
 							<!-- <img class="film__icon" src='Frontend/assets/logos/TheUrmandicaZine.webp' alt="logo de cortometraje Silencio"> -->
-							<img class="film__icon" src='Frontend/assets/logos/logoPortadaIntension.webp' style="view-transition-name: logo-intension-start" alt="logo de cortometraje Silencio">
+							<img class="film__icon" src='Frontend/assets/logos/intension.svg' style="view-transition-name: logo-intension-start" alt="logo de cortometraje Silencio">
 						</figure>
 						</a>
 						<p id="zine__parag" class="paragraph__item">
@@ -275,15 +276,17 @@
 					<!-- <div class="carrusel_button left"></div>	 -->
 					 <div class="carrusel__container">
 						<div class="carrucel-zine">
-							<div id="the_urmadic_3" class="issues-min the_urmadic-1" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/SILENCIO.webp', 'logo de cortometraje Silencio', 'Cortometraje realizado a partir de Cicatrices del Silencio, un documento basado en talleres desarrollados en siete cárceles de Colombia. Testimonio de resistencia, autonomía y lucha por la dignidad.', 'Frontend/assets/img/nodos/audiovisual/silencio.webp', [1, 0, 0, 0, 0], 'lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o', 'SILENCIO')" onclick="vmodal('lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o?autoplay=1&muted=0&loop=1?subtitle=en', 'SILENCIO', 1)">
-								<figure>
-									<img class="issue__image issue-3" id="the_urmadic_3" src="Frontend/assets/img/in_tension/TonyFry_texture.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
-									<div class="gradient"></div>
-									<p class="name-issue">border <span>lands</span></p>
-									<div class="filter_color color_borderlands"></div>
-								</figure>
+							<a href="/Frontend/templates/InTension/issues/prototype/prototype.html">
+								<div id="the_urmadic_3" class="issues-min the_urmadic-1" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/SILENCIO.webp', 'logo de cortometraje Silencio', 'Cortometraje realizado a partir de Cicatrices del Silencio, un documento basado en talleres desarrollados en siete cárceles de Colombia. Testimonio de resistencia, autonomía y lucha por la dignidad.', 'Frontend/assets/img/nodos/audiovisual/silencio.webp', [1, 0, 0, 0, 0], 'lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o', 'SILENCIO')" onclick="vmodal('lone.earth/videos/embed/gDjXofHbBFXDKnVCGAtE4o?autoplay=1&muted=0&loop=1?subtitle=en', 'SILENCIO', 1)">
+									<figure>
+										<img class="issue__image issue-3" id="the_urmadic_3" src="Frontend/assets/img/in_tension/TonyFry_texture.webp" alt="portada, sistematización audiovisual - red peruana de masculinidades">
+										<div class="gradient"></div>
+										<p class="name-issue">border <span>lands</span></p>
+										<div class="filter_color color_borderlands"></div>
+									</figure>
 
-							</div>
+								</div>
+							</a>
 							<div id="the_urmadic_2" class="issues-min the_urmadic-2" onmouseover="changeControlsP('film__icon','Frontend/assets/icons/audiovisuales/MUTANTE.webp', 'logo de cortometraje Mutante', '¿Cuánto de eso a lo que he llamado otrx, me habita y me hace monstrux? Sabiendo mis entrañas contaminadas con los colores extravagantes, los silencios estridentes y las formas deformadas de las fronteras que se hacen diluibles a través de los susurros.', 'Frontend/assets/img/nodos/audiovisual/mutante_mapa.webp', [0, 1, 0, 0, 0], 'lone.earth/videos/embed/3dfdb4a5-bf8b-42cd-bb82-376cc8a61475', 'MUTANTE')" onclick="vmodal('lone.earth/videos/embed/3dfdb4a5-bf8b-42cd-bb82-376cc8a61475?autoplay=1&muted=0&loop=1?subtitle=en', 'MUTANTE', 1)">
 								<figure>
 									<img class="issue__image issue-2" id="the_urmadic_2"  src="Frontend/assets/img/in_tension/issues/textura_muro.webp" alt="portada, lumbre en el viento ">

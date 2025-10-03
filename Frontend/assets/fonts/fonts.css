@@ -117,3 +117,40 @@
     font-family: VintageGlitch;
     src: url("VintageGlitch/Vintage Glitch.ttf") format("opentype");
 }
+
+@font-face {
+    font-family: bigw;
+    src: url("bigwhale/Bigwhale.otf") format("opentype");
+}
+
+
+
+
+/* cuerpo de texto */
+
+@font-face {
+    font-family: grazie;
+    src: url("./grazie_mille/ttf/GrazieMille-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: grazie-semi;
+    src: url("./grazie_mille/ttf/GrazieMille-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: grazie-bold;
+    src: url("./grazie_mille/ttf/GrazieMille-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: grazie-bold-italic;
+    src: url("./grazie_mille/ttf/GrazieMille-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: grazie-italic;
+    src: url("./grazie_mille/ttf/GrazieMille-Italic.ttf") format("truetype");
+}
+

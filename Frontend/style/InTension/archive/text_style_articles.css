@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.articles{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.article__content{
+    background-color: #fafafa;
+    max-width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    color: #00000022;
+    font-family: alte;
+    background-size: cover;
+    background-clip: text;
+    background-position: fixed;
+    /* p{
+        margin-bottom: 40%;
+    } */
+
+}
+.title__image{
+    position: absolute;
+    background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
+    background-position: bottom;
+}
+.title__filter{
+    position: relative;
+    mix-blend-mode: multiply;
+}
+
+.text{
+    font-family: grazie;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.separator{
+    height: 500px;
+}
+

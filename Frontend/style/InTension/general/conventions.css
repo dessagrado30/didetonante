@@ -1,0 +1,51 @@
+body{
+    --section-1-color:#ff0000;
+    --section-2-color:#9400ff;
+    --section-3-color:#006666;
+    --issue-color: #d7ff39;
+    background-color: #fafafa;
+}
+.section__one-color{
+    background-color: var(--section-1-color);
+}
+.section__two-color{
+    background-color: var(--section-2-color);
+}
+.section__three-color{
+    background-color: var(--section-3-color);
+}
+.section__one-text-color{
+    color: var(--section-1-color);
+}
+.section__two-text-color{
+    color: var(--section-2-color);
+}
+.section__three-text-color{
+    color: var(--section-3-color);
+}
+.issue-color{
+    background-color: var(--issue-color);
+}
+
+/* articles convensions - temp */
+
+.group_cero{
+    background-color: var(--issue-color);
+}
+.group_one{
+    background-color: var(--section-1-color);
+    opacity: 70%;
+}
+.group_two{
+    background-color: var(--section-2-color);
+    opacity: 30%;
+}
+.group_three{
+    background-color: var(--section-3-color);
+}
+
+.separator{
+    width: 100%;
+    height: 1000px;
+}
+

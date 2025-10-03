@@ -1,6 +1,9 @@
 
-/* .article{
-    background-color: blueviolet;
+body{
+    overflow: hidden;
+    min-height: 100px;
+}
+.article{
     display: flex;
     justify-content: center;
 }
@@ -11,4 +14,4 @@
     text-align: justify;
     font-size: 1.8rem;
     line-height: 2.5rem;
-} */
+}
