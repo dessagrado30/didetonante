@@ -15,19 +15,13 @@
 .contain{
     position: relative;
     background-color: #fafafa;
-    /* width: 80%; */
     padding: 5% 12% 15% 20%;
     height: auto;
     display: grid;
-    /* gap: 2%; */
-    /* padding-bottom: 50%; */
     justify-content: center;
-    /* padding-block: 10%; */
     .articles__list{
-        /* border-top: 1px solid #0b0b0b55; */
         position: relative;
         background-color: #fafafa;
-        /* top: 20%; */
         width: 100%;
         min-width: 300px;
         max-width: 1700px;
@@ -102,7 +96,6 @@
 
                     .image__container{
                         position: relative;
-                        /* background-color: #9400ff; */
                         overflow: hidden;
                         width: 100%;
                         height: 100%;
@@ -111,9 +104,8 @@
                             position: absolute;
                             height: 120%;
                             width: fit-content;
+                            transition-duration: .6s;
                         }
-
-
                     }
                     .image_text{
                         opacity: 50%;
@@ -163,6 +155,11 @@
                     font-family: alte-regular;
                     font-weight: 500;
                     font-size: 1.2rem;
+                }
+            }
+            &:hover{
+                img{
+                    transform: scale(1.03);
                 }
             }
         }

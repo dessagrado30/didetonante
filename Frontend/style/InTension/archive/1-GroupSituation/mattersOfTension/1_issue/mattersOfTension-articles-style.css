@@ -17,7 +17,7 @@
 }
 .title{
     text-align: center;
-    font-size: 6rem;
+    font-size: clamp(4rem, 6.8rem, 8rem);
 }
 
 .text{
@@ -39,12 +39,29 @@
     min-height: 500px;
     font-family: alte-regular;
     margin-bottom: 10%;
+    .title__container{
+        width: 100%;
+        .title{
+            width: 100%;
+        }
+        p{
+            display: grid;
+            line-height: .8lh;
+        }
+        .end{
+            font-size: clamp(4rem, 7rem, 8rem);
+        }
+        .times{
+            font-size: clamp(4rem, 9.5rem, 10rem);
+        }
+    }
+
 }
 .article__content--float{
     float: inline-start;
 }
 .article-two{
-    margin-block: 10%;
+    margin-block: 5%;
     display: grid;
     justify-content: center;
     align-items: center;

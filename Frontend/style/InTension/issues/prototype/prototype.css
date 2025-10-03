@@ -73,9 +73,14 @@ a{
 
     }
 }
+
 .index_issue{
     position: relative;
     img{
         top: 0;
     }
+}
+
+.separator{
+    height: 1000px;
 }

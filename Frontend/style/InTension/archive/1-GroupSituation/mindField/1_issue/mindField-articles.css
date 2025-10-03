@@ -1,29 +1,157 @@
-
-body{
+.article{
     background-color: #fafafa;
-    height: fit-content;
-    overflow: hidden;
+    width: 70%;
+    display: grid;
+    justify-items: center;
 }
-.articles{
-    display: flex;
-    justify-content: center;
+
+.title__container{
+    /* background-color: #ff0000; */
+    position: relative;
     width: 100%;
-    height: auto;
+    margin-block: 1%;
 }
-.article_one{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    position: absolute;
-    width: 40%;
-    height: 100vh;
-    font-family: alte;
-    .title{
-        /* line-height: 2rem; */
-        font-size: 3rem;
+.title{
+    text-align: center;
+    font-size: 6rem;
+}
+
+.text{
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.article-one{
+    margin-block: 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    position: relative;
+    min-width: 400px;
+    /* max-width: 1200px; */
+    min-height: 500px;
+    font-family: alte-regular;
+    margin-bottom: 10%;
+}
+.article__content--float{
+    float: inline-start;
+}
+.article-two{
+    margin-block: 2%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    position: relative;
+    min-width: 400px;
+    min-height: 500px;
+    font-family: alte-regular;
+    margin-bottom: 10%;
+
+    .title__container{
+        position: relative;
+        height: 350px;
+
+        .title{
+            top: -20%;
+            position: absolute;
+            width: 380px;
+            height: 150%;
+            p{
+                display: grid;
+                grid-template-columns: 38px 320px 22px;
+                grid-template-rows: 70px 70px 70px 120px;
+                font-size: 5rem;
+                width: 100%;
+                line-height: 5.5rem;
+                row-gap: 2%;
+
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* border: 1px solid blueviolet; */
+                }
+                .illution{
+                    font-family: alte-regular;
+                    grid-row: 1/2;
+                    grid-column: 1/4;
+                    font-size: clamp(3rem, 4.7rem, 5rem); 
+                }
+
+                .and{
+                    grid-column: 1/2;
+                    font-size: clamp(.8rem, 1.5rem, 2rem);              
+                }
+
+                .dangers{
+                    font-family: alte-regular;
+                    grid-column: 2/3;
+                    font-size: clamp(.8rem, 5.2rem, 8rem);
+                }
+
+                .of{
+                    grid-column: 3/4;
+                    font-size: 2rem;
+                    font-size: clamp(.8rem, 1.5rem, 2rem);  
+                }
+
+                .the{
+                    grid-column: 1/2;
+                    font-size: 2rem;  
+                    font-size: clamp(.8rem, 1.5rem, 2rem);  
+                }
+
+                .extended{
+                    grid-column: 2/4;
+                    font-size: clamp(4rem, 4.9rem, 5rem);  
+                }
+
+                .mind{
+                    grid-column: 1/4;
+                    font-size: clamp(5rem, 10.5rem, 20rem); 
+                }
+            }
+        }
     }
     .text{
-        text-align: justify;
-        font-size: 1.8rem;
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        gap: 10%;
+
+        .paragraph{
+            display: grid;
+            .subtitle{
+                display: grid;
+                font-family: grazie-semi;
+                font-size: 2rem;
+            }
+            span{
+                font-family: grazie-semi;
+
+            }
+            p{
+                min-width: 300px;
+            }
+            
+        }
     }
+}
+
+.figure__article--one{
+    position: fixed;
+    top: 0;
+    /* transform: translate(0, -100%); */
+    z-index: -1;
+}
+
+.figure__article--two{
+    position: sticky;
+    top: 100%;
+    transform: translate(0, -100%);
+    z-index: -1;
 }

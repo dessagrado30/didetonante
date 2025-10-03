@@ -42,6 +42,8 @@ body{
 }
 
 .text{
+    text-wrap: pretty;
+    
     font-family: grazie;
     font-size: 1.3rem;
     line-height: 2.5rem;
