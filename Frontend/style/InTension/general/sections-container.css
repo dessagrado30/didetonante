@@ -264,7 +264,7 @@
                     height: 100%;
                     background-color: var(--section-3-color);
                     mix-blend-mode: darken;
-                    opacity: 40%;
+                    opacity: 70%;
                 }
                 img{
                     position: absolute;
@@ -522,6 +522,10 @@
             border-radius: 5px 50px 5px 50px;
             overflow: hidden;
             grid-row: 1/3;
+            .article_description{
+                width: 70%;
+            }
+
             figure{
                 right: 0;
                 position: absolute;
@@ -626,6 +630,9 @@
             /* grid-column: 1/3; */
             grid-row: 1/4;
             overflow: hidden;
+            .article_description{
+                width: 70%;
+            }
             figure{
                 position: absolute;
                 margin: 0;
@@ -741,7 +748,7 @@
                 position: relative;
                 width: 90px;
                 height: 90px;
-                border: 8px solid #fafafa;
+                border: 5px solid #fafafa;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;

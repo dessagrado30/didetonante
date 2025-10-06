@@ -50,11 +50,11 @@
             border-right: 1px solid #0b0b0b55;
         } */
         .article--linesection{
-            border-left: 3px solid #d7ff39;
+            border-left: 1px solid #0b0b0b33;
         }
         .article{
             position: relative;
-            padding-top: 15%;
+            /* padding-top: 15%; */
             cursor: pointer;
             margin: 10% 0 10% 0;
             display: flex;

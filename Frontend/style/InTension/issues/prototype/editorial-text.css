@@ -3,7 +3,7 @@ body{
     overflow: hidden;
     min-height: 100px;
 }
-.article{
+/* .article{
     display: flex;
     justify-content: center;
 }
@@ -14,4 +14,4 @@ body{
     text-align: justify;
     font-size: 1.8rem;
     line-height: 2.5rem;
-}
+} */
