@@ -46,7 +46,7 @@ body{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .1), rgba(0, 0, 0, .2), rgba(0, 0, 0, .3));
     }
     .gradient__bg-sections{
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .2));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
     }
     .filtro__banner{
         position: absolute;

@@ -31,14 +31,30 @@ body{
     } */
 
 }
-.title__image{
+
+
+.title__image--situation{
     position: absolute;
-    background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
-    background-position: bottom;
+    background-image: url("/Frontend/assets/img/in_tension/articles/migracion.webp");
+    background-size: 500%;
+    background-position: 15%;
 }
-.title__filter{
+.title__filter--situation{
     position: relative;
-    mix-blend-mode: multiply;
+    mix-blend-mode: darken;
+    opacity: 100%;
+} 
+
+.title__image--movement{
+    position: absolute;
+    background-image: url("/Frontend/assets/img/in_tension/articles/Poster_zoom.webp");
+    background-size: 30lh;
+    background-position: 30% 40%;
+}
+.title__filter--movement{
+    position: relative;
+    mix-blend-mode: darken;
+    opacity: 40%;
 }
 
 .text{

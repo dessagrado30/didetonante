@@ -139,10 +139,10 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            opacity: 0;
+            /* opacity: 0; */
             bottom: 0;
-            left: 10%;
-            transform: translate(0, 130%);
+            /* left: 10%; */
+            /* transform: translate(0, 130%); */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -202,8 +202,8 @@
                 height: 100%;
                 border-radius: 50%;
                 overflow: hidden;
-                top: 0;
                 position: absolute;
+                top: 0;
                 img{
                     transform: translate(-50%, -50%);
                     height: 500%;
@@ -791,7 +791,6 @@
         }
         &:hover{
             .content__icons{
-                left: 0;
                 opacity: 1;
             }
         }

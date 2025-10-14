@@ -357,21 +357,22 @@ section{
 }
 
 .section__title{
-    margin: 0;
-    padding-bottom: 2%;
     color: #00000022;
-    font-family: alte;
-    font-size: 5rem;
     background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
     background-size: cover;
     background-clip: text;
+}
+.vertical__title{
+    margin: 0;
+    padding-bottom: 2%;
+    font-family: alte;
+    font-size: 5rem;
     background-position: fixed;
     position: absolute;
     left: 0;
     top: 40%;
-}
-.vertical__title{
     transform: rotate(-90deg);
+
 }
 
 .icon__title{
@@ -663,6 +664,20 @@ section{
         }
     }
 }
+.articles__container{
+    .content__icons{
+        opacity: 0;
+        left: 10%;
+        transform: translate(0, 130%);
+    }
+    &:hover{
+        .content__icons{
+            left: 0;
+            opacity: 1;
+        }
+    }
+}
+
 .banner{
     h3{
         position: absolute;
