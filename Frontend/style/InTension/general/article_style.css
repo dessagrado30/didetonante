@@ -46,7 +46,7 @@
 @keyframes showtitleh{
     from {
         opacity: 1;
-        transform: translate(250%, -600px);
+        transform: translate(200%, -600px);
     }
     to {
         opacity: 1;

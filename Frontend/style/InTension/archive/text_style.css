@@ -1,8 +1,8 @@
 body{
-    --section-1-color:#ff0000;
+    /* --section-1-color:#ff0000;
     --section-2-color:#9400ff;
     --section-3-color:#006666;
-    --issue-color: #d7ff39;
+    --issue-color: #d7ff39; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,7 +95,7 @@ body{
         filter: brightness(.8);
 
     }
-    .group_cero{
+    /* .group_cero{
         background-color: var(--issue-color);
     }
     .group_one{
@@ -109,5 +109,5 @@ body{
     .group_three{
         background-color: var(--section-3-color);
 
-    }
+    } */
 }

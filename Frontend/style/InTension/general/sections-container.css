@@ -73,10 +73,10 @@
             filter: saturate(0) brightness(90%) blur(2px);
         }
         .filter_red, .filter_aquamarine{
-            opacity: 70%;
+            opacity: 100%;
         }
         .filter_violet{
-            opacity: 30%;
+            opacity: 100%;
         }
         .filter_issue{
             opacity: 100%;
@@ -187,7 +187,7 @@
                     height: 100%;
                     background-color: var(--section-1-color);
                     mix-blend-mode: darken;
-                    opacity: 70%;
+                    /* opacity: 70%; */
                 }
                 img{
                     position: absolute;
@@ -223,7 +223,7 @@
                     height: 100%;
                     background-color: var(--section-2-color);
                     mix-blend-mode: darken;
-                    opacity: 40%;
+                    /* opacity: 40%; */
                 }
                 img{
                     position: absolute;
@@ -264,7 +264,7 @@
                     height: 100%;
                     background-color: var(--section-3-color);
                     mix-blend-mode: darken;
-                    opacity: 70%;
+                    /* opacity: 70%; */
                 }
                 img{
                     position: absolute;

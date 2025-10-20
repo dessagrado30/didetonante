@@ -1,6 +1,6 @@
 body{
-    --section-1-color:#ff0000;
-    --section-2-color:#9400ff;
+    --section-1-color:#ff0000bb;
+    --section-2-color:#9400ff55;
     --section-3-color:#006666;
     --issue-color: #d8fc00;
     background-color: #fafafa;
@@ -26,26 +26,4 @@ body{
 .issue-color{
     background-color: var(--issue-color);
 }
-
-/* articles convensions - temp */
-
-.group_cero{
-    background-color: var(--issue-color);
-}
-.group_one{
-    background-color: var(--section-1-color);
-    opacity: 70%;
-}
-.group_two{
-    background-color: var(--section-2-color);
-    opacity: 30%;
-}
-.group_three{
-    background-color: var(--section-3-color);
-}
-
-/* .separator{
-    width: 100%;
-    height: 100px;
-} */
 

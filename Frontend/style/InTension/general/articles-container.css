@@ -19,16 +19,17 @@
     height: auto;
     display: grid;
     justify-content: center;
-    gap: 20%;
+    gap: 5%;
 
     .articles__list--situation{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
         grid-auto-flow: 1fr 1fr;
         /* .container{
             height: 380px;
         } */
+
         .container--principal{
             position: relative;
             grid-column: 1/4;
@@ -39,11 +40,9 @@
             }
         }
     }
-    .articles__list--movement{
+    .articles__list--movement, .articles__list--explosion{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-        /* grid-auto-flow: 1fr 1fr; */
         .container--principal{
             position: relative;
             grid-row: 1/3;
@@ -53,6 +52,14 @@
             }
         }
     }
+
+    .articles__list--explosion{
+        .container--principal{
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+    }
+
     .articles__list{
         position: relative;
         background-color: #fafafa;
@@ -141,10 +148,12 @@
                             position: absolute;
                             height: 120%;
                             width: fit-content;
+                            
                             transition-duration: .6s;
                         }
                         .principal{
                             width: 100%;
+                            transform: translate(0, -50%);
                             height: fit-content;
                         }
                     }
@@ -156,16 +165,6 @@
                         height: 100px;
                         bottom: 0;
 
-
-                        .article_one{
-                            opacity: 20%;
-                        }
-                        .article_two{
-                            opacity: 40%;
-                        }
-                        .article_three{
-                            opacity: 60%;
-                        }
                         .issue__min_title--filter{
                             position: absolute;
                             /* background-color: #ff0000aa; */
@@ -186,8 +185,10 @@
                             }
                         }
                         .image_text{
-                            opacity: 50%;
+                            opacity: 70%;
                             position: absolute;
+                            font-family: mont-medium;
+                            font-size: .7rem;
                             bottom: 0;
                             right: 0;
                             margin: 1%;

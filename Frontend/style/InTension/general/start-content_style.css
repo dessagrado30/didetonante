@@ -1,5 +1,5 @@
 
-body{
+/* body{
     --section-1-color:#ff0000;
     --section-2-color:#9400ff;
     --section-3-color:#006666;
@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-}
+} */
 
 .banner{
     width: 100vw;
@@ -58,11 +58,11 @@ body{
         mix-blend-mode: color;
     }
     .banner-section{
-        opacity: 70%;
+        opacity: 100%;
         mix-blend-mode: darken;
     }
     .low_opacity{
-        opacity: 30%;
+        opacity: 100%;
     }
 }
 
