@@ -20,7 +20,8 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
-    gap: 5%;
+    grid-template-rows: auto auto auto;
+
 
     .articles__list{
         position: relative;
@@ -28,7 +29,17 @@
         min-width: 300px;
         max-width: 1300px;
         width: 90%;
-        gap: 3rem;
+        /* gap: 5%; */
+
+        .vertical__title{
+            position: sticky;
+            top: 0;
+            color: #0b0b0b;
+            background-color: antiquewhite;
+            transform-origin: center center;
+            transform: translate(-150%, 0) rotate(-90deg);
+        }
+        
         .section__title{
             color: #0b0b0b;
             width: 100%;
@@ -99,21 +110,14 @@
                     .image__container{
                         position: relative;
                         overflow: hidden;
-                        /* width: 100%; */
                         height: 100%;
                         img{
                             position: absolute;
                             object-fit: cover;
                             width: 120%;
                             height: 120%;
-                            /* width: fit-content; */
                             transition-duration: .6s;
                         }
-                        /* .principal{
-                            width: 100%;
-                            transform: translate(0, -50%);
-                            height: fit-content;
-                        } */
                     }
 
                     .article__title{
@@ -174,10 +178,11 @@
     }
     .articles__list--situation{
         padding: 0;
-        padding: 30% 0 20% 0;
+        padding: 10% 0 0 0;
         display: grid;
         grid-template-columns: minmax(90%, 1200px);
         justify-content: center;
+        gap: 5%;
 
         .container--principal{
             height: 350px;
@@ -193,16 +198,14 @@
         }
     }
     .articles__list--movement, .articles__list--explosion{
-        padding: 0 0 10% 0;
+        padding: 40% 0 0 0;
         display: grid;
         width: 90%;
         max-width: 1200px;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         justify-content: center;
-        gap: 5%;
-        /* & > *{
-            border: 1px solid black;
-        } */
+        gap: 10%;
+
         .container--principal{
             max-width: 600px;
             min-height: 90%;
@@ -215,7 +218,7 @@
             grid-template-columns: 1fr;
             grid-template-rows: 350px 350px;
             justify-items: center;
-            gap: 5%;
+            gap: 8%;
             /* .article{
                 height: auto;
             } */

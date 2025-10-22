@@ -396,6 +396,7 @@ section{
 }
 
 .page1{
+    /* background-color: #00000000; */
     height: 600px;
     padding-block: 1%;
 }
