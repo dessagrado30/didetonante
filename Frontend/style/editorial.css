@@ -212,7 +212,6 @@
 
     .zn__grid{
         .issues__container{
-            /* background-color: rgb(43, 189, 226); */
             display: grid;
             grid-template-columns: 4fr 2fr 6fr;
             grid-template-rows: 1fr;

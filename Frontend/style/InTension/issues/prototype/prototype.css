@@ -3,48 +3,42 @@ body{
     height: fit-content;
     overflow-x: hidden;
 }
-/* .articles{
+.articles{
+    position: absolute;
+    padding: 5% 0 0 0;
     display: flex;
     justify-content: center;
     width: 100%;
     height: auto;
 }
-.article{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    position: absolute;
-    width: 40%;
-    height: 100vh;
-    font-family: alte;
-    .title{
-        font-size: 3rem;
-    }
-    .text{
-        text-align: justify;
-        font-size: 1.8rem;
-        line-height: 3rem;
-    }
-} */    
 
 .issue-pres{
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     gap: 0;
     .title-issue{
         color: #fafafa;
         margin: 0;
-        width: 100%;
+        width: 20%;
+        min-width: 300px;
         font-family: mont-extrabold;
-        font-size: 4.5rem;
+        font-size: clamp(2rem, 10vw, 4.5rem);
         text-align: center;
         bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .issue-icon{
-        width: 100%;
+        width: 20%;
+        min-width: 300px;
         margin: 0;
+        display: flex;
+        justify-content: center;
         img{
             margin: 0;
             width: 100%;
@@ -112,7 +106,7 @@ a{
 }
 
 .separator{
-    height: 1100px;
+    height: 1500px;
 }
 
 
@@ -196,22 +190,16 @@ a{
     }
 
 }
+.ftr{
+    min-height: 500px;
+}
+@media (width < 1700px){
+    .index{
+        height: 400px;
+        & > *{
+            display: none;
+        }
+    }
+    
 
-.content__box, .vertical__title{
-    display: none;
-}
-.separator{
-    background-color: #fafafa;
-    height: 700px;
-}
-@media (width > 1700px){
-    .vertical__title{
-        display: initial;
-    }
-    .content__box{
-        display: flex;
-    }
-    .separator{
-        height: 1000px;
-    }
 }

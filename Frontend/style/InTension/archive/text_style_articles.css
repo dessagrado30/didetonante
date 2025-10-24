@@ -29,9 +29,7 @@ body{
     /* p{
         margin-bottom: 40%;
     } */
-
 }
-
 
 .title__image--situation{
     position: absolute;
@@ -59,7 +57,6 @@ body{
 
 .text{
     text-wrap: pretty;
-    
     font-family: grazie;
     font-size: 1.3rem;
     line-height: 2.5rem;

@@ -9,9 +9,9 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    & > *{
+    /* & > *{
         border: 1px solid white;
-    }
+    } */
     .title{
         text-align: center;
         position: relative;
@@ -21,14 +21,14 @@
         color: #fafafa;
         bottom: 0;
 
-        .factions{
+        .re{
             position: absolute;
             top: -45%;
             left: 0;
             font-size: 8rem;
             transform: translate(0, 0);
         }
-        .ficto{
+        .views{
             line-height: 0;
             position: absolute;
             font-size: 6rem;

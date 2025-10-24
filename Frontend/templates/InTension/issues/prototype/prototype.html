@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/Frontend/style/InTension/in-tension.css">
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/conventions.css">
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/start-content_style.css">
+	<link rel="stylesheet" href="/Frontend/style/InTension/archive/text_style.css">
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/sections-container.css">
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/articles-container.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/issues/prototype/prototype.css">
@@ -47,7 +48,7 @@
                 <div class="filtro__banner gradient gradient__bg-prototype"></div>
             </figure>
             <div class="issue-pres">
-                <h1 class="title-issue">Prototype edition</h1>
+                <h1 class="title-issue"><span>Prototype</span> <span>edition</span></h1>
                 <figure class="issue-icon">
                     <img src="/Frontend/assets/icons/in-tension/issue-icon.svg" alt="Intension - Prototype edition">
                 </figure>
@@ -60,8 +61,27 @@
         </div>
     </a>
     <section class="articles">
-        <iframe class="articles__container" src="./editorial-text.html" frameborder="0"></iframe>
+        <div class="article article__editorial">
+            <div class="title__container">
+                <figure class="icon">
+                    <img src="/Frontend/assets/icons/in-tension/content/1_reposo.svg" alt="">
+                </figure>
+                <div class="title image">
+                    <p>Editorial <span>STATEMENT</span></p>
+                </div>
+                <div class="title filter issue-color">
+                    <p>Editorial <span>STATEMENT</span></p>
+                </div>
+            </div>
+            <p class="text">
+                In Tension has an independent institutionally unaligned position. Its perspectives will be critical, intercultural and committed to advancing views and actions that resist the defuturing and neo-reactionary forces, politics and cultures that have become such a feature of the global present. Its forms of address aim to be accessible without shying away from engaging and presenting issues from either practical or theoretical points of view. We editors will invite contributions and submissions on diverse current topics. Our material will be bi-lingual, and visual content will be integral to our approach to communication. We will question, argue, provoke and enter into dialogue with readers.
+            </p>
+            <p class="text">
+                In Tension is not just a website and pdf publication, it is also a project and a platform under construction. The intention of In Tension is to grow the project as readership grows in size and in active engagement. Podcasts will come soon, events a little later. Projects will emerge out of circumstances, needs, and created relationships.  Its aim is to expose challenging ideas and issues, explore and develop contrapractices, prompt and host dialogue. It will appear bi-annually. Our contributors will be diverse and global. 
+            </p>
+        </div>
     </section>
+
     <section class="index">
         <figure class="background__image index_issue">
             <img class="back_image-intex" src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="Issue One. Principal image">
@@ -192,12 +212,10 @@
     <div class="separator">
     </div>
     <section class="contain">
-        
+        <div class="pin__color pin__color--one">
+            <p>SITUATION</p>
+        </div>
         <ul id="situated" class="articles__list articles__list--situation">
-            <!-- <div>
-
-            </div>             -->
-
             <li class="article article--linesection container--principal">
                 <!-- <div class="section__name issue-color">
                     <p>Matters of tension</p>
@@ -229,7 +247,7 @@
                     <div class="container two">
                         <a href="/Frontend/templates/InTension/archive/1-GroupSituation/2_mindField/1_issue/mindField-articles.html">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/migracion.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/Poster_zoom.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__one-color"></div>
                                     <h2 class="issue__min_title">The illusion and dangers <span>of the extended mind</span></h2>
@@ -250,7 +268,7 @@
                     <div class="container three">
                         <a href="/Frontend/templates/InTension/archive/1-GroupSituation/3_stupidity/1_issue/stupidity-articles.html">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/migracion.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__one-color"></div>
                                     <h2 class="issue__min_title">AI and energy</h2>
@@ -272,7 +290,7 @@
                     <div class="container four">
                         <a href="/Frontend/templates/InTension/archive/1-GroupSituation/4_borderLands/1_issue/borderLands-articles.html">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/migracion.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/palestine2025_16x9.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__one-color"></div>
                                     <h2 class="issue__min_title">Voices from the Borderland</h2>
@@ -290,19 +308,18 @@
             </div>
 
         </ul>
-
-        <p class="vertical__title">In This Issue</p>
-
+        <div class="pin__color pin__color--two">
+            <p>MOVEMENT</p>
+        </div>
         <ul id="movement" class="articles__list articles__list--movement">
             <!-- <div>
 
             </div>             -->
-
             <li class="article article--linesection container--principal">
                 <div class="container one">
                     <a href="/Frontend/templates/InTension/archive/2-GroupMovement/5_reEducation/1_issue/reEducation-article.html">
                         <div class="img__box article_one">
-                            <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                            <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/textura_muro.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                             <div class="article__title">
                                 <div class="issue__min_title--filter section__two-color"></div>
                                 <h2 class="issue__min_title">Education-in-error</h2>
@@ -322,7 +339,7 @@
                     <div class="container two">
                         <a href="/Frontend/templates/InTension/archive/2-GroupMovement/6_onResistance/1_issue/onResistance-articles.html">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__two-color"></div>
                                     <h2 class="issue__min_title">The language of war, conflict, and resistance</h2>
@@ -340,10 +357,10 @@
                     <div class="container three">
                         <a href="/Frontend/templates/InTension/archive/2-GroupMovement/6_onResistance/1_issue/onResistance-articles.html#situated_resistence">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/Poster_zoom.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__two-color"></div>
-                                    <h2 class="issue__min_title">Situated resistance: first pass at the obvious</h2>
+                                    <h2 class="issue__min_title">Fiction Factions</h2>
                                     <p class="image_text">Photo by:</p>
                                 </div>
                             </div>
@@ -358,7 +375,9 @@
             </div>
         </ul>
 
-
+        <div class="pin__color pin__color--three">
+            <p>EXPLOSION</p>
+        </div>
         <ul id="explosion" class="articles__list articles__list--explosion">
             <div class="grid">
                 <li class="article article--linesection">
@@ -383,7 +402,7 @@
                     <div class="container two">
                         <a href="/Frontend/templates/InTension/archive/3-GroupExplosion/8_voices/1_issue/mindField-article.html">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/migracion.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__three-color"></div>
                                     <h2 class="issue__min_title">The illusion and dangers <span>of the extended mind</span></h2>
@@ -403,7 +422,7 @@
                 <div class="container three">
                     <a href="/Frontend/templates/InTension/archive/3-GroupExplosion/9_reViews/1_issue/reViews-article.html">
                         <div class="img__box article_one">
-                            <figure class="image__container"><img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
+                            <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                             <div class="article__title">
                                 <div class="issue__min_title--filter section__three-color"></div>
                                 <h2 class="issue__min_title">The illusion and dangers <span>of the extended mind</span></h2>
