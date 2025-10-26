@@ -4,8 +4,6 @@ body{
     --section-3-color:#006666;
     --issue-color: #d8fc00;
     background-color: #fafafa;
-    text-decoration: none;
-    color: ;
 }
 .section__one-color{
     background-color: var(--section-1-color);
