@@ -1,0 +1,674 @@
+
+.audiovisual__section{
+    --green-color:#ceff1d;
+    --mag-color:#fd33d1;
+    background-color: #0b0b0b00;
+    position: relative;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    border-radius: 30px;
+    overflow: hidden;
+
+    .media__container{
+        top: -130%;
+        width:100%;
+        height: 100%;
+        .av__grid{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: right;
+            overflow: hidden;
+            border-radius: 30px;
+            .cortos__container{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+                gap: 10px;
+
+                .cortos{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    /* margin: 5% 0 5% 0;    */
+                    /* border: 2px solid white; */
+                    figure{
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        img{
+                            height: 100%;
+                            object-fit: cover;
+                            transition: 1s;
+                        }
+                    }
+
+                    .pin__options{
+                        cursor: pointer;
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        bottom: 20px;
+                        right: 20px; 
+                        filter: brightness(80%);
+                        opacity: 0%;
+                        transition: .5s;
+                        &:hover{
+                            filter: brightness(1);
+                        }
+                        .container__buttons{
+                            width: 100%;
+                            height: 100%;
+                            .button-info{
+                                position: absolute;
+                                width: 100%;
+                                left: 0;
+                                top: 0;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .min{
+                            cursor: pointer;
+                            transform: scale(105%);
+                            /* filter: brightness(70%) saturate(0%) blur(5px); */
+                        }
+                        .pin__options{
+                            opacity: 100%;
+                        }
+                    }
+                }
+                .pin{
+                    height: 700px;
+                    max-width: 500px;
+                    position: relative;
+                    display: flex;
+                    overflow: hidden;
+                    border-radius: 30px 30px 5px 5px;
+                    grid-row: 1/2;
+                    transition-duration: 1s;
+                    .min{
+                        filter: brightness(1);
+                        transition-duration: 1s;
+                    }
+                    figure{
+                        margin: 0;
+                        img{
+                            position: absolute;
+                            width: 130%;
+                            height: fit-content;
+                            left: -20%;
+                        }
+                        .pin-silencio{
+                            left: -10%;
+                            top: -5%;
+                            transform: scale(120%);
+                            transition-duration: 1s;
+                        }
+                        .pin-rpmasc{
+                            top: 0;
+                            right: 0;
+                        }
+                        .pin-armadillo{
+                            top: 0%;
+                            height: fit-content;
+
+                        }
+                        .pin-mutante{
+                            top: -10%;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                        }
+
+                    }
+                    .controls{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        transition-duration: .5s;
+                        .background__controls{
+                            display: none;
+                        }
+
+                        .container__elements{
+                            position: absolute;
+                            width: 60%;
+                            height: 80%;
+                            top: 20%;
+                            transition-duration: .5s;
+                            .film__icon{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 30%;
+                                transition-duration: 3s;
+    
+                                .icon{
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 50%;
+                                    transform: translate(-50%, 0);
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+    
+                                .icon--armadillo{
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+                                .icon--lumbre{
+                                    height: 70%;
+                                    width: fit-content;
+                                }
+                                .icon--rpmasc{
+                                    height: 70%;
+                                    width: fit-content;
+                                }
+                                .icon--mutante{
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+                                .icon--silencio{
+                                    width: 60%;
+                                    height: fit-content;
+                                }
+    
+    
+                            }
+                            .paragraph__item {
+                                position: absolute;
+                                top: 30%;
+                                width: 100%;
+                                color: white;
+                                font-family: OpenSans;
+                                font-weight: 200;
+                                text-align: left;
+                                line-height: 1.7rem;
+                                font-size: 1rem;
+                            }
+                            .controls__container{
+                                position: absolute;
+                                bottom: 2rem;
+                                margin-top: 5%;
+                                border-top: 1px solid #9e9e9e00;
+                                width: 100%;
+                                overflow: hidden;
+                                transition-duration: 1s;
+                                
+                                
+                                .buttons{
+                                    width: 90%;
+                                    height: 100%;
+                                    padding-top: 3%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin-left: 50%;
+                                    transform: translate(-50%, -100%);
+                                    transition-duration: .5s; 
+                                    
+                                    .controls__button{
+                                        cursor: pointer;
+                                        filter: brightness(90%);
+                                        width: 30px;
+                                        &:hover {
+                                            filter: sepia(86%) saturate(1695%) hue-rotate(15deg) brightness(107%) contrast(105%);
+                                        }
+                                    }
+                                    .button-back{
+                                        transform: rotate(180deg);
+                                    }
+                                    .button-play{
+                                        width: 60px;
+                                    } 
+                                }
+                            }
+
+
+                            .modo{
+                                position: absolute;
+                                min-width: 350px;
+                                bottom: 0;
+                                margin-bottom: 5em;
+                                .button-av{
+                                    font-family: rozha;
+                                    font-size: 2rem;
+                                    position: relative;
+                                    width: 90%;
+                                    height: 50px;
+                                    margin: 10px;
+                                    border-radius: 20px;
+                                    display: flex;
+                                    .button-av-text{
+                                        position: relative;
+                                        margin: 0;
+                                        align-content: center;
+                                        left: 50%;
+                                        transform: translate(-50%, 0);
+                                    }
+                                }
+                                /* .peliculas{
+                                    cursor: pointer;
+                                    border: 2px solid magenta;
+                                    color: magenta;
+                                }
+                                .podcast{
+                                    cursor: default;
+                                    border: 2px solid rgb(51, 51, 51);
+                                    color: rgb(51, 51, 51);
+                                } */
+                            }
+                        }
+                    }
+                    /* .pin__options{
+                        position: absolute;
+                        top: 0;
+                        left: 0;            
+                        opacity: 100%;
+                        transition: 1.5s opacity;
+                        .container__buttons{
+                            
+                            img{
+                                margin: 10px;
+                                position: absolute;
+                                cursor: pointer;
+                                width: 70px;
+                                opacity: 20%;
+                                &:hover{
+                                    transition: .5s opacity;
+                                    opacity: 100%;
+                                }
+                            }
+                        }
+                    }             */
+                }
+                .show-buttons{
+                    .min{
+                        filter: brightness(0);
+                    }
+                    .controls{
+                        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));;
+                        .container__elements{
+                            top: 5%;
+                            .controls__container{
+                                border-top: 1px solid #fafafa55;
+                                .buttons{
+                                    transform: translate(-50%, 0);
+                                }
+                            }
+                        }
+                    }
+                }
+                .pin:hover{
+                    .pin__options{
+                        opacity: 1;
+                    }
+                }
+
+                .carrusel > *{
+                    margin: 0;
+                    min-height: 200px;
+                }
+
+                .carrusel{
+                    position: relative;
+                    min-width: 100%;
+                    max-width: 1000px;
+                    height: 100%;
+                    display: grid;
+                    border-radius: 25px;
+                    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+                    grid-template-columns: repeat(3, minmax(300px, 1fr));
+                    grid-template-rows: 1fr 1fr;
+                    gap: 10px;
+
+                        
+                    .silencio{
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 10px 10px 10px 30px;
+                        figure{
+                            margin: 0;
+                            img{
+                                /* height: 100%; */
+                                position: absolute; 
+                                left: -40%;
+                                /* top: 0; */
+                            }
+                        }
+                    }
+                    .mutante{
+                        position: relative;
+                        overflow: hidden;
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                /* height: 100%; */
+                                left: -40%;
+                            }
+                        }
+                    }
+                    .rpmasc{
+                        position: relative;
+                        overflow: hidden;
+                        /* grid-column: 2/4; */
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                width: 150%;
+                                /* height: 100%; */
+                                right: 0;
+                            }
+                        }
+                        .caps{
+                            /* background-color: #ceff1d; */
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: 1fr 1fr;
+                            gap: 3%;
+                            .cap{
+                                background-color: #ceff1d;
+                                position: relative;
+                                /* margin: 5px; */
+                                border-radius: 10px;
+                                overflow: hidden;
+                                /* display: flex; */
+                                /* justify-content: center; */
+                                /* align-items: center; */
+                                img{
+                                    position: absolute;
+                                    /* top: -50%; */
+                                    /* left: 30%; */
+                                    height: 110%;
+                                    width: fit-content;
+                                    /* width: 100%;
+                                    height: fit-content; */
+                                }
+                                .cap_2{
+                                    left: -40%;
+                                }
+                                .cap_3{
+                                    left: -20%;
+                                }
+                                .cap_4{
+                                    left: 0;
+                                }
+                                .cap_5{
+                                    left: -60%;
+                                }
+                            }
+                        }
+        
+                    }
+                    .lumbre{
+                        position: relative;
+                        overflow: hidden;
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                /* height: 100%; */
+                            }
+                        }
+        
+                    }
+                    .armadillo{
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 10px 10px 30px 10px;
+                        /* grid-column: 2/4; */
+                        figure{
+                            margin: 0;
+                            img{
+                                position: absolute;
+                                right: -50%;
+                                /* height:100%; */
+                            }
+                        }
+                    }
+
+                    .image{
+                        /* background-image: url("../assets/img/nodos/audiovisual/mutante_mapa.jpg"); */
+                        background-color: #2e2e2e;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        transform: translate(-110%, 0);
+                        display: flex;
+                        justify-content: center;
+                        overflow: hidden;
+                        border-radius: 30px;
+                        opacity: 0;
+                        transition: transform .8s, opacity 1s;
+                        .center__img{
+                            position: absolute;
+                            top: 0;
+                            /* left: -20%; */
+                            height: 100%;
+                            width: fit-content;
+                        }
+                        .mid--armadillo{
+                            left: 0;
+                        }
+                        .mid--lumbre{
+                            left: 20%;
+                        }
+                        .mid--rpmasc{ 
+                            left: 0;    
+                        }
+                        .mid--mutante{   
+                            left: 10%;  
+                        }
+                        .mid--silencio{
+                            height: 140%;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    .image-show{
+                        transition: transform .8s, opacity .5s;
+                        opacity: 1;
+                        transform: translate(-50%, 0);
+                    }
+
+                    .data{
+                        position: absolute;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 60%;
+                        height: 100%;
+                        background-color: #1f1f1f;
+                        transform: translate(-110%, 0);
+                        /* transform: translate(190%, 0); */
+                        opacity: 0;
+                        /* transition: opacity 2s; */
+                        transition: transform 1s, opacity 5s;
+                        /* z-index: 10; */
+                        /* display: none; */
+                        .limit{
+                            /* background-color: #ceff1d; */
+                            margin-left: 5%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            position: absolute;
+                            overflow-x: scroll;
+                            width: 70%;
+                            height: 100%;
+                            
+                            &::-webkit-scrollbar{
+                                width: 0px;
+                                height: 0px;
+                            }
+                            .container{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 300%;
+                                height: 100%;
+                                
+                                
+                                .data__content{
+                                    display: flex;
+                                    color:#8a8a8a;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    top: 30%;
+                                    width: 100%;
+                                    height: 100%;
+                                    /* left: 0;  */
+                                    
+                                    .content__logo{
+                                        filter: opacity(50%);
+                                        width: 15%;
+                                    }
+                                    .paragraph__item {
+                                        width: 55%;
+                                        /* color: white; */
+                                        font-family: montserrat;
+                                        font-weight: medium;
+                                        text-align: center;
+                                        font-size: .9em;
+                                    }
+                                }
+                                /* .proceso{
+                                    background-color: #d448ff;
+                                }
+                                .involucradxs{
+                                    background-color: #80ffea;
+                                }
+                                .referencias{
+                                    background-color: #ff45f6;
+                                } */
+            
+                            }
+                            .menus__container{
+                                /* background-color: #fd33d1; */
+                                position: absolute;  
+                                display: flex;
+                                left: 50%;
+                                transform: translate(-50%, 0);
+                                width: 100%;
+                                justify-content: space-between;
+                                align-items: center;
+                                bottom: 5%;
+                                margin-bottom: 10%;
+                
+                                .menu{
+                                    background-color: #242424;
+                                    cursor: pointer;
+                                    width: 120px;
+                                    height: 80px;
+                                    /* padding-top: 5%; */
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: .5s;
+                                    &:hover {
+                                        background-color: #2e2e2e;
+                                    }
+                                    .menu__icon{
+                                        filter: opacity(30%);
+                                    }
+                                    .menu__name{
+                                        font-size: 15px;
+                                        color: #838383;
+                                        display: none;
+                                    }
+                                }
+                                .button-back{
+                                    transform: rotate(180deg);
+                                }
+                                .button-play{
+                                    width: 60px;
+                                }
+                            }
+                        }
+                    }
+                    .data-show{
+                        transition: transform 1s, opacity 1s;
+                        opacity: 1;
+                        transform: translate(75%, 0);
+                    }
+                }
+            }
+        }        
+    }
+    .box{
+        position: absolute;
+        height: 600px;
+    }
+}
+
+.opacity-modal{
+    opacity: 1;
+}
+
+@media (width < 700px){
+    .audiovisual__section{
+        .media__container{
+            .av__grid{
+                width: 100%;
+            }
+            .controls{
+                position: relative;
+                width: 100%;
+                .backg__controls{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 25%;
+                    --img: url('../assets/img/nodos/audiovisual/mutante_mapa.webp');
+                    --grad: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("../assets/img/nodos/audiovisual/mutante_mapa.webp");
+                    background-position-x: center;
+                    background-size: 100%;
+
+                    z-index: -1;
+
+                    .background__controls{
+                        position: absolute;
+                        /* display: block; */
+                        top: -5%;
+                        left: 0;
+                        width: 100%;
+                        z-index: -1;
+                    }
+                }
+                .paragraph__item {
+                    width: 70%;
+                }
+
+                .controls__container{ 
+                    width: 70%;
+                    .buttons{
+                        transform: translate(0, 0);
+                    }
+                }
+
+            }
+        }
+    }           
+}

@@ -1,28 +1,35 @@
-body{
-    --section-1-color:#ff0000bb;
-    --section-2-color:#9400ff55;
-    --section-3-color:#006666;
-    --issue-color: #d8fc00;
-    background-color: #fafafa;
+body {
+  --section-1-color:#ff0000bb;
+  --section-2-color:#9400ff55;
+  --section-3-color:#006666;
+  --issue-color: #d8fc00;
+  background-color: #fafafa;
 }
-.section__one-color{
-    background-color: var(--section-1-color);
+
+.section__one-color {
+  background-color: var(--section-1-color);
 }
-.section__two-color{
-    background-color: var(--section-2-color);
+
+.section__two-color {
+  background-color: var(--section-2-color);
 }
-.section__three-color{
-    background-color: var(--section-3-color);
+
+.section__three-color {
+  background-color: var(--section-3-color);
 }
-.section__one-text-color{
-    color: var(--section-1-color);
+
+.section__one-text-color {
+  color: var(--section-1-color);
 }
-.section__two-text-color{
-    color: var(--section-2-color);
+
+.section__two-text-color {
+  color: var(--section-2-color);
 }
-.section__three-text-color{
-    color: var(--section-3-color);
+
+.section__three-text-color {
+  color: var(--section-3-color);
 }
-.issue-color{
-    background-color: var(--issue-color);
-}
+
+.issue-color {
+  background-color: var(--issue-color);
+}/*# sourceMappingURL=conventions.css.map */

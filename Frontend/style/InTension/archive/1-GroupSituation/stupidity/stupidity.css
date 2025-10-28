@@ -1,40 +1,41 @@
-.section__text{
-    position: relative;
-    width: 800px;
-    height: 320px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    z-index: 1;
-    .title{
-        text-align: center;
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        font-family: alte;
-        color: #fafafa;
-        /* bottom: 10%; */
-        .stupidity{
-            line-height: 1.5;
-            font-size:6rem;                }
-    }
-    .paragraph__container{
-        width: 100%;
-        height: 100%;
-        background-color: #00000088;
-        mix-blend-mode: luminosity;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        .description{
-            width: 90%;
-            color: #fafafa;
-            font-family: alte-regular;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            text-align: justify ;
-        }
-    }
+.section__text {
+  position: relative;
+  width: 800px;
+  height: 320px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
 }
+.section__text .title {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: alte;
+  color: #fafafa;
+  /* bottom: 10%; */
+}
+.section__text .title .stupidity {
+  line-height: 1.5;
+  font-size: 6rem;
+}
+.section__text .paragraph__container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  mix-blend-mode: luminosity;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+.section__text .paragraph__container .description {
+  width: 90%;
+  color: #fafafa;
+  font-family: alte-regular;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-align: justify;
+}/*# sourceMappingURL=stupidity.css.map */

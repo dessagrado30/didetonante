@@ -1,66 +1,65 @@
 /* .articles > *, .article > *, .title {
     border: 2px solid black;
 } */
-
-.article{
-    background-color: #fafafa;
-    width: 70%;
-    display: grid;
-    justify-items: center;
+.article {
+  background-color: #fafafa;
+  width: 70%;
+  display: grid;
+  justify-items: center;
 }
 
-.title__container{
-    position: relative;
-    width: 100%;
-    margin-block: 1%;
-}
-.title{
-    text-align: center;
-    font-size: clamp(4rem, 6.8rem, 8rem);
+.title__container {
+  position: relative;
+  width: 100%;
+  margin-block: 1%;
 }
 
-.text{
-    text-align: justify;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+.title {
+  text-align: center;
+  font-size: 6.8rem;
 }
 
-.article-one{
-    margin-block: 10%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    position: relative;
-    min-width: 400px;
-    min-height: 500px;
-    font-family: alte-regular;
-    margin-bottom: 10%;
-    .title__container{
-        width: 100%;
-        .title{
-            width: 100%;
-        }
-        p{
-            display: grid;
-            line-height: .8lh;
-        }
-        .end{
-            font-size: clamp(4rem, 7rem, 8rem);
-        }
-        .times{
-            font-size: clamp(4rem, 9.5rem, 10rem);
-        }
-    }
-
+.text {
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
 }
+
+.article-one {
+  margin-block: 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  position: relative;
+  min-width: 400px;
+  min-height: 500px;
+  font-family: alte-regular;
+  margin-bottom: 10%;
+}
+.article-one .title__container {
+  width: 100%;
+}
+.article-one .title__container .title {
+  width: 100%;
+}
+.article-one .title__container p {
+  display: grid;
+  line-height: 0.8lh;
+}
+.article-one .title__container .end {
+  font-size: 7rem;
+}
+.article-one .title__container .times {
+  font-size: 9.5rem;
+}
+
 /* .article__content--float{
     float: inline-start;
 } */
-
-.figure__article--one{
-    position: fixed;
-    top: 0;
-    z-index: -1;
-}
+.figure__article--one {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}/*# sourceMappingURL=mattersOfTension-articles-style.css.map */

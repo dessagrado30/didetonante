@@ -1,62 +1,61 @@
-.banner-section--three{
-    mix-blend-mode: multiply;
+.banner-section--three {
+  mix-blend-mode: multiply;
 }
-.section__text{
-    height: 300px;
-    display: grid;
-    grid-template-columns: .2fr .8fr;
-    grid-template-rows: 300px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    & > *{
-        border: 1px solid white;
-    }
-    .title{
-        text-align: center;
-        position: relative;
-        width: 100px;
-        height: 100%;
-        font-family: alte;
-        color: #fafafa;
-        bottom: 0;
 
-        .factions{
-            position: absolute;
-            top: -45%;
-            left: 0;
-            font-size: 8rem;
-            transform: translate(0, 0);
-        }
-        .ficto{
-            line-height: 0;
-            position: absolute;
-            font-size: 6rem;
-            right: -80%;
-            top: 0;
-            transform-origin: center;
-            transform: rotate(-90deg) translate(-50%, 0);
-        }
-    }
-    .paragraph__container{
-        height: 100%;
-        width: 200px;
-        margin-top: 2%;
-        left: 0;
-        background-color: #00000088;
-        mix-blend-mode: luminosity;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .description{
-            width: 90%;
-            color: #fafafa;
-            font-family: alte-regular;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            /* text-align: justify; */
-            
-        }
-    }
+.section__text {
+  height: 300px;
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  grid-template-rows: 300px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
+.section__text > * {
+  border: 1px solid white;
+}
+.section__text .title {
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100%;
+  font-family: alte;
+  color: #fafafa;
+  bottom: 0;
+}
+.section__text .title .factions {
+  position: absolute;
+  top: -45%;
+  left: 0;
+  font-size: 8rem;
+  transform: translate(0, 0);
+}
+.section__text .title .ficto {
+  line-height: 0;
+  position: absolute;
+  font-size: 6rem;
+  right: -80%;
+  top: 0;
+  transform-origin: center;
+  transform: rotate(-90deg) translate(-50%, 0);
+}
+.section__text .paragraph__container {
+  height: 100%;
+  width: 200px;
+  margin-top: 2%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  mix-blend-mode: luminosity;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section__text .paragraph__container .description {
+  width: 90%;
+  color: #fafafa;
+  font-family: alte-regular;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  /* text-align: justify; */
+}/*# sourceMappingURL=fictoFactions.css.map */
