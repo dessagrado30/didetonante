@@ -67,54 +67,22 @@
 }
 
 .editorial {
+    padding: 0;
+    height: 60%;
     .editorial__paragraph{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 }
-
-.section__title{
-    color: #00000022;
-    background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
-    background-size: cover;
-    background-clip: text;
-}
 .vertical__title{
-    margin: 0;
-    padding-bottom: 2%;
-    font-family: alte;
-    font-size: 5rem;
-    background-position: fixed;
-    position: absolute;
-    left: 0;
-    top: 40%;
+    left: -5%;
+    top: 30%;
     transform: rotate(-90deg);
 
 }
 
-.icon__title{
-    transform: translate(100px, -30%);
-    font-size: 2.5rem;
-}
-
-.page1, .page2{
-    position: relative;
-    background-color: #fafafa;
-    z-index: 5;
-    
-    .content__box{
-        width: 80%;
-        padding-block: 3%;
-
-        .section__title{
-            left: -2%;
-        }
-    }
-}
-
 .page1{
-    /* background-color: #00000000; */
-    height: 600px;
-    padding-block: 1%;
+    height: 450px;
+    top: 340px;
 }
 .page2{
     position: sticky;
@@ -201,7 +169,7 @@
                         width: 700px;
                         height: 400px;
                         border-bottom: 1px solid #fafafa;
-                        transition: 1s;                    
+                        transition: 1s;           
                     }
                     &:hover{
                         cursor: pointer;
@@ -222,23 +190,23 @@
                         top: -5%;
                         right: 0;
                         transform-origin: bottom right;
-                        transform: rotate(20deg);
+                        transform: rotate(20deg) translate(0, -30%);
                     }
                     .right{
                         right: 0;
                         transform-origin: bottom right;
-                        transform: rotate(20deg);
+                        transform: rotate(20deg) translate(0, -30%);
                     }
                     .left{
                         left: 0;
                         transform-origin: bottom left;
-                        transform: rotate(-20deg);
+                        transform: rotate(-20deg translate(0, -30%));
                     }
                     .color_prototype{
                         top: -5%;
                         right: 0;
                         transform-origin: bottom right;
-                        transform: rotate(20deg);
+                        transform: rotate(20deg) translate(0, -30%);
                         background-color: var(--issue-color);
                         mix-blend-mode: color;
                     }
@@ -246,7 +214,7 @@
                         top: -5%;
                         right: 0;
                         transform-origin: bottom right;
-                        transform: rotate(20deg);
+                        transform: rotate(20deg) translate(0, -20%);
                         background-color: var(--issue-color);
                         opacity: 1%;
                     }
@@ -341,7 +309,7 @@
                         position: absolute;
                         color: #fafafa55;
                         font-family: alte;
-                        font-size: clamp(6rem, 9rem, 10rem);
+                        font-size: clamp(5rem, 7rem, 10rem);
                         /* left: 5px; */
                     }
                 }
