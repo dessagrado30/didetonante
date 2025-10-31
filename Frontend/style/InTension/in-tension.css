@@ -350,14 +350,6 @@ section{
   align-items: center;
 }
 
-.section__title {
-  color: rgba(0, 0, 0, 0.1333333333);
-  background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
-  background-size: cover;
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
 .vertical__title {
   margin: 0;
   padding-bottom: 2%;
@@ -368,11 +360,6 @@ section{
   left: 0;
   top: 40%;
   transform: rotate(-90deg);
-}
-
-.icon__title {
-  transform: translate(100px, -30%);
-  font-size: 2.5rem;
 }
 
 .page1, .page2 {
