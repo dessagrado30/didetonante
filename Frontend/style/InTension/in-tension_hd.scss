@@ -1,5 +1,15 @@
-
-@media (width < 1466px){
+@media (width < 1700px){
+    .back__issues{
+        .page__3 {
+            .content__section{
+                .backissues__container{
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                }
+            }
+        }
+    }
+}
+@media (width < 1800px){
 body{
     --border:  30px ;
 }
@@ -127,227 +137,14 @@ body{
         flex-direction: column;
         justify-items: center;
         .content__section{
-            width: 80%;
+            width: 90%;
             height: auto;
             .backissues__container{
-                position: relative;
-                margin-block: 3%;
-                width: 100%;
-                min-height: auto;
-                overflow-y: visible;
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                gap: 3% ;
-
-                .issues{
-                    position: relative;
-                    height: 300px;
-                    border-radius: 20px;
-                    overflow: hidden;
-                    .background__image{
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        width: 100%;
-                        height: 100%;
-                        img{
-                            position: absolute;
-                            height: 100%;
-                            width: fit-content;
-                        }
-                        .gradient{
-                            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, .3), rgba(0, 0, 0, .8));
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                        }
-                        .gradient--first{
-                            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
-
-                        }
-                    }
-                    .filter_color{
-                        position: absolute;
-                        width: 700px;
-                        height: 400px;
-                        border-bottom: 1px solid #fafafa;
-                        transition: 1s;           
-                    }
-                    &:hover{
-                        cursor: pointer;
-                        .filter_color{
-                            top: -30%;
-                        }
-                        .color_none{
-                            top: -10%;
-                            transform: rotate(20deg);
-                        }
-                        .text__issue{
-                            .name-issue{
-                                bottom: 2%;
-                            }
-                        }
-                    }
-                    .color_none{
-                        top: -5%;
-                        right: 0;
-                        transform-origin: bottom right;
-                        transform: rotate(20deg) translate(0, -30%);
-                    }
-                    .right{
-                        right: 0;
-                        transform-origin: bottom right;
-                        transform: rotate(20deg) translate(0, -30%);
-                    }
-                    .left{
-                        left: 0;
-                        transform-origin: bottom left;
-                        transform: rotate(-20deg translate(0, -30%));
-                    }
-                    .color_prototype{
-                        top: -5%;
-                        right: 0;
-                        transform-origin: bottom right;
-                        transform: rotate(20deg) translate(0, -30%);
-                        background-color: var(--issue-color);
-                        mix-blend-mode: color;
-                    }
-                    .color_prototype-opacity{
-                        top: -5%;
-                        right: 0;
-                        transform-origin: bottom right;
-                        transform: rotate(20deg) translate(0, -20%);
-                        background-color: var(--issue-color);
-                        opacity: 1%;
-                    }
-                    .color_borderlands{
-                        top: -5%;
-                        left: 0;
-                        transform-origin: bottom left;
-                        transform: rotate(-20deg);
-                        background-color: #5030ff;
-                        mix-blend-mode: difference;
-                    }
-                    .color_resistances{
-                        top: -5%;
-                        right: 0;
-                        transform-origin: bottom right;
-                        transform: rotate(20deg);
-                        background-color: #3399cc;
-                        mix-blend-mode: difference;
-                    }
-                    .color_genocide{
-                        top: -5%;
-                        left: 0;
-                        transform-origin: bottom left;
-                        transform: rotate(-20deg);
-                        background-color: #990033;
-                        mix-blend-mode: difference;
-                    }
-                    .text__issue{
-                        position: absolute;
-                        top: 0;
-                        width: 100%;
-                        height: 100%;
-                        font-family: alte;
-                        color: #fafafa;
-                        display: grid;
-                        justify-items: center;
-                        grid-template-columns: 1fr;
-                        grid-template-rows: 1fr 1fr;
-                        
-                        .sup{
-                            position: absolute;
-                            margin: 0;
-                            top: 0;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            .number-issue{
-                                margin: 0;
-                                top: 0;
-                                font-size: 4rem;
-                            }
-                            .date-issue{
-                                margin: 0;
-                                font-size: 1rem;
-                            }
-                        }
-                        .sup__2{
-                            color: #ffff66;
-                        }
-                        .name-issue{
-                            position: absolute;
-                            bottom: 0;
-                            margin: 4%;
-                            font-size: 2rem;
-                            transition-duration: 1s;
-                        }
-                    }
-                }
-                .zine{
-                    width: 100%;
-                    text-align: center;
-                    top: -25%;
-                    position: absolute;
-                    font-family: big;
-                    font-size: 5rem;
-                    color: var(--issue-color);
-                }
-                .comming{
-                    /* background-color: #99003355; */
-                    position: absolute;
-                    margin: 0;
-                    height: 100%;
-                    width: 75%;
-
-                    right: -.4%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    p{
-                        cursor: default;
-                        position: absolute;
-                        color: #fafafa55;
-                        font-family: alte;
-                        font-size: clamp(5rem, 7rem, 10rem);
-                        /* left: 5px; */
-                    }
-                }
+                transform: scale(.8);
             }
         }
-        .intertext{
-            margin-block: 1%;
-            font-weight: lighter;
-            width: 500px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: justify;
-            text-align-last: center;
-
-            .text__box{
-                width: 100%;
-                text-align: justify;
-                hyphens: auto;
-                text-wrap: pretty;
-                hyphenate-limit-chars: 6;
-                color: #fafafa;
-                line-height: 1.5lh;
-                font-size: 1.1rem;
-                font-family: mont-medium;
-                opacity: 80%;
-            }
-            .pin{
-                top: 50%;
-                left: 50%;
-                transform: rotate(45deg);
-                border-radius: 0 50% 50% 50%;
-                background-color: var(--issue-color);
-                width: 30px;
-                height: 30px;
-            }
+        .intertext > *{
+            display: none;
         }
     }
 }
@@ -409,7 +206,7 @@ body{
     }
 }
 .section__title{
-    top: 50%;
+    top: 40%;
 }
 
 .icon__title{

@@ -127,13 +127,11 @@ section{
         
         .background__image{
             position: fixed;
-            top: -10%;
+            top: 0;
+            object-fit: cover;
+            width: 100vw;
+            height: 150vh;
             filter: saturate(0);
-            height: 100%;
-            .img_issue{
-                height: 140%;
-                width: fit-content;
-            }
         }
         .mask{
             position: fixed;
@@ -602,7 +600,7 @@ section{
                     font-size: 5rem;
                     color: var(--issue-color);
                 }
-                .comming{
+                .coming{
                     /* background-color: #99003355; */
                     position: absolute;
                     margin: 0;
@@ -618,7 +616,7 @@ section{
                         position: absolute;
                         color: #fafafa55;
                         font-family: alte;
-                        font-size: clamp(6rem, 9rem, 10rem);
+                        font-size: clamp(7rem, 90%, 10rem);
                         /* left: 5px; */
                     }
                 }

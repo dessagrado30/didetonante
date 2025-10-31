@@ -120,14 +120,12 @@ section{
 }
 .port .port__content .background__image {
   position: fixed;
-  top: -10%;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 150vh;
   filter: saturate(0);
-  height: 100%;
-}
-.port .port__content .background__image .img_issue {
-  height: 140%;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .port .port__content .mask {
   position: fixed;
@@ -592,7 +590,7 @@ section{
   font-size: 5rem;
   color: var(--issue-color);
 }
-.back__issues .page__3 .content__section .backissues__container .comming {
+.back__issues .page__3 .content__section .backissues__container .coming {
   /* background-color: #99003355; */
   position: absolute;
   margin: 0;
@@ -603,12 +601,12 @@ section{
   justify-content: center;
   align-items: center;
 }
-.back__issues .page__3 .content__section .backissues__container .comming p {
+.back__issues .page__3 .content__section .backissues__container .coming p {
   cursor: default;
   position: absolute;
   color: rgba(250, 250, 250, 0.3333333333);
   font-family: alte;
-  font-size: 9rem;
+  font-size: clamp(7rem, 90%, 10rem);
   /* left: 5px; */
 }
 .back__issues .page__3 .intertext {

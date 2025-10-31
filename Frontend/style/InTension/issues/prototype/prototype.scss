@@ -195,11 +195,31 @@ a{
 }
 @media (width < 1700px){
     .index{
+        .content__box{
+            transform: scale(.7) translate(-15%, 0);
+        }
+    }
+    .articles__list{
+        transform: scale(.8) translate(0, 0);
+    }
+    .pin__color{
+        top: 50%;
+        left: 0;
+        transform: translate(-350%, 200%);
+        font-size: .6rem;
+        p{
+            margin: 0 0 0 5%;
+        }
+    }
+}
+@media (width < 1200px){
+    .index{
         height: 400px;
         & > *{
             display: none;
         }
     }
+
     
 
 }
