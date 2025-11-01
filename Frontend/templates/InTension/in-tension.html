@@ -7,6 +7,7 @@
 	<link type="image/svg" rel="icon" href="/Frontend/assets/icons/InTension.svg">
 	<link rel="stylesheet" href="/Frontend/style/normalize.css">
 	<link rel="stylesheet" href="/Frontend/assets/fonts/fonts.css">
+	<link rel="stylesheet" href="/Frontend/style/contacto.css">
 	<link rel="stylesheet" href="/Frontend/style/header-and-behavior.css">
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/conventions.css">
 	<link rel="stylesheet" href="/Frontend/style/InTension/in-tension.css">
@@ -18,406 +19,438 @@
 </head>
 <body>
 	<!-- <main> -->
-		<header class="header">
-			<div class="header__container">
-				<a class="container__logo" href="/index.html">
-					<img id="logo" class="header__logo hlogo--color" src="/Frontend/assets/icons/LLAMITA.svg">
-				</a>
-			</div>
-			<div class="intension__container">
-				<img class="intension__logo" src="/Frontend/assets/logos/intensionheader.svg" alt="logo InTension">
-			</div>
-			<nav class="header__nav">
-				<label class="nav__label">
-					<input class="checkbox" type="checkbox">
-				</label>
-				<ul class="nav__list">
-					<!-- <li class="list__item item--button"><img class="send__icon" src="/Frontend/assets/icons/align-justify.svg"></li> -->
-					<li class="list__item item--button" onclick="modal('/Frontend/assets/img/nodos/editorial.webp')"><img class="send__icon" src="/Frontend/assets/icons/send-horizontal.svg"></li>
-				</ul>
-			</nav>
-		</header>
+	<header class="header">
+		<div class="header__container">
+			<a class="container__logo" href="/index.html">
+				<img id="logo" class="header__logo hlogo--color" src="/Frontend/assets/icons/LLAMITA.svg">
+			</a>
+		</div>
+		<div class="intension__container">
+			<img class="intension__logo" src="/Frontend/assets/logos/intensionheader.svg" alt="logo InTension">
+		</div>
+		<nav class="header__nav">
+			<label class="nav__label">
+				<input class="checkbox" type="checkbox">
+			</label>
+			<ul class="nav__list">
+				<!-- <li class="list__item item--button"><img class="send__icon" src="/Frontend/assets/icons/align-justify.svg"></li> -->
+				<li class="list__item item--button" onclick="modal('/Frontend/assets/img/nodos/editorial.webp')"><img class="send__icon" src="/Frontend/assets/icons/send-horizontal.svg"></li>
+			</ul>
+		</nav>
+	</header>
 
-		<section class="port">
-			<div class="banner">
-				<div class="text__line right">
-					<p>Weaving social ecologies from refuge and reparation</p>
-				</div>
-				<div class="text__line left">
-					<p>Tejiendo ecologías sociales desde el refugio y la reparación</p>
-				</div>
+	<section class="port">
+		<div class="banner">
+			<div class="text__line right">
+				<p>Weaving social ecologies from refuge and reparation</p>
 			</div>
-
-			<div class="port__content">
-				<figure class="background__image">
-					<img class="img_issue" src="/Frontend/assets/img/in_tension/TonyFry_texture.webp" alt="fotografía de portada - In-tension">
-				</figure>
-				<div class="mask"></div>
-				<div class="title__container">
-					<p class="issue__title"><span>Prototype edition</span></p>
-				</div>
-				<div id="InTensionPort" class="text__container">
-					<img class="in-tension_img" src="/Frontend/assets/logos/intension.svg" style="view-transition-name: logo-intension-start" alt="logo in-tension">
-					<p class="ind_text">THIS WEBSITE SIMULATES THE APPEARANCE OF WHAT IN-TENSION WOULD LOOK LIKE, BUT AT THE SAME TIME EXPLAIN/ILLUSTRATE THE FORM/INTENT OF THE CONTENT.</p>
-
-				</div>
-				<ul class="section__menu">
-					<li>
-						About
-					</li>
-					<li>
-						Zine
-					</li>
-					<li>
-						Podcast
-					</li>
-					<li>
-						Support / Resources
-					</li>
-					<li>
-						Weaving dialogue
-					</li>
-					<li>
-						Suscribe / Contact
-					</li>
-
-				</ul>
-				
-			</div>
-			<div class="displace">
-				<figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
-			</div>
-		</section>
-
-		<section class="introduction__section">
-			<div class="editorial blend">
-			</div>
-			<div class="editorial opacity">
-			</div>
-			<div class="editorial ed__text">
-				<p class="editorial__paragraph">
-					To be alive now is to exist in a state of betweenness. To be alive has always been in between birth and death, but something fundamental has changed. The existential, psychic and political space of the in-between has expanded, and the tension of existing in this space has dramatically changed, for everyone everywhere.</p>
-			</div>
-		</section>
-		
-		<!-- <div class="section__page page__video">
-			<div class="video__container">
-				<iframe class="video" title="Macehualopunks (Documental Completo)" width="560" height="315" src="https://lone.earth/videos/embed/014aabba-c3d4-4647-b02b-d486fdf53b2c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-			</div>
-		</div> -->
-
-		<a href="#content_section">
-			<div class="content__button">
-				<img src="/Frontend/assets/icons/content__icon.svg" alt="show content icon">
-			</div>
-		</a>
-		<section class="section__page page1">
-			<div class="content__box">
-				<div class="section__page page__video">
-					<div class="video__container">
-						<!-- <iframe class="video" title="Macehualopunks (Documental Completo)" width="560" height="315" src="https://lone.earth/videos/embed/014aabba-c3d4-4647-b02b-d486fdf53b2c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe> -->
-						<!-- <iframe class="video" title="Cuerpxs Otrxs" width="560" height="315" src="https://lone.earth/videos/embed/qf3vkb29iMzibJNUfY71Ae?start=0s&amp;autoplay=1&amp;muted=1" frameborder="1" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe> -->
-						<iframe class="video" title="Cuerpxs Otrxs" width="560" height="315" src="https://lone.earth/videos/embed/qf3vkb29iMzibJNUfY71Ae?start=0s&amp;autoplay=1" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-					</div>
-				</div>
-			</div>			
-		</section>
-
-
-		<div class="back__issues">
-			<figure>
-				<img class="background2" src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="Imagen de fondo: Textura, Ramas de arbol.">
-			</figure>
-			<div class="backdrop_blur"></div>
-			<div class="page__3">
-				<div class="content__section">
-					<p class="section__title vertical__title">Issues</p>
-					<div class="backissues__container">
-						<a href="/Frontend/templates/InTension/issues/prototype/prototype.html">
-							<div class="issues issue__0">
-								<figure class="background__image">
-									<img src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="">
-									<div class="gradient gradient--first"></div>
-								</figure>
-								<div class="filter_color color_prototype"></div>
-								<div class="filter_color color_prototype-opacity right"></div>
-								<div class="filter_color color_none right"></div>
-								<div class="filter_color color_none left"></div>
-								<div class="text__issue">
-									<div class="sup">
-										<p class="number-issue">0</p>
-										<p class="date-issue">2025</p>
-									</div>
-									<p class="name-issue">Prototype</p>
-								</div>
-							</div>
-						</a>
-						<div class="issues issue__1">
-							<figure class="background__image">
-								<img class="bg_img" src="/Frontend/assets/img/in_tension/issues/textura_muro.webp" alt="">
-								<div class="gradient"></div>
-							</figure>
-							<div class="filter_color color_borderlands"></div>
-							<div class="filter_color color_none right"></div>
-							<div class="filter_color color_none left"></div>
-							<div class="text__issue">
-								<div class="sup">
-									<p class="number-issue">1</p>
-									<p class="date-issue">2026</p>
-								</div>
-								<p class="name-issue">Edition theme</p>
-							</div>
-						</div>
-						<div class="issues issue__2">
-							<figure class="background__image">
-								<img src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="">
-								<div class="gradient"></div>
-							</figure>
-							<div class="filter_color color_resistances"></div>
-							<div class="filter_color color_none right"></div>
-							<div class="filter_color color_none left"></div>
-							<div class="text__issue">
-								<div class="sup sup__2">
-									<p class="number-issue">2</p>
-									<p class="date-issue">2026</p>
-								</div>
-								<p class="name-issue">Edition theme</p>
-							</div>
-						</div>
-						<div class="issues issue__3">
-							<figure class="background__image">
-								<img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="">
-								<div class="gradient"></div>
-							</figure>
-							<div class="filter_color color_genocide"></div>
-							<div class="filter_color color_none right"></div>
-							<div class="filter_color color_none left"></div>
-							<div class="text__issue">
-								<div class="sup">
-									<p class="number-issue">3</p>
-									<p class="date-issue">2027</p>
-								</div>
-								<p class="name-issue">Edition theme</p>
-							</div>
-						</div>
-						<div class="zine">ZINE</div>
-						<div class="coming">
-							<p>Coming Issues</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="intertext">
-					<div class="pin"></div>
-					<p class="text__box">The intention of this publication is to address issues of tension understood as matters of concern between people of the global north and south and those between.</p>
-				</div>
+			<div class="text__line left">
+				<p>Tejiendo ecologías sociales desde el refugio y la reparación</p>
 			</div>
 		</div>
 
-		<section class="section__page page2">
-			<div id="content_section" class="content__box">
-				<p class="archive__message">WE WILL BUILD AN ARCHIVE AS THE ISSUES START TO ACCUMULATE WHICH CAN BE ACCESSED BY <span>CLICKING ON THE SECTION BELOW.</span></p>
-				
-				<div class="articles__box">
-					<div class="articles__container">
-						<article class="box__section section__1">
-							<a href="/Frontend/templates/InTension/archive/1-GroupSituation/1_mattersOfTension/mattersOfTension.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
-								</figure>
-								<div class="filters filter_red section__one-color"></div>
-								<p class="article_description">Concerns of life in the contemporary world  that are  sources of tension, and need a better understanding.</p>
-								<h3 class="h_article">
-									<span class="matters">Matters of</span> <span class="tension">Tension</span>
-								</h3>
-							</a>
-						</article>
-						<article class="box__section section__2">
-							<a href="/Frontend/templates/InTension/archive/1-GroupSituation/2_mindField/mindField.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
-								</figure>
-								<!-- <div class="filter-selection section__one-color"></div> -->
-								<div class="filters filter_red section__one-color"></div>
-								<p class="article_description">Mental health is a growing global critical issue we’ll explore.</p>
-								<h3 class="h_article">
-									<span class="mind">Mind</span> <span class="field">Field</span>
-								</h3>
-							</a>
-						</article>
-						<article class="box__section section__3">
-							<a href="/Frontend/templates/InTension/archive/1-GroupSituation/3_stupidity/stupidity.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
-								</figure>
-								<!-- <div class="filter-selection section__one-color"></div> -->
-								<div class="filters filter_red section__one-color"></div>
-								<p class="article_description">Stupidity has become a systemic condition of modern techno-society.</p>
-								<h3 class="h_article">
-									<span class="stupidity">Stupidity</span>
-								</h3>
-							</a>
-						</article>
-						<article class="box__section section__4">
-							<a href="/Frontend/templates/InTension/archive/1-GroupSituation/4_borderLands/borderLands.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
-								</figure>
-								<!-- <div class="filter-selection section__one-color"></div> -->
-								<div class="filters filter_red section__one-color"></div>
-								<p class="article_description">We all exist between cultures, histories, knowledges, pasts and futures.</p>
-								<h3 class="h_article">
-									<span class="bord">Border</span><span class="lands">Lands</span>
-								</h3>
-							</a>
-						</article>
-						<div class="content__icons filter_section-1">
-							<figure class="icon__background"><img src="/Frontend/assets/img/in_tension/articles/migracion.webp" alt=""></figure>
-							<figure class="icon">
-								<div class="filter section__one-color"></div>
-								<img src="/Frontend/assets/icons/in-tension/content/1_reposo.svg" alt="Ícono de circulo en posición de reposo representando la primera parte de la sección de artículos.">
-							</figure>
-							<p class="section__title icon__title">Situation</p>
-						</div>
+		<div class="port__content">
+			<figure class="background__image">
+				<img class="img_issue" src="/Frontend/assets/img/in_tension/TonyFry_texture.webp" alt="fotografía de portada - In-tension">
+			</figure>
+			<div class="mask"></div>
+			<div class="title__container">
+				<p class="issue__title"><span>Prototype edition</span></p>
+			</div>
+			<div id="InTensionPort" class="text__container">
+				<img class="in-tension_img" src="/Frontend/assets/logos/intension.svg" style="view-transition-name: logo-intension-start" alt="logo in-tension">
+				<p class="ind_text">THIS WEBSITE SIMULATES THE APPEARANCE OF WHAT IN-TENSION WOULD LOOK LIKE, BUT AT THE SAME TIME EXPLAIN/ILLUSTRATE THE FORM/INTENT OF THE CONTENT.</p>
 
-						<!-- <div class="icon">
-							<figure>
-								<img src="" alt="">
-							</figure>
-						</div> -->
-					</div>
-					<div class="articles__container">
-						<article class="box__section section__5">
+			</div>
+			<ul class="section__menu">
+				<li>
+					About
+				</li>
+				<li>
+					Zine
+				</li>
+				<li>
+					Podcast
+				</li>
+				<li>
+					Support / Resources
+				</li>
+				<li>
+					Weaving dialogue
+				</li>
+				<li>
+					Suscribe / Contact
+				</li>
 
-							<a href="/Frontend/templates/InTension/archive/2-GroupMovement/5_reEducation/reEducation.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="">
-								</figure>
-								<div class="filters filter_violet section__two-color"></div>
-								<p class="article_description">Higher education is at risk from machinic ignorance and corporate control.</p>
-								<h3 class="h_article">
-									<span class="re">RE</span> <span class="education">Education</span>
-								</h3>
-							</a>
-						</article>
-						<article class="box__section section__6">
-							<a href="/Frontend/templates/InTension/archive/2-GroupMovement/6_onResistance/onResistance.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="">
-								</figure>
-								<div class="filters filter_violet section__two-color"></div>								
-								<p class="article_description">What demands to be resisted ever grows but the ability to do so doesn’t.</p>
-								<h3 class="h_article">
-									<span class="on">On</span> <span class="resistence">Resistence</span>
-								</h3>
-							</a>
-						</article>
-						<article class="box__section section__7">
-							
-							<a href="/Frontend/templates/InTension/archive/2-GroupMovement/7_fictoFaction/fictoFaction.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="">
-								</figure>
-								<div class="filters filter_violet section__two-color"></div>
-								<p class="article_description">Fiction has become a force to create the real and to challenge facts.</p>
-								<h3 class="h_article">
-									<span class="ficto">Ficto</span> <span class="factions">Factions</span>
-								</h3>
-							</a>
-						</article>
-						<div class="content__icons filter_section-2">
-							<figure class="icon__background"><img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt=""></figure>
-							<figure class="icon">
-								<div class="filter"></div>
-								<img src="/Frontend/assets/icons/in-tension/content/2_impulso.svg" alt="Ícono de circulo a punto de rodar, representando la segunda parte de la sección de artículos.">
-							</figure>
-							<p class="section__title icon__title">Movement</p>
-						</div>
+			</ul>
+			
+		</div>
+		<div class="displace">
+			<figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
+		</div>
+	</section>
 
-						<!-- <div class="icon">
-							<figure>
-								<img src="" alt="">
-							</figure>
-						</div> -->
-					</div>
-					<div class="articles__container">
-						<article class="box__section section__8">
-							
-							<a href="/Frontend/templates/InTension/archive/3-GroupExplosion/8_voices/voices.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="">
-								</figure>
-								<div class="filters filter_aquamarine section__three-color"></div>
-								<p class="article_description">In-Tension speaks, listens and is open to dialogue.</p>
-								<h3 class="h_article">
-									<span class="voices voices_shadow_1">Voices</span> <span class="voices voices_shadow_2">Voices</span><span class="voices voices_shadow_3">Voices</span>
-								</h3>
-							</a>
-						</article>
-						<article class="box__section section__9">
-							
-							<a href="/Frontend/templates/InTension/archive/3-GroupExplosion/9_reViews/reViews.html">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="">
-								</figure>
-								<div class="filters filter_aquamarine section__three-color"></div>
-								<p class="article_description">Books, films and songs provide an ecology of thought and imagination to share.</p>
-								<h3 class="h_article">
-									<span class="re">RE</span> <span class="views">Views</span>
-								</h3>
-							</a>
-							
-						</article>
-						<article class="box__section section__10">
-							
-							<a href="/Frontend/templates/InTension/archive/3-GroupExplosion/">
-								<figure>
-									<img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="">
-								</figure>
-								<div class="filters filter_issue"></div>
-								<div class="circle">
-									<div class="filtro__hereandnow issue-color"></div>
-									<p class="hereandnow">Here<span class="and">&</span><span class="now">Now</span></p>
-								</div>
-							</a>
-						</article>
-						<div class="content__icons filter_section-3">
-							<figure class="icon__background"><img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt=""></figure>
-							<figure class="icon">
-								<div class="filter"></div>
-								<img src="/Frontend/assets/icons/in-tension/content/4_expansión.svg" alt="">
-							</figure>
-							<p class="section__title icon__title">Explosion</p>
-						</div>
-						<!-- <div class="icon">
-							<figure>
-								<img src="" alt="Ícono de círculo en llamas, representando la tercera parte de la sección de artículos.">
-							</figure>
-						</div> -->
-					</div>
+	<section class="introduction__section">
+		<div class="editorial blend">
+		</div>
+		<div class="editorial opacity">
+		</div>
+		<div class="editorial ed__text">
+			<p class="editorial__paragraph">
+				To be alive now is to exist in a state of betweenness. To be alive has always been in between birth and death, but something fundamental has changed. The existential, psychic and political space of the in-between has expanded, and the tension of existing in this space has dramatically changed, for everyone everywhere.</p>
+		</div>
+	</section>
+	
+	<!-- <div class="section__page page__video">
+		<div class="video__container">
+			<iframe class="video" title="Macehualopunks (Documental Completo)" width="560" height="315" src="https://lone.earth/videos/embed/014aabba-c3d4-4647-b02b-d486fdf53b2c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+		</div>
+	</div> -->
+
+	<a href="#content_section">
+		<div class="content__button">
+			<img src="/Frontend/assets/icons/content__icon.svg" alt="show content icon">
+		</div>
+	</a>
+	<section class="section__page page1">
+		<div class="content__box">
+			<div class="section__page page__video">
+				<div class="video__container">
+					<!-- <iframe class="video" title="Macehualopunks (Documental Completo)" width="560" height="315" src="https://lone.earth/videos/embed/014aabba-c3d4-4647-b02b-d486fdf53b2c" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe> -->
+					<!-- <iframe class="video" title="Cuerpxs Otrxs" width="560" height="315" src="https://lone.earth/videos/embed/qf3vkb29iMzibJNUfY71Ae?start=0s&amp;autoplay=1&amp;muted=1" frameborder="1" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe> -->
+					<iframe class="video" title="Cuerpxs Otrxs" width="560" height="315" src="https://lone.earth/videos/embed/qf3vkb29iMzibJNUfY71Ae?start=0s&amp;autoplay=1" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 				</div>
-			</div>			
-		</section>
-		<div class="separate"></div>
-		<section class="section__page page__2">
-			<!-- <div class="backdrop_blur"></div> -->
+			</div>
+		</div>			
+	</section>
+
+
+	<div class="back__issues">
+		<figure>
+			<img class="background2" src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="Imagen de fondo: Textura, Ramas de arbol.">
+		</figure>
+		<div class="backdrop_blur"></div>
+		<div class="page__3">
+			<div class="content__section">
+				<p class="section__title vertical__title">Issues</p>
+				<div class="backissues__container">
+					<a href="/Frontend/templates/InTension/issues/prototype/prototype.html">
+						<div class="issues issue__0">
+							<figure class="background__image">
+								<img src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="">
+								<div class="gradient gradient--first"></div>
+							</figure>
+							<div class="filter_color color_prototype"></div>
+							<div class="filter_color color_prototype-opacity right"></div>
+							<div class="filter_color color_none right"></div>
+							<div class="filter_color color_none left"></div>
+							<div class="text__issue">
+								<div class="sup">
+									<p class="number-issue">0</p>
+									<p class="date-issue">2025</p>
+								</div>
+								<p class="name-issue">Prototype</p>
+							</div>
+						</div>
+					</a>
+					<div class="issues issue__1">
+						<figure class="background__image">
+							<img class="bg_img" src="/Frontend/assets/img/in_tension/issues/textura_muro.webp" alt="">
+							<div class="gradient"></div>
+						</figure>
+						<div class="filter_color color_borderlands"></div>
+						<div class="filter_color color_none right"></div>
+						<div class="filter_color color_none left"></div>
+						<div class="text__issue">
+							<div class="sup">
+								<p class="number-issue">1</p>
+								<p class="date-issue">2026</p>
+							</div>
+							<p class="name-issue">Edition theme</p>
+						</div>
+					</div>
+					<div class="issues issue__2">
+						<figure class="background__image">
+							<img src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="">
+							<div class="gradient"></div>
+						</figure>
+						<div class="filter_color color_resistances"></div>
+						<div class="filter_color color_none right"></div>
+						<div class="filter_color color_none left"></div>
+						<div class="text__issue">
+							<div class="sup sup__2">
+								<p class="number-issue">2</p>
+								<p class="date-issue">2026</p>
+							</div>
+							<p class="name-issue">Edition theme</p>
+						</div>
+					</div>
+					<div class="issues issue__3">
+						<figure class="background__image">
+							<img src="/Frontend/assets/img/in_tension/issues/arbol.webp" alt="">
+							<div class="gradient"></div>
+						</figure>
+						<div class="filter_color color_genocide"></div>
+						<div class="filter_color color_none right"></div>
+						<div class="filter_color color_none left"></div>
+						<div class="text__issue">
+							<div class="sup">
+								<p class="number-issue">3</p>
+								<p class="date-issue">2027</p>
+							</div>
+							<p class="name-issue">Edition theme</p>
+						</div>
+					</div>
+					<div class="zine">ZINE</div>
+					<div class="coming">
+						<p>Coming Issues</p>
+					</div>
+
+				</div>
+			</div>
 			<div class="intertext">
 				<div class="pin"></div>
-				<p class="text__box">The intension of this publication is to adress issues of tension understood as matters of concern between people of the global north and south.</p>
+				<p class="text__box">The intention of this publication is to address issues of tension understood as matters of concern between people of the global north and south and those between.</p>
 			</div>
-		</section>
-		<div class="intersection"></div>
-		<section class="in-tension__footer">
-			<a href="#InTensionPort">
-				<div class="displace up">
-					<figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
+		</div>
+	</div>
+
+	<section class="section__page page2">
+		<div id="content_section" class="content__box">
+			<p class="archive__message">WE WILL BUILD AN ARCHIVE AS THE ISSUES START TO ACCUMULATE WHICH CAN BE ACCESSED BY <span>CLICKING ON THE SECTION BELOW.</span></p>
+			
+			<div class="articles__box">
+				<div class="articles__container">
+					<article class="box__section section__1">
+						<a href="/Frontend/templates/InTension/archive/1-GroupSituation/1_mattersOfTension/mattersOfTension.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
+							</figure>
+							<div class="filters filter_red section__one-color"></div>
+							<p class="article_description">Concerns of life in the contemporary world  that are  sources of tension, and need a better understanding.</p>
+							<h3 class="h_article">
+								<span class="matters">Matters of</span> <span class="tension">Tension</span>
+							</h3>
+						</a>
+					</article>
+					<article class="box__section section__2">
+						<a href="/Frontend/templates/InTension/archive/1-GroupSituation/2_mindField/mindField.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
+							</figure>
+							<!-- <div class="filter-selection section__one-color"></div> -->
+							<div class="filters filter_red section__one-color"></div>
+							<p class="article_description">Mental health is a growing global critical issue we’ll explore.</p>
+							<h3 class="h_article">
+								<span class="mind">Mind</span> <span class="field">Field</span>
+							</h3>
+						</a>
+					</article>
+					<article class="box__section section__3">
+						<a href="/Frontend/templates/InTension/archive/1-GroupSituation/3_stupidity/stupidity.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
+							</figure>
+							<!-- <div class="filter-selection section__one-color"></div> -->
+							<div class="filters filter_red section__one-color"></div>
+							<p class="article_description">Stupidity has become a systemic condition of modern techno-society.</p>
+							<h3 class="h_article">
+								<span class="stupidity">Stupidity</span>
+							</h3>
+						</a>
+					</article>
+					<article class="box__section section__4">
+						<a href="/Frontend/templates/InTension/archive/1-GroupSituation/4_borderLands/borderLands.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/situation_section.webp" alt="">
+							</figure>
+							<!-- <div class="filter-selection section__one-color"></div> -->
+							<div class="filters filter_red section__one-color"></div>
+							<p class="article_description">We all exist between cultures, histories, knowledges, pasts and futures.</p>
+							<h3 class="h_article">
+								<span class="bord">Border</span><span class="lands">Lands</span>
+							</h3>
+						</a>
+					</article>
+					<div class="content__icons filter_section-1">
+						<figure class="icon__background"><img src="/Frontend/assets/img/in_tension/articles/migracion.webp" alt=""></figure>
+						<figure class="icon">
+							<div class="filter section__one-color"></div>
+							<img src="/Frontend/assets/icons/in-tension/content/1_reposo.svg" alt="Ícono de circulo en posición de reposo representando la primera parte de la sección de artículos.">
+						</figure>
+						<p class="section__title icon__title">Situation</p>
+					</div>
+
+					<!-- <div class="icon">
+						<figure>
+							<img src="" alt="">
+						</figure>
+					</div> -->
 				</div>
-			</a>
-			<iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
-			</iframe>
-		</section>
+				<div class="articles__container">
+					<article class="box__section section__5">
+
+						<a href="/Frontend/templates/InTension/archive/2-GroupMovement/5_reEducation/reEducation.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="">
+							</figure>
+							<div class="filters filter_violet section__two-color"></div>
+							<p class="article_description">Higher education is at risk from machinic ignorance and corporate control.</p>
+							<h3 class="h_article">
+								<span class="re">RE</span> <span class="education">Education</span>
+							</h3>
+						</a>
+					</article>
+					<article class="box__section section__6">
+						<a href="/Frontend/templates/InTension/archive/2-GroupMovement/6_onResistance/onResistance.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="">
+							</figure>
+							<div class="filters filter_violet section__two-color"></div>								
+							<p class="article_description">What demands to be resisted ever grows but the ability to do so doesn’t.</p>
+							<h3 class="h_article">
+								<span class="on">On</span> <span class="resistence">Resistence</span>
+							</h3>
+						</a>
+					</article>
+					<article class="box__section section__7">
+						
+						<a href="/Frontend/templates/InTension/archive/2-GroupMovement/7_fictoFaction/fictoFaction.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt="">
+							</figure>
+							<div class="filters filter_violet section__two-color"></div>
+							<p class="article_description">Fiction has become a force to create the real and to challenge facts.</p>
+							<h3 class="h_article">
+								<span class="ficto">Ficto</span> <span class="factions">Factions</span>
+							</h3>
+						</a>
+					</article>
+					<div class="content__icons filter_section-2">
+						<figure class="icon__background"><img src="/Frontend/assets/img/in_tension/articles/Poster 2.webp" alt=""></figure>
+						<figure class="icon">
+							<div class="filter"></div>
+							<img src="/Frontend/assets/icons/in-tension/content/2_impulso.svg" alt="Ícono de circulo a punto de rodar, representando la segunda parte de la sección de artículos.">
+						</figure>
+						<p class="section__title icon__title">Movement</p>
+					</div>
+
+					<!-- <div class="icon">
+						<figure>
+							<img src="" alt="">
+						</figure>
+					</div> -->
+				</div>
+				<div class="articles__container">
+					<article class="box__section section__8">
+						
+						<a href="/Frontend/templates/InTension/archive/3-GroupExplosion/8_voices/voices.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="">
+							</figure>
+							<div class="filters filter_aquamarine section__three-color"></div>
+							<p class="article_description">In-Tension speaks, listens and is open to dialogue.</p>
+							<h3 class="h_article">
+								<span class="voices voices_shadow_1">Voices</span> <span class="voices voices_shadow_2">Voices</span><span class="voices voices_shadow_3">Voices</span>
+							</h3>
+						</a>
+					</article>
+					<article class="box__section section__9">
+						
+						<a href="/Frontend/templates/InTension/archive/3-GroupExplosion/9_reViews/reViews.html">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="">
+							</figure>
+							<div class="filters filter_aquamarine section__three-color"></div>
+							<p class="article_description">Books, films and songs provide an ecology of thought and imagination to share.</p>
+							<h3 class="h_article">
+								<span class="re">RE</span> <span class="views">Views</span>
+							</h3>
+						</a>
+						
+					</article>
+					<article class="box__section section__10">
+						
+						<a href="/Frontend/templates/InTension/archive/3-GroupExplosion/">
+							<figure>
+								<img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt="">
+							</figure>
+							<div class="filters filter_issue"></div>
+							<div class="circle">
+								<div class="filtro__hereandnow issue-color"></div>
+								<p class="hereandnow">Here<span class="and">&</span><span class="now">Now</span></p>
+							</div>
+						</a>
+					</article>
+					<div class="content__icons filter_section-3">
+						<figure class="icon__background"><img src="/Frontend/assets/img/in_tension/articles/img3.webp" alt=""></figure>
+						<figure class="icon">
+							<div class="filter"></div>
+							<img src="/Frontend/assets/icons/in-tension/content/4_expansión.svg" alt="">
+						</figure>
+						<p class="section__title icon__title">Explosion</p>
+					</div>
+					<!-- <div class="icon">
+						<figure>
+							<img src="" alt="Ícono de círculo en llamas, representando la tercera parte de la sección de artículos.">
+						</figure>
+					</div> -->
+				</div>
+			</div>
+		</div>			
+	</section>
+	<div class="separate"></div>
+	<section class="section__page page__2">
+		<!-- <div class="backdrop_blur"></div> -->
+		<div class="intertext">
+			<div class="pin"></div>
+			<p class="text__box">The intension of this publication is to adress issues of tension understood as matters of concern between people of the global north and south.</p>
+		</div>
+	</section>
+	<div class="intersection"></div>
+	<section class="in-tension__footer">
+		<a href="#InTensionPort">
+			<div class="displace up">
+				<figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
+			</div>
+		</a>
+		<iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
+		</iframe>
+	</section>
+
+	<dialog class="send modal modal-style">
+
+		<div class="modal__container">
+			<div class="modal__content">
+
+				<div class="form contact__form">
+					<!-- <div class="message">
+						<p class="title">¡Gracias!</p>
+						<p class="paragraph">Cada vez estamos más cerca. Elija un proyecto de su interés y comente.</p>
+					</div> -->
+					<embed class="api_contacto" src="https://app.didetonante.com">
+					<!-- <p class="title--mod form__title">Control</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
+						</div>
+						<div class="form__item" >
+							<p class="print"></p>
+						</div>
+					</div> -->
+					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="Frontend/assets/icons/x.svg" alt="sendbutton"></button>
+					<!-- <button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button> -->
+
+				</div>
+			</div>
+			
+		</div>
+	</dialog>
 
 	<script src="/Frontend/script/header.js"></script>
+	<script type="text/javascript" src="Frontend/script/script.js"></script>
 	<!-- <script src="../script/in-tension.js"></script> -->
 
 </body>
