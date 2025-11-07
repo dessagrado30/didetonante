@@ -18,6 +18,10 @@ body {
   background-color: var(--section-3-color);
 }
 
+.issue-color {
+  background-color: var(--issue-color);
+}
+
 .section__one-text-color {
   color: var(--section-1-color);
 }
@@ -30,6 +34,6 @@ body {
   color: var(--section-3-color);
 }
 
-.issue-color {
-  background-color: var(--issue-color);
+.section__issue-text-color {
+  color: var(--issue-color);
 }/*# sourceMappingURL=conventions.css.map */

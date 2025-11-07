@@ -14,6 +14,9 @@ body{
 .section__three-color{
     background-color: var(--section-3-color);
 }
+.issue-color{
+    background-color: var(--issue-color);
+}
 .section__one-text-color{
     color: var(--section-1-color);
 }
@@ -23,6 +26,6 @@ body{
 .section__three-text-color{
     color: var(--section-3-color);
 }
-.issue-color{
-    background-color: var(--issue-color);
+.section__issue-text-color{
+    color: var(--issue-color);
 }

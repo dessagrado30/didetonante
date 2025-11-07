@@ -57,6 +57,7 @@
     height: 60%;
   }
   .editorial .editorial__paragraph {
+    transform: translate(0, -30%);
     font-size: 1.3rem;
   }
   .vertical__title {

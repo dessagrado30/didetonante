@@ -5,6 +5,9 @@
     width: 100vw;
     height: 50vh;
     min-height: 350px;
+    h3{
+        font-size: clamp(3rem, 80vw, 3.5rem);
+    }
 }
 
 .banner-home{

@@ -6,6 +6,9 @@
   height: 50vh;
   min-height: 350px;
 }
+.banner h3 {
+  font-size: clamp(3rem, 80vw, 3.5rem);
+}
 
 .banner-home {
   background-image: linear-gradient(to right, var(--mag), var(--mag), var(--mag-color));

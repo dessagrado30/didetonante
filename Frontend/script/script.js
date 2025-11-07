@@ -48,7 +48,7 @@ function closeModal(){
     event.preventDefault();
     action.classList.toggle("opacity-modal")
     const checkLogo = document.getElementById("close_button");
-    checkLogo.innerHTML = '<img src="./Frontend/assets/icons/x.svg" alt="sendbutton"></img>'
+    checkLogo.innerHTML = '<img src="/Frontend/assets/icons/x.svg" alt="sendbutton"></img>'
     checkLogo.disabled = false;
     action.close();
 }

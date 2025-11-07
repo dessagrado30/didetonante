@@ -82,6 +82,7 @@ body{
     padding: 0;
     height: 60%;
     .editorial__paragraph{
+        transform: translate(0, -30%);
         font-size: 1.3rem;
     }
 }
@@ -141,10 +142,7 @@ body{
             height: auto;
             .backissues__container{
                 transform: scale(.8);
-                .coming{
-                    
-                }
-            }
+            }   
         }
         .intertext > *{
             display: none;
