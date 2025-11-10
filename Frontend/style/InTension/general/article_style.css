@@ -46,4 +46,16 @@
     opacity: 1;
     transform: translate(0);
   }
+}
+.separator {
+  height: 50vh;
+}
+
+@media (width < 1700px) {
+  .separator {
+    height: 40vh;
+  }
+  .article__head {
+    transform: scale(0.8);
+  }
 }/*# sourceMappingURL=article_style.css.map */

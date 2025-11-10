@@ -64,4 +64,10 @@
 .footer .divs__content .div_logo figure img {
   min-height: 200px;
   max-height: 200px;
+}
+
+@media (width < 1430px) and (width > 1095px) {
+  .footer .divs__content {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
 }/*# sourceMappingURL=footer.css.map */

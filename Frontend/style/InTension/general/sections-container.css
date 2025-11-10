@@ -2,13 +2,30 @@ body {
   --border: 50px ;
 }
 
+.section__title {
+  margin: 0;
+  padding-bottom: 2%;
+  color: rgba(0, 0, 0, 0.1333333333);
+  font-family: alte;
+  font-size: 5rem;
+  background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-position: fixed;
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
 .content__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  display: grid;
+  justify-items: center;
 }
 .content__box .archive__message {
   width: 85%;
+  top: 0;
   text-align: center;
   font-size: 17px;
   font-family: mont-medium;
@@ -90,22 +107,6 @@ body {
   opacity: 1;
 }
 
-.section__title {
-  margin: 0;
-  padding-bottom: 2%;
-  color: rgba(0, 0, 0, 0.1333333333);
-  font-family: alte;
-  font-size: 5rem;
-  background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
-  background-size: cover;
-  -webkit-background-clip: text;
-          background-clip: text;
-  background-position: fixed;
-  position: absolute;
-  left: 0;
-  top: 40%;
-}
-
 .vertical__title {
   transform: rotate(-90deg);
 }
@@ -118,20 +119,21 @@ body {
 .articles__box {
   position: relative;
   width: 100%;
+  height: auto;
+  min-height: 300px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 68px;
 }
 .articles__box .articles__container {
-  top: -5%;
   position: relative;
+  top: 0;
   width: 100%;
   min-height: 450px;
   display: grid;
-  grid-template-columns: 58% 42%;
+  grid-template-columns: 56% 40%;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 15% 0 0 0;
-  gap: 15px;
+  gap: 4%;
 }
 .articles__box .articles__container .content__icons {
   position: absolute;

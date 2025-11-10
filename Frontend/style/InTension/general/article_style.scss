@@ -1,5 +1,4 @@
 
-
 .showparagraph{
     animation-name: showparagraph;
     animation-timeline: view();
@@ -51,5 +50,18 @@
     to {
         opacity: 1;
         transform: translate(0);
+    }
+}
+
+.separator{
+    height: 50vh;
+}
+
+@media (width < 1700px){
+    .separator{
+        height: 40vh;
+    }
+    .article__head{
+        transform: scale(.8);
     }
 }

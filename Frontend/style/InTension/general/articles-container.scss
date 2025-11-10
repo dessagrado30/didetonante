@@ -49,7 +49,6 @@
         min-width: 300px;
         max-width: 1500px;
         width: 90%;
-
         .vertical__title{
             position: sticky;
             top: 0;
@@ -75,11 +74,13 @@
             font-size: 5rem;
         }
         .article{
+            width: 100%;
             position: relative;
             cursor: pointer;
             display: flex;
             justify-content: center;
             padding: 0;
+            
             .section__name{
                 position: absolute;
                 width: 60%;
@@ -99,6 +100,7 @@
 
             .container{
                 position: relative;
+                width: 100%;
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 3fr 1fr;
@@ -183,6 +185,7 @@
                 }
                     
                 .description_box{
+                    position: relative;
                     width: 100%;
                     height: 100%;
                 }
@@ -250,6 +253,15 @@
             }
         }
     }
+}
+.article__link{
+    text-decoration: none;
+    color: #0b0b0b;
+}
+.out{
+    cursor: initial;
+    filter: saturate(0);
+    opacity: 50%;
 }
 .pin__color{
     position: sticky;

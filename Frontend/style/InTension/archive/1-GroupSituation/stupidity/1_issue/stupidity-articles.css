@@ -1,9 +1,6 @@
-/* .articles > *, .article > *, .title {
-    border: 2px solid black;
-} */
 .article {
   background-color: #fafafa;
-  width: 70%;
+  width: 0%;
   display: grid;
   justify-items: center;
 }
@@ -19,20 +16,16 @@
   font-size: 6rem;
 }
 
-.text {
-  text-align: justify;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
-}
-
 .article-one {
   width: 45%;
   display: grid;
   margin-bottom: 10%;
+  justify-content: center;
 }
 .article-one .article__head {
   position: relative;
   display: grid;
+  width: 900px;
   height: 400px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 450px;

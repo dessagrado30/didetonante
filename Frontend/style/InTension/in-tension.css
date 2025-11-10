@@ -319,12 +319,14 @@ section{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: 100vh;
 }
 .editorial .editorial__paragraph {
+  width: 70%;
+  height: 100%;
+  padding-top: 10%;
   color: #0b0b0b;
   mix-blend-mode: hard-light;
-  width: 70%;
   font-family: alte;
   font-size: 30px;
   line-height: 2;
@@ -360,16 +362,16 @@ section{
   transform: rotate(-90deg);
 }
 
-.page1, .page2 {
+.page1, .page__sections {
   position: relative;
   background-color: #fafafa;
   z-index: 5;
 }
-.page1 .content__box, .page2 .content__box {
+.page1 .content__box, .page__sections .content__box {
   width: 80%;
   padding-block: 3%;
 }
-.page1 .content__box .section__title, .page2 .content__box .section__title {
+.page1 .content__box .section__title, .page__sections .content__box .section__title {
   left: -2%;
 }
 
@@ -379,7 +381,7 @@ section{
   padding-block: 1%;
 }
 
-.page2 {
+.page__sections {
   position: sticky;
   top: 0;
   padding-bottom: 2%;
@@ -703,5 +705,21 @@ section{
   }
   .section__menu {
     display: none;
+  }
+}
+.card__animation--one {
+  animation-name: showfour;
+  animation-timeline: view();
+  animation-range: entry 0 cover 180vh;
+}
+
+@keyframes showfour {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translate(0, -300px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0);
   }
 }/*# sourceMappingURL=in-tension.css.map */

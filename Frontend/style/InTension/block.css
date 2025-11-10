@@ -1,0 +1,29 @@
+.block{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    p{
+        margin: 20%;
+    }
+}
+@media (width < 1280px){
+    body > *:not(:first-child){
+        display: none;
+    }
+    .block{
+        opacity: 100%;
+    }
+}
+@media (height < 600px){
+    body > *:not(:first-child){
+        display: none;
+    }
+    .block{
+        opacity: 100%;
+    }
+}

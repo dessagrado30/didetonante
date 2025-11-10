@@ -20,13 +20,15 @@
   width: 80%;
   min-width: 350px;
   max-width: 800px;
-  font-family: alte-regular;
   margin-bottom: 10%;
 }
 .articles .article .text {
   text-align: justify;
-  font-size: 1.3rem;
-  line-height: 2.5rem;
+  text-wrap: pretty;
+  hyphenate-limit-chars: 7;
+  font-family: grazie;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 .title__container {
@@ -105,4 +107,4 @@
   position: absolute;
   mix-blend-mode: color;
   filter: brightness(0.8);
-}/*# sourceMappingURL=text_style.css.map */
+}/*# sourceMappingURL=editorial_text_style.css.map */

@@ -9,7 +9,6 @@
 }
 
 .title__container{
-    /* background-color: #ff0000; */
     position: relative;
     width: 100%;
     margin-block: 1%;
@@ -19,25 +18,17 @@
     font-size: 6rem;
 }
 
-.text{
-    text-align: justify;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
-}
-
 .article-four{
     width: 45%;
     background-color: #fafafa;
     margin-bottom: 10%;
     .article__head{ 
-        /* border: 1px solid #ff0000; */
         width: 100%;
         position: relative;
         display: grid;
         grid-template-rows: 500px;
         .title__container{
             position: absolute;
-            /* border: 1px solid #ff0000; */
             top: -10%;
             height: 100%;
             position: relative;
@@ -50,7 +41,6 @@
                 }
             }
             .subtitle{
-                /* background-color: blueviolet; */
                 bottom: 8%;
                 font-family: grazie-italic;
                 font-size: 1.7rem;
@@ -86,7 +76,6 @@
 .figure__article--one{
     position: fixed;
     top: 0;
-    /* transform: translate(0, -100%); */
     z-index: -1;
 }
 

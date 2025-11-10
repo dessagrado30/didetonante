@@ -63,7 +63,7 @@ a{
             justify-content: center;
             .articles__container{
                 left: 55%;
-                transform: translate(-20%, -180%);
+                transform: translate(-20%, -200%);
             }
             .box__section{
                 border: 4px solid #fafafa;
@@ -191,7 +191,7 @@ a{
 
 }
 .ftr{
-    min-height: 500px;
+    min-height: 100vh;
 }
 @media (width < 1700px){
     .index{

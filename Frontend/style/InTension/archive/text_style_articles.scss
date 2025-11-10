@@ -56,13 +56,15 @@ body{
 }
 
 .text{
+    text-align: justify;
+    hyphens: auto;
     text-wrap: pretty;
+    hyphenate-limit-chars: 7;
     font-family: grazie;
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    word-spacing: 0rem;
 }
 
-.separator{
-    height: 500px;
-}
+
 
