@@ -165,3 +165,12 @@
 /* .in-tension__footer{
     width: 100%;
 } */
+
+@media (width < 1800px){
+.section__text{
+    transform: scale(.7);
+}
+.articles__list{
+    transform: scale(.7) translate(0, -20%);
+}
+}

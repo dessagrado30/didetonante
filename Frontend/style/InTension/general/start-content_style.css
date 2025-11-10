@@ -166,4 +166,12 @@
 
 /* .in-tension__footer{
     width: 100%;
-} *//*# sourceMappingURL=start-content_style.css.map */
+} */
+@media (width < 1800px) {
+  .section__text {
+    transform: scale(0.7);
+  }
+  .articles__list {
+    transform: scale(0.7) translate(0, -20%);
+  }
+}/*# sourceMappingURL=start-content_style.css.map */
