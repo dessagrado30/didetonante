@@ -163,9 +163,25 @@
 }
 
 
-/* Umbara, cuerpos de texto in-tension*/
+/* Umbara*/
 
 @font-face {
     font-family: umbara;
     src: url("umbara/Umbara.otf") format("opentype");
 }
+
+
+/* Diga, cuerpos de texto in-tension*/
+@font-face {
+    font-family: diga;
+    src: url("diga/otf/Diga-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: diga-bold;
+    src: url("diga/otf/Diga-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: diga-medium;
+    src: url("diga/otf/Diga-Medium.otf") format("opentype");
+}
+

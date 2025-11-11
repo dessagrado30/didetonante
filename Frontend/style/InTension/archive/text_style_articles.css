@@ -1,5 +1,6 @@
 body {
-  --font-paragraph:umbara;
+  --font-paragraph-regular:diga;
+  --font-paragraph-bold:diga-bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +67,7 @@ body {
           hyphens: auto;
   text-wrap: pretty;
   hyphenate-limit-chars: 7;
-  font-family: var(--font-paragraph);
+  font-family: var(--font-paragraph-regular);
   font-size: 1.3rem;
   line-height: 2rem;
   letter-spacing: 0.01rem;
@@ -74,12 +75,12 @@ body {
 }
 
 span {
-  -webkit-text-stroke: 0.4px;
+  font-family: var(--font-paragraph-bold);
   text-align: left;
 }
 
 .subtitle {
   display: grid;
-  -webkit-text-stroke: 1px;
+  font-family: var(--font-paragraph-bold);
   font-size: clamp(1.5rem, 1.8vw, 2.5rem);
 }/*# sourceMappingURL=text_style_articles.css.map */
