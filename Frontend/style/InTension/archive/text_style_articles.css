@@ -1,4 +1,5 @@
 body {
+  --font-paragraph:umbara;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,13 +60,26 @@ body {
 }
 
 .text {
+  color: #333333;
   text-align: justify;
   -webkit-hyphens: auto;
           hyphens: auto;
   text-wrap: pretty;
   hyphenate-limit-chars: 7;
-  font-family: grazie;
-  font-size: 1rem;
+  font-family: var(--font-paragraph);
+  font-size: 1.3rem;
   line-height: 2rem;
+  letter-spacing: 0.01rem;
   word-spacing: 0rem;
+}
+
+span {
+  -webkit-text-stroke: 0.4px;
+  text-align: left;
+}
+
+.subtitle {
+  display: grid;
+  -webkit-text-stroke: 1px;
+  font-size: clamp(1.5rem, 1.8vw, 2.5rem);
 }/*# sourceMappingURL=text_style_articles.css.map */

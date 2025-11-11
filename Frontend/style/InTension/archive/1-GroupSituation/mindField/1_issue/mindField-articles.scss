@@ -56,9 +56,10 @@
             position: absolute;
             width: 380px;
             height: 150%;
-            /* p > *{
-                border: 1px solid rgb(0, 255, 179);
-            } */
+            p > *{
+                // border: 1px solid rgb(0, 255, 179);
+                font-family: alte;
+            }
             p{
                 display: grid;
                 grid-template-columns: 38px 320px 22px;
@@ -136,16 +137,6 @@
 
         .paragraph{
             display: grid;
-            .subtitle{
-                display: grid;
-                font-family: grazie-semi;
-                font-size: clamp(1.5rem, 1.8vw, 2.5rem);
-            }
-            span{
-                font-family: grazie-semi;
-                text-align: left;
-
-            }
             p{
                 min-width: 300px;
             }

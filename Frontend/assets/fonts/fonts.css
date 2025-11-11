@@ -162,3 +162,10 @@
     src: url("bigwhale/Bigwhale.otf") format("opentype");
 }
 
+
+/* Umbara, cuerpos de texto in-tension*/
+
+@font-face {
+    font-family: umbara;
+    src: url("umbara/Umbara.otf") format("opentype");
+}
