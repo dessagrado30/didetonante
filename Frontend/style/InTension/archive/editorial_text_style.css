@@ -1,18 +1,4 @@
-/* body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-} */
-.articles {
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-.articles .article {
+.editorial__content {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -22,41 +8,16 @@
   max-width: 800px;
   margin-bottom: 10%;
 }
-.articles .article .text {
-  text-align: justify;
-  text-wrap: pretty;
-  hyphenate-limit-chars: 7;
-  font-family: grazie;
-  font-size: 1rem;
-  line-height: 2rem;
-}
-
-.title__container {
+.editorial__content .title__container {
   position: relative;
   width: 100%;
   height: 350px;
   display: grid;
-  /* margin: 10% 0 3% 0; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* .group_cero{
-      background-color: var(--issue-color);
-  }
-  .group_one{
-      background-color: var(--section-1-color);
-      opacity: 70%;
-  }
-  .group_two{
-      background-color: var(--section-2-color);
-      opacity: 30%;
-  }
-  .group_three{
-      background-color: var(--section-3-color);
-
-  } */
 }
-.title__container figure {
+.editorial__content .title__container figure {
   position: absolute;
   margin: 0;
   top: 0;
@@ -67,11 +28,11 @@
   height: 70px;
   border-radius: 50%;
 }
-.title__container figure img {
+.editorial__content .title__container figure img {
   width: 100%;
   height: 100%;
 }
-.title__container .title {
+.editorial__content .title__container .title {
   position: absolute;
   width: 100%;
   bottom: 30px;
@@ -84,12 +45,12 @@
           background-clip: text;
   background-position: fixed;
 }
-.title__container .title p {
+.editorial__content .title__container .title p {
   display: flex;
   justify-content: center;
   margin: 0;
 }
-.title__container .title span {
+.editorial__content .title__container .title span {
   position: absolute;
   font-family: mont-medium;
   font-size: 1.5rem;
@@ -98,12 +59,12 @@
   color: rgba(0, 0, 0, 0.3333333333);
   bottom: -20%;
 }
-.title__container .image {
+.editorial__content .title__container .image {
   position: absolute;
   background-image: url("/Frontend/assets/img/in_tension/issues/textura_muro.webp");
   background-position: bottom;
 }
-.title__container .filter {
+.editorial__content .title__container .filter {
   position: absolute;
   mix-blend-mode: color;
   filter: brightness(0.8);

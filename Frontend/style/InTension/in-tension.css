@@ -59,14 +59,18 @@ section{
   padding: 5px 0 5px;
 }
 .header #logo, .header .hicon--color {
-  width: 40px;
+  width: 30px;
   filter: brightness(0);
 }
 .header .intension__container {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header .intension__container .intension__logo {
-  height: 50px;
+  height: 40px;
+  transform: translate(0, 5%);
   filter: brightness(0);
 }
 .header .item__link {
@@ -681,17 +685,8 @@ section{
   border: none;
 }
 
-.header.abajo {
-  background-color: #0b0b0b;
-}
-.header.abajo .intension__container .intension__logo {
-  filter: brightness(1);
-}
-.header.abajo #logo, .header.abajo .hicon--color {
-  filter: brightness(100);
-}
-.header.abajo img {
-  filter: brightness(100);
+.item__link {
+  color: #0b0b0b;
 }
 
 @media (width < 1000px) {

@@ -65,13 +65,18 @@ section{
     padding: 5px 0 5px;
 
     #logo, .hicon--color {
-        width: 40px;
+        width: 30px;
         filter: brightness(0);
     }
     .intension__container{
+        // background-color: rgb(169, 66, 233);
         position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .intension__logo{
-            height: 50px;
+            height: 40px;
+            transform: translate(0, 5%);
             filter: brightness(0);
         }
     }
@@ -702,19 +707,8 @@ section{
     }
 }
 
-.header.abajo{
-    background-color: #0b0b0b;
-    .intension__container{
-        .intension__logo{
-            filter: brightness(1);
-        }
-    }
-    #logo, .hicon--color {
-        filter: brightness(100);
-    }
-    img{
-        filter: brightness(100);
-    }
+.item__link {
+    color: #0b0b0b;
 }
 
 @media (width < 1000px){

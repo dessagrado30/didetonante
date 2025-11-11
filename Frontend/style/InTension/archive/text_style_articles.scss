@@ -1,10 +1,7 @@
 body{
-    --font-paragraph-regular:diga;
-    --font-paragraph-bold:diga-bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    --font-article-regular:diga;
+    --font-article-bold:diga-bold;
+    --font-titles:alte;
 }
 
 .articles{
@@ -28,9 +25,7 @@ body{
     background-size: cover;
     background-clip: text;
     background-position: fixed;
-    /* p{
-        margin-bottom: 40%;
-    } */
+    font-family: var(--font-titles)
 }
 
 .title__image--situation{
@@ -63,21 +58,21 @@ body{
     hyphens: auto;
     text-wrap: pretty;
     hyphenate-limit-chars: 7;
-    font-family: var(--font-paragraph-regular);
+    font-family: var(--font-article-regular);
     font-size: 1.3rem;
     line-height: 2rem;
     letter-spacing: .01rem;
     word-spacing: 0rem;
 }
 
-
-span{
-    font-family: var(--font-paragraph-bold);
+.highlighted__bold{
+    font-family: var(--font-article-bold);
     text-align: left;
 
 }
+
 .subtitle{
     display: grid;
-    font-family: var(--font-paragraph-bold);
+    font-family: var(--font-article-bold);
     font-size: clamp(1.5rem, 1.8vw, 2.5rem);
 }
