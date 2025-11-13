@@ -524,6 +524,7 @@ section{
   opacity: 1%;
 }
 .back__issues .page__3 .content__section .backissues__container .issues .color_borderlands {
+  filter: opacity(50%) saturate(0);
   top: -5%;
   left: 0;
   transform-origin: bottom left;
@@ -532,19 +533,21 @@ section{
   mix-blend-mode: difference;
 }
 .back__issues .page__3 .content__section .backissues__container .issues .color_resistances {
+  filter: opacity(50%) saturate(0);
   top: -5%;
   right: 0;
   transform-origin: bottom right;
   transform: rotate(20deg);
-  background-color: #3399cc;
+  background-color: #5030ff;
   mix-blend-mode: difference;
 }
 .back__issues .page__3 .content__section .backissues__container .issues .color_genocide {
+  filter: opacity(50%) saturate(0);
   top: -5%;
   left: 0;
   transform-origin: bottom left;
   transform: rotate(-20deg);
-  background-color: #990033;
+  background-color: #5030ff;
   mix-blend-mode: difference;
 }
 .back__issues .page__3 .content__section .backissues__container .issues .text__issue {
@@ -577,14 +580,11 @@ section{
   margin: 0;
   font-size: 1rem;
 }
-.back__issues .page__3 .content__section .backissues__container .issues .text__issue .sup__2 {
-  color: #ffff66;
-}
 .back__issues .page__3 .content__section .backissues__container .issues .text__issue .name-issue {
   position: absolute;
   bottom: 0;
   margin: 4%;
-  font-size: 2rem;
+  font-size: 1.6rem;
   transition-duration: 1s;
 }
 .back__issues .page__3 .content__section .backissues__container .zine {
@@ -597,7 +597,6 @@ section{
   color: var(--issue-color);
 }
 .back__issues .page__3 .content__section .backissues__container .coming {
-  /* background-color: #99003355; */
   position: absolute;
   margin: 0;
   height: 100%;
@@ -608,11 +607,13 @@ section{
   align-items: center;
 }
 .back__issues .page__3 .content__section .backissues__container .coming p {
+  width: 100%;
   cursor: default;
   position: absolute;
-  color: rgba(250, 250, 250, 0.3333333333);
+  color: rgba(250, 250, 250, 0.6666666667);
   font-family: alte;
-  font-size: clamp(7rem, 90%, 10rem);
+  font-size: clamp(6em, 8vw, 10em);
+  text-align: center;
   /* left: 5px; */
 }
 .back__issues .page__3 .intertext {

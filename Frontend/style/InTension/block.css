@@ -2,8 +2,9 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: blueviolet;
+  background-color: rgb(32, 32, 32);
   display: flex;
+  font-family: mont;
   justify-content: center;
   align-items: center;
   color: white;

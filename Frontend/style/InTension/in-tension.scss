@@ -457,6 +457,7 @@ section{
                     height: 400px;
                     border-radius: 20px;
                     overflow: hidden;
+
                     .background__image{
                         position: relative;
                         display: flex;
@@ -534,27 +535,33 @@ section{
                         opacity: 1%;
                     }
                     .color_borderlands{
+                        filter: opacity(50%) saturate(0);
                         top: -5%;
                         left: 0;
                         transform-origin: bottom left;
                         transform: rotate(-20deg);
+                        // background-color: #5030ff;
                         background-color: #5030ff;
                         mix-blend-mode: difference;
                     }
                     .color_resistances{
+                        filter: opacity(50%) saturate(0);
                         top: -5%;
                         right: 0;
                         transform-origin: bottom right;
                         transform: rotate(20deg);
-                        background-color: #3399cc;
+                        // background-color: #3399cc;
+                        background-color: #5030ff;
                         mix-blend-mode: difference;
                     }
                     .color_genocide{
+                        filter: opacity(50%) saturate(0);   
                         top: -5%;
                         left: 0;
                         transform-origin: bottom left;
                         transform: rotate(-20deg);
-                        background-color: #990033;
+                        // background-color: #990033;
+                        background-color: #5030ff;
                         mix-blend-mode: difference;
                     }
                     .text__issue{
@@ -587,14 +594,14 @@ section{
                                 font-size: 1rem;
                             }
                         }
-                        .sup__2{
-                            color: #ffff66;
-                        }
+                        // .sup__2{
+                        //     color: #ffff66;
+                        // }
                         .name-issue{
                             position: absolute;
                             bottom: 0;
                             margin: 4%;
-                            font-size: 2rem;
+                            font-size: 1.6rem;
                             transition-duration: 1s;
                         }
                     }
@@ -608,23 +615,24 @@ section{
                     font-size: 5rem;
                     color: var(--issue-color);
                 }
-                .coming{
-                    /* background-color: #99003355; */
+                .coming{    
                     position: absolute;
                     margin: 0;
                     height: 100%;
                     width: 75%;
-
                     right: -.4%;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+
                     p{
+                        width: 100%;
                         cursor: default;
                         position: absolute;
-                        color: #fafafa55;
+                        color: #fafafaaa;
                         font-family: alte;
-                        font-size: clamp(7rem, 90%, 10rem);
+                        font-size: clamp(6em, 8vw, 10em);;
+                        text-align: center;
                         /* left: 5px; */
                     }
                 }
