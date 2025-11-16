@@ -3,7 +3,12 @@ body {
   --section-2-color:#9400ff55;
   --section-3-color:#006666;
   --issue-color: #d8fc00;
+  --articles-box-height: 400px;
   background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
 }
 
 .section__one-color {
@@ -36,4 +41,69 @@ body {
 
 .section__issue-text-color {
   color: var(--issue-color);
+}
+
+.one {
+  animation-name: showone;
+  animation-timeline: view();
+  animation-range: entry -50% cover 50vh;
+}
+
+.two {
+  animation-name: showtwo;
+  animation-timeline: view();
+  animation-range: entry -50% cover 50vh;
+}
+
+.three {
+  animation-name: showthree;
+  animation-timeline: view();
+  animation-range: entry -50% cover 50vh;
+}
+
+.four {
+  animation-name: showfour;
+  animation-timeline: view();
+  animation-range: entry -50% cover 50vh;
+}
+
+@keyframes showone {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translate(0, 50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+}
+@keyframes showtwo {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translate(0, 200px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+}
+@keyframes showthree {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translate(0, 300px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
+}
+@keyframes showfour {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translate(0, 400px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translate(0);
+  }
 }/*# sourceMappingURL=conventions.css.map */

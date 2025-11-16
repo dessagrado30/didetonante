@@ -3,12 +3,13 @@
     --border: 30px ;
   }
   .port .banner {
-    height: 10%;
+    height: 11%;
   }
   .port .banner .text__line p {
     line-height: 0;
     bottom: 0;
     font-size: 0.9rem;
+    letter-spacing: 0.2rem;
   }
   .port .banner .left {
     padding-left: 0.5%;

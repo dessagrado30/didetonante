@@ -66,68 +66,68 @@
     }
 }
 
-.one{
-    animation-name: showone;
-    animation-timeline: view();
-    animation-range: entry 0 cover 50vh;
-}
-.two{
-    animation-name: showtwo;
-    animation-timeline: view();
-    animation-range: entry 0 cover 50vh;
-}
-.three{
-    animation-name: showthree;
-    animation-timeline: view();
-    animation-range: entry 0 cover 50vh;
-}
-.four{
-    animation-name: showfour;
-    animation-timeline: view();
-    animation-range: entry 0 cover 50vh;
-}
+// .one{
+//     animation-name: showone;
+//     animation-timeline: view();
+//     animation-range: entry 0 cover 50vh;
+// }
+// .two{
+//     animation-name: showtwo;
+//     animation-timeline: view();
+//     animation-range: entry 0 cover 50vh;
+// }
+// .three{
+//     animation-name: showthree;
+//     animation-timeline: view();
+//     animation-range: entry 0 cover 50vh;
+// }
+// .four{
+//     animation-name: showfour;
+//     animation-timeline: view();
+//     animation-range: entry 0 cover 50vh;
+// }
 
 
-@keyframes showone{
-    from {
-        opacity: 0;
-        transform: scale(.7) translate(0, 100px);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translate(0);
-    }
-}
-@keyframes showtwo{
-    from {
-        opacity: 0;
-        transform: scale(.7) translate(0, 200px);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translate(0);
-    }
-}
-@keyframes showthree{
-    from {
-        opacity: 0;
-        transform: scale(.7) translate(0, 300px);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translate(0);
-    }
-}
-@keyframes showfour{
-    from {
-        opacity: 0;
-        transform: scale(.7) translate(0, 400px);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translate(0);
-    }
-}
+// @keyframes showone{
+//     from {
+//         opacity: 0;
+//         transform: scale(.7) translate(0, 100px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: scale(1) translate(0);
+//     }
+// }
+// @keyframes showtwo{
+//     from {
+//         opacity: 0;
+//         transform: scale(.7) translate(0, 200px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: scale(1) translate(0);
+//     }
+// }
+// @keyframes showthree{
+//     from {
+//         opacity: 0;
+//         transform: scale(.7) translate(0, 300px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: scale(1) translate(0);
+//     }
+// }
+// @keyframes showfour{
+//     from {
+//         opacity: 0;
+//         transform: scale(.7) translate(0, 400px);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: scale(1) translate(0);
+//     }
+// }
 .articles{
     position: relative;
     width: 100%;

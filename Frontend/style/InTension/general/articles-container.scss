@@ -48,7 +48,7 @@
         min-height: 700px;
         min-width: 300px;
         max-width: 1500px;
-        width: 90%;
+        width: 100%;
         .vertical__title{
             position: sticky;
             top: 0;
@@ -68,6 +68,7 @@
             font-family: alte;
             font-size: 7rem;
             line-height: 1;
+            letter-spacing: 15rem;
             top: -15%;
         }
         .title_matters{
@@ -136,9 +137,12 @@
 
                     .label__section{
                         background-color: #0b0b0b55;
+                        padding: 5px;
+                        border-radius: 5px;
                         position: absolute;
                         font-size: 1rem;
-                        font-family: alte;
+                        font-family: mont-black;
+                        letter-spacing: .1rem;
                         line-height: 1lh;
                         text-align: center;
                         top: 0;
@@ -164,9 +168,10 @@
                             position: relative;
                             width: 95%;
                             text-align: center;
+                            letter-spacing: .1rem;
                             font-family: mont-black;
                             font-weight: italic;
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                             span{
                                 font-family: mont;
                                 font-weight: light;
@@ -191,7 +196,7 @@
                 }
                 .description_text{
                     left: 0;
-                    font-family: alte-regular;
+                    font-family: mont-medium;
                     font-weight: 500;
                     font-size: 1rem;
                     margin: 3%;
@@ -214,8 +219,8 @@
         justify-content: center;
         gap: 50px;
 
-        .container--principal{
-            height: 350px;
+        .container{
+            height: var(--articles-box-height);
         }
         .grid{
             display: grid;
@@ -223,7 +228,7 @@
             justify-items: center;
             gap: 50px;
             .article{
-                height: 350px;
+                height: var(--articles-box-height);
             }
         }
     }
@@ -239,17 +244,17 @@
             max-width: 600px;
             min-height: 90%;
             height: 100%;
-            min-height: 350px;
+            min-height: var(--articles-box-height);
             
         }
         .grid{
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 350px 350px;
+            grid-template-rows: var(--articles-box-height) var(--articles-box-height);
             justify-items: center;
             gap: 50px;
             .article{
-                height: 350px;
+                height: var(--articles-box-height);
             }
         }
     }

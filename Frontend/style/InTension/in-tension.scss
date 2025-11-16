@@ -3,47 +3,50 @@ html {
     scroll-padding-top: 100px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+a{
+    color: #fafafa;
+    text-decoration: none;
+}
 @view-transition {
     navigation: auto;
 }
 /* ::view-transition-group(*){
     animation-duration: 2s;
 } */
-::view-transition-old(root) {
-    animation-delay: 1s;
-    animation: slide-out-to-left .5s forwards;
+// ::view-transition-old(root) {
+//     animation-delay: 1s;
+//     animation: slide-out-to-left .5s forwards;
     
-}
-::view-transition-new(root) {
-    animation-delay: 1s; 
-    animation: slide-in-from-right .5s forwards;
+// }
+// ::view-transition-new(root) {
+//     animation-delay: 1s; 
+//     animation: slide-in-from-right .5s forwards;
     
-}
+// }
 
-@keyframes slide-out-to-left {
-    from{
-        transform: translateX(0)
-    }
-    to {
-        transform: translateX(-100%)
-    }
+// @keyframes slide-out-to-left {
+//     from{
+//         transform: translateX(0)
+//     }
+//     to {
+//         transform: translateX(-100%)
+//     }
     
-}
+// }
 
-@keyframes slide-in-from-right {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0)
-    }
-}
+// @keyframes slide-in-from-right {
+//     from {
+//         transform: translateX(100%);
+//     }
+//     to {
+//         transform: translateX(0)
+//     }
+// }
 
-body::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-}
+// body::-webkit-scrollbar{
+//     width: 0px;
+//     height: 0px;
+// }
 
 
 /* main{
@@ -95,7 +98,7 @@ section{
         background-color: #0b0b0b;
         position: sticky;
         width: 100vw;
-        height: 11%;
+        height: 9%;
         z-index: 100;
         .text__line {
             position: absolute;

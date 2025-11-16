@@ -1,0 +1,170 @@
+.background__image {
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+}
+.background__image img {
+  padding: 0;
+  margin: 0;
+}
+
+.aboutus-head {
+  width: 100%;
+  min-height: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 3%;
+  background-color: #fafafa;
+  padding-bottom: 5%;
+}
+.aboutus-head .head__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  min-height: 500px;
+  padding-top: 100px;
+  gap: 5%;
+}
+.aboutus-head .head__container .title-box {
+  width: 100%;
+  line-height: 30px;
+}
+.aboutus-head .head__container .title-box .title {
+  position: relative;
+  width: 100%;
+  color: rgba(0, 0, 0, 0);
+  font-size: 5rem;
+  -webkit-text-stroke: 3px #0b0b0b;
+  font-family: alte;
+}
+.aboutus-head .head__container .title-box .subtitle {
+  position: relative;
+  font-family: alte;
+  width: 100%;
+}
+.aboutus-head .head__container .visualprofiles {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-rows: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.aboutus-head .head__container .visualprofiles .profile__container {
+  min-height: 200px;
+  position: relative;
+  margin: 10%;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__centerbottom {
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  background-color: var(--issue-color);
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__righttop {
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__righttop .photo__container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-30%, -10%);
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__righttop .photo__container img {
+  filter: saturate(0);
+  width: 110%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__leftcenter {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  overflow: hidden;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__leftcenter .photo__container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-30%, -10%);
+}
+.aboutus-head .head__container .visualprofiles .profile__container .circle__leftcenter .photo__container img {
+  filter: saturate(0);
+  width: 110%;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .box__name {
+  position: absolute;
+  border: 2px solid black;
+  height: 1.5lh;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -10%;
+  transform: rotate(-90deg) translate(-50%, 0);
+}
+.aboutus-head .head__container .visualprofiles .profile__container .box__name .name__text {
+  font-size: 1rem;
+  font-family: alte;
+  color: #0b0b0b;
+}
+.aboutus-head .head__container .visualprofiles .profile__container .text__description {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  font-family: mont-medium;
+}
+
+.text-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-about .text {
+  width: 50%;
+}
+.text-about .text .paragraph {
+  grid-template-columns: 1fr;
+}
+
+.separator {
+  position: relative;
+}
+.separator .gradient__bg-info {
+  position: absolute;
+  background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+  width: 100%;
+  height: 100%;
+}
+.separator .filter--Ourambition {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ff6600;
+  mix-blend-mode: difference;
+}/*# sourceMappingURL=about-us.css.map */

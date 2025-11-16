@@ -48,7 +48,7 @@
   min-height: 700px;
   min-width: 300px;
   max-width: 1500px;
-  width: 90%;
+  width: 100%;
 }
 .contain .articles__list .vertical__title {
   position: sticky;
@@ -68,6 +68,7 @@
   font-family: alte;
   font-size: 7rem;
   line-height: 1;
+  letter-spacing: 15rem;
   top: -15%;
 }
 .contain .articles__list .title_matters {
@@ -133,9 +134,12 @@
 }
 .contain .articles__list .article .container .img__box .label__section {
   background-color: rgba(11, 11, 11, 0.3333333333);
+  padding: 5px;
+  border-radius: 5px;
   position: absolute;
   font-size: 1rem;
-  font-family: alte;
+  font-family: mont-black;
+  letter-spacing: 0.1rem;
   line-height: 1lh;
   text-align: center;
   top: 0;
@@ -160,9 +164,10 @@
   position: relative;
   width: 95%;
   text-align: center;
+  letter-spacing: 0.1rem;
   font-family: mont-black;
   font-weight: italic;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .contain .articles__list .article .container .img__box .article__title .issue__min_title span {
   font-family: mont;
@@ -184,7 +189,7 @@
 }
 .contain .articles__list .article .container .description_text {
   left: 0;
-  font-family: alte-regular;
+  font-family: mont-medium;
   font-weight: 500;
   font-size: 1rem;
   margin: 3%;
@@ -199,8 +204,8 @@
   justify-content: center;
   gap: 50px;
 }
-.contain .articles__list--situation .container--principal {
-  height: 350px;
+.contain .articles__list--situation .container {
+  height: var(--articles-box-height);
 }
 .contain .articles__list--situation .grid {
   display: grid;
@@ -209,7 +214,7 @@
   gap: 50px;
 }
 .contain .articles__list--situation .grid .article {
-  height: 350px;
+  height: var(--articles-box-height);
 }
 .contain .articles__list--movement, .contain .articles__list--explosion {
   padding: 0 0 50px 0;
@@ -223,17 +228,17 @@
   max-width: 600px;
   min-height: 90%;
   height: 100%;
-  min-height: 350px;
+  min-height: var(--articles-box-height);
 }
 .contain .articles__list--movement .grid, .contain .articles__list--explosion .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 350px 350px;
+  grid-template-rows: var(--articles-box-height) var(--articles-box-height);
   justify-items: center;
   gap: 50px;
 }
 .contain .articles__list--movement .grid .article, .contain .articles__list--explosion .grid .article {
-  height: 350px;
+  height: var(--articles-box-height);
 }
 
 .article__link {

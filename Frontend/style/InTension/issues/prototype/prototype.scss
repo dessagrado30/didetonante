@@ -3,6 +3,13 @@ body{
     height: fit-content;
     overflow-x: hidden;
 }
+
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+
 .editorial{
     background-color: #fafafa;
     position: absolute;
@@ -48,10 +55,6 @@ body{
     }
 }
 
-a{
-    color: initial;
-    text-decoration: initial;
-}
 // .back_image-index{
 //     opacity: 100%;
 // }
@@ -216,11 +219,14 @@ a{
     top: 5%;
 }
 .index{
-    width: 120%;
+    overflow: hidden;
     left: 0;
-    .content__box{       
+    .content__box{ 
+            
         .articles__box{
-            transform: scale(.75) translate(-12%, 0);
+            
+            width: 120%; 
+            transform: scale(.75) translate(0, 0);
         }
     }
 }

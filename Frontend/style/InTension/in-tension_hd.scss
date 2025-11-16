@@ -6,17 +6,18 @@ body{
 
 .port{
     .banner{
-        height: 10%;
+        height: 11%;
         .text__line {
             p { 
                 line-height: 0;
                 bottom: 0;
                 font-size: .9rem;
+                letter-spacing: .2rem;
             }
         }
         .left {
             padding-left: .5%;
-
+            
         }            
         .right {
             padding-right: 2%;

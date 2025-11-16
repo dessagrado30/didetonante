@@ -1,7 +1,25 @@
-.banner-section--three{
-    mix-blend-mode: multiply;
+// .banner-section--three{
+//     mix-blend-mode: multiply;
+// }
+.background__image{
+    position: relative;
+    img{
+        transform: scale(120%) translate(5%,0);
+        position: absolute;
+    }
+}
+.blend--difference{
+    mix-blend-mode: difference;
+    .paragraph__filter{
+        background-color: #9933ffaa;
+        border-radius: 0 0 30px 30px;
+    }
+}
+.blend--normal{
+    mix-blend-mode: normal;
 }
 .section__text{
+    position: absolute;
     height: 300px;
     display: grid;
     grid-template-columns: .2fr .8fr;
@@ -9,54 +27,63 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    & > *{
-        border: 1px solid white;
-    }
+    // & > *{
+    //     border: 1px solid white;
+    // }
     .title{
         text-align: center;
         position: relative;
-        width: 100px;
+        width: 80px;
         height: 100%;
         font-family: alte;
-        color: #fafafa;
+        color: #666699;
         bottom: 0;
 
         .factions{
-            position: absolute;
-            top: -45%;
-            left: 0;
-            font-size: 8rem;
-            transform: translate(0, 0);
-        }
-        .ficto{
             line-height: 0;
             position: absolute;
             font-size: 6rem;
             right: -80%;
             top: 0;
             transform-origin: center;
-            transform: rotate(-90deg) translate(-50%, 0);
+            transform: rotate(-90deg) translate(-50%, 80px);
+        }
+        .ficto{
+            position: absolute;
+            top: -45%;
+            left: 0;
+            font-size: 8rem;
+            transform: translate(0, 0);
         }
     }
     .paragraph__container{
-        height: 100%;
-        width: 200px;
+        height: 130%;
+        width: 450px;
+        position: relative;
+        transform: translate(0, 10%);
         margin-top: 2%;
         left: 0;
-        background-color: #00000088;
-        mix-blend-mode: luminosity;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        .description{
-            width: 90%;
-            color: #fafafa;
-            font-family: alte-regular;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            /* text-align: justify; */
-            
+        .paragraph__filter{
+            position: absolute;
+            width: 100%;
+            height: 100%;
         }
+    }
+}
+
+.section__text .description{
+    width: 90%;
+    color: #fafafa;
+    font-family: alte-regular;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: justify;
+    z-index: 10;    
+    .bold{
+        font-family: alte-bold;
     }
 }

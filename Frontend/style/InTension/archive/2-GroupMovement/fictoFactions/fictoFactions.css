@@ -1,8 +1,25 @@
-.banner-section--three {
-  mix-blend-mode: multiply;
+.background__image {
+  position: relative;
+}
+.background__image img {
+  transform: scale(120%) translate(5%, 0);
+  position: absolute;
+}
+
+.blend--difference {
+  mix-blend-mode: difference;
+}
+.blend--difference .paragraph__filter {
+  background-color: rgba(153, 51, 255, 0.6666666667);
+  border-radius: 0 0 30px 30px;
+}
+
+.blend--normal {
+  mix-blend-mode: normal;
 }
 
 .section__text {
+  position: absolute;
   height: 300px;
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
@@ -11,51 +28,58 @@
   align-items: center;
   z-index: 1;
 }
-.section__text > * {
-  border: 1px solid white;
-}
 .section__text .title {
   text-align: center;
   position: relative;
-  width: 100px;
+  width: 80px;
   height: 100%;
   font-family: alte;
-  color: #fafafa;
+  color: #666699;
   bottom: 0;
 }
 .section__text .title .factions {
-  position: absolute;
-  top: -45%;
-  left: 0;
-  font-size: 8rem;
-  transform: translate(0, 0);
-}
-.section__text .title .ficto {
   line-height: 0;
   position: absolute;
   font-size: 6rem;
   right: -80%;
   top: 0;
   transform-origin: center;
-  transform: rotate(-90deg) translate(-50%, 0);
+  transform: rotate(-90deg) translate(-50%, 80px);
+}
+.section__text .title .ficto {
+  position: absolute;
+  top: -45%;
+  left: 0;
+  font-size: 8rem;
+  transform: translate(0, 0);
 }
 .section__text .paragraph__container {
-  height: 100%;
-  width: 200px;
+  height: 130%;
+  width: 450px;
+  position: relative;
+  transform: translate(0, 10%);
   margin-top: 2%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5333333333);
-  mix-blend-mode: luminosity;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section__text .paragraph__container .description {
+.section__text .paragraph__container .paragraph__filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.section__text .description {
   width: 90%;
   color: #fafafa;
   font-family: alte-regular;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.4;
-  /* text-align: justify; */
+  text-align: justify;
+  z-index: 10;
+}
+.section__text .description .bold {
+  font-family: alte-bold;
 }/*# sourceMappingURL=fictoFactions.css.map */
