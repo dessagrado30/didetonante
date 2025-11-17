@@ -5,21 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article-name</title>
     <link rel="stylesheet" href="/Frontend/style/normalize.css">
-    <link rel="stylesheet" href="/Frontend/style/InTension/sections/text_style.css">
+    <link rel="stylesheet" href="/Frontend/assets/fonts/fonts.css">
+	<link rel="stylesheet" href="/Frontend/style/header-and-behavior.css">
+	<link rel="stylesheet" href="/Frontend/style/InTension/general/conventions.css">
+
+    
+	<link rel="stylesheet" href="/Frontend/style/InTension/in-tension.css">
+	<link rel="stylesheet" href="/Frontend/style/InTension/general/article_style.css">
+    <link rel="stylesheet" href="/Frontend/style/InTension/archive/text_style_articles.css">
+    <link rel="stylesheet" href="/Frontend/style/InTension/archive/3-GroupExplosion/voices/1_issue/voices-articles.css">
+
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <a class="container__logo" href="/index.html">
+                <img id="logo" class="header__logo hlogo--color" src="/Frontend/assets/icons/LLAMITA.svg">
+            </a>
+        </div>
+        <div class="intension__container">
+            <a href="/Frontend/templates/InTension/in-tension.html"><img class="intension__logo" src="/Frontend/assets/logos/intensionheader.svg" alt=""></a>
+        </div>
+        <nav class="header__nav">
+            <label class="nav__label">
+                <input class="checkbox" type="checkbox">
+            </label>
+            <ul class="nav__list">
+                <li class="list__item item--button"><img class="send__icon" src="/Frontend/assets/icons/align-justify.svg"></li>
+                <li class="list__item item--button" onclick="modal('/Frontend/assets/img/nodos/editorial.webp')"><img class="send__icon" src="/Frontend/assets/icons/send-horizontal.svg"></li>
+            </ul>
+        </nav>
+    </header>
     <section class="articles">
-        <div class="article">
-            <p class="title">The illusion and dangers of the extended mind.</p>
-            <p class="text">Mind is a product of the relation of the brain and the ontological designing what is external to it
-                One example of this is a change in the nature of reading (how to) functional reading is increasing, while to learn, cultivate the mind and gain is pleasure decreases. This change marks a more general move from 'a deep to shallow engagement,' linked to transition from general literary cultural environment to a media consumptive one of instant entertainment — a situation being seen not just a reducing memory but intellectually damaging to the ability to think and write beyond instrumental needs. It also increases a dependence on means of tertiary  retention (devices of artificial memory),  which effective produces a 'poverty of mind' from a reduction of mental analytic and reasoning skills while diminishing the  condition of imagination the informed facility to image with, and experiential encounters in the world which prompt the imagined. It follows that
-                artificial means that think for us (AI) reduces this developmental process. Tech-corporate myopic productivist instrumentalism appears blind to the ontological designing of mind of the products they produce variously described as 'brain rot', 'digital dementia', and 'the diminishment of cognitive 
-                abilities'. What is underway is a condition of intellectual slippage in which AI thinks for increasingly many of us. This is in effect a trend that can lead to the power of mind slipping into technological control (singularity). The power of AI and its links to quantum computing can engender a feeling of 
-                ignorance, and an already recognised danger of control (and the designation of 'our' redundancy). The speed of the technology is not only alarming, but equally so is that this speed is going to increase. 'We' may well be between a world of human and technological dominance. Notwithstanding the global inequity of the distribution of the digital technosphere, the impacts on us are going to be huge. There is already recognition of the economic displacement of  vast numbers of industrial and administrative workers (already named as 'the useless class' ). Some of the creators of AI have even warned of it destroying 'us'.
-            </p>
+        <div class="separator">
+        </div>
+        <article class="article__content article__content--float">
+            <div class="article article-five">
+                <div class="article__head">
+                    <div class="title__container">
+                        <div class="title title__image--explosion">
+                            <p class="texttitle__container"><span class="so">So,</span><span class="were">were</span><span class="live">do you live?</span></p>
+                        </div>
+                        <div class="title title__filter--explosion section__three-color">
+                            <p class="texttitle__container"><span class="so">So,</span><span class="were">were</span><span class="live">do you live?</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">               
+                    <div class="paragraph showparagraph--2">
+                        <p class="text">
+                            <span class="subtitle">Is it somewhere that is environmentally safe, politically stable, and free from conflict?</span>
+                            There are many places where the answer is ‘no’ to all three conditions. But in this age of a deepening climate crisis, nowhere can be completely environmentally safe, either now or in the not-too-distant future. Politically, the number of unsafe places is increasing. More nations are becoming politically repressive. Likewise, nations that once were seemingly stable democracies have now rushed into, or drifted towards, authoritarian government. It’s become clear that political situations can, and do, change fast: no nation is immune from the disruption of its political foundations. At the same time, there is insecurity and a lack of faith in stability even in what appear to be stable political regimes. Governments are just not willing to deal with the existential dangers of the planet. They know this requires drastic action, which would make them unpopular, and so put their future at risk. As a reaction, they do nothing that has any real impact, thus they survive. Such inaction brings us back to the questions of safety and the issues of environmental,  political, and conflict dangers. Inadequate action makes it certain that dangers will grow. In truth, nowhere is safe. There has to be another way. We are all between now and it, Safety will not be found,it has to be made, and this publication aims to be part of the making.
+                            Tell us about where you live in-tension from conflict, climate impacts and other critical conditions. A selection will be published on our website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <figure class="figure figure__article--one">
+            <img src="/Frontend/assets/img/in_tension/issues/textura_muro.webp" alt="">
+        </figure>
+        <div class="separator">
         </div>
     </section>
+    <section class="in-tension__footer">
+        <a href="#InTensionPort">
+            <div class="displace up">
+                <figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
+            </div>
+        </a>
+        <iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
+        </iframe>
+    </section>
 
+	<script src="/Frontend/script/header.js"></script>
 </body>
 </html>
 

@@ -50,6 +50,7 @@ body::-webkit-scrollbar{
     #logo, .hicon--color {
         width: 30px;
     }
+    border-bottom: 1px solid #0b0b0b;
     .intension__container{
         // background-color: rgb(169, 66, 233);
         display: flex;
@@ -117,6 +118,9 @@ body::-webkit-scrollbar{
             align-items: center;
             .list__item{
                 list-style: none;
+                & > *{
+                    filter: brightness(0);
+                }
                 .item__link{
                     position: relative;
                     font-family: helvetica;
@@ -177,8 +181,14 @@ body::-webkit-scrollbar{
     #logo, .hicon--color {
         filter: brightness(100);
     }
-    .header__nav .nav__list .list__item .send__icon {
-        filter: brightness(100);
+    .header__nav{
+        .nav__list{
+            .list__item{
+                & > *{
+                    filter: brightness(100);
+                }
+            }
+        }
     }
 }
 

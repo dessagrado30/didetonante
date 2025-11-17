@@ -45,11 +45,24 @@ body {
 .title__image--movement {
   position: absolute;
   background-image: url("/Frontend/assets/img/in_tension/articles/Poster_zoom.webp");
-  background-size: 30lh;
+  background-size: 10lh;
   background-position: 30% 40%;
 }
 
 .title__filter--movement {
+  position: relative;
+  mix-blend-mode: darken;
+  opacity: 70%;
+}
+
+.title__image--explosion {
+  position: absolute;
+  background-image: url("/Frontend/assets/img/in_tension/articles/img3.webp");
+  background-size: 2lh;
+  background-position: 30% 40%;
+}
+
+.title__filter--explosion {
   position: relative;
   mix-blend-mode: darken;
   opacity: 40%;

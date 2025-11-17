@@ -26,7 +26,7 @@
     .article__head{ 
         position: relative;
         display: grid;
-        width: 900px;
+        width: 950px;
         height: 400px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 450px;
@@ -42,9 +42,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: grazie-italic;
+            font-family: diga;
             line-height: 2rem;
-            font-size: 1rem;
+            font-size: 1.4rem;
         }
     }
 }

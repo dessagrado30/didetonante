@@ -9,7 +9,17 @@ a{
     color: initial;
     text-decoration: none;
 }
-
+.download__icon{
+    // position: absolute;
+    height: fit-content;
+    top: 9%;
+    margin: 2%;
+    right: 0;
+}
+.content__button--download{
+    // position: absolute;
+    transform: translate(0, -110%);
+}
 .editorial{
     background-color: #fafafa;
     position: absolute;

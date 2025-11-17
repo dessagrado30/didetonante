@@ -15,12 +15,10 @@
   margin-block: 1%;
   width: 60vw;
   height: 250px;
-  font-size: clamp(5rem, 50%, 6.1rem);
 }
-
-.title {
+.title__container .title {
   text-align: center;
-  font-size: 6rem;
+  font-size: clamp(5rem, 50%, 6.1rem);
 }
 
 .article-five {
@@ -43,30 +41,6 @@
   font-size: 1.7rem;
   position: absolute;
   opacity: 80%;
-}
-
-.line {
-  position: absolute;
-  width: 100%;
-  height: 20px;
-}
-
-.line__image {
-  background-image: url(/Frontend/assets/img/in_tension/issues/textura_arbol.webp);
-}
-
-.line__filter {
-  background-color: #ff0000;
-  opacity: 70%;
-  mix-blend-mode: darken;
-}
-
-.line--top {
-  top: 20%;
-}
-
-.line--bottom {
-  bottom: 5%;
 }
 
 .figure__article--one {

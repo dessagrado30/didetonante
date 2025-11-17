@@ -9,11 +9,34 @@
     <link rel="stylesheet" href="/Frontend/style/InTension/general/conventions.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/about-us.css">
 
+	<link rel="stylesheet" href="/Frontend/style/header-and-behavior.css">
+    <link rel="stylesheet" href="/Frontend/style/InTension/in-tension.css">
+
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/article_style.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/archive/text_style_articles.css">
 
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <a class="container__logo" href="/index.html">
+                <img id="logo" class="header__logo hlogo--color" src="/Frontend/assets/icons/LLAMITA.svg">
+            </a>
+        </div>
+        <div class="intension__container">
+            <a href="/Frontend/templates/InTension/in-tension.html"><img class="intension__logo" src="/Frontend/assets/logos/intensionheader.svg" alt="logo In-Tension"></a>
+        </div>
+        <nav class="header__nav">
+            <label class="nav__label">
+                <input class="checkbox" type="checkbox">
+            </label>
+            <ul class="nav__list">
+                <!-- <li class="list__item item--button"><img class="send__icon" src="/Frontend/assets/icons/align-justify.svg"></li> -->
+                <li class="list__item item--button" onclick="modal('/Frontend/assets/img/nodos/editorial.webp')"><img class="send__icon" src="/Frontend/assets/icons/send-horizontal.svg"></li>
+                <li class="list__item item--button"><img class="send__icon" src="/Frontend/assets/icons/idioma-ES.svg"></li>
+            </ul>
+        </nav>
+    </header>
     <figure class="background__image">
         <img src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="">
     </figure>
@@ -117,10 +140,47 @@
     <div class="separator">
         <div class="gradient__bg-info"></div>
         <div class="filter--Ourambition">
+            <h2>Our Ambition?</h2>
+            <p class="paragraph">
+                <span class="highlighted__bold">To create a space that gives voice to, and expresses the condition of tension that denotes the existential condition of being-in-the world now.</span>
+                To build a community of communication, a cross-readership dialogue, that also disseminates information, ideas, collaborative opportunities.
+                <span class="highlighted__bold">To develop dialogue on critical issues in ways that prompt projects, action and events.</span>
+                To build an archive of ideas and images.
+                To  highlight politically underdeveloped and neglected  issues and new ways of thinking about familiar ones.
+                <span class="highlighted__bold">To enable a space of bilingual exchange between voices of the South and North in and beyond their respective geographies.</span>
 
+            </p>
         </div>
     </div>
+    <div class="separator">
 
+    </div>
+    <div class="separator">
+        <div class="gradient__bg-info"></div>
+        <div class="filter--Ourambition">
+            <h2>Our Ambition?</h2>
+            <p class="paragraph">
+                <span class="highlighted__bold">To create a space that gives voice to, and expresses the condition of tension that denotes the existential condition of being-in-the world now.</span>
+                To build a community of communication, a cross-readership dialogue, that also disseminates information, ideas, collaborative opportunities.
+                <span class="highlighted__bold">To develop dialogue on critical issues in ways that prompt projects, action and events.</span>
+                To build an archive of ideas and images.
+                To  highlight politically underdeveloped and neglected  issues and new ways of thinking about familiar ones.
+                <span class="highlighted__bold">To enable a space of bilingual exchange between voices of the South and North in and beyond their respective geographies.</span>
+
+            </p>
+        </div>
+    </div>
+	<section class="in-tension__footer">
+		<a href="#InTensionPort">
+			<div class="displace up">
+				<figure class="displace-icon"><img src="/Frontend/assets/icons/displace.svg" alt="icon: desplazamiento"></figure>
+			</div>
+		</a>
+		<iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
+		</iframe>
+	</section>
+	<script src="/Frontend/script/header.js"></script>
+    <script type="text/javascript" src="/Frontend/script/contact.js"></script>
 
 
 </body>
