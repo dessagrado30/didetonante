@@ -102,12 +102,25 @@ a{
                     backdrop-filter: blur(5px);
                 }
             }
-
         }
     }
 }
+// button{
+//     background-color: transparent;
+// }
+.matters-of-tension, .mind-field, .stupidity, .borderland, .re-education, .on-resistence, .ficto-factions, .voices, .re-views, .now{
+    outline: 10px solid transparent;
+}
 
-/* content sections */
+/* select */
+@keyframes parpadeo-outline {
+  0%, 100% { outline-color: transparent; }
+  50% { outline: solid var(--issue-color);}
+}
+
+.parpadeo {
+    animation: parpadeo-outline 2s ease-in-out 2; /* 3 iteraciones */
+}
 
 .icon__issue{
     position: absolute;

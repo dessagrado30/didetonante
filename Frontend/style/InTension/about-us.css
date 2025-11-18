@@ -154,6 +154,10 @@
 }
 
 .separator {
+  padding-block: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 .separator .gradient__bg-info {
@@ -162,10 +166,68 @@
   width: 100%;
   height: 100%;
 }
-.separator .filter--Ourambition {
+.separator .filter-color {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #ff6600;
   mix-blend-mode: difference;
+}
+.separator .filter--Ourambition {
+  background-color: #ff6600;
+}
+.separator .filter--How {
+  background-color: #333399;
+}
+.separator .text__section {
+  color: #fafafa;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  width: 60%;
+  height: 380px;
+}
+.separator .text__section .section__title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separator .text__section .section__title .title {
+  color: rgba(0, 0, 0, 0);
+  text-align: center;
+  -webkit-text-stroke: 1px #fafafa;
+  width: 350%;
+  position: absolute;
+  font-size: clamp(2rem, 5vh, 4rem);
+  transform: rotate(-90deg);
+}
+.separator .text__section .paragraph {
+  letter-spacing: 0.03rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  font-family: mont-medium;
+  display: grid;
+  gap: 1rem;
+}
+.separator .text__section .paragraph .highlighted__bold {
+  font-family: mont-extrabold;
+}
+
+.what-why {
+  background-color: #fafafa;
+}
+.what-why .text__section {
+  color: #0b0b0b;
+}
+.what-why .text__section .section__title .title {
+  -webkit-text-stroke: 1px #0b0b0b;
+}
+
+@media (width < 1700px) {
+  .separator {
+    padding-block: 15%;
+  }
+  .separator .text__section {
+    width: 90%;
+  }
 }/*# sourceMappingURL=about-us.css.map */

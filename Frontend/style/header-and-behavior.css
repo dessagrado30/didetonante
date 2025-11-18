@@ -46,25 +46,6 @@ body::-webkit-scrollbar {
 }
 
 .header {
-  border-bottom: 1px solid #0b0b0b;
-}
-.header #logo, .header .hicon--color {
-  width: 30px;
-}
-.header .intension__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .intension__container .intension__logo {
-  height: 40px;
-  transform: translate(0, 5%);
-}
-.header .item__link {
-  color: #0b0b0b;
-}
-
-.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -117,10 +98,11 @@ body::-webkit-scrollbar {
 .header .header__nav .nav__list .list__item {
   list-style: none;
 }
-.header .header__nav .nav__list .list__item > * {
+.header .header__nav .nav__list .list__item .send__icon, .header .header__nav .nav__list .list__item .idiom__icon {
   filter: brightness(0);
 }
 .header .header__nav .nav__list .list__item .item__link {
+  color: #0b0b0b;
   position: relative;
   font-family: helvetica;
   margin: 0 15px;
@@ -147,8 +129,8 @@ body::-webkit-scrollbar {
   filter: sepia(86%) saturate(1695%) hue-rotate(15deg) brightness(107%) contrast(105%);
 }
 
-.header__nav .nav__list .list__item .send__icon {
-  filter: brightness(0);
+.header--intension {
+  border-bottom: 1px solid #0b0b0b;
 }
 
 .header.abajo {
@@ -177,7 +159,7 @@ body::-webkit-scrollbar {
 .header.abajo #logo, .header.abajo .hicon--color {
   filter: brightness(100);
 }
-.header.abajo .header__nav .nav__list .list__item > * {
+.header.abajo .header__nav .nav__list .list__item .send__icon, .header.abajo .header__nav .nav__list .list__item .idiom__icon {
   filter: brightness(100);
 }
 

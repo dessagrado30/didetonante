@@ -105,7 +105,23 @@ a {
           backdrop-filter: blur(5px);
 }
 
-/* content sections */
+.matters-of-tension, .mind-field, .stupidity, .borderland, .re-education, .on-resistence, .ficto-factions, .voices, .re-views, .now {
+  outline: 10px solid transparent;
+}
+
+/* select */
+@keyframes parpadeo-outline {
+  0%, 100% {
+    outline-color: transparent;
+  }
+  50% {
+    outline: solid var(--issue-color);
+  }
+}
+.parpadeo {
+  animation: parpadeo-outline 2s ease-in-out 2; /* 3 iteraciones */
+}
+
 .icon__issue {
   position: absolute;
   width: 100%;

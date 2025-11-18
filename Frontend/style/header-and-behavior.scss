@@ -46,25 +46,6 @@ body::-webkit-scrollbar{
     width: 0px;
     height: 0px;
 }
-.header {
-    #logo, .hicon--color {
-        width: 30px;
-    }
-    border-bottom: 1px solid #0b0b0b;
-    .intension__container{
-        // background-color: rgb(169, 66, 233);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .intension__logo{
-            height: 40px;
-            transform: translate(0, 5%);
-        }
-    }
-    .item__link {
-        color: #0b0b0b;
-    }
-}
 
 .header{
     position: fixed;
@@ -78,7 +59,6 @@ body::-webkit-scrollbar{
     z-index: 1000;
     font-display: swap;
     .header__container{
-        
         .container__logo{
             position: relative;
             color: #f5f5f5;
@@ -118,10 +98,11 @@ body::-webkit-scrollbar{
             align-items: center;
             .list__item{
                 list-style: none;
-                & > *{
+                .send__icon, .idiom__icon{
                     filter: brightness(0);
                 }
                 .item__link{
+                    color: #0b0b0b;
                     position: relative;
                     font-family: helvetica;
                     margin: 0 15px;
@@ -151,10 +132,26 @@ body::-webkit-scrollbar{
         }
     }
 }
-
-.header__nav .nav__list .list__item .send__icon {
-    filter: brightness(0);
+// intension
+.header--intension{
+    border-bottom: 1px solid #0b0b0b;
 }
+// #logo, .hicon--color { 
+//     width: 30px;
+// }
+// border-bottom: 1px solid #0b0b0b;
+// .intension__container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     .intension__logo{
+//         height: 40px;
+//         transform: translate(0, 5%);
+//     }
+// }
+// .header__nav .nav__list .list__item .send__icon {
+//     filter: brightness(0);
+// }
 
 .header.abajo{
     background-color: #0b0b0b;
@@ -184,7 +181,7 @@ body::-webkit-scrollbar{
     .header__nav{
         .nav__list{
             .list__item{
-                & > *{
+                .send__icon, .idiom__icon{
                     filter: brightness(100);
                 }
             }

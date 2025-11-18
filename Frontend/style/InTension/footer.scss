@@ -39,7 +39,9 @@
         gap: 5%;
         .divs{
             position: relative;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr 4fr 2fr;
             min-height: 30%;
             height: 100%;
             justify-content: center;
@@ -57,10 +59,9 @@
             position: relative;
             left: 0;
             figure{
-                position: absolute;
+                // position: absolute;
                 img{
-                    min-height: 200px;
-                    max-height: 200px;
+                    width: 200px;
                 }
             }
         }

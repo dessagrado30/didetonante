@@ -41,7 +41,9 @@
 }
 .footer .divs__content .divs {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 4fr 2fr;
   min-height: 30%;
   height: 100%;
   justify-content: center;
@@ -58,12 +60,8 @@
   position: relative;
   left: 0;
 }
-.footer .divs__content .div_logo figure {
-  position: absolute;
-}
 .footer .divs__content .div_logo figure img {
-  min-height: 200px;
-  max-height: 200px;
+  width: 200px;
 }
 
 @media (width < 1430px) and (width > 1095px) {
