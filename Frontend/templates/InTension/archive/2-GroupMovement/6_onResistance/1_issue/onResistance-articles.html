@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/article_style.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/archive/text_style_articles.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/archive/2-GroupMovement/onResistance/1_issue/onResistance-articles.css">
+    <link rel="stylesheet" href="/Frontend/style/contacto.css">
 
 </head>
 <body>
@@ -75,29 +76,25 @@
         </div>
         <article class="article__content article__content--float">
             <div id="situated_resistence" class="article article-two">
-                <div class="text">               
-                    <div class="paragraph">
-                        <p>
+                <div class="title__container">
+                    <div class="title title__image--movement">
+                        <p><span class="situated">Situated</span><span class="resistance">Resistance</span><span class="obvious">first pass at the obvious</span></p>
+                    </div>
+                    <div class="title title__filter--movement section__two-color">
+                        <p><span class="situated">Situated</span><span class="resistance">Resistance</span><span class="obvious">first pass at the obvious</span></p>
+                    </div>
+                </div>   
+                <div class="text">          
+                    <div class="paragraph showparagraph">
+                        <p class="text__column">
                             <span>Street protest is a longstanding and familiar form of resistance. It sits between two extremes. In Margaret Thatcher’s Britain in the late 1970s early 1980s it was cast and blunted by her as evidence of a functioning democracy. At the other extreme, in fully repressive regimes like Russia street protests prompt mass arrest and imprisonment. With sufficient numbers such action can have political agency as a statement of opposition. But if it generates violence, property damage and looting it can also be counter-productive.</span>
-                        <div class="temp__box temp__box--right">
-                            <div class="title__container">
-                                <div class="title title__image--movement">
-                                    <p><span class="situated">Situated resistance:</span><span class="first">first pass</span><span class="obvious">at the obvious</span></p>
-                                </div>
-                                <div class="title title__filter--movement section__two-color">
-                                    <p><span class="situated">Situated resistance:</span><span class="first">first pass</span><span class="obvious">at the obvious</span></p>
-                                </div>
-                            </div>                            
-                        </div>
                             <span>Likewise, such protests can be exploited by the state to demonstrate its power, especially when this involves a direct  confrontation with paramilitary police or the military. The traditional mode of organisation has been to get as many people onto the street as possible, marching with placards and banners in the hope of media coverage. In an age of greater complexity of issues, and of communications technology, along with better equipped law enforcement, the need for better organised and resilient forms of mass protest invite consideration. There are lessons to learn and actions to take.</span>
-                            <span>One of the control tactics is to ‘cut the head’ of the lead group of protestors and ‘snatch’ its leaders—this to produce disorder, fragment and reduce efficacy. A counter-measure (learnt from Asia) is to link bodies (not just arms) to form a block. In the past this was done by a wide front row gripping a long, thick wooden pole, this can equally be done with a rope. In addition, the lead block needs training to mirror that of law enforcement. The point here is not to enable violence but to blunt it. The other major action is to take charge of the narrative. The protest should have its own photo and recording documentation team  with pre-recorded and live material feeding the media from an off-location pop-up expo and media venue.</span>
+                            <span class="par">One of the control tactics is to ‘cut the head’ of the lead group of protestors and ‘snatch’ its leaders—this to produce disorder, fragment and reduce efficacy. A counter-measure (learnt from Asia) is to link bodies (not just arms) to form a block. In the past this was done by a wide front row gripping a long, thick wooden pole, this can equally be done with a rope. In addition, the lead block needs training to mirror that of law enforcement. The point here is not to enable violence but to blunt it. The other major action is to take charge of the narrative. The protest should have its own photo and recording documentation team  with pre-recorded and live material feeding the media from an off-location pop-up expo and media venue.</span>
                         </p>
                     </div>
-                    <div class="paragraph">
-                        <p>
+                    <div class="paragraph showparagraph--2">
+                        <p class="text__column">
                             <span>There are historical  lessons to learn. One example comes from the women protesting in the UK against nuclear armed aircraft operating from RAF/USAF Greenham Common, home of 96 nuclear warheads. In 1983, over 30,000 women linked hands, completely surrounding the nine-mile perimeter fence of the Airforce base. They set up a camp which was supported by women from all over the country maintaining a presence in rotation, which they did for 19 years. It ended because in 2000 the airbase was decommissioned. This protest created a culture of feminist</span> 
-                        <div class="temp__box temp__box--left">
-                        </div>
                             <span>resistance. It was non-violent, but not passive. For example, porridge was thrown at the windscreen of police cars which were taking arrested women away (which they frequently did). The prompted the driver to turn on the wipers, which smeared  porridge over the windscreen, making it hard to remove and for the drivers to see clearly. Above all it demonstrated commitment and endurance.</span>
                             <span>Confrontation with paramilitary and military forces equipped with tear-gas grenades, flash-bangs, rubber-bullet guns, and live-ammunition firing small arms is a dangerous challenge. Again, this invites contingency planning and implementation, plus innovation rather than spontaneous reaction. Deployed opposition to protest usually takes two forms: the defence of property, or the clearing of a mass of bodies from a space. It has to have a ‘command and control system.’ and its actions are predicated upon expected patterns of behaviour. The response to this is speed, movement, group reconfigurations, and unpredictability. Confuse rather than confront.</span>
                         </p>
@@ -185,7 +182,37 @@
         <iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
         </iframe>
     </section>
+	<dialog class="send modal modal-style">
 
+		<div class="modal__container">
+			<div class="modal__content">
+
+				<div class="form contact__form">
+					<!-- <div class="message">
+						<p class="title">¡Gracias!</p>
+						<p class="paragraph">Cada vez estamos más cerca. Elija un proyecto de su interés y comente.</p>
+					</div> -->
+					<embed class="api_contacto" src="https://app.didetonante.com">
+					<!-- <p class="title--mod form__title">Control</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
+						</div>
+						<div class="form__item" >
+							<p class="print"></p>
+						</div>
+					</div> -->
+					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="/Frontend/assets/icons/x.svg" alt="sendbutton"></button>
+					<!-- <button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button> -->
+
+				</div>
+			</div>
+			
+		</div>
+	</dialog>
 	<script src="/Frontend/script/header.js"></script>
+    <script type="text/javascript" src="/Frontend/script/contact.js"></script>
 </body>
 </html>

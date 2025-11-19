@@ -66,3 +66,13 @@
     transform: translate(0, -100%);
     z-index: -1;
 }
+
+.text{
+    width: 100vw;
+    gap: 1lh;
+    display: grid;
+    justify-content: center;
+    span{
+        max-width: 800px;
+    }
+}

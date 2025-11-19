@@ -20,12 +20,12 @@
 }
 
 .article-four {
-  width: 45%;
+  width: 100vw;
   background-color: #fafafa;
   margin-bottom: 10%;
 }
 .article-four .article__head {
-  width: 100%;
+  width: 800px;
   position: relative;
   display: grid;
   grid-template-rows: 500px;
@@ -87,4 +87,8 @@
   top: 100%;
   transform: translate(0, -100%);
   z-index: -1;
+}
+
+.text {
+  max-width: 800px;
 }/*# sourceMappingURL=borderLands-articles.css.map */

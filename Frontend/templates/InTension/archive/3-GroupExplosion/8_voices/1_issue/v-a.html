@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="/Frontend/style/InTension/general/article_style.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/archive/text_style_articles.css">
     <link rel="stylesheet" href="/Frontend/style/InTension/archive/3-GroupExplosion/voices/1_issue/voices-articles.scss">
+    <link rel="stylesheet" href="/Frontend/style/contacto.css">
 
 </head>
 <body>
@@ -68,7 +69,37 @@
         <div class="separator">
         </div>
     </section>
+	<dialog class="send modal modal-style">
 
+		<div class="modal__container">
+			<div class="modal__content">
+
+				<div class="form contact__form">
+					<!-- <div class="message">
+						<p class="title">¡Gracias!</p>
+						<p class="paragraph">Cada vez estamos más cerca. Elija un proyecto de su interés y comente.</p>
+					</div> -->
+					<embed class="api_contacto" src="https://app.didetonante.com">
+					<!-- <p class="title--mod form__title">Control</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
+						</div>
+						<div class="form__item" >
+							<p class="print"></p>
+						</div>
+					</div> -->
+					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="/Frontend/assets/icons/x.svg" alt="sendbutton"></button>
+					<!-- <button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button> -->
+
+				</div>
+			</div>
+			
+		</div>
+	</dialog>
+    <script type="text/javascript" src="/Frontend/script/contact.js"></script>
 </body>
 </html>
 

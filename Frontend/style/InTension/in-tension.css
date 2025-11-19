@@ -246,7 +246,7 @@ section{
   left: 0;
 }
 .title__container .issue__title {
-  margin: 0;
+  margin-block: 1vw;
   font-family: alte;
   font-size: 5rem;
   color: #fafafa;

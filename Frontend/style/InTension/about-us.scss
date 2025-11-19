@@ -232,6 +232,17 @@
         }
     }
 }
+.paragraph{
+    letter-spacing: 0.03rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-family: mont-medium;
+    // gap: .5lh;
+    .highlighted__bold{
+        font-family: mont-extrabold;
+    }
+    
+}
 .what-why{
     background-color: #fafafa;
     .text__section{

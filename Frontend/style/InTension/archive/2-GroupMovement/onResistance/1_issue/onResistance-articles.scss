@@ -3,8 +3,8 @@
 } */
 
 .article{
+    padding-top: 5%;
     background-color: #fafafa;
-    /* width: 70%; */
     display: grid;
     justify-content: center;
 }
@@ -19,79 +19,31 @@
     font-size: 6rem;
 }
 
-
-.article-one{
-    width: 40%;
-    margin-block: 5%;
-    .article__head{ 
-        /* width: 100%; */
-        .title__container{
-            /* width: 100%; */
-            .title{
-                /* border: 1px solid blueviolet; */
-                width: 100%;
-                min-height: 100px;
-                
-                p{
-                    /* border: 1px solid #ff00ff; */
-                    line-height: 1rem;
-                    font-size: 4.6rem;
-                }
-                /* .languaje{
-                    font-family: alte-regular;
-                    font-size: 5rem;
-                    font-size: clamp(3rem, 5.4rem, 6rem);
-                } */
-                .and{
-                    font-size: 3rem;
-                    font-family: alte-regular;
-                }
-            }
-        }
-
-    }
-    .paragraph{
-        p{
-            display: grid;
-            gap: 1lh;
-        }
-    }
-}
 .article-two{
-    width: 60%;
+    width: 100vw;
     margin-block: 5%;
     display: grid;
+    grid-template-rows: 1fr 5fr;
     justify-items: center;
-    gap: 2%;
+    align-items: center;
     position: relative;
     min-width: 400px;
     min-height: 500px;
     font-family: alte-regular;
     margin-bottom: 10%;
+    gap: 10%;
 
-    /* .title__container{
-         .title{
-            font-size: 3rem;
-            line-height: 2lh;
-            p{
-                display: grid;
-            }
-            .first{
-                font-size: 7rem;
-                font-family: alte-regular;
-            }
-            .obvious{
-                font-size: 4.5rem;
-                font-family: alte-regular;
-
-            }
-        }
-    } */
     .text{
         display: grid;
-        width: 110%;
+        max-width: 1200px;
         grid-template-columns: 1fr 1fr;
         gap: 10%;
+
+        .text__column{
+            display: grid;
+            gap: 1lh;
+        }
+        
         p{
             margin: 0;
         }
@@ -101,31 +53,7 @@
                 position: relative;
                 width: 190px;
                 height: 210px;
-                .title__container{
-                    .title{
-                        margin: 0;
-                        text-align: justify;
-                        position: absolute;
-                        left: 3%;
-                        top: -5%;
-                        font-size: clamp(2rem, 3rem, 5rem);
-                        font-size: 3rem;
-                        line-height: 2lh;
-                        p{
-                            display: grid;
-                        }
-                        .first{
-                            font-size: clamp(5rem, 7rem, 9rem);
-                            font-family: alte-regular;
-                        }
-                        .obvious{
-                            font-size: clamp(3rem, 4.5rem, 6rem);
-                            font-size: 4.5rem;
-                            font-family: alte-regular;
 
-                        }
-                    }
-                }
             }
             .temp__box--right{
                 float: right;
@@ -140,9 +68,41 @@
         }
     }
 }
+.title__container{
+    display: flex;
+    align-items: center;
+    .title{
+        margin: 0;
+        text-align: justify;
+        position: absolute;
+        font-size: 2.5rem;
+
+        p{
+            display: grid;
+            line-height: 2lh;
+        }
+        .situated{
+            font-size: clamp(5rem, 280% + 1rem, 9rem);
+            font-family: alte-bold;
+            line-height: 1lh;
+        }
+        .resistance{
+            font-size: clamp(3rem, 200% + 1rem, 6rem);
+            font-family: alte-bold;
+            line-height: 1lh;
+        }
+        .obvious{
+            width: 100%;
+            line-height: .3lh;
+            font-family: alte-regular;
+            font-size: clamp(2rem, 78% + 1rem, 5rem);
+        }
+    }
+}
+
 
 .article-three{
-    width: 60%;
+    max-width: 800px;
     margin-block: 5%;
     display: grid;
     justify-items: center;
@@ -153,27 +113,9 @@
     font-family: alte-regular;
     margin-bottom: 10%;
 
-    /* .title__container{
-         .title{
-            font-size: 3rem;
-            line-height: 2lh;
-            p{
-                display: grid;
-            }
-            .first{
-                font-size: 7rem;
-                font-family: alte-regular;
-            }
-            .obvious{
-                font-size: 4.5rem;
-                font-family: alte-regular;
-
-            }
-        }
-    } */
     .text{
+        max-width: 800px;
         display: grid;
-        width: 110%;
         grid-template-columns: 1fr 1fr;
         gap: 10%;
 
@@ -239,4 +181,12 @@
     top: 100%;
     transform: translate(0, -100%);
     z-index: -1;
+}
+
+.patagraph{
+    .par{
+        text-wrap: inherit;
+        text-align-last: left;
+    }
+
 }

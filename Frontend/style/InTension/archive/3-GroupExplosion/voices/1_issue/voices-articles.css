@@ -55,4 +55,22 @@
 }
 .texttitle__container .live {
   font-size: 3rem;
+}
+
+.paragraph {
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+}
+.paragraph .text {
+  display: grid;
+  max-width: 800px;
+  gap: 1lh;
+}
+
+.subtitle {
+  text-align: left;
+  -webkit-hyphens: none;
+          hyphens: none;
+  hyphenate-limit-chars: 7;
 }/*# sourceMappingURL=voices-articles.css.map */

@@ -63,3 +63,18 @@
         font-size: 3rem;
     }
 }
+.paragraph{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    .text{
+        display: grid;
+        max-width: 800px;
+        gap: 1lh;
+    }
+}
+.subtitle{
+    text-align: left;
+    hyphens: none;
+    hyphenate-limit-chars: 7;
+}

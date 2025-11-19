@@ -73,7 +73,6 @@ body {
   text-align: justify;
   -webkit-hyphens: auto;
           hyphens: auto;
-  text-wrap: pretty;
   hyphenate-limit-chars: 7;
   font-family: var(--font-article-regular);
   font-size: 1.3rem;

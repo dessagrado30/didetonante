@@ -49,7 +49,9 @@
   padding-block: 10%;
 }
 .text__grid .text {
+  display: grid;
   margin-right: 20%;
+  gap: 1lh;
 }
 
 @media (width < 1800px) {

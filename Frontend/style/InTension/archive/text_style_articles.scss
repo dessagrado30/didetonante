@@ -67,7 +67,6 @@ body{
     color: #333333;
     text-align: justify;
     hyphens: auto;
-    text-wrap: pretty;
     hyphenate-limit-chars: 7;
     font-family: var(--font-article-regular);
     font-size: 1.3rem;
@@ -79,7 +78,6 @@ body{
 .highlighted__bold{
     font-family: var(--font-article-bold);
     text-align: left;
-
 }
 
 .subtitle{

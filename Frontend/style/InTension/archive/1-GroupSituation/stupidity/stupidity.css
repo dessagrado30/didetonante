@@ -38,4 +38,9 @@
   font-size: 1.2rem;
   line-height: 1.4;
   text-align: justify;
+}
+
+.text {
+  max-width: 800px;
+  display: none;
 }/*# sourceMappingURL=stupidity.css.map */

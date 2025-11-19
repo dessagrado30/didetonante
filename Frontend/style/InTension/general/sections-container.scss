@@ -147,10 +147,7 @@ body{
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            /* opacity: 0; */
             bottom: 0;
-            /* left: 10%; */
-            /* transform: translate(0, 130%); */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -231,7 +228,6 @@ body{
                     height: 100%;
                     background-color: var(--section-2-color);
                     mix-blend-mode: darken;
-                    /* opacity: 40%; */
                 }
                 img{
                     position: absolute;
@@ -239,11 +235,6 @@ body{
                     height: 90%;
                 }
             }
-            /* background-color: var(--section-2-color);
-            figure{
-                width: 90%;
-                height: 90%;
-            } */
         }
         .filter_section-3{
             .icon__background{
@@ -280,11 +271,6 @@ body{
                     height: 70%;
                 }
             }
-            /* background-color: var(--section-3-color);
-            figure{
-                width: 70%;
-                height: 70%;
-            } */
         }
 
 
@@ -746,6 +732,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+            
             figure{
                 position: absolute;
                 margin: 0;
@@ -756,10 +743,25 @@ body{
                     width: 100%;
                 }
             }
+            .nowhere-icon__conrainer{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .svg__herenow{
+                    width: 60%;
+                }
+            }
+
             .circle{
+                background-color: transparent;
                 position: relative;
-                width: 90px;
-                height: 90px;
+                width: 100px;
+                height: 100px;
                 border: 5px solid #fafafa;
                 border-radius: 50%;
                 display: flex;
@@ -775,29 +777,48 @@ body{
                     height: 100%;
 
                 }
+                .geometry{
+                    position: absolute;
+                    top: 10%;
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    border-top: 10px solid #fafafa;
+                    z-index: 1;
+                }
                 .hereandnow{
                     color: #fafafa;
                     font-family: alte;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     line-height: 1.2lh;
                     position: absolute;
                     display: grid;
-                    grid-template-columns: 1.5fr .5fr;
+                    grid-template-columns: 1fr 6fr;
                     grid-template-rows: 1fr 1fr;
                     justify-content: center;
                     align-items: center;
                     text-decoration: initial;
                     width: 80%;
-                    .and{
-                        font-size: 2rem;
-                    }
+                    // & > *{
+                    //     outline: 1px solid blueviolet;
+                    // }
                     .now{
                         width: 100%;
-                        color: #00000000;
-                        -webkit-text-stroke: 1px #fafafa;
-                        font-size: 2rem;
+                        color: #fafafa;
+                        // -webkit-text-stroke: 1px #fafafa;
+                        font-size: 1.9rem;
                         grid-column: 1/3;
                     }   
+                    .and{
+                        display: flex;
+                        justify-content: center;
+                        width: 10px;
+                        font-size: .7rem;
+                        font-family: alte-regular;
+                        transform: rotate(-90deg);
+                    }
+
                 }
             }
         }

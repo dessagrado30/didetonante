@@ -55,7 +55,9 @@
     grid-template-columns: 1fr 1fr;
     padding-block: 10%;
     .text{
+        display: grid;
         margin-right: 20%;
+        gap: 1lh;
     }
 }
 

@@ -61,7 +61,7 @@
             </div>
         </div>
     </section>
-    <a href="/Frontend/assets/downloads/Stiegler-Taking-Care-of-Youth-and-the-Generations-excerpts.pdf" download="0.InTension-Prototype_Issue.pdf">
+    <a href="/Frontend/assets/downloads/1_Issue_in- tensión.pdf" download="0.InTension-Prototype_Issue.pdf">
         <div class="content__button content__button--download">
             <img class="download__icon" src="/Frontend/assets/icons/download.svg" alt="download icon">
         </div>
@@ -93,7 +93,7 @@
         </div>
     </section>
 
-    <section class="index">
+    <section id="index" class="index">
         <figure class="background__image index_issue">
             <img class="back_image-index" src="/Frontend/assets/img/in_tension/issues/textura_arbol.webp" alt="Issue One. Principal image">
             <div class="filtro__banner banner-issue issue-color"></div>
@@ -199,10 +199,14 @@
                     </article>
                     <article id="btn-now" class="box__section section__10">
                         <a href="#explosion">
-                            <div class="circle">
-                                <!-- <div class="filtro__hereandnow issue-color"></div> -->
-                                <p class="hereandnow">Here<span class="and">&</span><span class="now">Now</span></p>
-                            </div>
+                            <!-- <figure class="nowhere-icon__conrainer">
+                                <img class="svg__herenow" src="/Frontend/assets/img/in_tension/NowHere.svg" alt="">
+                            </figure> -->
+							<div class="circle">
+								<div class="filtro__hereandnow"></div>
+								<p class="hereandnow"><span class="now">NOW</span><span class="and">and</span>HERE</p>
+								<div class="geometry"></div>
+							</div>
                         </a>
                     </article>
                     <div class="content__icons filter_section-3">
@@ -354,7 +358,7 @@
                     <div id="onresistence-section" class="container two on-resistence">
                         <a href="/Frontend/templates/InTension/archive/2-GroupMovement/6_onResistance/1_issue/onResistance-articles.html">
                             <div class="img__box article_one">
-                                <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles-section/calle_marcha.webp" alt="Marcha 1 de Mayo, Colombia"></figure>
+                                <figure class="image__container"><img class="img--onresistence" src="/Frontend/assets/img/in_tension/articles-section/calle_marcha-fichachica.webp" alt="Marcha 1 de Mayo, Colombia"></figure>
                                 <p class="label__section section__issue-text-color">On Resistence</p>
                                 <div class="article__title">
                                     <div class="issue__min_title--filter section__two-color"></div>
@@ -371,7 +375,7 @@
                 </li>
                 <li class="article">
                     <div id="fictofactions-section" class="container three ficto-factions">
-                        <a href="/Frontend/templates/InTension/archive/2-GroupMovement/7_fictoFaction/1_issue/fictoFaction-article.html">
+                        <a href="/Frontend/templates/InTension/archive/2-GroupMovement/7_fictoFaction/fictoFaction.html">
                             <div class="img__box article_one">
                                 <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles/Poster_zoom.webp" alt="fotografía ramas de arbol, por Tony Fry"></figure>
                                 <p class="label__section section__issue-text-color">Ficto Factions</p>
@@ -418,7 +422,7 @@
                 </li>
                 <li class="article article--linesection">
                     <div id="reviews-section" class="container two re-views">
-                        <a href="">
+                        <a href="/Frontend/templates/InTension/archive/3-GroupExplosion/9_reViews/reViews.html">
                             <div class="img__box article_one">
                                 <figure class="image__container"><img src="/Frontend/assets/img/in_tension/articles-section/calle_marcha-2.webp" alt="Marcha 1 de Mayo, Colombia"></figure>
                                 <p class="label__section section__issue-text-color">ReViews</p>
@@ -471,6 +475,37 @@
         <iframe class="ftr" src="/Frontend/templates/InTension/footer.html" frameborder="0">
         </iframe>
     </section>
+
+	<dialog class="send modal modal-style">
+
+		<div class="modal__container">
+			<div class="modal__content">
+
+				<div class="form contact__form">
+					<!-- <div class="message">
+						<p class="title">¡Gracias!</p>
+						<p class="paragraph">Cada vez estamos más cerca. Elija un proyecto de su interés y comente.</p>
+					</div> -->
+					<embed class="api_contacto" src="https://app.didetonante.com">
+					<!-- <p class="title--mod form__title">Control</p>
+					<div class="form__item">
+						<div class="form__item">
+							<input id="key" class="item__input" type="number" placeholder="Código" required>
+						</div>
+						<div class="form__item" >
+							<p class="print"></p>
+						</div>
+					</div> -->
+					<button id="close_button" class="modal__button button__close" onclick="closeModal()"><img src="/Frontend/assets/icons/x.svg" alt="sendbutton"></button>
+					<!-- <button id="" class="modal__button button__action button__get" onclick="Get()"><img src="Frontend/assets/icons/target.svg"></button>
+					<button id="" class="modal__button button__action button__put" onclick="Put()"><img src="Frontend/assets/icons/chevrons-left-right-ellipsis.svg"></button>
+					<button id="check_button" class="modal__button button__action button__delete" onclick="Delete()"><img src="Frontend/assets/icons/trash-2.svg"></button> -->
+
+				</div>
+			</div>
+			
+		</div>
+	</dialog>
 
 	<script src="/Frontend/script/header.js"></script>
     <script type="text/javascript" src="/Frontend/script/contact.js"></script>

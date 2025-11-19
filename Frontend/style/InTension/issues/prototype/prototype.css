@@ -32,6 +32,14 @@ a {
   height: auto;
   z-index: 1;
 }
+.editorial .editorial__content {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+.editorial .editorial__content .text {
+  max-width: 800px;
+}
 
 .issue-pres {
   position: absolute;
