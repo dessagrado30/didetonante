@@ -72,3 +72,14 @@ document.getElementById('btn-now').addEventListener('click', () => {
   void elem.offsetWidth; // Reinicia la animación
   elem.classList.add('parpadeo');
 });
+
+
+
+
+// function scrollUp() {
+//   window.scrollBy(0, ); // Desplaza 100 píxeles hacia arriba
+// }
+
+function scrollDown() {
+  window.scrollBy(0, 750); // Desplaza 100 píxeles hacia abajo
+}
