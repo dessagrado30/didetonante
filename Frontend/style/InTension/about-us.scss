@@ -50,7 +50,7 @@
             }
             .subtitle{
                 position: relative;
-                font-family: alte;
+                font-family: mont;
                 width: 100%;
             }
         }
@@ -166,6 +166,9 @@
         width: 50%;
         .paragraph{
             grid-template-columns: 1fr;
+            .subtitle{
+                font-family: mont-extrabold;
+            }
         }
     }
 }

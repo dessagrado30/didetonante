@@ -47,7 +47,7 @@
 }
 .aboutus-head .head__container .title-box .subtitle {
   position: relative;
-  font-family: alte;
+  font-family: mont;
   width: 100%;
 }
 .aboutus-head .head__container .visualprofiles {
@@ -151,6 +151,9 @@
 }
 .text-about .text .paragraph {
   grid-template-columns: 1fr;
+}
+.text-about .text .paragraph .subtitle {
+  font-family: mont-extrabold;
 }
 
 .separator {
