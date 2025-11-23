@@ -13,7 +13,7 @@
   margin: 20%;
 }
 
-@media (width < 1280px) {
+@media (width < 1270px) {
   body > *:not(:first-child) {
     display: none;
   }
