@@ -83,3 +83,5 @@ document.getElementById('btn-now').addEventListener('click', () => {
 function scrollDown() {
   window.scrollBy(0, 750); // Desplaza 100 píxeles hacia abajo
 }
+
+

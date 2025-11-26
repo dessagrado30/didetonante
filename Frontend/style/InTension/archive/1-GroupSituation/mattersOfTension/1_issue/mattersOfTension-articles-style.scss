@@ -61,6 +61,20 @@
     }
 }
 
+.firefox{
+    .head{
+        transform: translate(0, -80%);
+    }
+    .text__grid{
+        grid-template-columns: 1fr 1fr;
+        transform: translate(0, -30%);
+        // .text{
+        //     max-width: 40rem;
+        //     margin-inline: 0;
+        // }
+    }
+}
+
 @media (width < 1800px){
 .article{
     .head{
@@ -73,4 +87,18 @@
         }
     }
 }
+.firefox{
+    .head{
+        transform: translate(-30%, -50%);
+    }
+    .text__grid{
+        grid-template-columns: 1fr 1fr;
+        transform: translate(0, -20%);
+        .text{
+            max-width: 40rem;
+            margin-inline: 0;
+        }
+    }
 }
+}
+

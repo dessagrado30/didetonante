@@ -54,6 +54,14 @@
   gap: 1lh;
 }
 
+.firefox .head {
+  transform: translate(0, -80%);
+}
+.firefox .text__grid {
+  grid-template-columns: 1fr 1fr;
+  transform: translate(0, -30%);
+}
+
 @media (width < 1800px) {
   .article .head .title__container {
     top: 85%;
@@ -61,5 +69,16 @@
   .article .head .title__container .title {
     left: 5%;
     transform: translate(0, -10%);
+  }
+  .firefox .head {
+    transform: translate(-30%, -50%);
+  }
+  .firefox .text__grid {
+    grid-template-columns: 1fr 1fr;
+    transform: translate(0, -20%);
+  }
+  .firefox .text__grid .text {
+    max-width: 40rem;
+    margin-inline: 0;
   }
 }/*# sourceMappingURL=mattersOfTension-articles-style.css.map */
