@@ -25,10 +25,11 @@
 .article-one .article__head {
   position: relative;
   display: grid;
+  justify-content: center;
   width: 800px;
   height: 400px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px;
+  grid-template-columns: 28rem;
+  grid-template-rows: 28rem;
 }
 .article-one .article__head .title__container .title {
   line-height: 6rem;

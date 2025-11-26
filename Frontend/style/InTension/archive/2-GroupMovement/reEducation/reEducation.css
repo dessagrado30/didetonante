@@ -44,8 +44,14 @@
 .section__text .paragraph__container .description {
   width: 90%;
   color: #fafafa;
-  font-family: alte-regular;
-  font-size: 1.2rem;
+  font-family: mont;
+  font-size: 1.3rem;
   line-height: 1.4;
   text-align: justify;
+}
+.section__text .paragraph__container .bold {
+  font-family: mont-medium;
+}
+.section__text .paragraph__container .extra-bold {
+  font-family: mont-extrabold;
 }/*# sourceMappingURL=reEducation.css.map */

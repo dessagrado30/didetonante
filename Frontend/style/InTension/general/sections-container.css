@@ -64,7 +64,7 @@ body {
 }
 .box__section .article_description {
   color: #fafafa;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: mont-medium;
   text-wrap: pretty;
   hyphenate-limit-chars: 7;

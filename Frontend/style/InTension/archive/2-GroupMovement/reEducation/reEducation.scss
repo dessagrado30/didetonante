@@ -42,11 +42,16 @@
         .description{
             width: 90%;
             color: #fafafa;
-            font-family: alte-regular;
-            font-size: 1.2rem;
+            font-family: mont;
+            font-size: 1.3rem;
             line-height: 1.4;
             text-align: justify;
-            
+        }
+        .bold{
+            font-family: mont-medium;
+        }
+        .extra-bold{
+            font-family: mont-extrabold;
         }
     }
 }

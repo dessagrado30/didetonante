@@ -74,6 +74,7 @@ section{
   justify-content: center;
 }
 .port .banner .text__line p {
+  bottom: -0.6rem;
   position: absolute;
   font-family: alte;
   font-size: 1.1rem;

@@ -38,11 +38,11 @@
   transform: translate(0, 0);
 }
 .section__text .title .voices--2 {
-  opacity: 80%;
+  opacity: 50%;
   transform: translate(0, 100%);
 }
 .section__text .title .voices--3 {
-  opacity: 60%;
+  opacity: 20%;
   transform: translate(0, 200%);
 }
 .section__text .paragraph__container {

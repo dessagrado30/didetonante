@@ -184,4 +184,9 @@
     font-family: diga-medium;
     src: url("diga/otf/Diga-Medium.otf") format("opentype");
 }
+@font-face {
+    font-family: diga-italic;
+    src: url("diga/otf/Diga-Italic.otf") format("opentype");
+}
+
 
