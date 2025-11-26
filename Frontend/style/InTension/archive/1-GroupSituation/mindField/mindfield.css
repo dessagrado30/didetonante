@@ -39,12 +39,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section__text .paragraph__container .description {
-  width: 90%;
-  color: #fafafa;
-  font-family: alte-regular;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  text-align: justify;
 }/*# sourceMappingURL=mindfield.css.map */

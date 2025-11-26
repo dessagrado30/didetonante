@@ -18,7 +18,6 @@
   position: absolute;
   top: -40%;
   font-size: 6rem;
-  transform: translate(-25%, 0);
 }
 .section__text .title .resistance {
   line-height: 0;
@@ -30,23 +29,13 @@
   transform: rotate(-90deg) translate(-50%, 0);
 }
 .section__text .paragraph__container {
+  position: relative;
   width: 780px;
-  /* height: 100%; */
-  /* padding: 5%; */
   margin-top: 2%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5333333333);
-  mix-blend-mode: luminosity;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section__text .paragraph__container .description {
-  width: 90%;
-  color: #fafafa;
-  font-family: alte-regular;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  text-align: justify;
+  overflow: hidden;
 }/*# sourceMappingURL=onResistance.css.map */

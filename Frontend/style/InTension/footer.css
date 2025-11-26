@@ -58,6 +58,8 @@ body {
   list-style: none;
   padding-left: 0;
   line-height: 1.5lh;
+  font-family: mont-medium;
+  letter-spacing: 0.3rem;
 }
 .footer .elements__container .info__box .contact .item::before {
   content: "";

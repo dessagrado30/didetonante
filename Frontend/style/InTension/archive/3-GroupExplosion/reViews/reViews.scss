@@ -1,5 +1,7 @@
 .banner-section--three{
-    mix-blend-mode: multiply;
+    opacity: 70%;
+    background-color: #006666;
+    mix-blend-mode: darken;
 }
 .section__text{
     height: 300px;
@@ -49,15 +51,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .description{
-            width: 90%;
-            color: #fafafa;
-            font-family: alte-regular;
-            font-size: 1.5rem;
-            line-height: 1.4;
-            margin-inline: 20%;
-            /* text-align: justify; */
-            
-        }
     }
 }

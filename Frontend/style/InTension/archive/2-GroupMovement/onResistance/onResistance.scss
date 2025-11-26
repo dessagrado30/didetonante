@@ -16,7 +16,6 @@
             position: absolute;
             top: -40%;
             font-size: 6rem;
-            transform: translate(-25%, 0);
         }
         .resistance{
             line-height: 0;
@@ -29,25 +28,14 @@
         }
     }
     .paragraph__container{
+        position: relative;
         width: 780px;
-        /* height: 100%; */
-        /* padding: 5%; */
         margin-top: 2%;
         left: 0;
-        background-color: #00000088;
-        mix-blend-mode: luminosity;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        .description{
-            width: 90%;
-            color: #fafafa;
-            font-family: alte-regular;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            text-align: justify;
-            
-        }
+        overflow: hidden;
     }
 }

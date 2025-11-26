@@ -61,6 +61,8 @@ body{
                 list-style: none;
                 padding-left: 0;
                 line-height: 1.5lh;
+                font-family: mont-medium;
+                letter-spacing: .3rem;
                 .item::before {
                     content: "";
                     display: inline-block;

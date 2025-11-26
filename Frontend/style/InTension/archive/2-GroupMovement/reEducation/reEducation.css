@@ -31,27 +31,13 @@
   transform: rotate(-90deg) translate(-50%, 0);
 }
 .section__text .paragraph__container {
+  position: relative;
   width: 780px;
   margin-top: 2%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5333333333);
-  mix-blend-mode: luminosity;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section__text .paragraph__container .description {
-  width: 90%;
-  color: #fafafa;
-  font-family: mont;
-  font-size: 1.3rem;
-  line-height: 1.4;
-  text-align: justify;
-}
-.section__text .paragraph__container .bold {
-  font-family: mont-medium;
-}
-.section__text .paragraph__container .extra-bold {
-  font-family: mont-extrabold;
+  overflow: hidden;
 }/*# sourceMappingURL=reEducation.css.map */

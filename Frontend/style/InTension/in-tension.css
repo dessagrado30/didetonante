@@ -164,11 +164,11 @@ section{
   justify-content: center;
   font-size: 1.4rem;
 }
-.port .port__content .section__menu li {
+.port .port__content .section__menu li, .port .port__content .section__menu li a {
   padding-left: 2%;
   margin-right: 4%;
 }
-.port .port__content .section__menu li:hover {
+.port .port__content .section__menu li:hover, .port .port__content .section__menu li a:hover {
   color: var(--issue-color);
   cursor: pointer;
 }
@@ -177,6 +177,15 @@ section{
 }
 .port .port__content .section__menu li::marker {
   color: var(--issue-color);
+}
+.port .port__content .section__menu .none {
+  padding-left: 2%;
+  margin-right: 4%;
+  color: rgba(250, 250, 250, 0.4666666667);
+}
+.port .port__content .section__menu .none:hover {
+  color: rgba(250, 250, 250, 0.4666666667);
+  cursor: default;
 }
 
 .displace {

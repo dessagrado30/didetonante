@@ -30,28 +30,14 @@
         }
     }
     .paragraph__container{
+        position: relative;
         width: 780px;
         margin-top: 2%;
         left: 0;
-        background-color: #00000088;
-        mix-blend-mode: luminosity;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
-        .description{
-            width: 90%;
-            color: #fafafa;
-            font-family: mont;
-            font-size: 1.3rem;
-            line-height: 1.4;
-            text-align: justify;
-        }
-        .bold{
-            font-family: mont-medium;
-        }
-        .extra-bold{
-            font-family: mont-extrabold;
-        }
+        overflow: hidden;
     }
 }

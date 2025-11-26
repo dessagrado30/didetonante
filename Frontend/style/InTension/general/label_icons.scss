@@ -1,0 +1,30 @@
+.section__label{
+    position: fixed;
+    top: 15%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .label{
+        position: relative;
+        width: 3vw;
+        height: 3vw;
+        min-width: 4rem;
+        min-height: 4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            position: absolute;
+            filter: brightness(0);
+            width: 90%;
+            height: 90%;
+        }
+        .img--explosion{
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+

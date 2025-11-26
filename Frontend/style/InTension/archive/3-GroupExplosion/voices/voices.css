@@ -1,16 +1,12 @@
 .banner-section--three {
-  mix-blend-mode: multiply;
-}
-
-.banner-section--three {
   opacity: 70%;
   background-color: #006666;
   mix-blend-mode: darken;
 }
 
 .section__text {
-  height: 300px;
-  width: 720px;
+  height: 400px;
+  width: 45rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: 300px;
@@ -28,6 +24,7 @@
   height: 100%;
   font-family: alte;
   color: #fafafa;
+  margin-right: 20%;
 }
 .section__text .title .voices {
   position: absolute;
@@ -56,12 +53,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.section__text .paragraph__container .description {
-  width: 90%;
-  color: #fafafa;
-  font-family: alte-regular;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  /* text-align: justify; */
 }/*# sourceMappingURL=voices.css.map */

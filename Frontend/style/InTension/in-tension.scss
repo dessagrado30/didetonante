@@ -199,7 +199,7 @@ section{
             display: flex;
             justify-content: center;
             font-size: 1.4rem;
-            li{
+            li, li a{
                 padding-left: 2%;
                 margin-right: 4%;
                 &:hover{
@@ -213,6 +213,16 @@ section{
             }
             li::marker{
                 color: var(--issue-color);
+            }
+            .none{
+                padding-left: 2%;
+                margin-right: 4%;
+                color: #fafafa77;
+                &:hover{
+                    color: #fafafa77;
+                    cursor: default;
+                    
+                }
             }
         }   
     }
