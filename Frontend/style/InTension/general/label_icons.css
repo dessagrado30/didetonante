@@ -1,7 +1,7 @@
 .section__label {
-  position: fixed;
-  top: 15%;
-  width: 100vw;
+  position: absolute;
+  top: -40%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,4 +26,8 @@
 .section__label .label .img--explosion {
   width: 80%;
   height: 80%;
+}
+
+.label--reviews {
+  top: -70%;
 }/*# sourceMappingURL=label_icons.css.map */

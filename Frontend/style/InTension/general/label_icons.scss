@@ -1,7 +1,7 @@
 .section__label{
-    position: fixed;
-    top: 15%;
-    width: 100vw;
+    position: absolute;
+    top: -40%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,5 +26,8 @@
             height: 80%;
         }
     }
+}
+.label--reviews{
+    top: -70%;
 }
 

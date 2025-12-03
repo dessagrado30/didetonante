@@ -4,6 +4,7 @@
     mix-blend-mode: darken;
 }
 .section__text{
+    position: relative;
     height: 300px;
     display: grid;
     grid-template-columns: .2fr .8fr;

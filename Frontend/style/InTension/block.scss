@@ -12,19 +12,19 @@
         margin: 20%;
     }
 }
-// @media (width < 1270px){
-//     body > *:not(:first-child){
-//         display: none;
-//     }
-//     .block{
-//         opacity: 100%;
-//     }
-// }
-// @media (height < 600px){
-//     body > *:not(:first-child){
-//         display: none;
-//     }
-//     .block{
-//         opacity: 100%;
-//     }
-// }
+@media (width < 1230px){
+    body > *:not(:first-child){
+        display: none;
+    }
+    .block{
+        opacity: 100%;
+    }
+}
+@media (height < 500px){
+    body > *:not(:first-child){
+        display: none;
+    }
+    .block{
+        opacity: 100%;
+    }
+}

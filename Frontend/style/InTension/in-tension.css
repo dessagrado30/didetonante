@@ -12,6 +12,11 @@ a {
 @view-transition {
   navigation: auto;
 }
+.bold--init {
+  color: #bebebe;
+  font-family: mont-medium;
+}
+
 /* ::view-transition-group(*){
     animation-duration: 2s;
 } */

@@ -1,6 +1,7 @@
 .section__text {
+  position: relative;
   width: 900px;
-  height: 300px;
+  height: 18rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;

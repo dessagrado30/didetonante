@@ -10,6 +10,10 @@ a{
 @view-transition {
     navigation: auto;
 }
+.bold--init{
+    color: #bebebe;
+    font-family: mont-medium;
+}
 /* ::view-transition-group(*){
     animation-duration: 2s;
 } */
@@ -742,6 +746,56 @@ section{
             left: 10%;
         }
     }
+
+    // .port{
+    //     position: relative;
+    //     overflow: hidden;
+    //     background-color: #0b0b0b;
+    //     width: 100vw;
+    //     height: 100vh;
+
+    //     .banner{
+    //         background-color: #0b0b0b;
+    //         position: sticky;
+    //         width: 100vw;
+    //         height: 9%;
+    //         z-index: 100;
+    //         .text__line {
+    //             position: absolute;
+    //             bottom: 0;
+    //             width: 50%;
+    //             height: 3rem;
+    //             display: flex;
+    //             justify-content: center;
+    //             p { 
+    //                 bottom: -.6rem;
+    //                 position: absolute;
+    //                 font-family: alte;
+    //                 font-size: 1.1rem;
+    //                 letter-spacing: .3em;
+    //             }
+    //         }
+    //         .left {
+    //             color: black;
+    //             background-image: linear-gradient(120deg, transparent 0%, var(--issue-color) 0% 97%, transparent 95%);
+    //             left: 0;
+    //             letter-spacing: .2em;
+
+    //         }            
+    //         .right {
+    //             color: white;
+    //             right: 0;
+    //             transform: skew(20deg 0 0 0);
+    //         }
+    //     }
+    // }
+
+
+
+
+
+
+
     .section__menu{
         display: none;
     }

@@ -1,15 +1,23 @@
 
 .banner{
+    position: relative;
     width: 100vw;
-    height: 100vh;
+    min-height: 80rem;
+
     .banner__container{
         position: relative;
         width: 100%;
         height: 100%;
         position: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        // justify-content: center;
+        // align-items: center;
+        align-content: center;
+        justify-items: center;
+        .section__text{
+            top: 20%;
+        }
+
     }
 }
 .background__image{
@@ -17,6 +25,7 @@
     margin: 0;
     width: 100%;
     height: 100%;
+    
     img{
         position: absolute;
         object-fit: cover;
