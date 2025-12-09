@@ -16,20 +16,6 @@
     font-size: 6rem;
 }
 
-.article-one{
-    margin-block: 10%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-    position: relative;
-    min-width: 400px;
-    /* max-width: 1200px; */
-    min-height: 500px;
-    font-family: alte-regular;
-    margin-bottom: 10%;
-}
 .article__content--float{
     float: inline-start;
 }
@@ -41,21 +27,22 @@
     align-items: center;
     gap: 2%;
     position: relative;
-    min-width: 400px;
-    min-height: 500px;
+    // min-width: 400px;
+    // min-height: 500px;
     font-family: alte-regular;
     margin-bottom: 10%;
     
 
     .title__container{
         position: relative;
-        height: 350px;
+        height: 20rem;
 
         .title{
+            border: 1px solid #0b0b0b;
             top: -20%;
             position: absolute;
-            width: 380px;
-            height: 150%;
+            width: 25rem;
+            // height: 150%;
             p > *{
                 font-family: alte;
             }

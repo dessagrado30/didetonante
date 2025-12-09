@@ -59,6 +59,7 @@ body {
   padding-left: 0;
   line-height: 1.5lh;
   font-family: mont-medium;
+  font-size: clamp(0.7rem, 10% + 0rem, 2rem);
   letter-spacing: 0.3rem;
 }
 .footer .elements__container .info__box .contact .item::before {
