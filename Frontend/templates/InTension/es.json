@@ -1,0 +1,109 @@
+ {
+    "header":{
+        "block":"",
+        "lang":"es"
+    },
+    "issue-initview": {
+        "title": "",
+        "warning-text":""
+    },
+    "menu": {
+        "item-one":"Nosotrxs",
+        "item-two":"Revista",
+        "item-three":"Podcast",
+        "item-four":"Eventos/Proyectos",
+        "item-five":"Ayuda / Recursos",
+        "item-six":"Espacio de diálogo",
+        "item-seven":"Contacto"
+    },
+    "editorial": "",
+    "issues": {
+        "section-title": "Revista",
+        "index-title": "Números",
+        "issue-one": {
+            "name":""
+        },
+        "issue-two": {
+            "name":""
+        },
+        "issue-three": {
+            "name":""
+        },
+        "issue-four": {
+            "name":""
+        },
+        "comming-issues": "",
+        "intention-textbox": ""
+    },
+    "zine-sections": {
+        "warning-text":"",
+        "boxes": {
+
+            
+            "situation":"",
+            "box-one": {
+                "matters":"",
+                "tension":"",
+                "paragraph":""
+            },
+            "box-two": {
+                "mind":"",
+                "field":"",
+                "paragraph":""
+            },
+            "box-three": {
+                "stupidity": "",
+                "paragraph":""
+            },
+            "box-four": {
+                "borderlands": "",
+                "paragraph":""
+            },
+
+
+            "movement":"",
+            "box-five": {
+                "re": "",
+                "education":"",
+                "paragraph":""
+            },
+            "box-six": {
+                "on": "",
+                "resistance":"",
+                "paragraph":""
+            },
+            "box-seven": {
+                "ficto": "",
+                "factions":"",
+                "paragraph":""
+            },
+            "box-eight": {
+                "voices": "",
+                "paragraph":""
+            },
+
+
+            "explosion":"",
+            "box-nine": {
+                "re": "",
+                "views":"",
+                "paragraph":""
+            },
+            "box-ten": {
+                "now": "",
+                "and":"",
+                "here":"",
+                "paragraph":""
+            }
+        }
+    },
+    "footer": {
+        "final-warning-text":"",
+        "final-warning-span":""
+    }
+    
+}
+
+
+
+

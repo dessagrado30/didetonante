@@ -41,4 +41,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.block {
+  display: none;
 }/*# sourceMappingURL=borderLands.css.map */
